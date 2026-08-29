@@ -237,6 +237,7 @@ GEZ = [
     ("/harita/", "Harita"),
     ("/araclar/", "Araçlar"),
     ("/liste/", "Listeler"),
+    ("/gezi/", "Gezi"),
     ("/deniz/", "Denize yakın"),
     ("/tur/ogretmenevleri/", "Öğretmenevleri"),
     ("/rehber/", "Rehber"),
@@ -278,6 +279,7 @@ def kabuk(
     aktif: str = "",
     ek_bas: str = "",
     on_gorsel: str = "",
+    anahtarlar: list[str] | None = None,
     harita: bool = False,
     arac: bool = False,
 ) -> str:
@@ -306,7 +308,9 @@ def kabuk(
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(baslik)}</title>
 <meta name="description" content="{e(aciklama)}">
+{f'<meta name="keywords" content="{e(", ".join(anahtarlar[:12]))}">' if anahtarlar else ""}
 <link rel="canonical" href="{kanonik}">
+<meta name="google-site-verification" content="yD5FFmNqygHuVF-pcouKiUd2NsBxSfG9vHiCoqgYHFc">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{AD}">
 <meta property="og:locale" content="tr_TR">
@@ -352,6 +356,7 @@ misafirhanelerinin bağımsız dizini. Rezervasyon alınmaz; her tesis doğrudan
 <li><a href="/harita/">Harita</a></li>
 <li><a href="/ara/">Tesis ara</a></li>
 <li><a href="/liste/">Sıralı listeler</a></li>
+<li><a href="/gezi/">Gezi rehberi</a></li>
 <li><a href="/deniz/">Denize yakın tesisler</a></li>
 <li><a href="/tur/ogretmenevleri/">Öğretmenevleri</a></li>
 <li><a href="/tur/polisevleri/">Polisevleri</a></li>
@@ -371,7 +376,9 @@ misafirhanelerinin bağımsız dizini. Rezervasyon alınmaz; her tesis doğrudan
 <li><a href="/rehber/ankaraya-yakin-deniz-tatili/">Ankara'ya yakın deniz</a></li>
 </ul></div>
 <div><h3>Veri</h3><ul>
-<li><a href="/tesisler.json">Açık veri (JSON)</a></li>
+<li><a href="/veri/">Açık veri ve kaynak gösterme</a></li>
+<li><a href="/tesisler.json">Ham veri (JSON)</a></li>
+<li><a href="/feed.xml">RSS beslemesi</a></li>
 <li><a href="/sitemap.xml">Site haritası</a></li>
 <li><a href="/kaynaklar/">Kaynaklar ve katkı</a></li>
 </ul></div>

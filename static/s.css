@@ -605,3 +605,38 @@ p{margin:0 0 1em}
 .hi-p{width:30px;height:30px}
 .hi-p::before,.hi-y{left:6px;width:19px;height:19px}
 .hi-p::after{left:13px;top:22px}
+
+/* ---------- gezi rehberi ---------- */
+.gz-iz{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+  margin:0 0 34px}
+.gz-k{background:var(--yuzey);border:1px solid var(--cizgi);border-radius:var(--r);
+  padding:16px 17px;box-shadow:var(--golge-sm);display:flex;flex-direction:column;gap:9px;
+  transition:border-color .18s,box-shadow .18s,transform .18s}
+.gz-k:hover{border-color:var(--vurgu-cizgi);box-shadow:var(--golge);transform:translateY(-2px)}
+.gz-bas{display:flex;gap:13px;align-items:flex-start}
+.gz-km{flex:none;min-width:54px;text-align:center;font-size:1.16rem;font-weight:700;
+  color:var(--vurgu);line-height:1.05;font-variant-numeric:tabular-nums;
+  background:var(--vurgu-yumusak);border-radius:var(--r-sm);padding:8px 4px}
+.gz-km small{display:block;font-size:.64rem;font-weight:600;color:var(--soluk);
+  letter-spacing:.06em;text-transform:uppercase;margin-top:1px}
+.gz-k h3{font-size:1.06rem;line-height:1.28;margin:0}
+.gz-tur{display:inline-flex;align-items:center;gap:5px;font-size:.79rem;color:var(--soluk);
+  margin-top:4px;font-family:var(--sans);font-weight:500}
+.gz-k p{font-size:.9rem;line-height:1.58;color:var(--orta);margin:0;flex:1}
+.gz-kaynak{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;font-weight:600;
+  color:var(--soluk);text-decoration:none;margin-top:auto}
+.gz-kaynak:hover{color:var(--vurgu)}
+.gz-say{display:inline-block;font-family:var(--sans);font-size:.8rem;font-weight:700;
+  color:var(--vurgu);background:var(--vurgu-yumusak);border-radius:99px;
+  padding:2px 10px;vertical-align:middle;margin-left:6px}
+.yazi h2{scroll-margin-top:80px}
+
+/* ---------- alıntı / gömme kutusu ---------- */
+.alinti{background:var(--yuzey2);border:1px solid var(--cizgi);border-radius:var(--r);
+  padding:16px 18px;margin:0 0 16px}
+.alinti h3{font-size:1rem;margin:0 0 9px}
+.alinti textarea{width:100%;min-height:82px;font:inherit;font-size:.82rem;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;line-height:1.5;
+  background:var(--yuzey);color:var(--murekkep);border:1px solid var(--cizgi2);
+  border-radius:var(--r-sm);padding:10px 12px;resize:vertical}
+.alinti p{font-size:.85rem;color:var(--soluk);margin:8px 0 0}

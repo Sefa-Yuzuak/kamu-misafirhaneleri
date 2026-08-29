@@ -27,6 +27,21 @@ from araclar import (  # noqa: E402
     karsilastir_sayfasi,
     mesafe_sayfasi,
 )
+from blog import (  # noqa: E402
+    ETIKET,
+    etiket_sayfasi,
+    gezi_dizini,
+    il_gezi_sayfasi,
+    ilce_sayfasi,
+    temiz_yerler,
+)
+from dagitim import (  # noqa: E402
+    INDEXNOW_ANAHTAR,
+    manifest,
+    opensearch,
+    rss,
+    veri_sayfasi,
+)
 from listeler import liste_sayfasi, liste_tanimlari, listeler_dizini  # noqa: E402
 from mesafe import en_yakinlar, il_merkezleri  # noqa: E402
 from stil import yayimla  # noqa: E402
@@ -436,7 +451,25 @@ Son güncelleme: {TARIH_TR}
 
 
 def robots() -> str:
+    """Tüm tarayıcılara açık. Üretken arama motorlarının tarayıcıları da
+    açıkça karşılanıyor: alıntılanmak istiyoruz, engellemek işimize gelmez."""
     return f"""User-agent: *
+Allow: /
+
+# Üretken arama motorları — içeriğin alıntılanmasını istiyoruz
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: CCBot
 Allow: /
 
 Sitemap: {SITE}/sitemap.xml
@@ -593,6 +626,89 @@ def main() -> int:
                                   for a, b in il_merkezleri(konumlar).items()},
                         "t": satirlar},
                        ensure_ascii=False, separators=(",", ":")), "utf-8")
+
+    # ---- gezi rehberi ----
+    gyol = KOK / "data" / "gezi.json"
+    if gyol.exists() and konumlar:
+        from genel import TARIH_TR
+
+        gezi = json.loads(gyol.read_text("utf-8"))
+        il_ilce: dict[str, dict[str, list]] = defaultdict(dict)
+        etiket_kayit: dict[str, list] = defaultdict(list)
+        for anahtar, yerler in gezi.items():
+            il, _, ilce = anahtar.partition("|")
+            temiz = temiz_yerler(yerler)
+            if len(temiz) < 2:
+                continue
+            il_ilce[il][ilce] = temiz
+            for y in temiz:
+                etiket_kayit[y["tur"]].append((il, ilce, y))
+
+        il_ilce_tesis: dict[tuple[str, str], list] = defaultdict(list)
+        for t in tesisler:
+            il_ilce_tesis[(t["il"], t["ilce"])].append(t)
+
+        toplam_yer = 0
+        for il, ilceler in il_ilce.items():
+            for ilce, yerler in ilceler.items():
+                yaz(
+                    f"/gezi/{slug(il)}/{slug(ilce)}/",
+                    ilce_sayfasi(il, ilce, yerler, il_ilce_tesis[(il, ilce)],
+                                 gorseller, konumlar, TARIH_TR),
+                )
+                yollar.append(f"/gezi/{slug(il)}/{slug(ilce)}/")
+                toplam_yer += len(yerler)
+            yaz(f"/gezi/{slug(il)}/",
+                il_gezi_sayfasi(il, ilceler, il_grup[il], gorseller, konumlar, TARIH_TR))
+            yollar.append(f"/gezi/{slug(il)}/")
+
+        yaz("/gezi/", gezi_dizini({i: sum(len(v) for v in d.values())
+                                   for i, d in il_ilce.items()}, toplam_yer, TARIH_TR))
+        yollar.append("/gezi/")
+
+        for tur, kayitlar in etiket_kayit.items():
+            if tur in ETIKET and len(kayitlar) >= 5:
+                yaz(f"/etiket/{tur}/", etiket_sayfasi(tur, kayitlar, TARIH_TR))
+                yollar.append(f"/etiket/{tur}/")
+        print(f"gezi: {len(il_ilce)} il, "
+              f"{sum(len(v) for v in il_ilce.values())} ilçe, {toplam_yer} yer")
+    else:
+        import parca as _p
+
+        _p.GEZ = [g for g in _p.GEZ if g[0] != "/gezi/"]
+
+    # ---- açık veri sayfası ----
+    from genel import TARIH_TR as _tarih
+
+    yaz("/veri/", veri_sayfasi(tesisler, len(yollar) + 1, _tarih))
+    yollar.append("/veri/")
+
+    # ---- besleme, tarayıcı araması, uygulama tanımı, IndexNow ----
+    from datetime import datetime, timezone
+
+    simdi = datetime.now(timezone.utc)
+    one_cikan = [
+        ("/", f"{AD} — 81 ilde {len(tesisler)} tesis",
+         "Türkiye'nin kamu konaklama tesislerinin bağımsız dizini."),
+        ("/deniz/", "Denize yakın kamu tesisleri",
+         "Denize konumu doğrulanmış tesislerin tam listesi."),
+        ("/araclar/en-yakin/", "Bana en yakın kamu tesisi",
+         "Bulunduğunuz ile göre en yakın tesisleri mesafe sırasıyla bulun."),
+        ("/araclar/tatil-butcesi/", "Tatil bütçesi hesaplayıcı",
+         "Konaklama, yakıt ve harcamayı birlikte hesaplayın."),
+        ("/harita/", "Kamu misafirhaneleri haritası",
+         "561 tesis harita üzerinde."),
+        ("/veri/", "Açık veri — CC BY 4.0",
+         "Veri kümesini indirin, kaynak göstererek kullanın."),
+    ]
+    for anahtar, baslik, ikon in REHBERLER:
+        one_cikan.append((f"/rehber/{anahtar}/", baslik, ""))
+    (CIKTI / "feed.xml").write_text(rss(one_cikan, simdi), "utf-8")
+    (CIKTI / "opensearch.xml").write_text(opensearch(), "utf-8")
+    (CIKTI / "manifest.webmanifest").write_text(manifest(), "utf-8")
+    (CIKTI / f"{INDEXNOW_ANAHTAR}.txt").write_text(INDEXNOW_ANAHTAR, "utf-8")
+    # IndexNow'a gönderilecek adres listesi
+    (CIKTI / "urls.txt").write_text("\n".join(SITE + y for y in yollar), "utf-8")
 
     (CIKTI / "sitemap.xml").write_text(sitemap(yollar), "utf-8")
     (CIKTI / "robots.txt").write_text(robots(), "utf-8")
