@@ -6,7 +6,7 @@ import html
 import json
 import re
 
-from veri import TURLER, slug, tesis_slug
+from veri import TURLER, kisa_ad, slug, tesis_slug
 
 SITE = "https://kamumisafirhaneler.com"
 AD = "Kamu Misafirhaneleri"
@@ -127,6 +127,35 @@ def yol_tarifi_url(t: dict) -> str:
     return "https://www.google.com/maps/dir/?api=1&destination=" + urllib.parse.quote(hedef)
 
 
+def google_yer_url(t: dict) -> str:
+    """Tesisin Google Haritalar kaydı — yorumlar orada okunur."""
+    import urllib.parse
+
+    return "https://www.google.com/maps/search/?api=1&query=" + urllib.parse.quote(
+        f"{t['ad']} {t['ilce']} {t['il']}"
+    )
+
+
+def osm_adres(konum: dict | None) -> str:
+    """OSM display_name'den okunur bir sokak adresi çıkarır.
+
+    Yalnızca tesis olarak eşleşen kayıtlarda anlamlıdır; ilçe merkezlerinde boş döner.
+    """
+    if not konum or konum.get("kesinlik") != "tesis":
+        return ""
+    parcalar = [x.strip() for x in (konum.get("osm") or "").split(",")]
+    if len(parcalar) < 3:
+        return ""
+    # ilk öğe tesis adı; sokak/cadde ve mahalleyi al
+    govde, goruldu = [], set()
+    for x in parcalar[1:4]:
+        a = x.lower()
+        if a and a not in goruldu and not a.isdigit():
+            goruldu.add(a)
+            govde.append(x)
+    return ", ".join(govde)
+
+
 def wa_url(t: dict, no: str) -> str:
     import urllib.parse
 
@@ -208,7 +237,7 @@ def tesis_karti(t: dict, gorseller: dict, il_goster: bool = True) -> str:
     return f"""<article class="tk">
 <div class="tk-gorsel">{gorsel}<span class="rzs-k">{rozetler}</span><span class="yer-et">{ik("konum")}{e(t["il"])}</span></div>
 <div class="tk-govde">
-<h3 class="tk-ad"><a href="/tesis/{s}/">{e(t["ad"])}</a></h3>
+<h3 class="tk-ad"><a href="/tesis/{s}/">{e(kisa_ad(t["ad"]))}</a></h3>
 <p class="tk-meta">{"".join(f"<span>{m}</span>" for m in meta)}</p>
 {fiyat}{ol_html}</div>
 <div class="tk-alt">{eylemler(t)}</div>
@@ -333,6 +362,8 @@ misafirhanelerinin bağımsız dizini. Rezervasyon alınmaz; her tesis doğrudan
 </div>
 <div><h3>Keşfet</h3><ul>
 <li><a href="/il/">81 il</a></li>
+<li><a href="/harita/">Harita</a></li>
+<li><a href="/ara/">Tesis ara</a></li>
 <li><a href="/deniz/">Denize yakın tesisler</a></li>
 <li><a href="/tur/ogretmenevleri/">Öğretmenevleri</a></li>
 <li><a href="/tur/polisevleri/">Polisevleri</a></li>

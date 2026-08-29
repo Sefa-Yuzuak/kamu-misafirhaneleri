@@ -21,7 +21,7 @@ from genel import (  # noqa: E402
 )
 from parca import AD, SITE, e, harita_kutusu, ik, il_karti, kabuk, tesis_karti  # noqa: E402
 from uret import CIKTI, KOK, il_sayfasi, kirinti_ld, sss_html, sss_ld, tesis_sayfasi  # noqa: E402
-from veri import TURLER, slug, tesis_slug, tur_slug  # noqa: E402
+from veri import TURLER, kisa_ad, slug, tesis_slug, tur_slug  # noqa: E402
 
 
 # --------------------------------------------------------------------------
@@ -61,7 +61,7 @@ toplam {toplam} kayıt. İl seçin, tesislerin telefon ve fiyat bilgilerine ula�
         ],
     }
     return kabuk(
-        baslik=f"81 İlde Kamu Misafirhaneleri — il il liste | {AD}",
+        baslik="81 İlde Kamu Misafirhaneleri — il il tam liste",
         aciklama=f"Türkiye'nin 81 ilindeki {toplam} öğretmenevi, polisevi ve kamu "
         "misafirhanesi. İl seçerek telefon, fiyat ve yol tarifine ulaşın.",
         yol="/il/",
@@ -120,7 +120,7 @@ def tur_sayfasi(tur: str, tesisler: list[dict], gorseller: dict) -> str:
 <h2>Sık sorulan sorular</h2>{sss_html(sss)}</section>"""
 
     return kabuk(
-        baslik=f"{cogul} — {len(tesisler)} tesis, telefon ve fiyat | {AD}",
+        baslik=f"{cogul} — {len(tesisler)} tesis, telefon ve fiyat",
         aciklama=f"Türkiye'deki {len(tesisler)} {cogul.lower()}: telefon numaraları, "
         f"2026 fiyatları ve {len(iller)} ilde konum bilgisi.",
         yol=yol,
@@ -183,7 +183,7 @@ Ankara'ya yakın olanlar{ik("ok")}</a></div>
 <section class="bl kap bl-cizgi"><h2>Sık sorulan sorular</h2>{sss_html(sss)}</section>"""
 
     return kabuk(
-        baslik=f"Denize Yakın Kamu Misafirhaneleri — {len(deniz)} tesis | {AD}",
+        baslik=f"Denize Yakın Kamu Misafirhaneleri — {len(deniz)} tesis",
         aciklama=f"Denize konumu doğrulanmış {len(deniz)} öğretmenevi, polisevi ve kamu "
         f"tesisi. {len(iller)} kıyı ilinde, Ankara'ya uzaklığa göre sıralı.",
         yol="/deniz/",
@@ -266,7 +266,7 @@ bildirin — kaynağıyla birlikte düzeltilir. Bu dizin ticari değildir, rekla
 etmez ve rezervasyon almaz. Bağlayıcı bilgi için tesisin bağlı olduğu kuruma başvurun.</div></div>
 </div>"""
     return kabuk(
-        baslik=f"Kaynaklar ve Katkı | {AD}",
+        baslik="Kaynaklar, veri kaynağı kurumlar ve fotoğraf lisansları",
         aciklama="Bu dizindeki verilerin hangi kurumlardan derlendiği, fotoğraf "
         "lisansları ve düzeltme bildirimi.",
         yol="/kaynaklar/",
@@ -313,7 +313,7 @@ def harita_sayfasi(tesisler: list[dict], konumlar: dict) -> str:
 <section class="bl kap bl-cizgi"><h2>Sık sorulan sorular</h2>{sss_html(sss)}</section>"""
 
     return kabuk(
-        baslik=f"Kamu Misafirhaneleri Haritası — {len(var)} tesis | {AD}",
+        baslik=f"Kamu Misafirhaneleri Haritası — {len(var)} tesis",
         aciklama=f"Türkiye'deki {len(var)} öğretmenevi, polisevi ve kamu misafirhanesinin "
         "haritası. Tesise tıklayarak telefon, fiyat ve yol tarifine ulaşın.",
         yol="/harita/",
@@ -340,7 +340,7 @@ role="combobox" aria-expanded="false" aria-controls="oneri" aria-label="Tesis ar
 <div id="sonuclar"></div>
 </section>"""
     return kabuk(
-        baslik=f"Tesis ara | {AD}",
+        baslik="Tesis ara — 562 kamu misafirhanesi içinde arama",
         aciklama=f"{len(tesisler)} kamu konaklama tesisi içinde ada, ilçeye veya ile göre arama.",
         yol="/ara/",
         icerik=icerik,
@@ -351,8 +351,8 @@ role="combobox" aria-expanded="false" aria-controls="oneri" aria-label="Tesis ar
 
 def dortyuzdort() -> str:
     return kabuk(
-        baslik=f"Sayfa bulunamadı | {AD}",
-        aciklama="Aradığınız sayfa bulunamadı.",
+        baslik="Sayfa bulunamadı — Kamu Misafirhaneleri",
+        aciklama="Aradığınız sayfa bulunamadı. 81 ildeki 562 kamu konaklama tesisine ana sayfadan veya il listesinden ulaşabilirsiniz.",
         yol="/404.html",
         icerik=f"""<div class="bos" style="padding:90px 20px">{ik("bos")}
 <h1 style="margin-bottom:10px">Sayfa bulunamadı</h1>
@@ -490,7 +490,7 @@ def main() -> int:
     # arama dizini — [ad, ilce, il, slug, tur kisaltmasi]
     tur_kod = {k: i for i, k in enumerate(TURLER)}
     dizin = [
-        [t["ad"], t["ilce"], t["il"], tesis_slug(t), tur_kod[t["tur"]],
+        [kisa_ad(t["ad"]), t["ilce"], t["il"], tesis_slug(t), tur_kod[t["tur"]],
          1 if t.get("deniz") else 0]
         for t in tesisler
     ]
@@ -507,7 +507,7 @@ def main() -> int:
             k = konumlar.get(tesis_slug(t))
             if not k:
                 continue
-            hnoktalar.append([k["lat"], k["lon"], t["ad"], tesis_slug(t), t["il"],
+            hnoktalar.append([k["lat"], k["lon"], kisa_ad(t["ad"]), tesis_slug(t), t["il"],
                               t["ilce"], tur_kod2[t["tur"]], 1 if t.get("deniz") else 0,
                               1 if k["kesinlik"] == "tesis" else 0])
         (CIKTI / "data" / "harita.json").write_text(

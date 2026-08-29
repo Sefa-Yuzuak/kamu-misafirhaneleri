@@ -1,0 +1,4491 @@
+{
+ "adana-aladag-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.545247,
+  "lon": 35.394442,
+  "kesinlik": "ilce",
+  "osm": "Aladağ, Adana, Akdeniz Bölgesi, Türkiye",
+  "il": "Adana",
+  "ilce": "Aladağ"
+ },
+ "adana-ceyhan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.022792,
+  "lon": 35.807154,
+  "kesinlik": "tesis",
+  "osm": "Ceyhan Öğretmenevi, Atatürk Caddesi, Ceyhan, Konakoğlu Mahallesi, Kelemeti, Ceyhan, Adana, Akdeniz Bölgesi, 01930, Türki",
+  "il": "Adana",
+  "ilce": "Ceyhan"
+ },
+ "adana-feke-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.814761,
+  "lon": 35.911653,
+  "kesinlik": "ilce",
+  "osm": "Feke, Adana, Akdeniz Bölgesi, Türkiye",
+  "il": "Adana",
+  "ilce": "Feke"
+ },
+ "adana-imamoglu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.257713,
+  "lon": 35.661337,
+  "kesinlik": "ilce",
+  "osm": "İmamoğlu, Adana, Akdeniz Bölgesi, 01700, Türkiye",
+  "il": "Adana",
+  "ilce": "İmamoğlu"
+ },
+ "adana-kozan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.447786,
+  "lon": 35.816631,
+  "kesinlik": "ilce",
+  "osm": "Kozan, Adana, Akdeniz Bölgesi, Türkiye",
+  "il": "Adana",
+  "ilce": "Kozan"
+ },
+ "adana-saimbeyli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.984564,
+  "lon": 36.088826,
+  "kesinlik": "ilce",
+  "osm": "Saimbeyli, Adana, Akdeniz Bölgesi, 01740, Türkiye",
+  "il": "Adana",
+  "ilce": "Saimbeyli"
+ },
+ "adana-adana-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.999431,
+  "lon": 35.331894,
+  "kesinlik": "tesis",
+  "osm": "Adana Merkez Öğretmenevi, Ordu Caddesi, Reşatbey, Reşatbey Mahallesi, Seyhan, Adana, Akdeniz Bölgesi, 01120, Türkiye",
+  "il": "Adana",
+  "ilce": "Seyhan"
+ },
+ "adiyaman-celikhan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.033309,
+  "lon": 38.242389,
+  "kesinlik": "ilce",
+  "osm": "Çelikhan, Adıyaman, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Adıyaman",
+  "ilce": "Çelikhan"
+ },
+ "adiyaman-gerger-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.029339,
+  "lon": 39.03332,
+  "kesinlik": "ilce",
+  "osm": "Gerger, Adıyaman, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Adıyaman",
+  "ilce": "Gerger"
+ },
+ "adiyaman-kahta-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.790495,
+  "lon": 38.61428,
+  "kesinlik": "tesis",
+  "osm": "Kahta Öğretmenevi, Yunus Emre Caddesi, Karşıyaka, Kâhta, Adıyaman, Güneydoğu Anadolu Bölgesi, 02400, Türkiye",
+  "il": "Adıyaman",
+  "ilce": "Kahta"
+ },
+ "adiyaman-merkez-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.069055,
+  "lon": 39.533451,
+  "kesinlik": "tesis",
+  "osm": "Tunceli Öğretmenevi, Cem Emir Caddesi, Atatürk Mah., Tunceli, Tunceli Merkez, Tunceli, Doğu Anadolu Bölgesi, 62000, Türk",
+  "il": "Adıyaman",
+  "ilce": "Merkez"
+ },
+ "adiyaman-huseyin-celik-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.029133,
+  "lon": 38.619433,
+  "kesinlik": "ilce",
+  "osm": "Sincik, Adıyaman, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Adıyaman",
+  "ilce": "Sincik"
+ },
+ "adiyaman-tut-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.794449,
+  "lon": 37.914949,
+  "kesinlik": "ilce",
+  "osm": "Tut, Adıyaman, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Adıyaman",
+  "ilce": "Tut"
+ },
+ "afyonkarahisar-bolvadin-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.706625,
+  "lon": 31.048197,
+  "kesinlik": "tesis",
+  "osm": "Bolvadin Öğretmenevi, İstasyon Caddesi, Selçuklu Mahallesi, Bolvadin, Afyonkarahisar, Ege Bölgesi, Türkiye",
+  "il": "Afyonkarahisar",
+  "ilce": "Bolvadin"
+ },
+ "afyonkarahisar-dazkiri-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.902113,
+  "lon": 29.862394,
+  "kesinlik": "ilce",
+  "osm": "Dazkırı, Denizli - Afyonkarahisar Yolu, Aşağı Yenice, Dazkırı, Afyonkarahisar, Ege Bölgesi, 03950, Türkiye",
+  "il": "Afyonkarahisar",
+  "ilce": "Dazkırı"
+ },
+ "afyonkarahisar-dinar-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.065591,
+  "lon": 30.156363,
+  "kesinlik": "ilce",
+  "osm": "Dinar, Denizli - Afyonkarahisar Yolu, Dinar, Afyonkarahisar, Ege Bölgesi, 03400, Türkiye",
+  "il": "Afyonkarahisar",
+  "ilce": "Dinar"
+ },
+ "afyonkarahisar-merkez-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.069055,
+  "lon": 39.533451,
+  "kesinlik": "tesis",
+  "osm": "Tunceli Öğretmenevi, Cem Emir Caddesi, Atatürk Mah., Tunceli, Tunceli Merkez, Tunceli, Doğu Anadolu Bölgesi, 62000, Türk",
+  "il": "Afyonkarahisar",
+  "ilce": "Merkez"
+ },
+ "afyonkarahisar-sandikli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.473708,
+  "lon": 30.269352,
+  "kesinlik": "tesis",
+  "osm": "Sandıklı Öğretmenevi ve Akşam Sanat Okulu, 03-54, Dutağacı, Sandıklı, Afyonkarahisar, Ege Bölgesi, Türkiye",
+  "il": "Afyonkarahisar",
+  "ilce": "Sandıklı"
+ },
+ "afyonkarahisar-suhut-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.533961,
+  "lon": 30.546129,
+  "kesinlik": "ilce",
+  "osm": "Şuhut, Afyonkarahisar, Ege Bölgesi, Türkiye",
+  "il": "Afyonkarahisar",
+  "ilce": "Şuhut"
+ },
+ "agri-diyadin-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.539769,
+  "lon": 43.671203,
+  "kesinlik": "ilce",
+  "osm": "Diyadin, Ağrı, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Ağrı",
+  "ilce": "Diyadin"
+ },
+ "agri-eleskirt-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.798379,
+  "lon": 42.67547,
+  "kesinlik": "ilce",
+  "osm": "Eleşkirt, Ağrı, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Ağrı",
+  "ilce": "Eleşkirt"
+ },
+ "agri-hamur-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.609335,
+  "lon": 42.988203,
+  "kesinlik": "ilce",
+  "osm": "Hamur, Ağrı, Doğu Anadolu Bölgesi, 04850, Türkiye",
+  "il": "Ağrı",
+  "ilce": "Hamur"
+ },
+ "agri-burcin-uysal-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.719125,
+  "lon": 43.050489,
+  "kesinlik": "ilce",
+  "osm": "Ağrı Merkez, Ağrı, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Ağrı",
+  "ilce": "Merkez"
+ },
+ "agri-merkez-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.069055,
+  "lon": 39.533451,
+  "kesinlik": "tesis",
+  "osm": "Tunceli Öğretmenevi, Cem Emir Caddesi, Atatürk Mah., Tunceli, Tunceli Merkez, Tunceli, Doğu Anadolu Bölgesi, 62000, Türk",
+  "il": "Ağrı",
+  "ilce": "Merkez"
+ },
+ "agri-patnos-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.240319,
+  "lon": 42.832814,
+  "kesinlik": "tesis",
+  "osm": "OGRETMENEVI, D280, Eskikonak, Patnos, Ağrı, Doğu Anadolu Bölgesi, 04500, Türkiye",
+  "il": "Ağrı",
+  "ilce": "Patnos"
+ },
+ "agri-tutak-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.539356,
+  "lon": 42.77275,
+  "kesinlik": "ilce",
+  "osm": "Tutak, Ağrı, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Ağrı",
+  "ilce": "Tutak"
+ },
+ "amasya-gumushacikoy-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.873623,
+  "lon": 35.215897,
+  "kesinlik": "ilce",
+  "osm": "Gümüşhacıköy, Amasya, Karadeniz Bölgesi, Türkiye",
+  "il": "Amasya",
+  "ilce": "Gümüşhacıköy"
+ },
+ "amasya-amasya-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.831533,
+  "lon": 35.648494,
+  "kesinlik": "tesis",
+  "osm": "Suluova Öğretmenevi Ve ASO, 194, Atatürk Bulvarı, Cumhuriyet Mahallesi, Oğulbağı, Suluova, Amasya, Karadeniz Bölgesi, 05",
+  "il": "Amasya",
+  "ilce": "Merkez"
+ },
+ "amasya-merzifon-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.872139,
+  "lon": 35.463538,
+  "kesinlik": "ilce",
+  "osm": "Merzifon, Amasya, Karadeniz Bölgesi, Türkiye",
+  "il": "Amasya",
+  "ilce": "Merzifon"
+ },
+ "amasya-suluova-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.831533,
+  "lon": 35.648494,
+  "kesinlik": "tesis",
+  "osm": "Suluova Öğretmenevi Ve ASO, 194, Atatürk Bulvarı, Cumhuriyet Mahallesi, Oğulbağı, Suluova, Amasya, Karadeniz Bölgesi, 05",
+  "il": "Amasya",
+  "ilce": "Suluova"
+ },
+ "amasya-tasova-sehit-omer-kesim-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.760349,
+  "lon": 36.321973,
+  "kesinlik": "ilce",
+  "osm": "Taşova, Amasya, Karadeniz Bölgesi, Türkiye",
+  "il": "Amasya",
+  "ilce": "Taşova"
+ },
+ "ankara-bala-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.553364,
+  "lon": 33.123753,
+  "kesinlik": "ilce",
+  "osm": "Balâ, Ankara, İç Anadolu Bölgesi, 06720, Türkiye",
+  "il": "Ankara",
+  "ilce": "Bala"
+ },
+ "ankara-beypazari-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.165649,
+  "lon": 31.920455,
+  "kesinlik": "ilce",
+  "osm": "Beypazarı, Ankara, İç Anadolu Bölgesi, 06730, Türkiye",
+  "il": "Ankara",
+  "ilce": "Beypazarı"
+ },
+ "ankara-camlidere-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.49148,
+  "lon": 32.475826,
+  "kesinlik": "ilce",
+  "osm": "Çamlıdere, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "il": "Ankara",
+  "ilce": "Çamlıdere"
+ },
+ "ankara-cubuk-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.238896,
+  "lon": 33.028947,
+  "kesinlik": "ilce",
+  "osm": "Çubuk, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "il": "Ankara",
+  "ilce": "Çubuk"
+ },
+ "ankara-golbasi-75-yil-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.792529,
+  "lon": 32.806665,
+  "kesinlik": "ilce",
+  "osm": "Gölbaşı, Ankara, İç Anadolu Bölgesi, 06830, Türkiye",
+  "il": "Ankara",
+  "ilce": "Gölbaşı"
+ },
+ "ankara-haymana-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.433318,
+  "lon": 32.494582,
+  "kesinlik": "tesis",
+  "osm": "Haymana Öğretmenevi, Kurtuluş Sokağı, Çaldağ Mahallesi, Haymana, Ankara, İç Anadolu Bölgesi, 06860, Türkiye",
+  "il": "Ankara",
+  "ilce": "Haymana"
+ },
+ "ankara-kahramankazan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.205444,
+  "lon": 32.681315,
+  "kesinlik": "ilce",
+  "osm": "Kahramankazan, Ankara, İç Anadolu Bölgesi, 06980, Türkiye",
+  "il": "Ankara",
+  "ilce": "Kahramankazan"
+ },
+ "ankara-kalecik-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.076398,
+  "lon": 33.445043,
+  "kesinlik": "ilce",
+  "osm": "Kalecik, Kırıkkale-Çankırı yolu, Ahikemal Şenyurt Mahallesi, Kalecik, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "il": "Ankara",
+  "ilce": "Kalecik"
+ },
+ "ankara-kizilcahamam-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.470095,
+  "lon": 32.652856,
+  "kesinlik": "ilce",
+  "osm": "Kızılcahamam, Ankara, İç Anadolu Bölgesi, 06890, Türkiye",
+  "il": "Ankara",
+  "ilce": "Kızılcahamam"
+ },
+ "ankara-nallihan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.188822,
+  "lon": 31.350345,
+  "kesinlik": "ilce",
+  "osm": "Nallıhan, Ankara, İç Anadolu Bölgesi, 06920, Türkiye",
+  "il": "Ankara",
+  "ilce": "Nallıhan"
+ },
+ "ankara-polatli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.58567,
+  "lon": 32.14173,
+  "kesinlik": "ilce",
+  "osm": "Polatlı, Turan Caddesi, Cumhuriyet Mahallesi, Polatlı, Ankara, İç Anadolu Bölgesi, 06900, Türkiye",
+  "il": "Ankara",
+  "ilce": "Polatlı"
+ },
+ "ankara-sincan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.971181,
+  "lon": 32.582809,
+  "kesinlik": "tesis",
+  "osm": "Sincan Öğretmenevi, Erdal Sokak, İstasyon Mahallesi, Sincan, Ankara, İç Anadolu Bölgesi, 06930, Türkiye",
+  "il": "Ankara",
+  "ilce": "Sincan"
+ },
+ "ankara-sereflikochisar-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.938933,
+  "lon": 33.543884,
+  "kesinlik": "ilce",
+  "osm": "Şereflikoçhisar, Ankara, İç Anadolu Bölgesi, 06950, Türkiye",
+  "il": "Ankara",
+  "ilce": "Şereflikoçhisar"
+ },
+ "ankara-baskent-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.932847,
+  "lon": 32.819918,
+  "kesinlik": "tesis",
+  "osm": "Başkent Öğretmenevi, Emniyet Mahallesi, Yenimahalle, Ankara, İç Anadolu Bölgesi, 06560, Türkiye",
+  "il": "Ankara",
+  "ilce": "Yenimahalle"
+ },
+ "antalya-akseki-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.045639,
+  "lon": 31.789676,
+  "kesinlik": "ilce",
+  "osm": "Akseki, Antalya, Akdeniz Bölgesi, Türkiye",
+  "il": "Antalya",
+  "ilce": "Akseki"
+ },
+ "antalya-alanya-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.552267,
+  "lon": 31.976198,
+  "kesinlik": "tesis",
+  "osm": "Alanya Öğretmenevi, Atatürk Bulvarı, Kızlar Pınarı Mahallesi, Alanya, Antalya, Akdeniz Bölgesi, 07400, Türkiye",
+  "il": "Antalya",
+  "ilce": "Alanya"
+ },
+ "antalya-demre-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.244569,
+  "lon": 29.987615,
+  "kesinlik": "ilce",
+  "osm": "Demre, Antalya, Akdeniz Bölgesi, Türkiye",
+  "il": "Antalya",
+  "ilce": "Demre"
+ },
+ "antalya-elmali-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.738379,
+  "lon": 29.918362,
+  "kesinlik": "ilce",
+  "osm": "Elmalı, Antalya, Akdeniz Bölgesi, 07700, Türkiye",
+  "il": "Antalya",
+  "ilce": "Elmalı"
+ },
+ "antalya-gazipasa-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.270792,
+  "lon": 32.311037,
+  "kesinlik": "tesis",
+  "osm": "Gazipaşa Öğretmenevi, Güvenlik Caddesi, Pazarcı Mahallesi, Gazipaşa, Antalya, Akdeniz Bölgesi, 07900, Türkiye",
+  "il": "Antalya",
+  "ilce": "Gazipaşa"
+ },
+ "antalya-antalya-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.90304,
+  "lon": 30.663626,
+  "kesinlik": "tesis",
+  "osm": "Antalya Öğretmenevi, D400, Kültür Mahallesi, Kepez, Antalya, Akdeniz Bölgesi, 07090, Türkiye",
+  "il": "Antalya",
+  "ilce": "Kepez"
+ },
+ "antalya-konyaalti-mehmet-zeki-balci-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.872613,
+  "lon": 30.650365,
+  "kesinlik": "ilce",
+  "osm": "Konyaaltı, Antalya, Akdeniz Bölgesi, Türkiye",
+  "il": "Antalya",
+  "ilce": "Konyaaltı"
+ },
+ "antalya-korkuteli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.063139,
+  "lon": 30.197951,
+  "kesinlik": "tesis",
+  "osm": "Korkuteli Öğretmenevi, Kocakuruş Caddesi, Kiremitli, İmrahor, Korkuteli, Antalya, Akdeniz Bölgesi, Türkiye",
+  "il": "Antalya",
+  "ilce": "Korkuteli"
+ },
+ "antalya-kumluca-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.366905,
+  "lon": 30.285842,
+  "kesinlik": "ilce",
+  "osm": "Kumluca, Antalya, Akdeniz Bölgesi, Türkiye",
+  "il": "Antalya",
+  "ilce": "Kumluca"
+ },
+ "antalya-serik-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.916868,
+  "lon": 31.104748,
+  "kesinlik": "ilce",
+  "osm": "Serik, Antalya, Akdeniz Bölgesi, Türkiye",
+  "il": "Antalya",
+  "ilce": "Serik"
+ },
+ "artvin-ardanuc-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.123482,
+  "lon": 42.065836,
+  "kesinlik": "tesis",
+  "osm": "Ardanuç Öğretmenevi ve Akşam Sanat Okulu, Hükümet Caddesi, Merkez Mahallesi, Ardanuç, Artvin, Karadeniz Bölgesi, Türkiye",
+  "il": "Artvin",
+  "ilce": "Ardanuç"
+ },
+ "artvin-borcka-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.360245,
+  "lon": 41.674674,
+  "kesinlik": "ilce",
+  "osm": "Borçka, Artvin, Karadeniz Bölgesi, Türkiye",
+  "il": "Artvin",
+  "ilce": "Borçka"
+ },
+ "artvin-hopa-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.385387,
+  "lon": 41.463193,
+  "kesinlik": "ilce",
+  "osm": "Hopa, Artvin, Karadeniz Bölgesi, 08600, Türkiye",
+  "il": "Artvin",
+  "ilce": "Hopa"
+ },
+ "artvin-artvin-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.179581,
+  "lon": 41.816898,
+  "kesinlik": "tesis",
+  "osm": "Artvin Öğretmenevi, Halkevi Caddesi, Çarşı, Çarşı Mahallesi, Artvin Merkez, Artvin, Karadeniz Bölgesi, 08000, Türkiye",
+  "il": "Artvin",
+  "ilce": "Merkez"
+ },
+ "artvin-murgul-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.279681,
+  "lon": 41.564126,
+  "kesinlik": "ilce",
+  "osm": "Murgul, Artvin, Karadeniz Bölgesi, Türkiye",
+  "il": "Artvin",
+  "ilce": "Murgul"
+ },
+ "artvin-savsat-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.252488,
+  "lon": 42.356886,
+  "kesinlik": "ilce",
+  "osm": "Şavşat, Artvin, Karadeniz Bölgesi, 08700, Türkiye",
+  "il": "Artvin",
+  "ilce": "Şavşat"
+ },
+ "artvin-yusufeli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.810829,
+  "lon": 41.527085,
+  "kesinlik": "ilce",
+  "osm": "Yusufeli, Artvin, Karadeniz Bölgesi, Türkiye",
+  "il": "Artvin",
+  "ilce": "Yusufeli"
+ },
+ "aydin-bozdogan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.672879,
+  "lon": 28.313966,
+  "kesinlik": "tesis",
+  "osm": "Bozdoğan Öğretmenevi ve Akşam Sanat Okulu, 27, Yazıkent Caddesi, TOKİ, Yeni, Bozdoğan, Aydın, Ege Bölgesi, 09760, Türkiy",
+  "il": "Aydın",
+  "ilce": "Bozdoğan"
+ },
+ "aydin-efeler-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.847175,
+  "lon": 27.833725,
+  "kesinlik": "ilce",
+  "osm": "Efeler, Aydın, Ege Bölgesi, Türkiye",
+  "il": "Aydın",
+  "ilce": "Efeler"
+ },
+ "aydin-kocarli-sabanci-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.762218,
+  "lon": 27.707338,
+  "kesinlik": "ilce",
+  "osm": "Koçarlı, Aydın, Ege Bölgesi, Türkiye",
+  "il": "Aydın",
+  "ilce": "Koçarlı"
+ },
+ "aydin-kusadasi-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.86324,
+  "lon": 27.266873,
+  "kesinlik": "ilce",
+  "osm": "Kuşadası, Aydın, Ege Bölgesi, Türkiye",
+  "il": "Aydın",
+  "ilce": "Kuşadası"
+ },
+ "aydin-nazilli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.914138,
+  "lon": 28.326945,
+  "kesinlik": "ilce",
+  "osm": "Nazilli, Fevzi Çakmak Caddesi, Cumhuriyet, Nazilli, Aydın, Ege Bölgesi, 09800, Türkiye",
+  "il": "Aydın",
+  "ilce": "Nazilli"
+ },
+ "aydin-soke-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.751976,
+  "lon": 27.405629,
+  "kesinlik": "ilce",
+  "osm": "Söke, Aydın, Ege Bölgesi, 09200, Türkiye",
+  "il": "Aydın",
+  "ilce": "Söke"
+ },
+ "balikesir-ayvalik-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.318096,
+  "lon": 26.691671,
+  "kesinlik": "ilce",
+  "osm": "Ayvalık, Balıkesir, Marmara Bölgesi, Türkiye",
+  "il": "Balıkesir",
+  "ilce": "Ayvalık"
+ },
+ "balikesir-bandirma-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.357382,
+  "lon": 27.971784,
+  "kesinlik": "tesis",
+  "osm": "Bandırma Öğretmenevi, 13, Ortaokul Caddesi, Livatya, Hacı Yusuf Mahallesi, Bandırma, Balıkesir, Marmara Bölgesi, 10200, ",
+  "il": "Balıkesir",
+  "ilce": "Bandırma"
+ },
+ "balikesir-burhaniye-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.503018,
+  "lon": 26.980739,
+  "kesinlik": "ilce",
+  "osm": "Burhaniye, Balıkesir, Marmara Bölgesi, 10700, Türkiye",
+  "il": "Balıkesir",
+  "ilce": "Burhaniye"
+ },
+ "balikesir-karesibey-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.645401,
+  "lon": 27.878386,
+  "kesinlik": "tesis",
+  "osm": "Karesibey Öğretmenevi ve Akşam Sanat Okulu Müdürlüğü, Doğumevi Sokak, Balıkesir, Dumlupınar Mahallesi, Balıkesir, Karesi",
+  "il": "Balıkesir",
+  "ilce": "Büyükşehir"
+ },
+ "balikesir-buyuksehir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.357734,
+  "lon": 27.972458,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, Ortaokul Caddesi, Livatya, Hacı Yusuf Mahallesi, Bandırma, Balıkesir, Marmara Bölgesi, 10200, Türkiye",
+  "il": "Balıkesir",
+  "ilce": "Büyükşehir"
+ },
+ "balikesir-dursunbey-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.547293,
+  "lon": 28.652987,
+  "kesinlik": "ilce",
+  "osm": "Dursunbey, İstasyon Caddesi, Dursunbey, Çiftçi, İstasyon, Dursunbey, Balıkesir, Marmara Bölgesi, Türkiye",
+  "il": "Balıkesir",
+  "ilce": "Dursunbey"
+ },
+ "balikesir-altinoluk-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.593835,
+  "lon": 27.015684,
+  "kesinlik": "ilce",
+  "osm": "Edremit, Balıkesir, Marmara Bölgesi, Türkiye",
+  "il": "Balıkesir",
+  "ilce": "Edremit"
+ },
+ "balikesir-erdek-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.397435,
+  "lon": 27.790987,
+  "kesinlik": "ilce",
+  "osm": "Erdek, Balıkesir, Marmara Bölgesi, Türkiye",
+  "il": "Balıkesir",
+  "ilce": "Erdek"
+ },
+ "balikesir-gonen-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.104412,
+  "lon": 27.656398,
+  "kesinlik": "ilce",
+  "osm": "Gönen, Balıkesir, Marmara Bölgesi, 10900, Türkiye",
+  "il": "Balıkesir",
+  "ilce": "Gönen"
+ },
+ "balikesir-manyas-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.047692,
+  "lon": 27.96799,
+  "kesinlik": "ilce",
+  "osm": "Manyas, Balıkesir, Marmara Bölgesi, 10470, Türkiye",
+  "il": "Balıkesir",
+  "ilce": "Manyas"
+ },
+ "balikesir-sindirgi-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.238705,
+  "lon": 28.174913,
+  "kesinlik": "ilce",
+  "osm": "Sındırgı, Balıkesir, Marmara Bölgesi, 10330, Türkiye",
+  "il": "Balıkesir",
+  "ilce": "Sındırgı"
+ },
+ "bilecik-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.90426,
+  "lon": 30.037278,
+  "kesinlik": "ilce",
+  "osm": "Bozüyük, Hükümet Caddesi, Kasımpaşa Mahallesi, Bozüyük, Bilecik, Marmara Bölgesi, 11300, Türkiye",
+  "il": "Bilecik",
+  "ilce": "Bozüyük"
+ },
+ "bilecik-golpazari-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.283937,
+  "lon": 30.316536,
+  "kesinlik": "ilce",
+  "osm": "Gölpazarı, Bilecik, Marmara Bölgesi, Türkiye",
+  "il": "Bilecik",
+  "ilce": "Gölpazarı"
+ },
+ "bilecik-sogut-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.015552,
+  "lon": 30.181427,
+  "kesinlik": "ilce",
+  "osm": "Söğüt, Bilecik, Marmara Bölgesi, Türkiye",
+  "il": "Bilecik",
+  "ilce": "Söğüt"
+ },
+ "bingol-adakli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.228533,
+  "lon": 40.482658,
+  "kesinlik": "ilce",
+  "osm": "Adaklı, Bingöl, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Bingöl",
+  "ilce": "Adaklı"
+ },
+ "bingol-karliova-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.2946,
+  "lon": 41.010238,
+  "kesinlik": "ilce",
+  "osm": "Karlıova, Bingöl, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Bingöl",
+  "ilce": "Karlıova"
+ },
+ "bingol-kigi-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.310367,
+  "lon": 40.349628,
+  "kesinlik": "ilce",
+  "osm": "Kiğı, Bingöl, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Bingöl",
+  "ilce": "Kığı"
+ },
+ "bingol-bingol-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.894873,
+  "lon": 40.504191,
+  "kesinlik": "tesis",
+  "osm": "Bingöl Öğretmenevi, Bingöl-Diyarbakır yolu, Karşıyaka Mahallesi, Çayboyu, Bingöl Merkez, Bingöl, Doğu Anadolu Bölgesi, 1",
+  "il": "Bingöl",
+  "ilce": "Merkez"
+ },
+ "bingol-solhan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.965935,
+  "lon": 41.051815,
+  "kesinlik": "ilce",
+  "osm": "Solhan, Bingöl, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Bingöl",
+  "ilce": "Solhan"
+ },
+ "bitlis-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.799603,
+  "lon": 42.731968,
+  "kesinlik": "tesis",
+  "osm": "Adilcevaz Öğretmenevi, 1, Cumhuriyet Caddesi, Çayır Mahallesi, Adilcevaz, Bitlis, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Bitlis",
+  "ilce": "Adilcevaz"
+ },
+ "bitlis-selcuklu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.752508,
+  "lon": 42.499692,
+  "kesinlik": "tesis",
+  "osm": "Ahlat Selçuklu Öğretmenevi, Devlet Bahçeli Bulvarı, Ahlat, Kırklar, Yeniköprü, Ahlat, Bitlis, Doğu Anadolu Bölgesi, Türk",
+  "il": "Bitlis",
+  "ilce": "Ahlat"
+ },
+ "bitlis-guroymak-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.574172,
+  "lon": 42.025327,
+  "kesinlik": "ilce",
+  "osm": "Güroymak, Bitlis, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Bitlis",
+  "ilce": "Güroymak"
+ },
+ "bitlis-hizan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.225009,
+  "lon": 42.426324,
+  "kesinlik": "ilce",
+  "osm": "Hizan, Bitlis, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Bitlis",
+  "ilce": "Hizan"
+ },
+ "bitlis-mutki-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.408974,
+  "lon": 41.921941,
+  "kesinlik": "ilce",
+  "osm": "Mutki, Bitlis, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Bitlis",
+  "ilce": "Mutki"
+ },
+ "bitlis-tatvan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.50108,
+  "lon": 42.28548,
+  "kesinlik": "tesis",
+  "osm": "Tatvan Öğretmenevi, Göl Caddesi, Saray Mahallesi, Tatvan, Bitlis, Doğu Anadolu Bölgesi, 13200, Türkiye",
+  "il": "Bitlis",
+  "ilce": "Tatvan"
+ },
+ "bolu-dortdivan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.720645,
+  "lon": 32.062598,
+  "kesinlik": "ilce",
+  "osm": "Dörtdivan, Bolu, Karadeniz Bölgesi, Türkiye",
+  "il": "Bolu",
+  "ilce": "Dörtdivan"
+ },
+ "bolu-goynuk-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.398317,
+  "lon": 30.786617,
+  "kesinlik": "ilce",
+  "osm": "Göynük, Bolu, Karadeniz Bölgesi, Türkiye",
+  "il": "Bolu",
+  "ilce": "Göynük"
+ },
+ "bolu-solmaz-ahmet-baysal-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.733295,
+  "lon": 31.611048,
+  "kesinlik": "ilce",
+  "osm": "Bolu Merkez, Bolu, Karadeniz Bölgesi, Türkiye",
+  "il": "Bolu",
+  "ilce": "Merkez"
+ },
+ "bolu-yenicaga-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.771186,
+  "lon": 32.032296,
+  "kesinlik": "tesis",
+  "osm": "Yeniçağa Öğretmenevi, 7, D-100, Asil Bey Mahallesi, Kemaller Köyü, Yeniçağa, Bolu, Karadeniz Bölgesi, 14650, Türkiye",
+  "il": "Bolu",
+  "ilce": "Yeniçağa"
+ },
+ "burdur-bucak-ahmet-kadriye-ozturk-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.456745,
+  "lon": 30.585539,
+  "kesinlik": "ilce",
+  "osm": "Bucak, Burdur, Akdeniz Bölgesi, 15300, Türkiye",
+  "il": "Burdur",
+  "ilce": "Bucak"
+ },
+ "burdur-mehmet-akif-ersoy-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.389402,
+  "lon": 33.783161,
+  "kesinlik": "tesis",
+  "osm": "Şerife Bacı Öğretmenevi, 10, Arnavutoğlu Caddesi, Mehmet Akif Ersoy, İnönü Mahallesi, Kastamonu Merkez, Kastamonu, Karad",
+  "il": "Burdur",
+  "ilce": "Merkez"
+ },
+ "bursa-gemlik-danis-ekim-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.430165,
+  "lon": 29.15707,
+  "kesinlik": "ilce",
+  "osm": "Gemlik, Bursa, Marmara Bölgesi, 16600, Türkiye",
+  "il": "Bursa",
+  "ilce": "Gemlik"
+ },
+ "bursa-inegol-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.07374,
+  "lon": 29.504857,
+  "kesinlik": "tesis",
+  "osm": "İnegöl Öğretmenevi, 13, Osman Balcı Sokak, Kemalpaşa Mahallesi, İnegöl, Bursa, Marmara Bölgesi, 16400, Türkiye",
+  "il": "Bursa",
+  "ilce": "İnegöl"
+ },
+ "bursa-iznik-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.430344,
+  "lon": 29.722373,
+  "kesinlik": "ilce",
+  "osm": "İznik, Bursa, Marmara Bölgesi, 16860, Türkiye",
+  "il": "Bursa",
+  "ilce": "İznik"
+ },
+ "bursa-karacabey-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.215984,
+  "lon": 28.359059,
+  "kesinlik": "ilce",
+  "osm": "Karacabey, Bursa, Marmara Bölgesi, 16700, Türkiye",
+  "il": "Bursa",
+  "ilce": "Karacabey"
+ },
+ "bursa-mustafakemalpasa-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.073426,
+  "lon": 29.502691,
+  "kesinlik": "ilce",
+  "osm": "Kemalpaşa Mahallesi, İnegöl, Bursa, Marmara Bölgesi, Türkiye",
+  "il": "Bursa",
+  "ilce": "M.Kemalpaşa"
+ },
+ "bursa-bursa-osmangazi-merkez-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.678424,
+  "lon": 29.155172,
+  "kesinlik": "ilce",
+  "osm": "Merkez, Kepekdere, Harmancık, Bursa, Marmara Bölgesi, 16770, Türkiye",
+  "il": "Bursa",
+  "ilce": "Merkez"
+ },
+ "bursa-mudanya-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.375258,
+  "lon": 28.883793,
+  "kesinlik": "ilce",
+  "osm": "Mudanya, Bursa, Marmara Bölgesi, Türkiye",
+  "il": "Bursa",
+  "ilce": "Mudanya"
+ },
+ "bursa-orhangazi-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.491101,
+  "lon": 29.308716,
+  "kesinlik": "tesis",
+  "osm": "Orhangazi Öğretmenevi, Hükümet Caddesi, Camiikebir, Orhangazi, Bursa, Marmara Bölgesi, 16800, Türkiye",
+  "il": "Bursa",
+  "ilce": "Orhangazi"
+ },
+ "canakkale-ayvacik-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 39.601185,
+  "lon": 26.403131,
+  "kesinlik": "ilce",
+  "osm": "Ayvacık, Çanakkale, Marmara Bölgesi, Türkiye",
+  "il": "Çanakkale",
+  "ilce": "Ayvacık"
+ },
+ "canakkale-bayramic-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 39.808624,
+  "lon": 26.613004,
+  "kesinlik": "ilce",
+  "osm": "Bayramiç, Çanakkale, Marmara Bölgesi, Türkiye",
+  "il": "Çanakkale",
+  "ilce": "Bayramiç"
+ },
+ "canakkale-eceabatsabanci-ogretmen-evi-ve-aksam-sanat-okulu": null,
+ "canakkale-ezine-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 39.787328,
+  "lon": 26.336226,
+  "kesinlik": "tesis",
+  "osm": "Ezine ASO Öğretmen Evi, Bülent Ecevit Caddesi, Camikebir Mahallesi, Ezine, Çanakkale, Marmara Bölgesi, 17600, Türkiye",
+  "il": "Çanakkale",
+  "ilce": "Ezine"
+ },
+ "canakkale-gelibolu-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 40.405104,
+  "lon": 26.67577,
+  "kesinlik": "tesis",
+  "osm": "Gelibolu Öğretmen Evi, Tuğsavul 2. Aralık Sokak, Hoca Hamza, Hoca Hamza Mahallesi, Gelibolu, Çanakkale, Marmara Bölgesi,",
+  "il": "Çanakkale",
+  "ilce": "Gelibolu"
+ },
+ "canakkale-gokceada-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 40.200387,
+  "lon": 25.908462,
+  "kesinlik": "ilce",
+  "osm": "Gökçeada, Çanakkale, Marmara Bölgesi, 17760, Türkiye",
+  "il": "Çanakkale",
+  "ilce": "Gökçeada"
+ },
+ "canakkale-lapseki-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 40.344367,
+  "lon": 26.684597,
+  "kesinlik": "ilce",
+  "osm": "Lapseki, Çanakkale, Marmara Bölgesi, Türkiye",
+  "il": "Çanakkale",
+  "ilce": "Lapseki"
+ },
+ "canakkale-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 40.146271,
+  "lon": 26.402889,
+  "kesinlik": "ilce",
+  "osm": "Çanakkale Merkez, Çanakkale, Marmara Bölgesi, Türkiye",
+  "il": "Çanakkale",
+  "ilce": "Merkez"
+ },
+ "cankiri-eldivan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.530679,
+  "lon": 33.496617,
+  "kesinlik": "ilce",
+  "osm": "Eldivan, Çankırı, İç Anadolu Bölgesi, Türkiye",
+  "il": "Çankırı",
+  "ilce": "Eldivan"
+ },
+ "cankiri-ilgaz-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.916156,
+  "lon": 33.627413,
+  "kesinlik": "tesis",
+  "osm": "Ilgaz Ögretmenevi, İstanbul Cd., Ziraat, Gaziler, Ilgaz, Çankırı, İç Anadolu Bölgesi, 18400, Türkiye",
+  "il": "Çankırı",
+  "ilce": "Ilgaz"
+ },
+ "cankiri-kizilirmak-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.345976,
+  "lon": 33.987241,
+  "kesinlik": "ilce",
+  "osm": "Kızılırmak, Çankırı, İç Anadolu Bölgesi, Türkiye",
+  "il": "Çankırı",
+  "ilce": "Kızılırmak"
+ },
+ "cankiri-korgun-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.734837,
+  "lon": 33.518488,
+  "kesinlik": "ilce",
+  "osm": "Korgun, Çankırı, İç Anadolu Bölgesi, Türkiye",
+  "il": "Çankırı",
+  "ilce": "Korgun"
+ },
+ "cankiri-cankiri-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.916156,
+  "lon": 33.627413,
+  "kesinlik": "tesis",
+  "osm": "Ilgaz Ögretmenevi, İstanbul Cd., Ziraat, Gaziler, Ilgaz, Çankırı, İç Anadolu Bölgesi, 18400, Türkiye",
+  "il": "Çankırı",
+  "ilce": "Merkez"
+ },
+ "cankiri-orta-ataturk-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.627026,
+  "lon": 33.107749,
+  "kesinlik": "ilce",
+  "osm": "Orta, Çankırı, İç Anadolu Bölgesi, 18802, Türkiye",
+  "il": "Çankırı",
+  "ilce": "Orta"
+ },
+ "cankiri-sabanozu-gel-al-corap-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.48316,
+  "lon": 33.282615,
+  "kesinlik": "ilce",
+  "osm": "Şabanözü, Çankırı, İç Anadolu Bölgesi, Türkiye",
+  "il": "Çankırı",
+  "ilce": "Şabanözü"
+ },
+ "corum-alaca-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.169012,
+  "lon": 34.841477,
+  "kesinlik": "ilce",
+  "osm": "Alaca, Çorum, Karadeniz Bölgesi, 19600, Türkiye",
+  "il": "Çorum",
+  "ilce": "Alaca"
+ },
+ "corum-bayat-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.578974,
+  "lon": 34.926489,
+  "kesinlik": "ilce",
+  "osm": "Bayat Mahallesi, Çorum Merkez, Çorum, Karadeniz Bölgesi, Türkiye",
+  "il": "Çorum",
+  "ilce": "Bayat"
+ },
+ "corum-iskilip-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.730691,
+  "lon": 34.471011,
+  "kesinlik": "ilce",
+  "osm": "İskilip, Çorum, Karadeniz Bölgesi, 19400, Türkiye",
+  "il": "Çorum",
+  "ilce": "İskilip"
+ },
+ "corum-mecitozu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.520586,
+  "lon": 35.295345,
+  "kesinlik": "ilce",
+  "osm": "Mecitözü, Çorum, Karadeniz Bölgesi, Türkiye",
+  "il": "Çorum",
+  "ilce": "Mecitözü"
+ },
+ "corum-corum-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.97455,
+  "lon": 34.804298,
+  "kesinlik": "tesis",
+  "osm": "Osmancık Öğretmenevi, Atatürk Caddesi, Osmancık, Çorum, Karadeniz Bölgesi, 19500, Türkiye",
+  "il": "Çorum",
+  "ilce": "Merkez"
+ },
+ "corum-osmancik-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.97455,
+  "lon": 34.804298,
+  "kesinlik": "tesis",
+  "osm": "Osmancık Öğretmenevi, Atatürk Caddesi, Osmancık, Çorum, Karadeniz Bölgesi, 19500, Türkiye",
+  "il": "Çorum",
+  "ilce": "Osmancık"
+ },
+ "corum-sungurlu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.163824,
+  "lon": 34.375335,
+  "kesinlik": "ilce",
+  "osm": "Sungurlu, Çorum, Karadeniz Bölgesi, 19302, Türkiye",
+  "il": "Çorum",
+  "ilce": "Sungurlu"
+ },
+ "denizli-denizli-80-yil-ogretmenevi-iktisadi-isletmesi-ve-aksam-sanat-okului": {
+  "lat": 37.920038,
+  "lon": 29.121753,
+  "kesinlik": "ilce",
+  "osm": "Pamukkale, Denizli, Ege Bölgesi, Türkiye",
+  "il": "Denizli",
+  "ilce": "Pamukkale"
+ },
+ "diyarbakir-bismil-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.852769,
+  "lon": 40.661992,
+  "kesinlik": "ilce",
+  "osm": "Bismil, Nato Caddesi, Kurtuluş Mah., Kurtuluş Mahallesi, Bismil, Diyarbakır, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Diyarbakır",
+  "ilce": "Bismil"
+ },
+ "diyarbakir-cungus-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.211743,
+  "lon": 39.28817,
+  "kesinlik": "ilce",
+  "osm": "Çüngüş, Diyarbakır, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Diyarbakır",
+  "ilce": "Çüngüş"
+ },
+ "diyarbakir-dicle-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.372813,
+  "lon": 40.071817,
+  "kesinlik": "ilce",
+  "osm": "Dicle, Diyarbakır, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Diyarbakır",
+  "ilce": "Dicle"
+ },
+ "diyarbakir-egil-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.257553,
+  "lon": 40.08452,
+  "kesinlik": "ilce",
+  "osm": "Eğil, Diyarbakır, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Diyarbakır",
+  "ilce": "Eğil"
+ },
+ "diyarbakir-ergani-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.23278,
+  "lon": 39.754879,
+  "kesinlik": "ilce",
+  "osm": "Ergani, İstasyon Caddesi, Fatih Mah., Yayvantepe, Ergani, Diyarbakır, Güneydoğu Anadolu Bölgesi, 21950, Türkiye",
+  "il": "Diyarbakır",
+  "ilce": "Ergani"
+ },
+ "diyarbakir-hazro-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.25383,
+  "lon": 40.780853,
+  "kesinlik": "ilce",
+  "osm": "Hazro, Diyarbakır, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Diyarbakır",
+  "ilce": "Hazro"
+ },
+ "diyarbakir-sehit-orhan-korkmaz-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.500427,
+  "lon": 41.011997,
+  "kesinlik": "ilce",
+  "osm": "Kulp, Diyarbakır, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Diyarbakır",
+  "ilce": "Kulp"
+ },
+ "diyarbakir-lice-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.460313,
+  "lon": 40.647688,
+  "kesinlik": "ilce",
+  "osm": "Lice, Diyarbakır, Güneydoğu Anadolu Bölgesi, 21700, Türkiye",
+  "il": "Diyarbakır",
+  "ilce": "Lice"
+ },
+ "diyarbakir-silvan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.141151,
+  "lon": 41.00561,
+  "kesinlik": "ilce",
+  "osm": "Silvan, Diyarbakır, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Diyarbakır",
+  "ilce": "Silvan"
+ },
+ "diyarbakir-yenisehir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.949754,
+  "lon": 40.19596,
+  "kesinlik": "tesis",
+  "osm": "Diyarbakır Öğretmenevi, 102, Elazığ Bulvarı, Yolaltı Mahallesi, Yenişehir, Diyarbakır, Güneydoğu Anadolu Bölgesi, 21000,",
+  "il": "Diyarbakır",
+  "ilce": "Yenişehir"
+ },
+ "diyarbakir-diyarbakir-buyuksehir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.949754,
+  "lon": 40.19596,
+  "kesinlik": "tesis",
+  "osm": "Diyarbakır Öğretmenevi, 102, Elazığ Bulvarı, Yolaltı Mahallesi, Yenişehir, Diyarbakır, Güneydoğu Anadolu Bölgesi, 21000,",
+  "il": "Diyarbakır",
+  "ilce": "Yenişehir"
+ },
+ "edirne-kesan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.854879,
+  "lon": 26.630306,
+  "kesinlik": "ilce",
+  "osm": "Keşan, Edirne, Marmara Bölgesi, Türkiye",
+  "il": "Edirne",
+  "ilce": "Keşan"
+ },
+ "edirne-edirne-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.672762,
+  "lon": 26.560824,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, Tekke Bayırı Sokak, Sabuni Mahallesi, Edirne Merkez, Edirne, Marmara Bölgesi, 22100, Türkiye",
+  "il": "Edirne",
+  "ilce": "Merkez"
+ },
+ "edirne-uzunkopru-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.265799,
+  "lon": 26.692256,
+  "kesinlik": "tesis",
+  "osm": "Uzunköprü Öğretmenevi ve Akşam Sanat Okulu Müdürlüğü Çay Bahçesi - Çok Amaçlı Salonu, Lise Caddesi, Muradiye, Uzunköprü,",
+  "il": "Edirne",
+  "ilce": "Uzunköprü"
+ },
+ "elazig-agin-yusuf-karabatak-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.943909,
+  "lon": 38.713977,
+  "kesinlik": "ilce",
+  "osm": "Ağın, Elâzığ, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Elazığ",
+  "ilce": "Ağın"
+ },
+ "elazig-aricak-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.563431,
+  "lon": 40.134504,
+  "kesinlik": "ilce",
+  "osm": "Arıcak, Elâzığ, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Elazığ",
+  "ilce": "Arıcak"
+ },
+ "elazig-karakocan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.95343,
+  "lon": 40.038159,
+  "kesinlik": "tesis",
+  "osm": "Karakoçan Öğretmenevi Fiyatları, Atatürk Caddesi, Tepe Mahallesi, Karapınar, Karakoçan, Elâzığ, Doğu Anadolu Bölgesi, 23",
+  "il": "Elazığ",
+  "ilce": "Karakoçan"
+ },
+ "elazig-keban-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.794312,
+  "lon": 38.744442,
+  "kesinlik": "ilce",
+  "osm": "Keban, Elâzığ, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Elazığ",
+  "ilce": "Keban"
+ },
+ "elazig-kovancilar-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.718925,
+  "lon": 39.865913,
+  "kesinlik": "ilce",
+  "osm": "Kovancılar, Elâzığ, Doğu Anadolu Bölgesi, 23850, Türkiye",
+  "il": "Elazığ",
+  "ilce": "Kovancılar"
+ },
+ "elazig-elazig-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.674716,
+  "lon": 39.222713,
+  "kesinlik": "ilce",
+  "osm": "Elâzığ Merkez, Elâzığ, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Elazığ",
+  "ilce": "Merkez"
+ },
+ "elazig-sivrice-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.448693,
+  "lon": 39.306856,
+  "kesinlik": "ilce",
+  "osm": "Sivrice, 23-27, Sivrice, Elâzığ, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Elazığ",
+  "ilce": "Sivrice"
+ },
+ "erzincan-cayirli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.804082,
+  "lon": 40.037184,
+  "kesinlik": "ilce",
+  "osm": "Çayırlı, Erzincan, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Erzincan",
+  "ilce": "Çayırlı"
+ },
+ "erzincan-ilic-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.472172,
+  "lon": 38.556529,
+  "kesinlik": "ilce",
+  "osm": "İliç, Yeni Şehir /12 Sokağı, İstasyon Mah., İliç, Erzincan, Doğu Anadolu Bölgesi, 24700, Türkiye",
+  "il": "Erzincan",
+  "ilce": "İliç"
+ },
+ "erzincan-kemah-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.602182,
+  "lon": 39.035601,
+  "kesinlik": "tesis",
+  "osm": "Kemah Öğretmenevi, Kemal Cantürk Caddesi, Çarşı Mahallesi, Kemah, Erzincan, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Erzincan",
+  "ilce": "Kemah"
+ },
+ "erzincan-kemaliye-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.262097,
+  "lon": 38.496527,
+  "kesinlik": "ilce",
+  "osm": "Kemaliye, Erzincan, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Erzincan",
+  "ilce": "Kemaliye"
+ },
+ "erzincan-erzincan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.74486,
+  "lon": 39.509321,
+  "kesinlik": "tesis",
+  "osm": "Erzincan Öğretmenevi, Recep Tayyip Erdoğan Caddesi, İzzetpaşa, İzzetpaşa Mahallesi, Erzincan Merkez, Erzincan, Doğu Anad",
+  "il": "Erzincan",
+  "ilce": "Merkez"
+ },
+ "erzincan-otlukbeli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.971948,
+  "lon": 40.021676,
+  "kesinlik": "ilce",
+  "osm": "Otlukbeli, Erzincan, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Erzincan",
+  "ilce": "Otlukbeli"
+ },
+ "erzincan-refahiye-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.902753,
+  "lon": 38.768175,
+  "kesinlik": "ilce",
+  "osm": "Refahiye, Erzincan, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Erzincan",
+  "ilce": "Refahiye"
+ },
+ "erzincan-tercan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.777983,
+  "lon": 40.387364,
+  "kesinlik": "tesis",
+  "osm": "Tercan Öğretmenevi, Erzincan - Erzurum Yolu, Yavuzselim, Yaylacık, Tercan, Erzincan, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Erzincan",
+  "ilce": "Tercan"
+ },
+ "erzincan-uzumlu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.710115,
+  "lon": 39.701031,
+  "kesinlik": "ilce",
+  "osm": "Üzümlü, Erzincan, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Erzincan",
+  "ilce": "Üzümlü"
+ },
+ "erzurum-askale-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.922811,
+  "lon": 40.697653,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi Sokak, Çarşı, Aşkale, Erzurum, Doğu Anadolu Bölgesi, 25500, Türkiye",
+  "il": "Erzurum",
+  "ilce": "Aşkale"
+ },
+ "erzurum-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.904623,
+  "lon": 41.261693,
+  "kesinlik": "ilce",
+  "osm": "Erzurum Büyükşehir Belediyesi, 2, Ömer Nasuhi Bilmen Caddesi, Erzurum, Muratpaşa Mahallesi, Erzurum, Yakutiye, Erzurum, ",
+  "il": "Erzurum",
+  "ilce": "Büyükşehir"
+ },
+ "erzurum-cat-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.612828,
+  "lon": 40.976793,
+  "kesinlik": "tesis",
+  "osm": "Çat Öğretmenevi ve Akşam Sanat Okulu, Cumhuriyet Caddesi, Oyuklu, Çat, Erzurum, Doğu Anadolu Bölgesi, 25750, Türkiye",
+  "il": "Erzurum",
+  "ilce": "Çat"
+ },
+ "erzurum-hinis-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.358486,
+  "lon": 41.700327,
+  "kesinlik": "ilce",
+  "osm": "Hınıs, Erzurum, Doğu Anadolu Bölgesi, 25600, Türkiye",
+  "il": "Erzurum",
+  "ilce": "Hınıs"
+ },
+ "erzurum-horasan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.040798,
+  "lon": 42.16245,
+  "kesinlik": "ilce",
+  "osm": "Horasan, Şehit Harun Lal Caddesi, Esentepe, Horasan, Erzurum, Doğu Anadolu Bölgesi, 25800, Türkiye",
+  "il": "Erzurum",
+  "ilce": "Horasan"
+ },
+ "erzurum-ispir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.483378,
+  "lon": 40.999961,
+  "kesinlik": "ilce",
+  "osm": "İspir, Erzurum, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Erzurum",
+  "ilce": "İspir"
+ },
+ "erzurum-karacoban-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.35049,
+  "lon": 42.111626,
+  "kesinlik": "ilce",
+  "osm": "Karaçoban, Erzurum, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Erzurum",
+  "ilce": "Karaçoban"
+ },
+ "erzurum-karayazi-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.701673,
+  "lon": 42.143121,
+  "kesinlik": "ilce",
+  "osm": "Karayazı, Erzurum, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Erzurum",
+  "ilce": "Karayazı"
+ },
+ "erzurum-narman-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.3452,
+  "lon": 41.871138,
+  "kesinlik": "ilce",
+  "osm": "Narman, Erzurum, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Erzurum",
+  "ilce": "Narman"
+ },
+ "erzurum-oltu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.545941,
+  "lon": 41.995977,
+  "kesinlik": "ilce",
+  "osm": "Oltu, Erzurum, Doğu Anadolu Bölgesi, 25400, Türkiye",
+  "il": "Erzurum",
+  "ilce": "Oltu"
+ },
+ "erzurum-olur-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.826818,
+  "lon": 42.133243,
+  "kesinlik": "ilce",
+  "osm": "Olur, Erzurum, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Erzurum",
+  "ilce": "Olur"
+ },
+ "erzurum-pazaryolu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.414307,
+  "lon": 40.773831,
+  "kesinlik": "ilce",
+  "osm": "Pazaryolu, Erzurum, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Erzurum",
+  "ilce": "Pazaryolu"
+ },
+ "erzurum-senkaya-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.561141,
+  "lon": 42.345255,
+  "kesinlik": "ilce",
+  "osm": "Şenkaya, Erzurum, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Erzurum",
+  "ilce": "Şenkaya"
+ },
+ "erzurum-tekman-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.646746,
+  "lon": 41.509384,
+  "kesinlik": "ilce",
+  "osm": "Tekman, Erzurum, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Erzurum",
+  "ilce": "Tekman"
+ },
+ "erzurum-tortum-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.297082,
+  "lon": 41.550825,
+  "kesinlik": "ilce",
+  "osm": "Tortum, Erzurum, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Erzurum",
+  "ilce": "Tortum"
+ },
+ "erzurum-uzundere-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.532505,
+  "lon": 41.545865,
+  "kesinlik": "tesis",
+  "osm": "Uzundere Öğretmenevi, Cumhuriyet Caddesi, Merkez Mahallesi, Uzundere, Erzurum, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Erzurum",
+  "ilce": "Uzundere"
+ },
+ "eskisehir-eskisehir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.373514,
+  "lon": 31.036925,
+  "kesinlik": "tesis",
+  "osm": "Çifteler Öğretmenevi, Savran Sokak, Çifteler, Adalar Mah., Çifteler, Eskişehir, İç Anadolu Bölgesi, Türkiye",
+  "il": "Eskişehir",
+  "ilce": "Büyükşehir"
+ },
+ "eskisehir-cifteler-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.373514,
+  "lon": 31.036925,
+  "kesinlik": "tesis",
+  "osm": "Çifteler Öğretmenevi, Savran Sokak, Çifteler, Adalar Mah., Çifteler, Eskişehir, İç Anadolu Bölgesi, Türkiye",
+  "il": "Eskişehir",
+  "ilce": "Çifteler"
+ },
+ "gaziantep-sabanci-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.030684,
+  "lon": 36.636656,
+  "kesinlik": "ilce",
+  "osm": "İslahiye, Vatan Caddesi, Dervişpaşa, Çamlıca Mahallesi, İslahiye, Gaziantep, Güneydoğu Anadolu Bölgesi, 27800, Türkiye",
+  "il": "Gaziantep",
+  "ilce": "Islahiye"
+ },
+ "gaziantep-karkamis-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.831081,
+  "lon": 37.999956,
+  "kesinlik": "ilce",
+  "osm": "Karkamış, 27-26, Etiler Mah., Etiler Mahallesi, Karkamış, Gaziantep, Güneydoğu Anadolu Bölgesi, 27880, Türkiye",
+  "il": "Gaziantep",
+  "ilce": "Karkamış"
+ },
+ "gaziantep-nizip-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.001184,
+  "lon": 37.789031,
+  "kesinlik": "ilce",
+  "osm": "Nizip, 27-30, İstasyon Mah., İstasyon Mahallesi, Nizip, Gaziantep, Güneydoğu Anadolu Bölgesi, 27700, Türkiye",
+  "il": "Gaziantep",
+  "ilce": "Nizip"
+ },
+ "gaziantep-oguzeli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.965108,
+  "lon": 37.508549,
+  "kesinlik": "ilce",
+  "osm": "Oğuzeli, Gaziantep, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Gaziantep",
+  "ilce": "Oğuzeli"
+ },
+ "gaziantep-sahinbey-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.063147,
+  "lon": 37.375233,
+  "kesinlik": "tesis",
+  "osm": "Gaziantep Öğretmenevi, 11, 1002. Sokak, Alleben Mahallesi, Gaziantep, Şahinbey, Gaziantep, Güneydoğu Anadolu Bölgesi, 27",
+  "il": "Gaziantep",
+  "ilce": "Şahinbey"
+ },
+ "giresun-alucra-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 40.319666,
+  "lon": 38.765185,
+  "kesinlik": "ilce",
+  "osm": "Alucra, Giresun, Karadeniz Bölgesi, Türkiye",
+  "il": "Giresun",
+  "ilce": "Alucra"
+ },
+ "giresun-bulancak-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 40.938923,
+  "lon": 38.231878,
+  "kesinlik": "ilce",
+  "osm": "Bulancak, Giresun, Karadeniz Bölgesi, 28300, Türkiye",
+  "il": "Giresun",
+  "ilce": "Bulancak"
+ },
+ "giresun-camoluk-camoluk-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 40.135168,
+  "lon": 38.733976,
+  "kesinlik": "ilce",
+  "osm": "Çamoluk, Giresun, Karadeniz Bölgesi, 28710, Türkiye",
+  "il": "Giresun",
+  "ilce": "Çamoluk"
+ },
+ "giresun-dereli-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 40.73904,
+  "lon": 38.449132,
+  "kesinlik": "ilce",
+  "osm": "Dereli, Giresun, Karadeniz Bölgesi, 28950, Türkiye",
+  "il": "Giresun",
+  "ilce": "Dereli"
+ },
+ "giresun-dogankent-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 40.809918,
+  "lon": 38.914729,
+  "kesinlik": "ilce",
+  "osm": "Doğankent, Giresun, Karadeniz Bölgesi, Türkiye",
+  "il": "Giresun",
+  "ilce": "Doğankent"
+ },
+ "giresun-espiye-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 40.948323,
+  "lon": 38.711722,
+  "kesinlik": "ilce",
+  "osm": "Espiye, Giresun, Karadeniz Bölgesi, Türkiye",
+  "il": "Giresun",
+  "ilce": "Espiye"
+ },
+ "giresun-eynesil-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 41.064688,
+  "lon": 39.143405,
+  "kesinlik": "ilce",
+  "osm": "Eynesil, Giresun, Karadeniz Bölgesi, 28850, Türkiye",
+  "il": "Giresun",
+  "ilce": "Eynesil"
+ },
+ "giresun-gorele-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 41.033521,
+  "lon": 38.998624,
+  "kesinlik": "ilce",
+  "osm": "Görele, Giresun, Karadeniz Bölgesi, 28800, Türkiye",
+  "il": "Giresun",
+  "ilce": "Görele"
+ },
+ "giresun-kesap-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 40.915148,
+  "lon": 38.513856,
+  "kesinlik": "ilce",
+  "osm": "Keşap, Giresun, Karadeniz Bölgesi, Türkiye",
+  "il": "Giresun",
+  "ilce": "Kesap"
+ },
+ "giresun-merkez-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 41.049672,
+  "lon": 41.003907,
+  "kesinlik": "tesis",
+  "osm": "Ögretmen Evi, 53-05, Merkez, Çamlıhemşin, Rize, Karadeniz Bölgesi, 53750, Türkiye",
+  "il": "Giresun",
+  "ilce": "Merkez"
+ },
+ "giresun-piraziz-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 40.952573,
+  "lon": 38.124757,
+  "kesinlik": "ilce",
+  "osm": "Piraziz, Giresun, Karadeniz Bölgesi, Türkiye",
+  "il": "Giresun",
+  "ilce": "Piraziz"
+ },
+ "giresun-sebinkarahisar-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 40.288601,
+  "lon": 38.423612,
+  "kesinlik": "ilce",
+  "osm": "Şebinkarahisar, Giresun, Karadeniz Bölgesi, 28400, Türkiye",
+  "il": "Giresun",
+  "ilce": "Şebinkarahisar"
+ },
+ "giresun-tirebolu-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 41.007201,
+  "lon": 38.814631,
+  "kesinlik": "ilce",
+  "osm": "Tirebolu, Giresun, Karadeniz Bölgesi, 28500, Türkiye",
+  "il": "Giresun",
+  "ilce": "Tirebolu"
+ },
+ "giresun-yaglidere-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 40.860535,
+  "lon": 38.625158,
+  "kesinlik": "ilce",
+  "osm": "Yağlıdere, Giresun, Karadeniz Bölgesi, Türkiye",
+  "il": "Giresun",
+  "ilce": "Yağlıdere"
+ },
+ "gumushane-kelkit-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.133855,
+  "lon": 39.429824,
+  "kesinlik": "tesis",
+  "osm": "Kelkit Öğretmenevi, Çataklar Sokak, Cumhuriyet, Cumhuriyet Mahallesi, Kelkit, Gümüşhane, Karadeniz Bölgesi, 29600, Türki",
+  "il": "Gümüşhane",
+  "ilce": "Kelkit"
+ },
+ "gumushane-kurtun-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.701864,
+  "lon": 39.085711,
+  "kesinlik": "ilce",
+  "osm": "Kürtün, Gümüşhane, Karadeniz Bölgesi, Türkiye",
+  "il": "Gümüşhane",
+  "ilce": "Kürtün"
+ },
+ "gumushane-merkez-fevzi-atac-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.55827,
+  "lon": 39.29301,
+  "kesinlik": "ilce",
+  "osm": "Merkez, Torul, Gümüşhane, Karadeniz Bölgesi, 29800, Türkiye",
+  "il": "Gümüşhane",
+  "ilce": "Merkez"
+ },
+ "gumushane-siran-besbinaz-seker-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.189826,
+  "lon": 39.125232,
+  "kesinlik": "ilce",
+  "osm": "Şiran, Gümüşhane, Karadeniz Bölgesi, Türkiye",
+  "il": "Gümüşhane",
+  "ilce": "Şiran"
+ },
+ "gumushane-torul-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.557658,
+  "lon": 39.292636,
+  "kesinlik": "ilce",
+  "osm": "Torul, Gümüşhane, Karadeniz Bölgesi, 29800, Türkiye",
+  "il": "Gümüşhane",
+  "ilce": "Torul"
+ },
+ "hakkari-cukurca-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.246819,
+  "lon": 43.611042,
+  "kesinlik": "ilce",
+  "osm": "Çukurca, Hakkâri, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Hakkari",
+  "ilce": "Çukurca"
+ },
+ "hakkari-hakkari-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.576696,
+  "lon": 43.737786,
+  "kesinlik": "ilce",
+  "osm": "Hakkari Merkez, Hakkâri, Doğu Anadolu Bölgesi, 30000, Türkiye",
+  "il": "Hakkari",
+  "ilce": "Merkez"
+ },
+ "hakkari-semdinli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.306763,
+  "lon": 44.572508,
+  "kesinlik": "ilce",
+  "osm": "Şemdinli, Hakkâri, Doğu Anadolu Bölgesi, 30800, Türkiye",
+  "il": "Hakkari",
+  "ilce": "Şemdinli"
+ },
+ "hakkari-yuksekova-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.571769,
+  "lon": 44.28217,
+  "kesinlik": "ilce",
+  "osm": "Yüksekova, Hakkâri, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Hakkari",
+  "ilce": "Yüksekova"
+ },
+ "hatay-antakya-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.202557,
+  "lon": 36.164099,
+  "kesinlik": "ilce",
+  "osm": "Antakya (antik kent), Yenicamii Sokak, Yenicami Mahallesi, Hatay, Antakya, Hatay, Akdeniz Bölgesi, 31040, Türkiye",
+  "il": "Hatay",
+  "ilce": "Antakya"
+ },
+ "hatay-arsuz-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.419625,
+  "lon": 35.990524,
+  "kesinlik": "ilce",
+  "osm": "Arsuz, Hatay, Akdeniz Bölgesi, Türkiye",
+  "il": "Hatay",
+  "ilce": "Arsuz"
+ },
+ "hatay-belen-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.491674,
+  "lon": 36.194446,
+  "kesinlik": "ilce",
+  "osm": "Belen, Hatay, Akdeniz Bölgesi, 31350, Türkiye",
+  "il": "Hatay",
+  "ilce": "Belen"
+ },
+ "hatay-dortyol-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.835312,
+  "lon": 36.227408,
+  "kesinlik": "ilce",
+  "osm": "Dörtyol, Hatay, Akdeniz Bölgesi, 31600, Türkiye",
+  "il": "Hatay",
+  "ilce": "Dörtyol"
+ },
+ "hatay-erzin-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.974589,
+  "lon": 36.130486,
+  "kesinlik": "ilce",
+  "osm": "Erzin, D817, Hürriyet Mahallesi, Erzin, Hatay, Akdeniz Bölgesi, 31960, Türkiye",
+  "il": "Hatay",
+  "ilce": "Erzin"
+ },
+ "hatay-hassa-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.80011,
+  "lon": 36.517224,
+  "kesinlik": "ilce",
+  "osm": "Hassa, Hatay, Akdeniz Bölgesi, Türkiye",
+  "il": "Hatay",
+  "ilce": "Hassa"
+ },
+ "hatay-iskenderun-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.590227,
+  "lon": 36.171035,
+  "kesinlik": "ilce",
+  "osm": "İskenderun, Hatay, Akdeniz Bölgesi, Türkiye",
+  "il": "Hatay",
+  "ilce": "İskenderun"
+ },
+ "hatay-kirikhan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.498955,
+  "lon": 36.362173,
+  "kesinlik": "ilce",
+  "osm": "Kırıkhan, Hatay, Akdeniz Bölgesi, 31440, Türkiye",
+  "il": "Hatay",
+  "ilce": "Kırıkhan"
+ },
+ "hatay-payas-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.755932,
+  "lon": 36.215196,
+  "kesinlik": "ilce",
+  "osm": "Payas, Hatay, Akdeniz Bölgesi, 31900, Türkiye",
+  "il": "Hatay",
+  "ilce": "Payas"
+ },
+ "hatay-reyhanli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.268448,
+  "lon": 36.567231,
+  "kesinlik": "ilce",
+  "osm": "Reyhanlı, Hatay, Akdeniz Bölgesi, 31500, Türkiye",
+  "il": "Hatay",
+  "ilce": "Reyhanlı"
+ },
+ "hatay-samandag-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.125157,
+  "lon": 35.918765,
+  "kesinlik": "tesis",
+  "osm": "Ögretmenevi, 7379. Sokak, Kapısuyu, Samandağ, Hatay, Akdeniz Bölgesi, 31800, Türkiye",
+  "il": "Hatay",
+  "ilce": "Samandağ"
+ },
+ "hatay-yayladagi-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 35.902954,
+  "lon": 36.062599,
+  "kesinlik": "ilce",
+  "osm": "Yayladağı, Hatay, Akdeniz Bölgesi, 31550, Türkiye",
+  "il": "Hatay",
+  "ilce": "Yayladağı"
+ },
+ "isparta-atabey-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.950935,
+  "lon": 30.637407,
+  "kesinlik": "ilce",
+  "osm": "Atabey, Isparta, Akdeniz Bölgesi, Türkiye",
+  "il": "Isparta",
+  "ilce": "Atabey"
+ },
+ "isparta-egirdir-sabanci-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.875327,
+  "lon": 30.851848,
+  "kesinlik": "tesis",
+  "osm": "Eğirdir Sabancı Öğretmenevi ve Akşam Sanat Okulu, Kuş Sokak, Camii Mahallesi, Eğirdir Belediyesi, Eğirdir, Isparta, Akde",
+  "il": "Isparta",
+  "ilce": "Eğirdir"
+ },
+ "isparta-merkez-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.069055,
+  "lon": 39.533451,
+  "kesinlik": "tesis",
+  "osm": "Tunceli Öğretmenevi, Cem Emir Caddesi, Atatürk Mah., Tunceli, Tunceli Merkez, Tunceli, Doğu Anadolu Bölgesi, 62000, Türk",
+  "il": "Isparta",
+  "ilce": "Merkez"
+ },
+ "isparta-sarkikaraagac-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.081224,
+  "lon": 31.362032,
+  "kesinlik": "tesis",
+  "osm": "Şarkikaraağaç Öğretmenevi, 32-07, Şarkikaraağaç, Isparta, Akdeniz Bölgesi, Türkiye",
+  "il": "Isparta",
+  "ilce": "Şarkikaraağaç"
+ },
+ "isparta-yalvac-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.300287,
+  "lon": 31.174346,
+  "kesinlik": "ilce",
+  "osm": "Yalvaç, Isparta, Akdeniz Bölgesi, 32400, Türkiye",
+  "il": "Isparta",
+  "ilce": "Yalvaç"
+ },
+ "mersin-anamur-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.103853,
+  "lon": 32.962346,
+  "kesinlik": "tesis",
+  "osm": "Bozyazı Öğretmenevi, Antalya - Mersin Yolu, Kocadut, Bahçelievler, Çeltikçi, Bozyazı, Mersin, Akdeniz Bölgesi, Türkiye",
+  "il": "Mersin",
+  "ilce": "Anamur"
+ },
+ "mersin-aydincik-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.14892,
+  "lon": 33.328869,
+  "kesinlik": "tesis",
+  "osm": "Aydıncık Öğretmenevi, Antalya-Mersin yolu, Hürriyet, Yenikaş, Aydıncık, Mersin, Akdeniz Bölgesi, 33840, Türkiye",
+  "il": "Mersin",
+  "ilce": "Aydıncık"
+ },
+ "mersin-bozyazi-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.103853,
+  "lon": 32.962346,
+  "kesinlik": "tesis",
+  "osm": "Bozyazı Öğretmenevi, Antalya - Mersin Yolu, Kocadut, Bahçelievler, Çeltikçi, Bozyazı, Mersin, Akdeniz Bölgesi, Türkiye",
+  "il": "Mersin",
+  "ilce": "Bozyazı"
+ },
+ "mersin-erdemli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.605709,
+  "lon": 34.310287,
+  "kesinlik": "ilce",
+  "osm": "Erdemli, Mersin, Akdeniz Bölgesi, Türkiye",
+  "il": "Mersin",
+  "ilce": "Erdemli"
+ },
+ "mersin-gulnar-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.338664,
+  "lon": 33.399013,
+  "kesinlik": "ilce",
+  "osm": "Gülnar, Mersin, Akdeniz Bölgesi, Türkiye",
+  "il": "Mersin",
+  "ilce": "Gülnar"
+ },
+ "mersin-mut-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.637871,
+  "lon": 33.440402,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, Doğancı Sokak, Kale, Barabanlı, Mut, Mersin, Akdeniz Bölgesi, 33600, Türkiye",
+  "il": "Mersin",
+  "ilce": "Mut"
+ },
+ "mersin-silifke-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.376004,
+  "lon": 33.928528,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, İnönü Bulvarı, Pazarkaşı Mah., Silifke, Mersin, Akdeniz Bölgesi, 33960, Türkiye",
+  "il": "Mersin",
+  "ilce": "Silifke"
+ },
+ "mersin-tarsus-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.916483,
+  "lon": 34.895149,
+  "kesinlik": "ilce",
+  "osm": "Tarsus, Mersin, Akdeniz Bölgesi, Türkiye",
+  "il": "Mersin",
+  "ilce": "Tarsus"
+ },
+ "mersin-silifke-tasucu-lutfi-elvan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.316736,
+  "lon": 33.872214,
+  "kesinlik": "tesis",
+  "osm": "Silifke Taşucu Lütfi Elvan Öğretmenevi ve Akşam Sanat Okulu, Antalya - Mersin Yolu, Taşucu, Silifke, Mersin, Akdeniz Böl",
+  "il": "Mersin",
+  "ilce": "Taşucu"
+ },
+ "mersin-suphi-oner-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.777316,
+  "lon": 34.581668,
+  "kesinlik": "tesis",
+  "osm": "Mersin Suphi Öner Öğretmenevi, 124, Adnan Menderes Bulvarı, Dumlupınar Mahallesi, Yenişehir, Mersin, Akdeniz Bölgesi, 33",
+  "il": "Mersin",
+  "ilce": "Yenişehir"
+ },
+ "istanbul-burgazada-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.874166,
+  "lon": 29.129325,
+  "kesinlik": "ilce",
+  "osm": "Adalar, İstanbul, Marmara Bölgesi, Türkiye",
+  "il": "İstanbul",
+  "ilce": "Adalar"
+ },
+ "istanbul-asim-ve-nurhan-kocabiyik-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.972443,
+  "lon": 28.714239,
+  "kesinlik": "tesis",
+  "osm": "Asım ve Nurhan Kocabıyık Öğretmenevi, Marmara Sahil Sokağı, Ambarlı Mahallesi, Avcılar, İstanbul, Marmara Bölgesi, 34315",
+  "il": "İstanbul",
+  "ilce": "Avcılar"
+ },
+ "istanbul-bagcilar-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.035288,
+  "lon": 28.851665,
+  "kesinlik": "tesis",
+  "osm": "Bağcılar Öğretmenevi ve Akşam Sanat Okulu, 2, 1024. Sokak, Yavuz Selim Mahallesi, Bağcılar, İstanbul, Marmara Bölgesi, 3",
+  "il": "İstanbul",
+  "ilce": "Bağcılar"
+ },
+ "istanbul-bahcelievler-abidin-pak-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.00515,
+  "lon": 28.865648,
+  "kesinlik": "tesis",
+  "osm": "Bahçelievler Abidin Pak Öğretmenevi, Elmalı Sokağı, Ünverdi, Bahçelievler Mahallesi, Bahçelievler, İstanbul, Marmara Böl",
+  "il": "İstanbul",
+  "ilce": "Bahçelievler"
+ },
+ "istanbul-sabanci-ogretmenevi-ve-aksam-aksam-sanat-okulu": {
+  "lat": 41.1343,
+  "lon": 29.092038,
+  "kesinlik": "ilce",
+  "osm": "Beykoz, İstanbul, Marmara Bölgesi, Türkiye",
+  "il": "İstanbul",
+  "ilce": "Beykoz"
+ },
+ "istanbul-beylikduzu-ataturk-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.003815,
+  "lon": 28.637288,
+  "kesinlik": "ilce",
+  "osm": "Beylikdüzü, İstanbul, Marmara Bölgesi, Türkiye",
+  "il": "İstanbul",
+  "ilce": "Beylikdüzü"
+ },
+ "istanbul-beyoglu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.03002,
+  "lon": 28.973119,
+  "kesinlik": "tesis",
+  "osm": "Beyoğlu Öğretmenevi, Meşrutiyet Caddesi, İstiklal, Evliya Çelebi Mahallesi, Asmalı Mescit Mahallesi, Beyoğlu, İstanbul, ",
+  "il": "İstanbul",
+  "ilce": "Beyoğlu"
+ },
+ "istanbul-catalca-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.14368,
+  "lon": 28.460515,
+  "kesinlik": "ilce",
+  "osm": "Çatalca, İstanbul, Marmara Bölgesi, 34540, Türkiye",
+  "il": "İstanbul",
+  "ilce": "Çatalca"
+ },
+ "istanbul-cankurtaran-ogretmenevi-ve-aksam-sanat-ok": {
+  "lat": 41.019285,
+  "lon": 28.94793,
+  "kesinlik": "ilce",
+  "osm": "Fatih, İstanbul, Marmara Bölgesi, Türkiye",
+  "il": "İstanbul",
+  "ilce": "Fatih"
+ },
+ "istanbul-sehit-fethi-sekin-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.991874,
+  "lon": 28.771196,
+  "kesinlik": "ilce",
+  "osm": "Küçükçekmece, İstanbul, Marmara Bölgesi, Türkiye",
+  "il": "İstanbul",
+  "ilce": "Küçükçekmece"
+ },
+ "istanbul-silivri-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.071958,
+  "lon": 28.243318,
+  "kesinlik": "tesis",
+  "osm": "Silivri Öğretmenevi, Atatürk Caddesi, Piri Mehmet Paşa Mahallesi, Silivri, İstanbul, Marmara Bölgesi, 34570, Türkiye",
+  "il": "İstanbul",
+  "ilce": "Silivri"
+ },
+ "istanbul-sisli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.046688,
+  "lon": 28.995992,
+  "kesinlik": "tesis",
+  "osm": "Nişantaşı Öğretmenevi ve ASO, 63/2, Hüsrev Gerede Caddesi, Teşvikiye Mahallesi, Taşkışla, Harbiye Mahallesi, Şişli, İsta",
+  "il": "İstanbul",
+  "ilce": "Şişli"
+ },
+ "istanbul-adile-sultan-kasri-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.02655,
+  "lon": 29.015132,
+  "kesinlik": "ilce",
+  "osm": "Üsküdar, İstanbul, Marmara Bölgesi, Türkiye",
+  "il": "İstanbul",
+  "ilce": "Üsküdar"
+ },
+ "izmir-bayindir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.21778,
+  "lon": 27.645957,
+  "kesinlik": "tesis",
+  "osm": "Bayındır Öğretmenevi, Albay Alpat Caddesi, Sadıkpaşa Mahallesi, Bayındır, İzmir, Ege Bölgesi, 35840, Türkiye",
+  "il": "İzmir",
+  "ilce": "Bayındır"
+ },
+ "izmir-alacati-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.324404,
+  "lon": 26.30296,
+  "kesinlik": "ilce",
+  "osm": "Çeşme, İzmir, Ege Bölgesi, Türkiye",
+  "il": "İzmir",
+  "ilce": "Çeşme"
+ },
+ "izmir-karaburun-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.635442,
+  "lon": 26.509803,
+  "kesinlik": "ilce",
+  "osm": "Karaburun, İzmir, Ege Bölgesi, Türkiye",
+  "il": "İzmir",
+  "ilce": "Karaburun"
+ },
+ "izmir-kinik-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.087598,
+  "lon": 27.380475,
+  "kesinlik": "ilce",
+  "osm": "Kınık, İzmir, Ege Bölgesi, 35990, Türkiye",
+  "il": "İzmir",
+  "ilce": "Kınık"
+ },
+ "izmir-kiraz-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.228975,
+  "lon": 28.204863,
+  "kesinlik": "tesis",
+  "osm": "Kiraz Öğretmenevi ve Akşam Sanat Okulu Müdürlüğü, 16A, Gümüşsuyu Caddesi, Cumhuriyet Mahallesi, Kiraz, İzmir, Ege Bölges",
+  "il": "İzmir",
+  "ilce": "Kiraz"
+ },
+ "izmir-odemis-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.229526,
+  "lon": 27.975732,
+  "kesinlik": "tesis",
+  "osm": "Ödemiş Öğretmenevi, Fevzi Paşa Caddesi, Akıncılar, Akıncılar Mahallesi, Ödemiş, İzmir, Ege Bölgesi, 35750, Türkiye",
+  "il": "İzmir",
+  "ilce": "Ödemiş"
+ },
+ "izmir-selcuk-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.947465,
+  "lon": 27.366688,
+  "kesinlik": "tesis",
+  "osm": "Selçuk Öğretmenevi, Dr. Sabri Yayla Bulvarı, Atatürk Mahallesi, Selçuk, İzmir, Ege Bölgesi, 35920, Türkiye",
+  "il": "İzmir",
+  "ilce": "Selçuk"
+ },
+ "izmir-tire-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.087377,
+  "lon": 27.731475,
+  "kesinlik": "tesis",
+  "osm": "Tire Öğretmenevi, 29 Ekim Caddesi, Cumhuriyet, Cumhuriyet Mahallesi, Tire, İzmir, Ege Bölgesi, 35900, Türkiye",
+  "il": "İzmir",
+  "ilce": "Tire"
+ },
+ "kars-digor-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.376509,
+  "lon": 43.411947,
+  "kesinlik": "ilce",
+  "osm": "Digor, Kars, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Kars",
+  "ilce": "Diğor"
+ },
+ "kars-kagizman-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.719589,
+  "lon": 43.050529,
+  "kesinlik": "tesis",
+  "osm": "Ağrı Öğretmenevi, Ağrı - Kağızman Yolu, Fatih, Yavuz Mahallesi, Ağrı Merkez, Ağrı, Doğu Anadolu Bölgesi, 04100, Türkiye",
+  "il": "Kars",
+  "ilce": "Kağızman"
+ },
+ "kars-kars-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.60157,
+  "lon": 43.095624,
+  "kesinlik": "tesis",
+  "osm": "Kars Öğretmenevi, Ali Rıza Bey Sokak, Cumhuriyet Mahallesi, Kars Merkez, Kars, Doğu Anadolu Bölgesi, 36100, Türkiye",
+  "il": "Kars",
+  "ilce": "Merkez"
+ },
+ "kars-sarikamis-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.33589,
+  "lon": 42.576944,
+  "kesinlik": "ilce",
+  "osm": "Sarıkamış, Sarıkamış - Şenkaya Yolu, Teneke, Sarıkamış, Kars, Doğu Anadolu Bölgesi, 36500, Türkiye",
+  "il": "Kars",
+  "ilce": "Sarıkamış"
+ },
+ "kars-selim-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.035288,
+  "lon": 28.851665,
+  "kesinlik": "tesis",
+  "osm": "Bağcılar Öğretmenevi ve Akşam Sanat Okulu, 2, 1024. Sokak, Yavuz Selim Mahallesi, Bağcılar, İstanbul, Marmara Bölgesi, 3",
+  "il": "Kars",
+  "ilce": "Selim"
+ },
+ "kastamonu-arac-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.237577,
+  "lon": 33.319203,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, Araç Güney Çevre Yolu İnşaatı, Çiftlik, Akıncılar, Araç, Kastamonu, Karadeniz Bölgesi, Türkiye",
+  "il": "Kastamonu",
+  "ilce": "Araç"
+ },
+ "kastamonu-catalzeytin-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.953111,
+  "lon": 34.222675,
+  "kesinlik": "ilce",
+  "osm": "Çatalzeytin, Kastamonu, Karadeniz Bölgesi, Türkiye",
+  "il": "Kastamonu",
+  "ilce": "Çatalzeytin"
+ },
+ "kastamonu-daday-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.475156,
+  "lon": 33.463749,
+  "kesinlik": "ilce",
+  "osm": "Daday, Kastamonu, Karadeniz Bölgesi, Türkiye",
+  "il": "Kastamonu",
+  "ilce": "Daday"
+ },
+ "kastamonu-doganyurt-necdet-ruhi-aygun-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 42.005597,
+  "lon": 33.460457,
+  "kesinlik": "ilce",
+  "osm": "Doğanyurt, Kastamonu, Karadeniz Bölgesi, Türkiye",
+  "il": "Kastamonu",
+  "ilce": "Doğanyurt"
+ },
+ "kastamonu-inebolu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.390138,
+  "lon": 33.781438,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, Kastamonu-İnebolu yolu, İnönü, İnönü Mahallesi, Kastamonu Merkez, Kastamonu, Karadeniz Bölgesi, 37100, Türk",
+  "il": "Kastamonu",
+  "ilce": "İnebolu"
+ },
+ "kastamonu-sehit-serifebaci-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.812124,
+  "lon": 33.234341,
+  "kesinlik": "ilce",
+  "osm": "Merkez, Şenpazar, Kastamonu, Karadeniz Bölgesi, Türkiye",
+  "il": "Kastamonu",
+  "ilce": "Merkez"
+ },
+ "kastamonu-pinarbasi-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.718155,
+  "lon": 36.387064,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi ve Akşam Sanat Okulu, İsmet Paşa Cd., Yenicami Mahallesi, Büyük Potuklu, Pınarbaşı, Kayseri, İç Anadolu Bölg",
+  "il": "Kastamonu",
+  "ilce": "Pınarbaşı"
+ },
+ "kastamonu-senpazari-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.808599,
+  "lon": 33.232873,
+  "kesinlik": "ilce",
+  "osm": "Şenpazar, Kastamonu, Karadeniz Bölgesi, Türkiye",
+  "il": "Kastamonu",
+  "ilce": "Şenpazar"
+ },
+ "kastamonu-taskopru-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.507478,
+  "lon": 34.212834,
+  "kesinlik": "ilce",
+  "osm": "Taşköprü, Kastamonu, Karadeniz Bölgesi, 37400, Türkiye",
+  "il": "Kastamonu",
+  "ilce": "Taşköprü"
+ },
+ "kastamonu-tosya-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.016496,
+  "lon": 34.038608,
+  "kesinlik": "ilce",
+  "osm": "Tosya, Kastamonu, Karadeniz Bölgesi, 37300, Türkiye",
+  "il": "Kastamonu",
+  "ilce": "Tosya"
+ },
+ "kayseri-bunyan-sabanci-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.845821,
+  "lon": 35.857744,
+  "kesinlik": "ilce",
+  "osm": "Bünyan, Kayseri, İç Anadolu Bölgesi, 38600, Türkiye",
+  "il": "Kayseri",
+  "ilce": "Bünyan"
+ },
+ "kayseri-muammer-bakkaloglu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.387929,
+  "lon": 35.4901,
+  "kesinlik": "ilce",
+  "osm": "Develi, Kayseri, İç Anadolu Bölgesi, 38400, Türkiye",
+  "il": "Kayseri",
+  "ilce": "Develi"
+ },
+ "kayseri-sehit-soner-akbulut-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.721446,
+  "lon": 36.394132,
+  "kesinlik": "ilce",
+  "osm": "Pınarbaşı, Kayseri, İç Anadolu Bölgesi, 38700, Türkiye",
+  "il": "Kayseri",
+  "ilce": "Pınarbaşı"
+ },
+ "kayseri-kayseri-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.718155,
+  "lon": 36.387064,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi ve Akşam Sanat Okulu, İsmet Paşa Cd., Yenicami Mahallesi, Büyük Potuklu, Pınarbaşı, Kayseri, İç Anadolu Bölg",
+  "il": "Kayseri",
+  "ilce": "Talas"
+ },
+ "kayseri-yahyali-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.100343,
+  "lon": 35.354101,
+  "kesinlik": "ilce",
+  "osm": "Yahyalı, Kayseri, İç Anadolu Bölgesi, 38500, Türkiye",
+  "il": "Kayseri",
+  "ilce": "Yahyalı"
+ },
+ "kirklareli-babaeski-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.430262,
+  "lon": 27.091779,
+  "kesinlik": "ilce",
+  "osm": "Babaeski, Kırklareli, Marmara Bölgesi, Türkiye",
+  "il": "Kırklareli",
+  "ilce": "Babaeski"
+ },
+ "kirklareli-luleburgaz-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.404136,
+  "lon": 27.355465,
+  "kesinlik": "ilce",
+  "osm": "Lüleburgaz, Kırklareli, Marmara Bölgesi, Türkiye",
+  "il": "Kırklareli",
+  "ilce": "Lüleburgaz"
+ },
+ "kirklareli-kirklareli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.736804,
+  "lon": 27.22035,
+  "kesinlik": "tesis",
+  "osm": "Kırklareli Öğretmenevi, 1, Kara Umur  Caddesi, Demirtaş Mahallesi, Kırklareli Merkez, Kırklareli, Marmara Bölgesi, 39010",
+  "il": "Kırklareli",
+  "ilce": "Merkez"
+ },
+ "kirsehir-sehit-yucel-yilmaz-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.603596,
+  "lon": 34.415803,
+  "kesinlik": "ilce",
+  "osm": "Çiçekdağı, Kırşehir, İç Anadolu Bölgesi, Türkiye",
+  "il": "Kırşehir",
+  "ilce": "Çiçekdağı"
+ },
+ "kirsehir-merkez-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.069055,
+  "lon": 39.533451,
+  "kesinlik": "tesis",
+  "osm": "Tunceli Öğretmenevi, Cem Emir Caddesi, Atatürk Mah., Tunceli, Tunceli Merkez, Tunceli, Doğu Anadolu Bölgesi, 62000, Türk",
+  "il": "Kırşehir",
+  "ilce": "Merkez"
+ },
+ "kirsehir-sabanci-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.059874,
+  "lon": 34.380006,
+  "kesinlik": "ilce",
+  "osm": "Mucur, Kırşehir, İç Anadolu Bölgesi, Türkiye",
+  "il": "Kırşehir",
+  "ilce": "Mucur"
+ },
+ "kocaeli-gebze-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.80067,
+  "lon": 29.431767,
+  "kesinlik": "ilce",
+  "osm": "Gebze, Kocaeli, Marmara Bölgesi, 41400, Türkiye",
+  "il": "Kocaeli",
+  "ilce": "Gebze"
+ },
+ "kocaeli-golcuk-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.716925,
+  "lon": 29.819588,
+  "kesinlik": "ilce",
+  "osm": "Gölcük, Kocaeli, Marmara Bölgesi, Türkiye",
+  "il": "Kocaeli",
+  "ilce": "Gölcük"
+ },
+ "kocaeli-izmit-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.772114,
+  "lon": 29.950562,
+  "kesinlik": "ilce",
+  "osm": "İzmit, Kocaeli, Marmara Bölgesi, Türkiye",
+  "il": "Kocaeli",
+  "ilce": "İzmit"
+ },
+ "kocaeli-kandira-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.070106,
+  "lon": 30.152947,
+  "kesinlik": "tesis",
+  "osm": "Kandıra Öğretmenevi, Nihat Erim Caddesi, Kandıra, Akdurak Mahallesi, Kandıra, Kocaeli, Marmara Bölgesi, 41600, Türkiye",
+  "il": "Kocaeli",
+  "ilce": "Kandıra"
+ },
+ "kocaeli-karamursel-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.69125,
+  "lon": 29.616586,
+  "kesinlik": "ilce",
+  "osm": "Karamürsel, Kocaeli, Marmara Bölgesi, 41500, Türkiye",
+  "il": "Kocaeli",
+  "ilce": "Karamürsel"
+ },
+ "konya-aksehir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.356616,
+  "lon": 31.423672,
+  "kesinlik": "tesis",
+  "osm": "Akşehir Öğretmenevi, Sanayi Caddesi, Seyran, Akşehir, Konya, İç Anadolu Bölgesi, 42550, Türkiye",
+  "il": "Konya",
+  "ilce": "Akşehir"
+ },
+ "konya-beysehir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.668014,
+  "lon": 31.714012,
+  "kesinlik": "tesis",
+  "osm": "Konya - Beyşehir Öğretmenevi ve ASO Müdürlüğü, 125, Antalya Caddesi, Yeni Mah., Ali Akkanat Mah., Beyşehir, Konya, İç An",
+  "il": "Konya",
+  "ilce": "Beyşehir"
+ },
+ "konya-bozkir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.189874,
+  "lon": 32.247202,
+  "kesinlik": "ilce",
+  "osm": "Bozkır, Konya, İç Anadolu Bölgesi, 42630, Türkiye",
+  "il": "Konya",
+  "ilce": "Bozkır"
+ },
+ "konya-mevlana-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.865568,
+  "lon": 32.530733,
+  "kesinlik": "tesis",
+  "osm": "Mevlana Öğretmenevi, 63, Şehit Mehmet Gökhan Sokak, Akabe Mahallesi, Karatay, Konya, İç Anadolu Bölgesi, 42020, Türkiye",
+  "il": "Konya",
+  "ilce": "Büyükşehir"
+ },
+ "konya-merkez-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.946107,
+  "lon": 32.488073,
+  "kesinlik": "ilce",
+  "osm": "Medaş Konya Büyükşehir Stadyumu, 7, Kaletaş Caddesi, Parsana Mahallesi, Konya, Selçuklu, Konya, İç Anadolu Bölgesi, 4213",
+  "il": "Konya",
+  "ilce": "Büyükşehir"
+ },
+ "konya-cihanbeyli-75-yil-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.65899,
+  "lon": 32.92373,
+  "kesinlik": "ilce",
+  "osm": "Cihanbeyli, Konya, İç Anadolu Bölgesi, Türkiye",
+  "il": "Konya",
+  "ilce": "Cihanbeyli"
+ },
+ "konya-cumra-sabanci-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.572011,
+  "lon": 32.784598,
+  "kesinlik": "ilce",
+  "osm": "Çumra, Cahit Aküzüm Caddesi, Çumra, Konya, İç Anadolu Bölgesi, 42500, Türkiye",
+  "il": "Konya",
+  "ilce": "Çumra"
+ },
+ "konya-emirgazi-15-temmuz-sehitleri-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.903549,
+  "lon": 33.835954,
+  "kesinlik": "ilce",
+  "osm": "Emirgazi, Konya, İç Anadolu Bölgesi, Türkiye",
+  "il": "Konya",
+  "ilce": "Emirgazi"
+ },
+ "konya-eregli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.52338,
+  "lon": 34.046963,
+  "kesinlik": "tesis",
+  "osm": "Ereğli Öğretmenevi, Bulvar Caddesi, Hacımustafa Mahallesi, Ereğli, Konya, İç Anadolu Bölgesi, 42320, Türkiye",
+  "il": "Konya",
+  "ilce": "Ereğli"
+ },
+ "konya-hadim-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.986089,
+  "lon": 32.455804,
+  "kesinlik": "ilce",
+  "osm": "Hadim, Konya, İç Anadolu Bölgesi, Türkiye",
+  "il": "Konya",
+  "ilce": "Hadim"
+ },
+ "konya-huyuk-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.954776,
+  "lon": 31.597332,
+  "kesinlik": "ilce",
+  "osm": "Hüyük, Konya, İç Anadolu Bölgesi, 42690, Türkiye",
+  "il": "Konya",
+  "ilce": "Hüyük"
+ },
+ "konya-ilgin-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.281774,
+  "lon": 31.917867,
+  "kesinlik": "ilce",
+  "osm": "Ilgın, Konya, İç Anadolu Bölgesi, Türkiye",
+  "il": "Konya",
+  "ilce": "Ilgın"
+ },
+ "konya-kadinhani-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.24005,
+  "lon": 32.212206,
+  "kesinlik": "ilce",
+  "osm": "Kadınhanı, Konya, İç Anadolu Bölgesi, 42800, Türkiye",
+  "il": "Konya",
+  "ilce": "Kadınhanı"
+ },
+ "konya-karapinarogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.717758,
+  "lon": 33.547627,
+  "kesinlik": "ilce",
+  "osm": "Karapınar, Konya, İç Anadolu Bölgesi, 42400, Türkiye",
+  "il": "Konya",
+  "ilce": "Karapınar"
+ },
+ "konya-kulu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.037057,
+  "lon": 33.028629,
+  "kesinlik": "ilce",
+  "osm": "Kulu, Konya, İç Anadolu Bölgesi, Türkiye",
+  "il": "Konya",
+  "ilce": "Kulu"
+ },
+ "konya-seydisehir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.419371,
+  "lon": 31.848333,
+  "kesinlik": "ilce",
+  "osm": "Seydişehir, Konya, İç Anadolu Bölgesi, Türkiye",
+  "il": "Konya",
+  "ilce": "Seydişehir"
+ },
+ "konya-tuzlukcu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.472923,
+  "lon": 31.627061,
+  "kesinlik": "ilce",
+  "osm": "Tuzlukçu, Konya, İç Anadolu Bölgesi, Türkiye",
+  "il": "Konya",
+  "ilce": "Tuzlukçu"
+ },
+ "konya-yunak-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.818004,
+  "lon": 32.013959,
+  "kesinlik": "ilce",
+  "osm": "Yunak, Konya, İç Anadolu Bölgesi, Türkiye",
+  "il": "Konya",
+  "ilce": "Yunak"
+ },
+ "kutahya-emet-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.341462,
+  "lon": 29.258593,
+  "kesinlik": "ilce",
+  "osm": "Emet, Kütahya, Ege Bölgesi, Türkiye",
+  "il": "Kütahya",
+  "ilce": "Emet"
+ },
+ "kutahya-gediz-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.99165,
+  "lon": 29.391404,
+  "kesinlik": "tesis",
+  "osm": "Gediz Öğretmenevi, Soner Aksoy Caddesi, Gediz, Kütahya, Ege Bölgesi, 43600, Türkiye",
+  "il": "Kütahya",
+  "ilce": "Gediz"
+ },
+ "kutahya-kutahya-merkez-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.419911,
+  "lon": 29.985789,
+  "kesinlik": "ilce",
+  "osm": "Kütahya Merkez, Kütahya, Ege Bölgesi, Türkiye",
+  "il": "Kütahya",
+  "ilce": "Merkez"
+ },
+ "kutahya-pazarlar-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.994628,
+  "lon": 29.123122,
+  "kesinlik": "ilce",
+  "osm": "Pazarlar, Kütahya, Ege Bölgesi, Türkiye",
+  "il": "Kütahya",
+  "ilce": "Pazarlar"
+ },
+ "kutahya-simav-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.088675,
+  "lon": 28.980015,
+  "kesinlik": "ilce",
+  "osm": "Simav, Kütahya, Ege Bölgesi, Türkiye",
+  "il": "Kütahya",
+  "ilce": "Simav"
+ },
+ "kutahya-saphane-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.025409,
+  "lon": 29.219954,
+  "kesinlik": "ilce",
+  "osm": "Şaphane, Kütahya, Ege Bölgesi, Türkiye",
+  "il": "Kütahya",
+  "ilce": "Şaphane"
+ },
+ "kutahya-tavsanli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.540218,
+  "lon": 29.486341,
+  "kesinlik": "ilce",
+  "osm": "Tavşanlı, Kütahya - Balıkesir Yolu, Tepecik, Tavşanlı, Kütahya, Ege Bölgesi, 43300, Türkiye",
+  "il": "Kütahya",
+  "ilce": "Tavşanlı"
+ },
+ "malatya-sehit-husnu-bilgic-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.042242,
+  "lon": 38.489834,
+  "kesinlik": "ilce",
+  "osm": "Arapgir, Malatya, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Malatya",
+  "ilce": "Arapgir"
+ },
+ "malatya-darende-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.55731,
+  "lon": 37.492652,
+  "kesinlik": "ilce",
+  "osm": "Darende, Malatya, Doğu Anadolu Bölgesi, 44700, Türkiye",
+  "il": "Malatya",
+  "ilce": "Darende"
+ },
+ "malatya-dogansehir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.089293,
+  "lon": 37.874647,
+  "kesinlik": "ilce",
+  "osm": "Doğanşehir, 44-52, Yeni Mahalle, Doğanşehir, Malatya, Doğu Anadolu Bölgesi, 44500, Türkiye",
+  "il": "Malatya",
+  "ilce": "Doğanşehir"
+ },
+ "malatya-doganyol-tanriverdi-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.309952,
+  "lon": 39.038077,
+  "kesinlik": "ilce",
+  "osm": "Doğanyol, Malatya, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Malatya",
+  "ilce": "Doğanyol"
+ },
+ "malatya-hekimhan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.810719,
+  "lon": 37.927774,
+  "kesinlik": "ilce",
+  "osm": "Hekimhan, İstasyon Caddesi, Mimar Sinan Mahallesi, Turgut Özal Mahallesi, Hekimhan, Malatya, Doğu Anadolu Bölgesi, Türki",
+  "il": "Malatya",
+  "ilce": "Hekimhan"
+ },
+ "manisa-akhisar-ali-sefik-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.924053,
+  "lon": 27.84019,
+  "kesinlik": "ilce",
+  "osm": "Akhisar, Manisa, Ege Bölgesi, Türkiye",
+  "il": "Manisa",
+  "ilce": "Akhisar"
+ },
+ "manisa-buyuksehir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.61587,
+  "lon": 27.397029,
+  "kesinlik": "ilce",
+  "osm": "Manisa Büyükşehir Belediyesi Başkanlığı, No: 242, Mimar Sinan Bulvarı, Laleli Mahallesi, Yunusemre, Manisa, Ege Bölgesi,",
+  "il": "Manisa",
+  "ilce": "Büyükşehir"
+ },
+ "manisa-demirci-sabanci-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.047417,
+  "lon": 28.658368,
+  "kesinlik": "ilce",
+  "osm": "Demirci, Manisa, Ege Bölgesi, Türkiye",
+  "il": "Manisa",
+  "ilce": "Demirci"
+ },
+ "manisa-gordes-ataman-koc-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.933036,
+  "lon": 28.288649,
+  "kesinlik": "ilce",
+  "osm": "Gördes, Manisa, Ege Bölgesi, Türkiye",
+  "il": "Manisa",
+  "ilce": "Gördes"
+ },
+ "manisa-salihli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.478934,
+  "lon": 28.148465,
+  "kesinlik": "tesis",
+  "osm": "Salihli Öğretmen Evi ve Akşam Sanat Okulu, 70, Menderes Caddesi, Aksoy, Hacıbektaşlı, Salihli, Adala, Manisa, Ege Bölges",
+  "il": "Manisa",
+  "ilce": "Salihli"
+ },
+ "manisa-soma-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.198702,
+  "lon": 27.624166,
+  "kesinlik": "ilce",
+  "osm": "Soma, Soma Çevre Yolu, Samsacı, Yırca, Soma, Manisa, Ege Bölgesi, 45510, Türkiye",
+  "il": "Manisa",
+  "ilce": "Soma"
+ },
+ "manisa-turgutlu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.509999,
+  "lon": 27.707173,
+  "kesinlik": "ilce",
+  "osm": "Turgutlu, Kooperatif Sokak, İstasyonaltı Mahallesi Turgutlu, Turgutlu, Manisa, Ege Bölgesi, 45400, Türkiye",
+  "il": "Manisa",
+  "ilce": "Turgutlu"
+ },
+ "k-maras-afsin-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.243855,
+  "lon": 36.915287,
+  "kesinlik": "ilce",
+  "osm": "Afşin, Kahramanmaraş, Akdeniz Bölgesi, 46500, Türkiye",
+  "il": "K.Maraş",
+  "ilce": "Afşin"
+ },
+ "k-maras-sehit-hakan-tasgit-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.575017,
+  "lon": 36.355248,
+  "kesinlik": "ilce",
+  "osm": "Andırın, Kahramanmaraş, Akdeniz Bölgesi, 46400, Türkiye",
+  "il": "K.Maraş",
+  "ilce": "Andırın"
+ },
+ "k-maras-caglayancerit-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.749966,
+  "lon": 37.292785,
+  "kesinlik": "ilce",
+  "osm": "Çağlayancerit, Kahramanmaraş, Akdeniz Bölgesi, 46720, Türkiye",
+  "il": "K.Maraş",
+  "ilce": "Çağlayancerit"
+ },
+ "k-maras-sehit-hanifi-cakallioglu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.577928,
+  "lon": 36.955581,
+  "kesinlik": "ilce",
+  "osm": "Dulkadiroğlu İlkokulu, 72039, Şeyh Şamil Mah., Kahramanmaraş, Dulkadiroğlu, Kahramanmaraş, Akdeniz Bölgesi, 46080, Türki",
+  "il": "K.Maraş",
+  "ilce": "Dulkadiroğlu"
+ },
+ "k-maras-ekinozu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.060669,
+  "lon": 37.189415,
+  "kesinlik": "ilce",
+  "osm": "Ekinözü, Kahramanmaraş, Akdeniz Bölgesi, 46360, Türkiye",
+  "il": "K.Maraş",
+  "ilce": "Ekinözü"
+ },
+ "k-maras-elbistan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.202229,
+  "lon": 37.190301,
+  "kesinlik": "ilce",
+  "osm": "Elbistan, Kahramanmaraş, Akdeniz Bölgesi, 46300, Türkiye",
+  "il": "K.Maraş",
+  "ilce": "Elbistan"
+ },
+ "k-maras-prf-dr-mehmet-saglam-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.021313,
+  "lon": 36.494563,
+  "kesinlik": "ilce",
+  "osm": "Göksun, Kahramanmaraş, Akdeniz Bölgesi, 46600, Türkiye",
+  "il": "K.Maraş",
+  "ilce": "Göksun"
+ },
+ "k-maras-nurhak-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.965805,
+  "lon": 37.426669,
+  "kesinlik": "tesis",
+  "osm": "Nurhak Öğretmenevi, 46-03, Kızılca, Alçiçek Değirmenkaya, Barış, Nurhak, Kahramanmaraş, Akdeniz Bölgesi, 46370, Türkiye",
+  "il": "K.Maraş",
+  "ilce": "Nurhak"
+ },
+ "mardin-prof-dr-aydin-ayaydin-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.364698,
+  "lon": 40.269883,
+  "kesinlik": "ilce",
+  "osm": "Derik, Mardin, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Mardin",
+  "ilce": "Derik"
+ },
+ "mardin-kiziltepe-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.191655,
+  "lon": 40.584797,
+  "kesinlik": "ilce",
+  "osm": "Kızıltepe, Mardin, Güneydoğu Anadolu Bölgesi, 47400, Türkiye",
+  "il": "Mardin",
+  "ilce": "Kızıltepe"
+ },
+ "mardin-mazidagi-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.477321,
+  "lon": 40.486491,
+  "kesinlik": "ilce",
+  "osm": "Mazıdağı, Mardin, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Mardin",
+  "ilce": "Mazıdağı"
+ },
+ "mardin-artuklu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.323434,
+  "lon": 40.724947,
+  "kesinlik": "tesis",
+  "osm": "Mardin Öğretmenevi, 7, 11. Sokak, 13 Mart Mahallesi, Mardin, Artuklu, Mardin, Güneydoğu Anadolu Bölgesi, 47060, Türkiye",
+  "il": "Mardin",
+  "ilce": "Merkez"
+ },
+ "mardin-midyat-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.425562,
+  "lon": 41.340351,
+  "kesinlik": "tesis",
+  "osm": "Midyat Öğretmenevi, 7, Av. Talat Oğuz Caddesi, Yeni Mahallesi, Midyat, Mardin, Güneydoğu Anadolu Bölgesi, 47500, Türkiye",
+  "il": "Mardin",
+  "ilce": "Midyat"
+ },
+ "mardin-omerli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.402127,
+  "lon": 40.953883,
+  "kesinlik": "ilce",
+  "osm": "Ömerli, Mardin, Güneydoğu Anadolu Bölgesi, 47700, Türkiye",
+  "il": "Mardin",
+  "ilce": "Ömerli"
+ },
+ "mardin-savur-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.53684,
+  "lon": 40.887375,
+  "kesinlik": "ilce",
+  "osm": "Savur, Mardin, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Mardin",
+  "ilce": "Savur"
+ },
+ "mugla-bodrum-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.034399,
+  "lon": 27.430651,
+  "kesinlik": "ilce",
+  "osm": "Bodrum, Muğla, Ege Bölgesi, Türkiye",
+  "il": "Muğla",
+  "ilce": "Bodrum"
+ },
+ "mugla-fethiye-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.662781,
+  "lon": 29.121302,
+  "kesinlik": "tesis",
+  "osm": "Fethiye Öğretmenevi, Barış Manço Bulvarı, Foça Mahallesi, Fethiye, Muğla, Ege Bölgesi, 48518, Türkiye",
+  "il": "Muğla",
+  "ilce": "Fethiye"
+ },
+ "mugla-koycegiz-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.956416,
+  "lon": 28.688841,
+  "kesinlik": "tesis",
+  "osm": "Köyceğiz Öğretmenevi, Atatürk Kordonu 1. Cadde, Gülpınar, Köyceğiz, Muğla, Ege Bölgesi, 48804, Türkiye",
+  "il": "Muğla",
+  "ilce": "Köyceğiz"
+ },
+ "mugla-marmaris-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.846477,
+  "lon": 28.25445,
+  "kesinlik": "tesis",
+  "osm": "Marmaris Öğretmenevi ve Akşam Sanat Okulu, 206 Sokak, Siteler, Marmaris, Muğla, Ege Bölgesi, 48706, Türkiye",
+  "il": "Muğla",
+  "ilce": "Marmaris"
+ },
+ "mugla-mentese-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.213981,
+  "lon": 28.363965,
+  "kesinlik": "tesis",
+  "osm": "Muğla Öğretmenevi, Zübeyde Hanım Caddesi, Emirbeyazıt Mahallesi, Muğla, Menteşe, Muğla, Ege Bölgesi, 48050, Türkiye",
+  "il": "Muğla",
+  "ilce": "Menteşe"
+ },
+ "mugla-milas-orhan-mentese-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.316271,
+  "lon": 27.779976,
+  "kesinlik": "ilce",
+  "osm": "Milas, Muğla, Ege Bölgesi, Türkiye",
+  "il": "Muğla",
+  "ilce": "Milas"
+ },
+ "mugla-ula-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.102923,
+  "lon": 28.416366,
+  "kesinlik": "ilce",
+  "osm": "Ula, Muğla, Ege Bölgesi, Türkiye",
+  "il": "Muğla",
+  "ilce": "Ula"
+ },
+ "mus-bulanikogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.092386,
+  "lon": 42.270834,
+  "kesinlik": "ilce",
+  "osm": "Bulanık, Muş, Doğu Anadolu Bölgesi, 49500, Türkiye",
+  "il": "Muş",
+  "ilce": "Bulanık"
+ },
+ "mus-haskoy-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.682616,
+  "lon": 41.688529,
+  "kesinlik": "ilce",
+  "osm": "Hasköy, Muş, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Muş",
+  "ilce": "Hasköy"
+ },
+ "mus-malazgirt-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.146141,
+  "lon": 42.540946,
+  "kesinlik": "ilce",
+  "osm": "Malazgirt, Muş, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Muş",
+  "ilce": "Malazgirt"
+ },
+ "mus-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.672762,
+  "lon": 26.560824,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, Tekke Bayırı Sokak, Sabuni Mahallesi, Edirne Merkez, Edirne, Marmara Bölgesi, 22100, Türkiye",
+  "il": "Muş",
+  "ilce": "Merkez"
+ },
+ "mus-varto-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.172087,
+  "lon": 41.454664,
+  "kesinlik": "ilce",
+  "osm": "Varto, Muş, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Muş",
+  "ilce": "Varto"
+ },
+ "nevsehir-avanos-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.719979,
+  "lon": 34.854355,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi ve Akşam Sanat Okulu, 69, Vatan Caddesi, Avanos İlçe Merkezi, Avanos, Nevşehir, İç Anadolu Bölgesi, 50500, T",
+  "il": "Nevşehir",
+  "ilce": "Avanos"
+ },
+ "nevsehir-gulsehir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.762233,
+  "lon": 34.502657,
+  "kesinlik": "ilce",
+  "osm": "Gülşehir, Nevşehir, İç Anadolu Bölgesi, 50900, Türkiye",
+  "il": "Nevşehir",
+  "ilce": "Gülşehir"
+ },
+ "nevsehir-hacibektas-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.001335,
+  "lon": 34.6427,
+  "kesinlik": "ilce",
+  "osm": "Hacıbektaş, Nevşehir, İç Anadolu Bölgesi, 50800, Türkiye",
+  "il": "Nevşehir",
+  "ilce": "Hacıbektaş"
+ },
+ "nevsehir-merkez-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.069055,
+  "lon": 39.533451,
+  "kesinlik": "tesis",
+  "osm": "Tunceli Öğretmenevi, Cem Emir Caddesi, Atatürk Mah., Tunceli, Tunceli Merkez, Tunceli, Doğu Anadolu Bölgesi, 62000, Türk",
+  "il": "Nevşehir",
+  "ilce": "Merkez"
+ },
+ "nevsehir-urgup-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.592812,
+  "lon": 34.959455,
+  "kesinlik": "ilce",
+  "osm": "Ürgüp, Nevşehir, İç Anadolu Bölgesi, Türkiye",
+  "il": "Nevşehir",
+  "ilce": "Ürgüp"
+ },
+ "nigde-altunhisar-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.999013,
+  "lon": 34.371506,
+  "kesinlik": "ilce",
+  "osm": "Altunhisar, Niğde, İç Anadolu Bölgesi, Türkiye",
+  "il": "Niğde",
+  "ilce": "Altunhisar"
+ },
+ "nigde-bor-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.887607,
+  "lon": 34.562503,
+  "kesinlik": "ilce",
+  "osm": "Bor, İstasyon Caddesi, Selçuk, Bor, Niğde, İç Anadolu Bölgesi, 51700, Türkiye",
+  "il": "Niğde",
+  "ilce": "Bor"
+ },
+ "nigde-camardi-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.83441,
+  "lon": 34.986392,
+  "kesinlik": "ilce",
+  "osm": "Çamardı, Niğde, İç Anadolu Bölgesi, 51662, Türkiye",
+  "il": "Niğde",
+  "ilce": "Çamardı"
+ },
+ "nigde-ciftlik-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.237577,
+  "lon": 33.319203,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, Araç Güney Çevre Yolu İnşaatı, Çiftlik, Akıncılar, Araç, Kastamonu, Karadeniz Bölgesi, Türkiye",
+  "il": "Niğde",
+  "ilce": "Çiftlik"
+ },
+ "nigde-nigde-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.970896,
+  "lon": 34.676582,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, Feridun Zeren Caddesi, Niğde, İnönü Mah., İnönü Mahallesi, Niğde Merkez, Niğde, İç Anadolu Bölgesi, 51100, ",
+  "il": "Niğde",
+  "ilce": "Merkez"
+ },
+ "nigde-ulukisla-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.545708,
+  "lon": 34.48036,
+  "kesinlik": "ilce",
+  "osm": "Ulukışla, Ankara-Adana yolu, Alpağut, Bayağıl, Ulukışla, Niğde, İç Anadolu Bölgesi, 51902, Türkiye",
+  "il": "Niğde",
+  "ilce": "Ulukışla"
+ },
+ "ordu-akkus-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.795155,
+  "lon": 37.0181,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, Ünye - Niksar yolu, Çamçukuru, Yazlıkbelen Mahallesi, Akkuş, Ordu, Karadeniz Bölgesi, 52950, Türkiye",
+  "il": "Ordu",
+  "ilce": "Akkuş"
+ },
+ "ordu-caybasi-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.017194,
+  "lon": 37.098661,
+  "kesinlik": "ilce",
+  "osm": "Çaybaşı, Ordu, Karadeniz Bölgesi, 52310, Türkiye",
+  "il": "Ordu",
+  "ilce": "Çaybaşı"
+ },
+ "ordu-fatsa-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.030881,
+  "lon": 37.500221,
+  "kesinlik": "ilce",
+  "osm": "Fatsa, Ordu, Karadeniz Bölgesi, 52400, Türkiye",
+  "il": "Ordu",
+  "ilce": "Fatsa"
+ },
+ "ordu-korgan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.826009,
+  "lon": 37.346376,
+  "kesinlik": "tesis",
+  "osm": "Korgan Öğretmenevi ve Akşam Sanat Okulu, 52-55, Korgan, Tepe Mahallesi, Korgan, Ordu, Karadeniz Bölgesi, 52700, Türkiye",
+  "il": "Ordu",
+  "ilce": "Korgan"
+ },
+ "ordu-merkez-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.069055,
+  "lon": 39.533451,
+  "kesinlik": "tesis",
+  "osm": "Tunceli Öğretmenevi, Cem Emir Caddesi, Atatürk Mah., Tunceli, Tunceli Merkez, Tunceli, Doğu Anadolu Bölgesi, 62000, Türk",
+  "il": "Ordu",
+  "ilce": "Merkez"
+ },
+ "ordu-unye-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.145697,
+  "lon": 37.255098,
+  "kesinlik": "tesis",
+  "osm": "Ünye Öğretmenevi, Devlet Sahil Yolu Caddesi, Gölevi, Liseler Mahallesi, Ünye, Ordu, Karadeniz Bölgesi, 52300, Türkiye",
+  "il": "Ordu",
+  "ilce": "Ünye"
+ },
+ "rize-ardesen-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.191875,
+  "lon": 40.989418,
+  "kesinlik": "ilce",
+  "osm": "Ardeşen, Rize, Karadeniz Bölgesi, Türkiye",
+  "il": "Rize",
+  "ilce": "Ardeşen"
+ },
+ "rize-camlihemsin-yamanturk-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.045571,
+  "lon": 41.005697,
+  "kesinlik": "ilce",
+  "osm": "Çamlıhemşin, Rize, Karadeniz Bölgesi, Türkiye",
+  "il": "Rize",
+  "ilce": "Çamlıhemşin"
+ },
+ "rize-cayeli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.087833,
+  "lon": 40.723697,
+  "kesinlik": "ilce",
+  "osm": "Çayeli, Rize, Karadeniz Bölgesi, Türkiye",
+  "il": "Rize",
+  "ilce": "Çayeli"
+ },
+ "rize-findikli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.271235,
+  "lon": 41.141416,
+  "kesinlik": "ilce",
+  "osm": "Fındıklı, Rize, Karadeniz Bölgesi, Türkiye",
+  "il": "Rize",
+  "ilce": "Fındıklı"
+ },
+ "rize-guneysu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.977154,
+  "lon": 40.613591,
+  "kesinlik": "ilce",
+  "osm": "Güneysu, Rize, Karadeniz Bölgesi, Türkiye",
+  "il": "Rize",
+  "ilce": "Güneysu"
+ },
+ "rize-ikizdere-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.777992,
+  "lon": 40.559574,
+  "kesinlik": "ilce",
+  "osm": "İkizdere, Rize, Karadeniz Bölgesi, Türkiye",
+  "il": "Rize",
+  "ilce": "İkizdere"
+ },
+ "rize-kalkandere-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.927948,
+  "lon": 40.442509,
+  "kesinlik": "ilce",
+  "osm": "Kalkandere, Rize, Karadeniz Bölgesi, Türkiye",
+  "il": "Rize",
+  "ilce": "Kalkandere"
+ },
+ "rize-rize-merkez-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.016791,
+  "lon": 40.67287,
+  "kesinlik": "ilce",
+  "osm": "Merkez, Büyükköy, Çayeli, Rize, Karadeniz Bölgesi, Türkiye",
+  "il": "Rize",
+  "ilce": "Merkez"
+ },
+ "rize-pazar-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.180258,
+  "lon": 40.886848,
+  "kesinlik": "ilce",
+  "osm": "Pazar, Rize, Karadeniz Bölgesi, Türkiye",
+  "il": "Rize",
+  "ilce": "Pazar"
+ },
+ "sakarya-akyazi-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.690238,
+  "lon": 30.625483,
+  "kesinlik": "tesis",
+  "osm": "Akyazı Öğretmenevi, Ada Caddesi, Hastahane, Hastane Mahallesi, Akyazı, Sakarya, Marmara Bölgesi, 54400, Türkiye",
+  "il": "Sakarya",
+  "ilce": "Akyazı"
+ },
+ "sakarya-sakarya-buyuksehir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.110464,
+  "lon": 30.693046,
+  "kesinlik": "ilce",
+  "osm": "Karasu Büyükşehir Sahil Parkı, Dörtyol, Yalı Mahallesi, Karasu, Sakarya, Marmara Bölgesi, Türkiye",
+  "il": "Sakarya",
+  "ilce": "Büyükşehir"
+ },
+ "sakarya-hendek-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.795475,
+  "lon": 30.744515,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, 41, 54-25, Yeni, Yenimahalle Mahallesi, Hendek, Sakarya, Marmara Bölgesi, 54300, Türkiye",
+  "il": "Sakarya",
+  "ilce": "Hendek"
+ },
+ "sakarya-karasu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.095609,
+  "lon": 30.692462,
+  "kesinlik": "ilce",
+  "osm": "Karasu, Sakarya, Marmara Bölgesi, 54500, Türkiye",
+  "il": "Sakarya",
+  "ilce": "Karasu"
+ },
+ "sakarya-pamukova-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.505623,
+  "lon": 30.169305,
+  "kesinlik": "ilce",
+  "osm": "Pamukova, Sakarya, Marmara Bölgesi, 54900, Türkiye",
+  "il": "Sakarya",
+  "ilce": "Pamukova"
+ },
+ "sakarya-sogutlu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.903921,
+  "lon": 30.471664,
+  "kesinlik": "ilce",
+  "osm": "Söğütlü, Sakarya, Marmara Bölgesi, 54160, Türkiye",
+  "il": "Sakarya",
+  "ilce": "Söğütlü"
+ },
+ "sakarya-tarakli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.396578,
+  "lon": 30.492161,
+  "kesinlik": "ilce",
+  "osm": "Taraklı, Sakarya, Marmara Bölgesi, Türkiye",
+  "il": "Sakarya",
+  "ilce": "Taraklı"
+ },
+ "samsun-alacam-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.606864,
+  "lon": 35.597332,
+  "kesinlik": "ilce",
+  "osm": "Alaçam, Samsun, Karadeniz Bölgesi, 55000, Türkiye",
+  "il": "Samsun",
+  "ilce": "Alaçam"
+ },
+ "samsun-bafra-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.566595,
+  "lon": 35.902478,
+  "kesinlik": "ilce",
+  "osm": "Bafra, Samsun, Karadeniz Bölgesi, Türkiye",
+  "il": "Samsun",
+  "ilce": "Bafra"
+ },
+ "samsun-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.326585,
+  "lon": 36.314297,
+  "kesinlik": "ilce",
+  "osm": "Samsun Büyükşehir Belediyesi Uluslararası Golf Kulübü Bakım Tesisi, Denizevleri Mahallesi, Atakum, Samsun, Karadeniz Böl",
+  "il": "Samsun",
+  "ilce": "Büyükşehir"
+ },
+ "samsun-carsamba-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.210216,
+  "lon": 36.969549,
+  "kesinlik": "tesis",
+  "osm": "Terme Öğretmenevi ve Akşam Sanat Okulu, 19, Çarşamba Caddesi, Fenk Mahallesi, Terme, Samsun, Karadeniz Bölgesi, 55600, T",
+  "il": "Samsun",
+  "ilce": "Çarşamba"
+ },
+ "samsun-havza-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.965707,
+  "lon": 35.667103,
+  "kesinlik": "ilce",
+  "osm": "Havza, İnönü Bulvarı, İcadiye, Havza, Samsun, Karadeniz Bölgesi, 55700, Türkiye",
+  "il": "Samsun",
+  "ilce": "Havza"
+ },
+ "samsun-kavak-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.068537,
+  "lon": 36.026884,
+  "kesinlik": "ilce",
+  "osm": "Kavak, Şht. Sedat Eş Sk., 19 Mayıs, Dura, Kavak, Samsun, Karadeniz Bölgesi, 55850, Türkiye",
+  "il": "Samsun",
+  "ilce": "Kavak"
+ },
+ "samsun-ladik-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.908217,
+  "lon": 35.894565,
+  "kesinlik": "ilce",
+  "osm": "Ladik, Samsun, Karadeniz Bölgesi, 55760, Türkiye",
+  "il": "Samsun",
+  "ilce": "Ladik"
+ },
+ "samsun-tekkekoy-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.213299,
+  "lon": 36.460008,
+  "kesinlik": "tesis",
+  "osm": "Tekkeköy Öğretmenevi, 3104 Caddesi, 19 Mayıs Mahallesi, Antyeri, Tekkeköy, Samsun, Karadeniz Bölgesi, 55330, Türkiye",
+  "il": "Samsun",
+  "ilce": "Tekkeköy"
+ },
+ "samsun-terme-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.210216,
+  "lon": 36.969549,
+  "kesinlik": "tesis",
+  "osm": "Terme Öğretmenevi ve Akşam Sanat Okulu, 19, Çarşamba Caddesi, Fenk Mahallesi, Terme, Samsun, Karadeniz Bölgesi, 55600, T",
+  "il": "Samsun",
+  "ilce": "Terme"
+ },
+ "samsun-vezirkopru-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.14339,
+  "lon": 35.460472,
+  "kesinlik": "ilce",
+  "osm": "Vezirköprü, Samsun, Karadeniz Bölgesi, 55900, Türkiye",
+  "il": "Samsun",
+  "ilce": "Vezirköprü"
+ },
+ "siirt-baykan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.162873,
+  "lon": 41.785685,
+  "kesinlik": "ilce",
+  "osm": "Baykan, Siirt, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Siirt",
+  "ilce": "Baykan"
+ },
+ "siirt-eruh-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.750599,
+  "lon": 42.180836,
+  "kesinlik": "ilce",
+  "osm": "Eruh, Siirt, Güneydoğu Anadolu Bölgesi, 56800, Türkiye",
+  "il": "Siirt",
+  "ilce": "Eruh"
+ },
+ "siirt-kurtalan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.928423,
+  "lon": 41.697364,
+  "kesinlik": "ilce",
+  "osm": "Kurtalan, Gençlik Caddesi, Cumhuriyet Mah., Sümer Mahallesi, Kurtalan, Siirt, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Siirt",
+  "ilce": "Kurtalan"
+ },
+ "siirt-merkez-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.069055,
+  "lon": 39.533451,
+  "kesinlik": "tesis",
+  "osm": "Tunceli Öğretmenevi, Cem Emir Caddesi, Atatürk Mah., Tunceli, Tunceli Merkez, Tunceli, Doğu Anadolu Bölgesi, 62000, Türk",
+  "il": "Siirt",
+  "ilce": "Merkez"
+ },
+ "siirt-pervari-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.932504,
+  "lon": 42.547991,
+  "kesinlik": "ilce",
+  "osm": "Pervari, Siirt, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Siirt",
+  "ilce": "Pervari"
+ },
+ "siirt-sirvan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.061793,
+  "lon": 42.029931,
+  "kesinlik": "ilce",
+  "osm": "Şirvan, Siirt, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Siirt",
+  "ilce": "Şirvan"
+ },
+ "sinop-ayancik-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.946072,
+  "lon": 34.588309,
+  "kesinlik": "ilce",
+  "osm": "Ayancık, Sinop, Karadeniz Bölgesi, 57400, Türkiye",
+  "il": "Sinop",
+  "ilce": "Ayancık"
+ },
+ "sinop-boyabat-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.468974,
+  "lon": 34.767227,
+  "kesinlik": "ilce",
+  "osm": "Boyabat, Sinop, Karadeniz Bölgesi, 57200, Türkiye",
+  "il": "Sinop",
+  "ilce": "Boyabat"
+ },
+ "sinop-dikmen-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.651624,
+  "lon": 35.265057,
+  "kesinlik": "ilce",
+  "osm": "Dikmen, Sinop, Karadeniz Bölgesi, Türkiye",
+  "il": "Sinop",
+  "ilce": "Dikmen"
+ },
+ "sinop-duragan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.417967,
+  "lon": 35.05581,
+  "kesinlik": "ilce",
+  "osm": "Durağan, Sinop, Karadeniz Bölgesi, Türkiye",
+  "il": "Sinop",
+  "ilce": "Durağan"
+ },
+ "sinop-sinop-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 42.028093,
+  "lon": 35.153444,
+  "kesinlik": "tesis",
+  "osm": "Sinop Öğretmenevi, Bergüzer Sk., Kefevi Mahallesi, Sinop Merkez, Sinop, Karadeniz Bölgesi, 57000, Türkiye",
+  "il": "Sinop",
+  "ilce": "Merkez"
+ },
+ "sinop-turkeli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.948301,
+  "lon": 34.339586,
+  "kesinlik": "ilce",
+  "osm": "Türkeli, Sinop, Karadeniz Bölgesi, Türkiye",
+  "il": "Sinop",
+  "ilce": "Türkeli"
+ },
+ "sivas-akincilar-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.237577,
+  "lon": 33.319203,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, Araç Güney Çevre Yolu İnşaatı, Çiftlik, Akıncılar, Araç, Kastamonu, Karadeniz Bölgesi, Türkiye",
+  "il": "Sivas",
+  "ilce": "Akıncılar"
+ },
+ "sivas-dogansar-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.214232,
+  "lon": 37.53651,
+  "kesinlik": "ilce",
+  "osm": "Doğanşar, Sivas, İç Anadolu Bölgesi, Türkiye",
+  "il": "Sivas",
+  "ilce": "Doğanşar"
+ },
+ "sivas-gemerek-sabanci-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.183122,
+  "lon": 36.071104,
+  "kesinlik": "ilce",
+  "osm": "Gemerek, Sivas, İç Anadolu Bölgesi, 58580, Türkiye",
+  "il": "Sivas",
+  "ilce": "Gemerek"
+ },
+ "sivas-golova-selahattin-ayan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.061289,
+  "lon": 38.608431,
+  "kesinlik": "ilce",
+  "osm": "Gölova, Sivas, İç Anadolu Bölgesi, Türkiye",
+  "il": "Sivas",
+  "ilce": "Gölova"
+ },
+ "sivas-gurun-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.720643,
+  "lon": 37.270461,
+  "kesinlik": "tesis",
+  "osm": "Gürün Öğretmenevi, Kayseri-Malatya yolu, Pınarönü Mahallesi, Gürün Belediyesi, Gürün, Sivas, İç Anadolu Bölgesi, 58800, ",
+  "il": "Sivas",
+  "ilce": "Gürün"
+ },
+ "sivas-kangal-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.236997,
+  "lon": 37.394233,
+  "kesinlik": "tesis",
+  "osm": "Kangal Öğretmenevi, Sivas-Divriği Yolu, Kangal, Sivas, İç Anadolu Bölgesi, 58900, Türkiye",
+  "il": "Sivas",
+  "ilce": "Kangal"
+ },
+ "sivas-koyulhisar-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.301321,
+  "lon": 37.832276,
+  "kesinlik": "ilce",
+  "osm": "Koyulhisar, Sivas, İç Anadolu Bölgesi, Türkiye",
+  "il": "Sivas",
+  "ilce": "Koyulhisar"
+ },
+ "sivas-sivas-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.746077,
+  "lon": 37.021087,
+  "kesinlik": "tesis",
+  "osm": "Sivas Öğretmenevi, 22, Arap Şeyh Caddesi, Sivas, Pulur Mahallesi, Sivas Belediyesi, Sivas Merkez, Sivas, İç Anadolu Bölg",
+  "il": "Sivas",
+  "ilce": "Merkez"
+ },
+ "sivas-susehri-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.173498,
+  "lon": 38.066562,
+  "kesinlik": "tesis",
+  "osm": "Susehri Ogretmenevi, Suşehri Zara Yolu, Yalnıbağlar, Balkara, Suşehri, Sivas, İç Anadolu Bölgesi, Türkiye",
+  "il": "Sivas",
+  "ilce": "Suşehri"
+ },
+ "sivas-sarkislaogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.364093,
+  "lon": 36.403158,
+  "kesinlik": "ilce",
+  "osm": "Şarkışla, Akdağmadeni - Şarkışla yolu, Damlaca Mahallesi, Şarkışla Belediyesi, Şarkışla, Sivas, İç Anadolu Bölgesi, 5840",
+  "il": "Sivas",
+  "ilce": "Şarkışla"
+ },
+ "sivas-yildizeli-ahmet-remzi-kucukoran-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.867186,
+  "lon": 36.593311,
+  "kesinlik": "ilce",
+  "osm": "Yıldızeli, Yozgat - Sivas Yolu, Fevzi Çakmak, Yıldızeli, Sivas, İç Anadolu Bölgesi, Türkiye",
+  "il": "Sivas",
+  "ilce": "Yıldızeli"
+ },
+ "sivas-zara-mehmet-habib-soluk-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.897201,
+  "lon": 37.759073,
+  "kesinlik": "ilce",
+  "osm": "Zara, Sivas, İç Anadolu Bölgesi, Türkiye",
+  "il": "Sivas",
+  "ilce": "Zara"
+ },
+ "tekirdag-hayrabolu-sadi-kiyak-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.2212,
+  "lon": 27.111285,
+  "kesinlik": "tesis",
+  "osm": "Sadi Kıyak Öğretmenevi, Alpullu Caddesi, Hayrabolu, Hisar, Hayrabolu, Tekirdağ, Marmara Bölgesi, 59400, Türkiye",
+  "il": "Tekirdağ",
+  "ilce": "Hayrabolu"
+ },
+ "tekirdag-malkara-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.892489,
+  "lon": 26.907799,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi ve Akşam Sanat Okulu, Kurtuluş Caddesi, Gazibey, Malkara, Tekirdağ, Marmara Bölgesi, 59300, Türkiye",
+  "il": "Tekirdağ",
+  "ilce": "Malkara"
+ },
+ "tekirdag-suleymanpasa-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.977173,
+  "lon": 27.503855,
+  "kesinlik": "ilce",
+  "osm": "Süleymanpaşa, Tekirdağ, Marmara Bölgesi, Türkiye",
+  "il": "Tekirdağ",
+  "ilce": "Süleymanpaşa"
+ },
+ "tokat-artova-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.114067,
+  "lon": 36.300789,
+  "kesinlik": "ilce",
+  "osm": "Artova, Hükümet Caddesi, İstasyon, Artova, Tokat, Karadeniz Bölgesi, Türkiye",
+  "il": "Tokat",
+  "ilce": "Artova"
+ },
+ "tokat-erbaa-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.672798,
+  "lon": 36.571506,
+  "kesinlik": "ilce",
+  "osm": "Erbaa, Tokat, Karadeniz Bölgesi, Türkiye",
+  "il": "Tokat",
+  "ilce": "Erbaa"
+ },
+ "tokat-niksar-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.795155,
+  "lon": 37.0181,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, Ünye - Niksar yolu, Çamçukuru, Yazlıkbelen Mahallesi, Akkuş, Ordu, Karadeniz Bölgesi, 52950, Türkiye",
+  "il": "Tokat",
+  "ilce": "Niksar"
+ },
+ "tokat-resadiye-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.392069,
+  "lon": 37.338322,
+  "kesinlik": "ilce",
+  "osm": "Reşadiye, Tokat, Karadeniz Bölgesi, 60702, Türkiye",
+  "il": "Tokat",
+  "ilce": "Reşadiye"
+ },
+ "tokat-turhal-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.389589,
+  "lon": 36.078043,
+  "kesinlik": "ilce",
+  "osm": "Turhal, Cumhuriyet Caddesi, Yavuz Selim, Turhal, Tokat, Karadeniz Bölgesi, 60300, Türkiye",
+  "il": "Tokat",
+  "ilce": "Turhal"
+ },
+ "tokat-zile-dincerler-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.281462,
+  "lon": 35.931406,
+  "kesinlik": "ilce",
+  "osm": "Zile, Zile - Pazar yolu, İstasyon, Korucuk, Zile, Tokat, Karadeniz Bölgesi, Türkiye",
+  "il": "Tokat",
+  "ilce": "Zile"
+ },
+ "trabzon-hakki-zeki-basaran-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.021628,
+  "lon": 39.570673,
+  "kesinlik": "ilce",
+  "osm": "Akçaabat, Trabzon, Karadeniz Bölgesi, Türkiye",
+  "il": "Trabzon",
+  "ilce": "Akçaabat"
+ },
+ "trabzon-arakli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.934334,
+  "lon": 40.066107,
+  "kesinlik": "tesis",
+  "osm": "Arakli Ogretmenevi, D010, Yolgören, Araklı, Trabzon, Karadeniz Bölgesi, 61700, Türkiye",
+  "il": "Trabzon",
+  "ilce": "Araklı"
+ },
+ "trabzon-arsin-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.95373,
+  "lon": 39.932591,
+  "kesinlik": "ilce",
+  "osm": "Arsin, Trabzon, Karadeniz Bölgesi, 61900, Türkiye",
+  "il": "Trabzon",
+  "ilce": "Arsin"
+ },
+ "trabzon-besikduzu-sabanci-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.052731,
+  "lon": 39.228038,
+  "kesinlik": "ilce",
+  "osm": "Beşikdüzü, Trabzon, Karadeniz Bölgesi, 61800, Türkiye",
+  "il": "Trabzon",
+  "ilce": "Beşikdüzü"
+ },
+ "trabzon-carsibasi-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.081423,
+  "lon": 39.375217,
+  "kesinlik": "tesis",
+  "osm": "Çarşıbaşı Öğretmenevi, Trabzon-Giresun Yolu, Merkez, Zeytinlik, Çarşıbaşı, Trabzon, Karadeniz Bölgesi, Türkiye",
+  "il": "Trabzon",
+  "ilce": "Çarşıbaşı"
+ },
+ "trabzon-caykara-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.907078,
+  "lon": 41.267866,
+  "kesinlik": "tesis",
+  "osm": "Erzurum Öğretmenevi, Çaykara Caddesi, Erzurum, Lalapaşa Mahallesi, Erzurum, Yakutiye, Erzurum, Doğu Anadolu Bölgesi, 257",
+  "il": "Trabzon",
+  "ilce": "Çaykara"
+ },
+ "trabzon-duzkoy-lutfu-ofluoglu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.873831,
+  "lon": 39.426109,
+  "kesinlik": "ilce",
+  "osm": "Düzköy, Trabzon, Karadeniz Bölgesi, Türkiye",
+  "il": "Trabzon",
+  "ilce": "Düzköy"
+ },
+ "trabzon-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.672762,
+  "lon": 26.560824,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, Tekke Bayırı Sokak, Sabuni Mahallesi, Edirne Merkez, Edirne, Marmara Bölgesi, 22100, Türkiye",
+  "il": "Trabzon",
+  "ilce": "Merkez"
+ },
+ "trabzon-of-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.947642,
+  "lon": 40.269407,
+  "kesinlik": "ilce",
+  "osm": "Of, Trabzon, Karadeniz Bölgesi, 61830, Türkiye",
+  "il": "Trabzon",
+  "ilce": "Of"
+ },
+ "trabzon-surmene-inci-hamitcan-aksoy-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.912469,
+  "lon": 40.118671,
+  "kesinlik": "tesis",
+  "osm": "İnci-Hamitcan Aksoy Öğretmenevi, Sahil Caddesi, Orta, Sürmene, Trabzon, Karadeniz Bölgesi, 61600, Türkiye",
+  "il": "Trabzon",
+  "ilce": "Sürmene"
+ },
+ "trabzon-tonya-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.886348,
+  "lon": 39.290808,
+  "kesinlik": "ilce",
+  "osm": "Tonya, Trabzon, Karadeniz Bölgesi, Türkiye",
+  "il": "Trabzon",
+  "ilce": "Tonya"
+ },
+ "trabzon-vakfikebir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.048366,
+  "lon": 39.273304,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, Gülbahar Hatun Caddesi, Çarşı Mah., Çamlık, Vakfıkebir, Trabzon, Karadeniz Bölgesi, 61400, Türkiye",
+  "il": "Trabzon",
+  "ilce": "Vakfıkebir"
+ },
+ "tunceli-sehit-ogrtemen-necmettin-yilmaz-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.179879,
+  "lon": 39.829693,
+  "kesinlik": "ilce",
+  "osm": "Merkez, Güneycik, Nazımiye, Tunceli, Doğu Anadolu Bölgesi, 62950, Türkiye",
+  "il": "Tunceli",
+  "ilce": "Merkez"
+ },
+ "tunceli-ovacik-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.358383,
+  "lon": 39.214447,
+  "kesinlik": "ilce",
+  "osm": "Ovacık, Tunceli, Doğu Anadolu Bölgesi, 62900, Türkiye",
+  "il": "Tunceli",
+  "ilce": "Ovacık"
+ },
+ "tunceli-pertek-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.865556,
+  "lon": 39.327653,
+  "kesinlik": "ilce",
+  "osm": "Pertek, Tunceli, Doğu Anadolu Bölgesi, 62500, Türkiye",
+  "il": "Tunceli",
+  "ilce": "Pertek"
+ },
+ "sanliurfa-akcakale-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.708295,
+  "lon": 38.948682,
+  "kesinlik": "ilce",
+  "osm": "Akçakale, Şanlıurfa, Güneydoğu Anadolu Bölgesi, 63500, Türkiye",
+  "il": "Şanlıurfa",
+  "ilce": "Akçakale"
+ },
+ "sanliurfa-birecik-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.031532,
+  "lon": 37.980027,
+  "kesinlik": "ilce",
+  "osm": "Birecik, Şanlıurfa, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Şanlıurfa",
+  "ilce": "Birecik"
+ },
+ "sanliurfa-ceylanpinar-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.843323,
+  "lon": 40.05141,
+  "kesinlik": "ilce",
+  "osm": "Ceylanpınar, Şanlıurfa, Güneydoğu Anadolu Bölgesi, 63570, Türkiye",
+  "il": "Şanlıurfa",
+  "ilce": "Ceylanpınar"
+ },
+ "sanliurfa-harran-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.871006,
+  "lon": 39.025136,
+  "kesinlik": "ilce",
+  "osm": "Harran, Şanlıurfa, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Şanlıurfa",
+  "ilce": "Harran"
+ },
+ "sanliurfa-karakopru-onikilier-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.204652,
+  "lon": 38.795851,
+  "kesinlik": "ilce",
+  "osm": "Karaköprü, Şanlıurfa, Güneydoğu Anadolu Bölgesi, 63320, Türkiye",
+  "il": "Şanlıurfa",
+  "ilce": "Karaköprü"
+ },
+ "sanliurfa-sanliurfa-buyuksehir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.22789,
+  "lon": 39.759807,
+  "kesinlik": "tesis",
+  "osm": "Viranşehir Öğretmenevi, E 90, Kışla Mahallesi, Viranşehir, Şanlıurfa, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Şanlıurfa",
+  "ilce": "Merkez"
+ },
+ "sanliurfa-siverek-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.75409,
+  "lon": 39.317743,
+  "kesinlik": "ilce",
+  "osm": "Siverek, Şanlıurfa, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Şanlıurfa",
+  "ilce": "Siverek"
+ },
+ "sanliurfa-suruc-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.975185,
+  "lon": 38.424295,
+  "kesinlik": "ilce",
+  "osm": "Suruç, Şanlıurfa, Güneydoğu Anadolu Bölgesi, 63800, Türkiye",
+  "il": "Şanlıurfa",
+  "ilce": "Suruç"
+ },
+ "sanliurfa-viransehir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.22789,
+  "lon": 39.759807,
+  "kesinlik": "tesis",
+  "osm": "Viranşehir Öğretmenevi, E 90, Kışla Mahallesi, Viranşehir, Şanlıurfa, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Şanlıurfa",
+  "ilce": "Viranşehir"
+ },
+ "usak-esme-sabanci-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.398376,
+  "lon": 28.96896,
+  "kesinlik": "ilce",
+  "osm": "Eşme, İnönü Caddesi, Şehit Alibey Mahallesi, Eşme, Uşak, Ege Bölgesi, Türkiye",
+  "il": "Uşak",
+  "ilce": "Eşme"
+ },
+ "usak-usak-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.673449,
+  "lon": 29.402199,
+  "kesinlik": "tesis",
+  "osm": "Tüprag Öğretmenevi ve Akşam Sanat Okulu İnşaat Alanı, Kurtuluş Mahallesi, Uşak Merkez, Uşak, Ege Bölgesi, Türkiye",
+  "il": "Uşak",
+  "ilce": "Merkez"
+ },
+ "van-bahcesaray-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.123716,
+  "lon": 42.807734,
+  "kesinlik": "ilce",
+  "osm": "Bahçesaray, Van, Doğu Anadolu Bölgesi, 65710, Türkiye",
+  "il": "Van",
+  "ilce": "Bahçesaray"
+ },
+ "van-baskale-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.044911,
+  "lon": 44.016267,
+  "kesinlik": "ilce",
+  "osm": "Başkale, Van, Doğu Anadolu Bölgesi, 65600, Türkiye",
+  "il": "Van",
+  "ilce": "Başkale"
+ },
+ "van-caldiran-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.83337,
+  "lon": 31.16526,
+  "kesinlik": "tesis",
+  "osm": "Düzce Öğretmenevi, Çaldıran Sokak, Azmimilli Mahallesi, Düzce Merkez, Düzce, Karadeniz Bölgesi, 81000, Türkiye",
+  "il": "Van",
+  "ilce": "Çaldıran"
+ },
+ "van-catak-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.006907,
+  "lon": 43.059198,
+  "kesinlik": "ilce",
+  "osm": "Çatak, Van, Doğu Anadolu Bölgesi, 65870, Türkiye",
+  "il": "Van",
+  "ilce": "Çatak"
+ },
+ "van-mev-deprem-sehitleri-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.028989,
+  "lon": 43.359106,
+  "kesinlik": "ilce",
+  "osm": "Erciş, Van, Doğu Anadolu Bölgesi, 65400, Türkiye",
+  "il": "Van",
+  "ilce": "Erciş"
+ },
+ "van-gevas-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.295286,
+  "lon": 43.108271,
+  "kesinlik": "ilce",
+  "osm": "Gevaş, Van, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Van",
+  "ilce": "Gevaş"
+ },
+ "van-gurpinar-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.325214,
+  "lon": 43.407514,
+  "kesinlik": "tesis",
+  "osm": "Gürpınar Öğretmenevi, D975, Aşağı Kaymaz, Koyunyatağı, Gürpınar, Van, Doğu Anadolu Bölgesi, 65900, Türkiye",
+  "il": "Van",
+  "ilce": "Gürpınar"
+ },
+ "van-van-sisli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.499705,
+  "lon": 43.38824,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, Kazım Karabekir Bulvarı, Bahçıvan Mahallesi, Van, İpekyolu, Van, Doğu Anadolu Bölgesi, 65100, Türkiye",
+  "il": "Van",
+  "ilce": "İpekyolu"
+ },
+ "van-muradiye-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.265799,
+  "lon": 26.692256,
+  "kesinlik": "tesis",
+  "osm": "Uzunköprü Öğretmenevi ve Akşam Sanat Okulu Müdürlüğü Çay Bahçesi - Çok Amaçlı Salonu, Rüzgar Sokak, Muradiye, Uzunköprü,",
+  "il": "Van",
+  "ilce": "Muradiye"
+ },
+ "van-ozalpogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.653352,
+  "lon": 43.989727,
+  "kesinlik": "ilce",
+  "osm": "Özalp, Van Saray yolu, Kargalı, Özalp, Van, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Van",
+  "ilce": "Özalp"
+ },
+ "van-saray-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.50108,
+  "lon": 42.28548,
+  "kesinlik": "tesis",
+  "osm": "Tatvan Öğretmenevi, Göl Caddesi, Saray Mahallesi, Tatvan, Bitlis, Doğu Anadolu Bölgesi, 13200, Türkiye",
+  "il": "Van",
+  "ilce": "Saray"
+ },
+ "van-iskele-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.512311,
+  "lon": 43.375282,
+  "kesinlik": "ilce",
+  "osm": "Tuşba, Van, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Van",
+  "ilce": "Tuşba"
+ },
+ "yozgat-akdagmadeni-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.782147,
+  "lon": 35.892093,
+  "kesinlik": "ilce",
+  "osm": "Akdağmadeni YHT, 66-06, Bulgurlu, Akdağmadeni, Yozgat, İç Anadolu Bölgesi, 66300, Türkiye",
+  "il": "Yozgat",
+  "ilce": "Akdağmadeni"
+ },
+ "yozgat-75-yil-aydincik-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.130252,
+  "lon": 35.285161,
+  "kesinlik": "ilce",
+  "osm": "Aydıncık, Yozgat, İç Anadolu Bölgesi, Türkiye",
+  "il": "Yozgat",
+  "ilce": "Aydıncık"
+ },
+ "yozgat-bogazliyan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.236744,
+  "lon": 35.310834,
+  "kesinlik": "ilce",
+  "osm": "Boğazlıyan, Yozgat, İç Anadolu Bölgesi, 66400, Türkiye",
+  "il": "Yozgat",
+  "ilce": "Boğazlıyan"
+ },
+ "yozgat-cayiralan-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.304801,
+  "lon": 35.646372,
+  "kesinlik": "ilce",
+  "osm": "Çayıralan, Yozgat, İç Anadolu Bölgesi, 66600, Türkiye",
+  "il": "Yozgat",
+  "ilce": "Çayıralan"
+ },
+ "yozgat-cekerek-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.064957,
+  "lon": 35.50725,
+  "kesinlik": "ilce",
+  "osm": "Çekerek, Yozgat, İç Anadolu Bölgesi, Türkiye",
+  "il": "Yozgat",
+  "ilce": "Çekerek"
+ },
+ "yozgat-kadisehriogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.997469,
+  "lon": 35.791756,
+  "kesinlik": "ilce",
+  "osm": "Kadışehri, Yozgat, İç Anadolu Bölgesi, Türkiye",
+  "il": "Yozgat",
+  "ilce": "Kadışehri"
+ },
+ "yozgat-yozgat-ogretmenevi-ve-aksam-sanat-okulu-iktisadi-isletmesi": {
+  "lat": 39.756454,
+  "lon": 34.783827,
+  "kesinlik": "ilce",
+  "osm": "Yozgat Merkez, Yozgat, İç Anadolu Bölgesi, Türkiye",
+  "il": "Yozgat",
+  "ilce": "Merkez"
+ },
+ "yozgat-saraykent-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.693159,
+  "lon": 35.510792,
+  "kesinlik": "ilce",
+  "osm": "Saraykent, Yozgat, İç Anadolu Bölgesi, Türkiye",
+  "il": "Yozgat",
+  "ilce": "Saraykent"
+ },
+ "yozgat-sarikaya-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.49359,
+  "lon": 35.37551,
+  "kesinlik": "ilce",
+  "osm": "Sarıkaya, Yozgat, İç Anadolu Bölgesi, 66650, Türkiye",
+  "il": "Yozgat",
+  "ilce": "Sarıkaya"
+ },
+ "yozgat-sorgun-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.809868,
+  "lon": 35.185431,
+  "kesinlik": "ilce",
+  "osm": "Sorgun, Yozgat, İç Anadolu Bölgesi, 66700, Türkiye",
+  "il": "Yozgat",
+  "ilce": "Sorgun"
+ },
+ "yozgat-sefaatli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.498544,
+  "lon": 34.74969,
+  "kesinlik": "ilce",
+  "osm": "Şefaatli, Demiryolu Sokağı, Yaylapınar mahallesi, Şefaatli, Yozgat, İç Anadolu Bölgesi, Türkiye",
+  "il": "Yozgat",
+  "ilce": "Şefaatli"
+ },
+ "yozgat-yenifakili-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.212775,
+  "lon": 35.002441,
+  "kesinlik": "ilce",
+  "osm": "Yenifakılı, Turgut Özal Bulvarı, Yazlak mahallesi, Yenifakılı, Yozgat, İç Anadolu Bölgesi, Türkiye",
+  "il": "Yozgat",
+  "ilce": "Yenifakılı"
+ },
+ "yozgat-yerkoy-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.637234,
+  "lon": 34.469154,
+  "kesinlik": "tesis",
+  "osm": "Yerköy Öğretmenevi, Şeker Sokak, Yerköy, Yozgat, İç Anadolu Bölgesi, 66900, Türkiye",
+  "il": "Yozgat",
+  "ilce": "Yerköy"
+ },
+ "zonguldak-caycuma-ogretmen-evi-ve-aksam-sanat-okulu": {
+  "lat": 41.426946,
+  "lon": 32.072821,
+  "kesinlik": "ilce",
+  "osm": "Çaycuma, Zonguldak, Karadeniz Bölgesi, Türkiye",
+  "il": "Zonguldak",
+  "ilce": "Çaycuma"
+ },
+ "zonguldak-devrek-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.218882,
+  "lon": 31.955835,
+  "kesinlik": "ilce",
+  "osm": "Devrek, Zonguldak, Karadeniz Bölgesi, 67800, Türkiye",
+  "il": "Zonguldak",
+  "ilce": "Devrek"
+ },
+ "zonguldak-eregli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.52338,
+  "lon": 34.046963,
+  "kesinlik": "tesis",
+  "osm": "Ereğli Öğretmenevi, Bulvar Caddesi, Hacımustafa Mahallesi, Ereğli, Konya, İç Anadolu Bölgesi, 42320, Türkiye",
+  "il": "Zonguldak",
+  "ilce": "Ereğli"
+ },
+ "zonguldak-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.672762,
+  "lon": 26.560824,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, Tekke Bayırı Sokak, Sabuni Mahallesi, Edirne Merkez, Edirne, Marmara Bölgesi, 22100, Türkiye",
+  "il": "Zonguldak",
+  "ilce": "Merkez"
+ },
+ "aksaray-agacoren-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.868972,
+  "lon": 33.915577,
+  "kesinlik": "ilce",
+  "osm": "Ağaçören, Aksaray, İç Anadolu Bölgesi, Türkiye",
+  "il": "Aksaray",
+  "ilce": "Ağaçören"
+ },
+ "aksaray-eskil-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.401703,
+  "lon": 33.412823,
+  "kesinlik": "ilce",
+  "osm": "Eskil, Aksaray, İç Anadolu Bölgesi, Türkiye",
+  "il": "Aksaray",
+  "ilce": "Eskil"
+ },
+ "aksaray-aksaray-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.379922,
+  "lon": 34.025835,
+  "kesinlik": "tesis",
+  "osm": "Aksaray Ögretmenevi, Cumhuriyet Bulvarı, Nakkaş, Hasas Mahallesi, Aksaray Merkez, Aksaray, İç Anadolu Bölgesi, 68200, Tü",
+  "il": "Aksaray",
+  "ilce": "Merkez"
+ },
+ "aksaray-ortakoy-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.736624,
+  "lon": 34.041219,
+  "kesinlik": "ilce",
+  "osm": "Ortaköy, Aksaray, İç Anadolu Bölgesi, 68601, Türkiye",
+  "il": "Aksaray",
+  "ilce": "Ortaköy"
+ },
+ "aksaray-sariyahsi-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.984935,
+  "lon": 33.845537,
+  "kesinlik": "ilce",
+  "osm": "Sarıyahşi, Aksaray, İç Anadolu Bölgesi, Türkiye",
+  "il": "Aksaray",
+  "ilce": "Sarıyahşi"
+ },
+ "bayburt-bayburt-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.246528,
+  "lon": 40.229783,
+  "kesinlik": "tesis",
+  "osm": "Bayburt Öğretmenevi, Bayburt - Erzurum Yolu, Zahit, Gençosman Mahallesi, Bayburt Merkez, Bayburt, Karadeniz Bölgesi, 690",
+  "il": "Bayburt",
+  "ilce": "Merkez"
+ },
+ "karaman-karaman-merkez-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.186072,
+  "lon": 33.219347,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, Molla Fenari Mahallesi, Fenari Mahallesi, Karaman Merkez, Karaman, İç Anadolu Bölgesi, 70100, Türkiye",
+  "il": "Karaman",
+  "ilce": "Merkez"
+ },
+ "kirikkale-sehit-pilot-komiser-gokhun-mete-altunbas-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.673994,
+  "lon": 33.615167,
+  "kesinlik": "ilce",
+  "osm": "Keskin, Kırıkkale, İç Anadolu Bölgesi, Türkiye",
+  "il": "Kırıkkale",
+  "ilce": "Keskin"
+ },
+ "kirikkale-kirikkale-merkez-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.890457,
+  "lon": 33.997869,
+  "kesinlik": "ilce",
+  "osm": "Merkez Mahallesi, Çerikli, Delice, Kırıkkale, İç Anadolu Bölgesi, Türkiye",
+  "il": "Kırıkkale",
+  "ilce": "Merkez"
+ },
+ "batman-besiri-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.916246,
+  "lon": 41.292768,
+  "kesinlik": "ilce",
+  "osm": "Beşiri, Batman, Güneydoğu Anadolu Bölgesi, 72200, Türkiye",
+  "il": "Batman",
+  "ilce": "Beşiri"
+ },
+ "batman-gercus-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.568309,
+  "lon": 41.385236,
+  "kesinlik": "ilce",
+  "osm": "Gercüş, Batman, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Batman",
+  "ilce": "Gercüş"
+ },
+ "batman-kozluk-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.174509,
+  "lon": 41.50441,
+  "kesinlik": "tesis",
+  "osm": "Kozluk Öğretmenevi, 12, 15 Tmz.Ş.Cd. Caddesi, Yukarı Güneşli Mahallesi, Alıçlı, Kozluk, Batman, Güneydoğu Anadolu Bölges",
+  "il": "Batman",
+  "ilce": "Kozluk"
+ },
+ "batman-batman-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.893873,
+  "lon": 41.130502,
+  "kesinlik": "tesis",
+  "osm": "Batman Öğretmenevi, 34, Turgut Özal Bulvarı, Bahçelievler Mahallesi, Batman Merkez, Batman, Güneydoğu Anadolu Bölgesi, 7",
+  "il": "Batman",
+  "ilce": "Merkez"
+ },
+ "batman-sason-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 38.333163,
+  "lon": 41.419825,
+  "kesinlik": "tesis",
+  "osm": "Sason Öğretmenevi, 8, Haluk İmga Caddesi, Emek Mah., Boğazkapı, Sason, Batman, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Batman",
+  "ilce": "Sason"
+ },
+ "sirnak-beytussebap-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.570949,
+  "lon": 43.170219,
+  "kesinlik": "ilce",
+  "osm": "Beytüşşebap, Şırnak, Güneydoğu Anadolu Bölgesi, 73800, Türkiye",
+  "il": "Şırnak",
+  "ilce": "Beytüşşebap"
+ },
+ "sirnak-cizre-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.332437,
+  "lon": 42.18547,
+  "kesinlik": "ilce",
+  "osm": "Cizre, Şırnak, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Şırnak",
+  "ilce": "Cizre"
+ },
+ "sirnak-guclukonak-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.471163,
+  "lon": 41.911127,
+  "kesinlik": "ilce",
+  "osm": "Güçlükonak, Şırnak, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Şırnak",
+  "ilce": "Güçlükonak"
+ },
+ "sirnak-idil-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.338834,
+  "lon": 41.89663,
+  "kesinlik": "tesis",
+  "osm": "İdil Öğretmenevi, 112, Hükümet Caddesi, Aşağı Mahalle, İdil, Şırnak, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Şırnak",
+  "ilce": "İdil"
+ },
+ "sirnak-sirnak-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.338834,
+  "lon": 41.89663,
+  "kesinlik": "tesis",
+  "osm": "İdil Öğretmenevi, 112, Hükümet Caddesi, Aşağı Mahalle, İdil, Şırnak, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Şırnak",
+  "ilce": "Merkez"
+ },
+ "sirnak-silopi-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.249158,
+  "lon": 42.47075,
+  "kesinlik": "ilce",
+  "osm": "Silopi, Şırnak, Güneydoğu Anadolu Bölgesi, 73400, Türkiye",
+  "il": "Şırnak",
+  "ilce": "Silopi"
+ },
+ "sirnak-uludere-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.417439,
+  "lon": 42.933578,
+  "kesinlik": "ilce",
+  "osm": "Uludere, Şırnak, Güneydoğu Anadolu Bölgesi, Türkiye",
+  "il": "Şırnak",
+  "ilce": "Uludere"
+ },
+ "bartin-amasraogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.748917,
+  "lon": 32.386696,
+  "kesinlik": "ilce",
+  "osm": "Amasra, Bartın, Karadeniz Bölgesi, 74300, Türkiye",
+  "il": "Bartın",
+  "ilce": "Amasra"
+ },
+ "bartin-bartin-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.477208,
+  "lon": 32.334086,
+  "kesinlik": "ilce",
+  "osm": "Merkez, Kozcağız, Bartın Merkez, Bartın, Karadeniz Bölgesi, Türkiye",
+  "il": "Bartın",
+  "ilce": "Merkez"
+ },
+ "bartin-ulus-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.583939,
+  "lon": 32.641022,
+  "kesinlik": "ilce",
+  "osm": "Ulus, Bartın, Karadeniz Bölgesi, Türkiye",
+  "il": "Bartın",
+  "ilce": "Ulus"
+ },
+ "ardahan-hanak-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.23677,
+  "lon": 42.844903,
+  "kesinlik": "ilce",
+  "osm": "Hanak, Ardahan, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Ardahan",
+  "ilce": "Hanak"
+ },
+ "ardahan-merkez-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.069055,
+  "lon": 39.533451,
+  "kesinlik": "tesis",
+  "osm": "Tunceli Öğretmenevi, Cem Emir Caddesi, Atatürk Mah., Tunceli, Tunceli Merkez, Tunceli, Doğu Anadolu Bölgesi, 62000, Türk",
+  "il": "Ardahan",
+  "ilce": "Merkez"
+ },
+ "ardahan-posof-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.508918,
+  "lon": 42.726206,
+  "kesinlik": "tesis",
+  "osm": "Ardahan Posof Ogretmenevi, Alparslan Caddesi, Çakırkoç, Posof, Ardahan, Doğu Anadolu Bölgesi, 75800, Türkiye",
+  "il": "Ardahan",
+  "ilce": "Posof"
+ },
+ "igdir-igdir-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 39.921878,
+  "lon": 44.046796,
+  "kesinlik": "ilce",
+  "osm": "Iğdır Merkez, Iğdır, Doğu Anadolu Bölgesi, 76000, Türkiye",
+  "il": "Iğdır",
+  "ilce": "Merkez"
+ },
+ "igdir-tuzluca-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.040216,
+  "lon": 43.663788,
+  "kesinlik": "ilce",
+  "osm": "Tuzluca, Iğdır, Doğu Anadolu Bölgesi, Türkiye",
+  "il": "Iğdır",
+  "ilce": "Tuzluca"
+ },
+ "yalova-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.672762,
+  "lon": 26.560824,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi, Tekke Bayırı Sokak, Sabuni Mahallesi, Edirne Merkez, Edirne, Marmara Bölgesi, 22100, Türkiye",
+  "il": "Yalova",
+  "ilce": "Merkez"
+ },
+ "karabuk-eflani-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.422944,
+  "lon": 32.958188,
+  "kesinlik": "ilce",
+  "osm": "Eflani, Karabük, Karadeniz Bölgesi, Türkiye",
+  "il": "Karabük",
+  "ilce": "Eflani"
+ },
+ "karabuk-merkez-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.19554,
+  "lon": 32.623115,
+  "kesinlik": "ilce",
+  "osm": "Karabük Merkez, Karabük, Karadeniz Bölgesi, Türkiye",
+  "il": "Karabük",
+  "ilce": "Karabük"
+ },
+ "karabuk-safranbolu-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.245666,
+  "lon": 32.692957,
+  "kesinlik": "ilce",
+  "osm": "Safranbolu, Karabük, Karadeniz Bölgesi, 78600, Türkiye",
+  "il": "Karabük",
+  "ilce": "Safranbolu"
+ },
+ "kilis-kilis-merkez-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 36.72435,
+  "lon": 37.103251,
+  "kesinlik": "tesis",
+  "osm": "Kilis Öğretmenevi, Prof. Dr. Ali Görpe Caddesi, Ekrem Çetin Mahallesi, Kilis Merkez, Kilis, Güneydoğu Anadolu Bölgesi, 7",
+  "il": "Kilis",
+  "ilce": "Merkez"
+ },
+ "osmaniye-duzici-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.240122,
+  "lon": 36.453407,
+  "kesinlik": "ilce",
+  "osm": "Düziçi, Osmaniye, Akdeniz Bölgesi, 80600, Türkiye",
+  "il": "Osmaniye",
+  "ilce": "Düziçi"
+ },
+ "osmaniye-kadirli-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.375951,
+  "lon": 36.07826,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi Anaokulu, 1662. Sokak, kadirli sehir merkezi, Cemalpaşa Mahallesi, Kadirli İlçe Merkezi, Kadirli, Osmaniye, ",
+  "il": "Osmaniye",
+  "ilce": "Kadirli"
+ },
+ "osmaniye-osmaniye-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 37.375951,
+  "lon": 36.07826,
+  "kesinlik": "tesis",
+  "osm": "Öğretmenevi Anaokulu, 1664. Sokak, kadirli sehir merkezi, Cemalpaşa Mahallesi, Kadirli İlçe Merkezi, Kadirli, Osmaniye, ",
+  "il": "Osmaniye",
+  "ilce": "Merkez"
+ },
+ "duzce-akcakoca-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 41.087327,
+  "lon": 31.106557,
+  "kesinlik": "tesis",
+  "osm": "Akçakoca Öğretmenevi, Akçakoca Öğretmen Evi, Kepenç, Akçakoca, Düzce, Karadeniz Bölgesi, Türkiye",
+  "il": "Düzce",
+  "ilce": "Akçakoca"
+ },
+ "duzce-cumayeri-pakmaya-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.874689,
+  "lon": 30.950414,
+  "kesinlik": "ilce",
+  "osm": "Cumayeri, Düzce, Karadeniz Bölgesi, Türkiye",
+  "il": "Düzce",
+  "ilce": "Cumayeri"
+ },
+ "duzce-duzce-avni-akyol-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.839153,
+  "lon": 31.159536,
+  "kesinlik": "ilce",
+  "osm": "Düzce Merkez, Düzce, Karadeniz Bölgesi, Türkiye",
+  "il": "Düzce",
+  "ilce": "Merkez"
+ },
+ "duzce-yigilca-ogretmenevi-ve-aksam-sanat-okulu": {
+  "lat": 40.958351,
+  "lon": 31.441749,
+  "kesinlik": "tesis",
+  "osm": "Yığılca Öğretmenevi, Erenler Sokak, Şerenaltı, Orhangazi, Tıraşlar, Yığılca, Düzce, Karadeniz Bölgesi, 81950, Türkiye",
+  "il": "Düzce",
+  "ilce": "Yığılca"
+ },
+ "balikesir-ayvalik-polis-moral-egitim-merkezi": {
+  "lat": 39.318096,
+  "lon": 26.691671,
+  "kesinlik": "ilce",
+  "osm": "Ayvalık, Balıkesir, Marmara Bölgesi, Türkiye",
+  "il": "Balıkesir",
+  "ilce": "Ayvalık"
+ },
+ "aydin-didim-polis-moral-egitim-merkezi": {
+  "lat": 37.348489,
+  "lon": 27.320558,
+  "kesinlik": "tesis",
+  "osm": "Polis Moral Eğitim Merkezi Müdürlüğü, Didim, Aydın, Ege Bölgesi, Türkiye",
+  "il": "Aydın",
+  "ilce": "Didim"
+ },
+ "izmir-izmir-pmem-cesme-hizmet-binasi": {
+  "lat": 38.324404,
+  "lon": 26.30296,
+  "kesinlik": "ilce",
+  "osm": "Çeşme, İzmir, Ege Bölgesi, Türkiye",
+  "il": "İzmir",
+  "ilce": "Çeşme"
+ },
+ "mugla-fethiye-ovacik-polisevi": {
+  "lat": 36.622115,
+  "lon": 29.115338,
+  "kesinlik": "ilce",
+  "osm": "Fethiye, Muğla, Ege Bölgesi, Türkiye",
+  "il": "Muğla",
+  "ilce": "Fethiye"
+ },
+ "mugla-marmaris-polisevi": {
+  "lat": 36.852255,
+  "lon": 28.274266,
+  "kesinlik": "ilce",
+  "osm": "Marmaris, Muğla, Ege Bölgesi, Türkiye",
+  "il": "Muğla",
+  "ilce": "Marmaris"
+ },
+ "mersin-mersin-polisevi-sehit-altug-verdi-sosyal-tesisleri": {
+  "lat": 36.782277,
+  "lon": 34.592449,
+  "kesinlik": "ilce",
+  "osm": "Yenişehir, Mersin, Akdeniz Bölgesi, Türkiye",
+  "il": "Mersin",
+  "ilce": "Yenişehir"
+ },
+ "trabzon-trabzon-polisevi": {
+  "lat": 40.988953,
+  "lon": 39.789836,
+  "kesinlik": "tesis",
+  "osm": "Trabzon Polisevi Şube Müdürlüğü, Pelitli Mimar Sinan Caddesi, Yeşilköy Mahallesi, Trabzon, Ortahisar, Trabzon, Karadeniz",
+  "il": "Trabzon",
+  "ilce": "Ortahisar"
+ },
+ "izmir-urla-polis-kampi": {
+  "lat": 38.378833,
+  "lon": 26.762673,
+  "kesinlik": "tesis",
+  "osm": "Urla Polis Kampı, Iskele Caddesi, Denizli Mahallesi, İskele Mahallesi, Urla, İzmir, Ege Bölgesi, 35450, Türkiye",
+  "il": "İzmir",
+  "ilce": "Urla"
+ },
+ "izmir-ogm-gumuldur-egitim-merkezi": {
+  "lat": 38.255157,
+  "lon": 27.13814,
+  "kesinlik": "ilce",
+  "osm": "Menderes, İzmir, Ege Bölgesi, Türkiye",
+  "il": "İzmir",
+  "ilce": "Menderes"
+ },
+ "izmir-foca-egitim-ve-dinlenme-tesisi": {
+  "lat": 38.668916,
+  "lon": 26.754775,
+  "kesinlik": "ilce",
+  "osm": "Foça, İzmir, Ege Bölgesi, Türkiye",
+  "il": "İzmir",
+  "ilce": "Foça"
+ },
+ "mersin-mersin-alata-egitim-ve-dinlenme-tesisi": {
+  "lat": 36.605709,
+  "lon": 34.310287,
+  "kesinlik": "ilce",
+  "osm": "Erdemli, Mersin, Akdeniz Bölgesi, Türkiye",
+  "il": "Mersin",
+  "ilce": "Erdemli"
+ },
+ "canakkale-gokceada-egitim-ve-dinlenme-tesisi": {
+  "lat": 40.200387,
+  "lon": 25.908462,
+  "kesinlik": "ilce",
+  "osm": "Gökçeada, Çanakkale, Marmara Bölgesi, 17760, Türkiye",
+  "il": "Çanakkale",
+  "ilce": "Gökçeada"
+ },
+ "mersin-dsi-6-bolge-kapizli-egitim-ve-dinlenme-tesisi": {
+  "lat": 36.377817,
+  "lon": 33.926037,
+  "kesinlik": "ilce",
+  "osm": "Silifke, Mersin, Akdeniz Bölgesi, Türkiye",
+  "il": "Mersin",
+  "ilce": "Silifke"
+ },
+ "aydin-didim-orsem-didim-otel": {
+  "lat": 37.369687,
+  "lon": 27.268484,
+  "kesinlik": "ilce",
+  "osm": "Didim, Aydın, Ege Bölgesi, Türkiye",
+  "il": "Aydın",
+  "ilce": "Didim"
+ },
+ "antalya-manavgat-orsem-colakli": {
+  "lat": 36.787012,
+  "lon": 31.440667,
+  "kesinlik": "ilce",
+  "osm": "Manavgat, Antalya, Akdeniz Bölgesi, Türkiye",
+  "il": "Antalya",
+  "ilce": "Manavgat"
+ },
+ "izmir-cesme-shipley-altindag-konukevi": {
+  "lat": 38.324404,
+  "lon": 26.30296,
+  "kesinlik": "ilce",
+  "osm": "Çeşme, İzmir, Ege Bölgesi, Türkiye",
+  "il": "İzmir",
+  "ilce": "Çeşme"
+ },
+ "izmir-ozdere-egitim-ve-dinlenme-tesisi": {
+  "lat": 38.255157,
+  "lon": 27.13814,
+  "kesinlik": "ilce",
+  "osm": "Menderes, İzmir, Ege Bölgesi, Türkiye",
+  "il": "İzmir",
+  "ilce": "Menderes"
+ },
+ "aydin-didim-sosyal-tesisleri-ve-uygulama-oteli": {
+  "lat": 37.369687,
+  "lon": 27.268484,
+  "kesinlik": "ilce",
+  "osm": "Didim, Aydın, Ege Bölgesi, Türkiye",
+  "il": "Aydın",
+  "ilce": "Didim"
+ },
+ "mugla-marmaris-icmeler-uygulama-oteli": {
+  "lat": 36.852255,
+  "lon": 28.274266,
+  "kesinlik": "ilce",
+  "osm": "Marmaris, Muğla, Ege Bölgesi, Türkiye",
+  "il": "Muğla",
+  "ilce": "Marmaris"
+ },
+ "mugla-akyaka-uygulama-oteli": {
+  "lat": 37.102923,
+  "lon": 28.416366,
+  "kesinlik": "ilce",
+  "osm": "Ula, Muğla, Ege Bölgesi, Türkiye",
+  "il": "Muğla",
+  "ilce": "Ula"
+ },
+ "izmir-seferihisar-egitim-ve-dinlenme-tesisi": {
+  "lat": 38.195029,
+  "lon": 26.834219,
+  "kesinlik": "ilce",
+  "osm": "Seferihisar, İzmir, Ege Bölgesi, Türkiye",
+  "il": "İzmir",
+  "ilce": "Seferihisar"
+ },
+ "canakkale-saglik-bakanligi-gokceada-egitim-ve-dinlenme-tesisi": {
+  "lat": 40.200387,
+  "lon": 25.908462,
+  "kesinlik": "ilce",
+  "osm": "Gökçeada, Çanakkale, Marmara Bölgesi, 17760, Türkiye",
+  "il": "Çanakkale",
+  "ilce": "Gökçeada"
+ },
+ "aydin-tki-didim-egitim-ve-dinlenme-tesisi": {
+  "lat": 37.369687,
+  "lon": 27.268484,
+  "kesinlik": "ilce",
+  "osm": "Didim, Aydın, Ege Bölgesi, Türkiye",
+  "il": "Aydın",
+  "ilce": "Didim"
+ },
+ "aydin-ilksan-didim-sosyal-tesisi": {
+  "lat": 37.369687,
+  "lon": 27.268484,
+  "kesinlik": "ilce",
+  "osm": "Didim, Aydın, Ege Bölgesi, Türkiye",
+  "il": "Aydın",
+  "ilce": "Didim"
+ },
+ "istanbul-kilyos-sosyal-tesisleri-misafirhane": {
+  "lat": 41.16858,
+  "lon": 29.057262,
+  "kesinlik": "ilce",
+  "osm": "Sarıyer, İstanbul, Marmara Bölgesi, Türkiye",
+  "il": "İstanbul",
+  "ilce": "Sarıyer"
+ },
+ "kastamonu-cide-konukevi": {
+  "lat": 41.891571,
+  "lon": 33.003712,
+  "kesinlik": "ilce",
+  "osm": "Cide, Kastamonu, Karadeniz Bölgesi, Türkiye",
+  "il": "Kastamonu",
+  "ilce": "Cide"
+ },
+ "samsun-omu-konuk-evi": {
+  "lat": 41.332259,
+  "lon": 36.270465,
+  "kesinlik": "ilce",
+  "osm": "Atakum, Samsun, Karadeniz Bölgesi, Türkiye",
+  "il": "Samsun",
+  "ilce": "Atakum"
+ },
+ "samsun-omtel-sahil-tesisleri": {
+  "lat": 41.332259,
+  "lon": 36.270465,
+  "kesinlik": "ilce",
+  "osm": "Atakum, Samsun, Karadeniz Bölgesi, Türkiye",
+  "il": "Samsun",
+  "ilce": "Atakum"
+ },
+ "sinop-ahmet-muhip-diranas-uygulama-oteli": {
+  "lat": 42.046327,
+  "lon": 35.04386,
+  "kesinlik": "tesis",
+  "osm": "Sinop Üniversitesi Ahmet Muhip Dıranas Uygulama Oteli, Demirkollar Yolu, Abalı Köyü, Sinop Merkez, Sinop, Karadeniz Bölg",
+  "il": "Sinop",
+  "ilce": "Merkez"
+ },
+ "antalya-akdeniz-universitesi-sosyal-tesisleri-otel": {
+  "lat": 36.872613,
+  "lon": 30.650365,
+  "kesinlik": "ilce",
+  "osm": "Konyaaltı, Antalya, Akdeniz Bölgesi, Türkiye",
+  "il": "Antalya",
+  "ilce": "Konyaaltı"
+ },
+ "antalya-avrupa-akdeniz-adrasan-egitim-ve-dinlenme-tesisi": {
+  "lat": 36.366905,
+  "lon": 30.285842,
+  "kesinlik": "ilce",
+  "osm": "Kumluca, Antalya, Akdeniz Bölgesi, Türkiye",
+  "il": "Antalya",
+  "ilce": "Kumluca"
+ },
+ "amasya-amasya-universitesi-misafirhanesi": {
+  "lat": 40.398407,
+  "lon": 35.524603,
+  "kesinlik": "ilce",
+  "osm": "Merkez, Hasanbey, Göynücek, Amasya, Karadeniz Bölgesi, 05900, Türkiye",
+  "il": "Amasya",
+  "ilce": "Merkez"
+ },
+ "corum-hitit-universitesi-uygulama-ve-arastirma-oteli": {
+  "lat": 40.549911,
+  "lon": 34.953734,
+  "kesinlik": "ilce",
+  "osm": "Çorum Merkez, Çorum, Karadeniz Bölgesi, Türkiye",
+  "il": "Çorum",
+  "ilce": "Merkez"
+ },
+ "bursa-nilufer-hatun-konukevi": {
+  "lat": 40.216997,
+  "lon": 28.984791,
+  "kesinlik": "ilce",
+  "osm": "Nilüfer, Bursa, Marmara Bölgesi, Türkiye",
+  "il": "Bursa",
+  "ilce": "Nilüfer"
+ },
+ "istanbul-yilmaz-akdoruk-ogrenci-konukevi": {
+  "lat": 41.16858,
+  "lon": 29.057262,
+  "kesinlik": "ilce",
+  "osm": "Sarıyer, İstanbul, Marmara Bölgesi, Türkiye",
+  "il": "İstanbul",
+  "ilce": "Sarıyer"
+ },
+ "duzce-duzce-universitesi-misafirhanesi": {
+  "lat": 40.839153,
+  "lon": 31.159536,
+  "kesinlik": "ilce",
+  "osm": "Düzce Merkez, Düzce, Karadeniz Bölgesi, Türkiye",
+  "il": "Düzce",
+  "ilce": "Merkez"
+ },
+ "osmaniye-osmaniye-korkut-ata-universitesi-misafirhanesi": {
+  "lat": 37.194906,
+  "lon": 36.436244,
+  "kesinlik": "ilce",
+  "osm": "Merkez, Yarbaşı, Düziçi, Osmaniye, Akdeniz Bölgesi, Türkiye",
+  "il": "Osmaniye",
+  "ilce": "Merkez"
+ },
+ "adana-cukurova-universitesi-balcali-konukevi": {
+  "lat": 37.044563,
+  "lon": 35.367614,
+  "kesinlik": "tesis",
+  "osm": "2 Numaralı Konukevi, Çukurova Üniversitesi Ziraat Fakültesi Yolu, Balcalı Mahallesi, Sarıçam, Adana, Akdeniz Bölgesi, 01",
+  "il": "Adana",
+  "ilce": "Sarıçam"
+ },
+ "edirne-trakya-universitesi-enez-uygulama-oteli": {
+  "lat": 40.725028,
+  "lon": 26.084567,
+  "kesinlik": "ilce",
+  "osm": "Enez, Edirne, Marmara Bölgesi, 22700, Türkiye",
+  "il": "Edirne",
+  "ilce": "Enez"
+ },
+ "edirne-istanbul-universitesi-enez-prof-dr-nazim-terzioglu-tesisleri": {
+  "lat": 40.725028,
+  "lon": 26.084567,
+  "kesinlik": "ilce",
+  "osm": "Enez, Edirne, Marmara Bölgesi, 22700, Türkiye",
+  "il": "Edirne",
+  "ilce": "Enez"
+ },
+ "canakkale-comu-dardanos-hotel-egitim-ve-dinlenme-tesisi": {
+  "lat": 40.146271,
+  "lon": 26.402889,
+  "kesinlik": "ilce",
+  "osm": "Çanakkale Merkez, Çanakkale, Marmara Bölgesi, Türkiye",
+  "il": "Çanakkale",
+  "ilce": "Merkez"
+ }
+}

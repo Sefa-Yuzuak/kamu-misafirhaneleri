@@ -180,7 +180,7 @@ kurumlara aittir; kaynağı göstermek için kullanılmaktadır.</p></div>
     ]
 
     return kabuk(
-        baslik=f"{AD} — 81 ilde {len(tesisler)} öğretmenevi, polisevi ve kamu tesisi",
+        baslik=f"{AD} — 81 ilde {len(tesisler)} öğretmenevi ve kamu tesisi",
         aciklama=(
             f"Türkiye'nin 81 ilindeki {len(tesisler)} kamu misafirhanesi: telefon numaraları, "
             f"2026 fiyatları, denize yakın {len(deniz)} tesis. Ücretsiz, reklamsız dizin."
@@ -448,8 +448,9 @@ Bağlayıcı bilgi için tesisin bağlı olduğu kuruma başvurun.</div></div>
         "mainEntityOfPage": SITE + yol,
     }
     return kabuk(
-        baslik=f"{baslik} | {AD}",
-        aciklama=REHBER_OZET[anahtar][:158],
+        baslik=f"{baslik} — kamu misafirhaneleri rehberi",
+        aciklama=(REHBER_OZET[anahtar] + f" {len(tesisler)} tesislik veri kümesinden "
+                  f"derlendi, tahmin yok. Son güncelleme {TARIH_TR}.")[:158],
         yol=yol,
         icerik=icerik,
         kirintilar=kirintilar,
@@ -473,7 +474,7 @@ def rehber_dizini(tesisler: list[dict]) -> str:
 {len(tesisler)} tesislik veri kümesinden derlendi, tahmin yok.</p></div></div>
 <div class="iz">{kartlar}</div></section>"""
     return kabuk(
-        baslik=f"Rehber — kamu misafirhanelerinde konaklama | {AD}",
+        baslik="Rehber — kamu misafirhanelerinde konaklama",
         aciklama="Öğretmenevi ve kamu misafirhanelerinde kimler kalabilir, fiyatlar, "
         "rezervasyon ve denize yakın tesisler hakkında veriye dayalı rehberler.",
         yol="/rehber/",

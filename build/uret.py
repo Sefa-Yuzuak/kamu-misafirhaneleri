@@ -20,7 +20,9 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from parca import (  # noqa: E402
     AD,
+    google_yer_url,
     harita_kutusu,
+    osm_adres,
     SITE,
     e,
     eylemler,
@@ -31,7 +33,7 @@ from parca import (  # noqa: E402
     tesis_karti,
     yol_tarifi_url,
 )
-from veri import TURLER, slug, tesis_slug, tur_slug  # noqa: E402
+from veri import TURLER, kisa_ad, sayfa_basligi, slug, tesis_slug, tur_slug  # noqa: E402
 
 KOK = Path(__file__).resolve().parent.parent
 CIKTI = KOK / "site"
@@ -215,7 +217,7 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list[dict],
     kirintilar = [
         ("/", "Ana sayfa"),
         (f"/il/{slug(t['il'])}/", t["il"]),
-        (yol, t["ad"]),
+        (yol, kisa_ad(t["ad"])),
     ]
 
     hero_img = ""
@@ -240,11 +242,18 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list[dict],
         rozetler.append(f'<span class="rz">{ik("saat")}Ankara {e(t["ankara_saat"])} sa</span>')
 
     # künye tablosu — GEO: tablolar alıntılanır
-    satirlar = [
+    satirlar = []
+    if kisa_ad(t["ad"]) != t["ad"]:
+        satirlar.append(("Resmî ad", e(t["ad"])))
+    satirlar += [
         ("Tesis türü", e(t["tur"])),
         ("Bağlı kurum", e(kurum_tam(t["kurum"]))),
         ("İl / ilçe", f'<a href="/il/{slug(t["il"])}/">{e(t["il"])}</a> / {e(t["ilce"])}'),
     ]
+    adres = osm_adres(konum)
+    if adres:
+        satirlar.append(("Adres", f"{e(adres)} <span style=\"color:var(--soluk)\">"
+                                  "(OpenStreetMap kaydı)</span>"))
     if t.get("telefon"):
         satirlar.append(
             (
@@ -320,7 +329,7 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list[dict],
 
     icerik = f"""<div class="ts-ust">{hero_img}{foto_not}<div class="kap">
 <div class="rzs">{"".join(rozetler)}</div>
-<h1>{e(t["ad"])}</h1>
+<h1>{e(kisa_ad(t["ad"]))}</h1>
 <p class="yer">{ik("konum")}{e(t["ilce"])}, {e(t["il"])}</p>
 </div></div>
 <div class="kap ikili">
@@ -352,6 +361,8 @@ Tüm {e(tur_ad.lower())}{ik("ok")}</a>
 <p style="font-size:.88rem;color:var(--soluk);margin:12px 0 12px">{konum_notu}</p>
 <a class="dg dg-2 dg-sm dg-blok" href="{e(yol_tarifi_url(t))}"
 target="_blank" rel="noopener nofollow">{ik("yol")}Google Haritalar'da aç</a>
+<a class="dg dg-3 dg-sm dg-blok" style="margin-top:6px" href="{e(google_yer_url(t))}"
+target="_blank" rel="noopener nofollow">{ik("yildiz")}Google yorumlarını gör</a>
 </div>
 </aside>
 </div>
@@ -382,6 +393,8 @@ target="_blank" rel="noopener nofollow">{ik("yol")}Google Haritalar'da aç</a>
         ld_tesis["email"] = t["eposta"]
     if g:
         ld_tesis["image"] = f"{SITE}/img/il/{g['lg']}"
+    if adres:
+        ld_tesis["address"]["streetAddress"] = adres
     if konum and konum["kesinlik"] == "tesis":
         ld_tesis["geo"] = {
             "@type": "GeoCoordinates",
@@ -395,9 +408,9 @@ target="_blank" rel="noopener nofollow">{ik("yol")}Google Haritalar'da aç</a>
         ]
 
     return kabuk(
-        baslik=f"{t['ad']} — telefon, fiyat ve bilgiler | {AD}",
+        baslik=sayfa_basligi(t),
         aciklama=(
-            f"{t['ad']} ({t['ilce']}, {t['il']}) telefon numarası, "
+            f"{kisa_ad(t['ad'])} ({t['ilce']}, {t['il']}) telefon numarası, "
             + (f"2026 fiyatları, " if t.get("fiyat_2026") else "")
             + f"kimlerin kalabildiği ve yol tarifi. {kurum_tam(t['kurum'])} tesisi."
         )[:158],
@@ -536,7 +549,7 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
     }
 
     return kabuk(
-        baslik=f"{il} Kamu Misafirhaneleri — {len(tesisler)} tesis, telefon ve fiyat | {AD}",
+        baslik=f"{il} Kamu Misafirhaneleri — {len(tesisler)} tesis, telefon ve fiyat",
         aciklama=(
             f"{il} ilindeki {len(tesisler)} öğretmenevi, polisevi ve kamu misafirhanesi. "
             f"Telefon numaraları, 2026 fiyatları"

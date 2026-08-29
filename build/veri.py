@@ -67,6 +67,34 @@ def telefon_link(no: str) -> str:
     return "tel:+9" + re.sub(r"\D", "", no)
 
 
-def baslik_duzelt(ad: str) -> str:
-    """Uzun resmi adları kısaltmadan, ekranda okunur hale getirir."""
-    return re.sub(r"\s+", " ", ad).strip()
+_UZANTI = re.compile(
+    r"\s*(ve\s+)?(Akşam|Aksam)\s+Sanat\s+Ok(ulu|\.)?ı?"
+    r"(\s+İktisadi\s+İşletmesi)?\s*$",
+    re.IGNORECASE,
+)
+_IKTISADI = re.compile(r"\s*İktisadi\s+İşletmesi\s*$", re.IGNORECASE)
+
+
+def kisa_ad(ad: str) -> str:
+    """Ekranda ve başlıkta kullanılan ad. Resmî ad künye tablosunda kalır.
+
+    521 öğretmenevinin resmî adı "... ve Akşam Sanat Okulu" ile bitiyor; bu ek
+    her başlığı 21 karakter uzatıp arama sonucunda kırpılmasına yol açıyor.
+    """
+    kisa = re.sub(r"\s+", " ", ad).strip()
+    for _ in range(3):
+        yeni = _IKTISADI.sub("", _UZANTI.sub("", kisa)).strip(" ,-")
+        if yeni == kisa:
+            break
+        kisa = yeni
+    return kisa or ad
+
+
+def sayfa_basligi(t: dict) -> str:
+    """Benzersiz, 65 karakteri aşmayan sayfa başlığı."""
+    ad = kisa_ad(t["ad"])
+    yer = t["il"] if t["ilce"].lower() in ad.lower() else f"{t['ilce']}, {t['il']}"
+    for aday in (f"{ad}, {yer} — telefon ve fiyat", f"{ad}, {yer}", f"{ad}, {t['il']}", ad):
+        if len(aday) <= 68:
+            return aday
+    return ad
