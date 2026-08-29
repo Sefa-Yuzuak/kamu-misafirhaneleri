@@ -1,0 +1,7260 @@
+{
+ "cekim_tarihi": "2026-08-29",
+ "tesis_sayisi": 562,
+ "tesisler": [
+  {
+   "ad": "Aladağ Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Adana",
+   "ilce": "Aladağ",
+   "telefon": [
+    "0322 591 20 05"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Ceyhan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Adana",
+   "ilce": "Ceyhan",
+   "telefon": [
+    "0322 613 44 49"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Feke Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Adana",
+   "ilce": "Feke",
+   "telefon": [
+    "0322 741 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "İmamoğlu Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Adana",
+   "ilce": "İmamoğlu",
+   "telefon": [
+    "0322 892 13 28"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Kozan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Adana",
+   "ilce": "Kozan",
+   "telefon": [
+    "0322 515 41 14"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Saimbeyli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Adana",
+   "ilce": "Saimbeyli",
+   "telefon": [
+    "0322 761 24 48"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Adana Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Adana",
+   "ilce": "Seyhan",
+   "telefon": [
+    "0322 453 31 58"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Çelikhan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Adıyaman",
+   "ilce": "Çelikhan",
+   "telefon": [
+    "0416 451 25 77"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Gerger Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Adıyaman",
+   "ilce": "Gerger",
+   "telefon": [
+    "0416 431 24 00"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Kahta Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Adıyaman",
+   "ilce": "Kahta",
+   "telefon": [
+    "0416 726 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Merkez Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Adıyaman",
+   "ilce": "Merkez",
+   "telefon": [
+    "0416 214 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Hüseyin Çelik Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Adıyaman",
+   "ilce": "Sincik",
+   "telefon": [
+    "0416 421 21 40"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Tut Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Adıyaman",
+   "ilce": "Tut",
+   "telefon": [
+    "0416 441 28 00"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Bolvadin Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Afyonkarahisar",
+   "ilce": "Bolvadin",
+   "telefon": [
+    "0272 612 76 22"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Dazkırı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Afyonkarahisar",
+   "ilce": "Dazkırı",
+   "telefon": [
+    "0272 421 32 25"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Dinar Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Afyonkarahisar",
+   "ilce": "Dinar",
+   "telefon": [
+    "0272 353 41 06"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Merkez Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Afyonkarahisar",
+   "ilce": "Merkez",
+   "telefon": [
+    "0272 212 08 92"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Sandıklı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Afyonkarahisar",
+   "ilce": "Sandıklı",
+   "telefon": [
+    "0272 512 50 35"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Şuhut Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Afyonkarahisar",
+   "ilce": "Şuhut",
+   "telefon": [
+    "0272 718 27 16"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Diyadin Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ağrı",
+   "ilce": "Diyadin",
+   "telefon": [
+    "0471 511 47 06"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Eleşkirt Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ağrı",
+   "ilce": "Eleşkirt",
+   "telefon": [
+    "0472 711 44 50"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Hamur Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ağrı",
+   "ilce": "Hamur",
+   "telefon": [
+    "0472 451 26 73"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Burçin Uysal Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ağrı",
+   "ilce": "Merkez",
+   "telefon": [
+    "0472 215 30 06"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Merkez Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ağrı",
+   "ilce": "Merkez",
+   "telefon": [
+    "0472 215 28 89"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Patnos Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ağrı",
+   "ilce": "Patnos",
+   "telefon": [
+    "0472 616 10 21"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Tutak Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ağrı",
+   "ilce": "Tutak",
+   "telefon": [
+    "0472 411 22 96"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Gümüşhacıköy Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Amasya",
+   "ilce": "Gümüşhacıköy",
+   "telefon": [
+    "0358 717 16 58"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3.5
+  },
+  {
+   "ad": "Amasya Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Amasya",
+   "ilce": "Merkez",
+   "telefon": [
+    "0358 218 18 41"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3.5
+  },
+  {
+   "ad": "Merzifon Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Amasya",
+   "ilce": "Merzifon",
+   "telefon": [
+    "0358 513 05 51"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3.5
+  },
+  {
+   "ad": "Suluova Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Amasya",
+   "ilce": "Suluova",
+   "telefon": [
+    "0358 417 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3.5
+  },
+  {
+   "ad": "Taşova Şehit Ömer Kesim Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Amasya",
+   "ilce": "Taşova",
+   "telefon": [
+    "0358 312 13 20"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3.5
+  },
+  {
+   "ad": "Bala Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ankara",
+   "ilce": "Bala",
+   "telefon": [
+    "0312 876 11 81"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 0
+  },
+  {
+   "ad": "Beypazarı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ankara",
+   "ilce": "Beypazarı",
+   "telefon": [
+    "0312 763 11 35"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 0
+  },
+  {
+   "ad": "Çamlıdere Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ankara",
+   "ilce": "Çamlıdere",
+   "telefon": [
+    "0312 753 13 98"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 0
+  },
+  {
+   "ad": "Çubuk Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ankara",
+   "ilce": "Çubuk",
+   "telefon": [
+    "0312 837 27 88"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 0
+  },
+  {
+   "ad": "Gölbaşı 75. Yıl Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ankara",
+   "ilce": "Gölbaşı",
+   "telefon": [
+    "0312 484 72 74"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 0
+  },
+  {
+   "ad": "Haymana Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ankara",
+   "ilce": "Haymana",
+   "telefon": [
+    "0312 658 08 28"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 0
+  },
+  {
+   "ad": "Kahramankazan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ankara",
+   "ilce": "Kahramankazan",
+   "telefon": [
+    "0312 814 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 0
+  },
+  {
+   "ad": "Kalecik Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ankara",
+   "ilce": "Kalecik",
+   "telefon": [
+    "0312 857 10 10"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 0
+  },
+  {
+   "ad": "Kızılcahamam Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ankara",
+   "ilce": "Kızılcahamam",
+   "telefon": [
+    "0312 736 32 06"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 0
+  },
+  {
+   "ad": "Nallıhan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ankara",
+   "ilce": "Nallıhan",
+   "telefon": [
+    "0312 785 23 74"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 0
+  },
+  {
+   "ad": "Polatlı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ankara",
+   "ilce": "Polatlı",
+   "telefon": [
+    "0312 623 26 64"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 0
+  },
+  {
+   "ad": "Sincan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ankara",
+   "ilce": "Sincan",
+   "telefon": [
+    "0312 276 59 60"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 0
+  },
+  {
+   "ad": "Şereflikoçhisar Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ankara",
+   "ilce": "Şereflikoçhisar",
+   "telefon": [
+    "0312 687 18 39"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 0
+  },
+  {
+   "ad": "Başkent Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ankara",
+   "ilce": "Yenimahalle",
+   "telefon": [
+    "0312 212 96 40"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 0
+  },
+  {
+   "ad": "Akseki Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Antalya",
+   "ilce": "Akseki",
+   "telefon": [
+    "0242 678 20 18"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6
+  },
+  {
+   "ad": "Alanya Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Antalya",
+   "ilce": "Alanya",
+   "telefon": [
+    "0242 513 01 47"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6
+  },
+  {
+   "ad": "Demre Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Antalya",
+   "ilce": "Demre",
+   "telefon": [
+    "0242 871 23 88"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6
+  },
+  {
+   "ad": "Elmalı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Antalya",
+   "ilce": "Elmalı",
+   "telefon": [
+    "0242 618 32 88"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6
+  },
+  {
+   "ad": "Gazipaşa Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Antalya",
+   "ilce": "Gazipaşa",
+   "telefon": [
+    "0242 572 42 83"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6
+  },
+  {
+   "ad": "Antalya Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Antalya",
+   "ilce": "Kepez",
+   "telefon": [
+    "0242 227 11 43"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6
+  },
+  {
+   "ad": "Konyaaltı Mehmet Zeki Balcı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Antalya",
+   "ilce": "Konyaaltı",
+   "telefon": [
+    "0242 229 14 31"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6
+  },
+  {
+   "ad": "Korkuteli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Antalya",
+   "ilce": "Korkuteli",
+   "telefon": [
+    "0242 643 22 40"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6
+  },
+  {
+   "ad": "Kumluca Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Antalya",
+   "ilce": "Kumluca",
+   "telefon": [
+    "0242 887 59 55"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6
+  },
+  {
+   "ad": "Serik Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Antalya",
+   "ilce": "Serik",
+   "telefon": [
+    "0242 722 37 67"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6
+  },
+  {
+   "ad": "Ardanuç Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Artvin",
+   "ilce": "Ardanuç",
+   "telefon": [
+    "0466 611 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 11
+  },
+  {
+   "ad": "Borçka Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Artvin",
+   "ilce": "Borçka",
+   "telefon": [
+    "0466 415 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 11
+  },
+  {
+   "ad": "Hopa Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Artvin",
+   "ilce": "Hopa",
+   "telefon": [
+    "0466 351 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 11
+  },
+  {
+   "ad": "Artvin Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Artvin",
+   "ilce": "Merkez",
+   "telefon": [
+    "0466 212 36 35"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 11
+  },
+  {
+   "ad": "Murgul Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Artvin",
+   "ilce": "Murgul",
+   "telefon": [
+    "0466 711 36 42"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 11
+  },
+  {
+   "ad": "Şavşat Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Artvin",
+   "ilce": "Şavşat",
+   "telefon": [
+    "0466 517 18 08"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 11
+  },
+  {
+   "ad": "Yusufeli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Artvin",
+   "ilce": "Yusufeli",
+   "telefon": [
+    "0466 811 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 11
+  },
+  {
+   "ad": "Bozdoğan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Aydın",
+   "ilce": "Bozdoğan",
+   "telefon": [
+    "0256 414 24 87"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Efeler Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Aydın",
+   "ilce": "Efeler",
+   "telefon": [
+    "0256 225 26 81"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Koçarlı Sabancı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Aydın",
+   "ilce": "Koçarlı",
+   "telefon": [
+    "0256 761 24 24"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Kuşadası Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Aydın",
+   "ilce": "Kuşadası",
+   "telefon": [
+    "0256 612 38 88"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Nazilli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Aydın",
+   "ilce": "Nazilli",
+   "telefon": [
+    "0256 312 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Söke Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Aydın",
+   "ilce": "Söke",
+   "telefon": [
+    "0256 512 01 26"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Ayvalık Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Balıkesir",
+   "ilce": "Ayvalık",
+   "telefon": [
+    "0266 312 30 04"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "fiyat_2026": "2 kişilik oda kamu 2.800 TL (MEB 2.200); 3–4 kişilik 4.200 TL; açık büfe kahvaltı dahil",
+   "deniz": "Atatürk Bulvarı, sahil şeridinde",
+   "kaynak_fiyat": "https://ayvalikogretmenevi.meb.k12.tr/icerikler/2026yazdonemikonaklamafiyatlistesi_17338455.html",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Bandırma Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Balıkesir",
+   "ilce": "Bandırma",
+   "telefon": [
+    "0266 712 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Burhaniye Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Balıkesir",
+   "ilce": "Burhaniye",
+   "telefon": [
+    "0266 422 39 73"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "fiyat_2026": "3–4 kişilik odada kişi başı kamu 2.000 TL, kahvaltı dahil (1 Ekim 2026'ya kadar)",
+   "deniz": "Ören sahilinde, bahçesinde yüzme havuzu",
+   "kaynak_fiyat": "https://brhogretmenevi.meb.k12.tr/icerikler/odafiyatlarimiz_2628683.html",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Karesibey Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Balıkesir",
+   "ilce": "Büyükşehir",
+   "telefon": [
+    "0266 245 56 66"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Büyükşehir Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Balıkesir",
+   "ilce": "Büyükşehir",
+   "telefon": [
+    "0266 549 10 10"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Dursunbey Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Balıkesir",
+   "ilce": "Dursunbey",
+   "telefon": [
+    "0266 662 17 68"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Altınoluk Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Balıkesir",
+   "ilce": "Edremit",
+   "telefon": [
+    "0266 396 11 19"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Erdek Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Balıkesir",
+   "ilce": "Erdek",
+   "telefon": [
+    "0266 835 36 76"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Gönen Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Balıkesir",
+   "ilce": "Gönen",
+   "telefon": [
+    "0266 762 39 98"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Manyas Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Balıkesir",
+   "ilce": "Manyas",
+   "telefon": [
+    "0266 818 19 77"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Sındırgı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Balıkesir",
+   "ilce": "Sındırgı",
+   "telefon": [
+    "0266 516 15 18"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bilecik",
+   "ilce": "Bozüyük",
+   "telefon": [
+    "0228 314 00 60"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Gölpazarı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bilecik",
+   "ilce": "Gölpazarı",
+   "telefon": [
+    "0228 411 36 21"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Söğüt Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bilecik",
+   "ilce": "Söğüt",
+   "telefon": [
+    "0228 361 35 97"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Adaklı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bingöl",
+   "ilce": "Adaklı",
+   "telefon": [
+    "0426 611 24 84"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Karlıova Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bingöl",
+   "ilce": "Karlıova",
+   "telefon": [
+    "0426 511 20 54"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Kığı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bingöl",
+   "ilce": "Kığı",
+   "telefon": [
+    "0426 311 21 72"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Bingöl Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bingöl",
+   "ilce": "Merkez",
+   "telefon": [
+    "0426 213 23 80"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Solhan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bingöl",
+   "ilce": "Solhan",
+   "telefon": [
+    "0426 711 26 50"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bitlis",
+   "ilce": "Adilcevaz",
+   "telefon": [
+    "0434 311 25 98"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Selçuklu Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bitlis",
+   "ilce": "Ahlat",
+   "telefon": [
+    "0434 412 60 49"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Güroymak Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bitlis",
+   "ilce": "Güroymak",
+   "telefon": [
+    "0434 511 31 86"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Hizan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bitlis",
+   "ilce": "Hizan",
+   "telefon": [
+    "0434 611 22 63"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Mutki Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bitlis",
+   "ilce": "Mutki",
+   "telefon": [
+    "0434 711 25 24"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Tatvan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bitlis",
+   "ilce": "Tatvan",
+   "telefon": [
+    "0434 827 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Dörtdivan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bolu",
+   "ilce": "Dörtdivan",
+   "telefon": [
+    "0374 331 45 13"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 2.5
+  },
+  {
+   "ad": "Göynük Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bolu",
+   "ilce": "Göynük",
+   "telefon": [
+    "0374 451 61 47"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 2.5
+  },
+  {
+   "ad": "Solmaz Ahmet Baysal Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bolu",
+   "ilce": "Merkez",
+   "telefon": [
+    "0374 217 53 93"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 2.5
+  },
+  {
+   "ad": "Yeniçağa Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bolu",
+   "ilce": "Yeniçağa",
+   "telefon": [
+    "0374 341 47 07"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 2.5
+  },
+  {
+   "ad": "Bucak Ahmet Kadriye Öztürk Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Burdur",
+   "ilce": "Bucak",
+   "telefon": [
+    "0248 325 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Mehmet Akif Ersoy Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Burdur",
+   "ilce": "Merkez",
+   "telefon": [
+    "0248 233 36 34"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Gemlik Daniş Ekim Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bursa",
+   "ilce": "Gemlik",
+   "telefon": [
+    "0224 514 55 66"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "İnegöl Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bursa",
+   "ilce": "İnegöl",
+   "telefon": [
+    "0224 711 28 00"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "İznik Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bursa",
+   "ilce": "İznik",
+   "telefon": [
+    "0224 757 10 80"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Karacabey Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bursa",
+   "ilce": "Karacabey",
+   "telefon": [
+    "0224 676 49 03"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Mustafakemalpaşa Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bursa",
+   "ilce": "M.Kemalpaşa",
+   "telefon": [
+    "0224 614 10 33"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Bursa Osmangazi Merkez Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bursa",
+   "ilce": "Merkez",
+   "telefon": [
+    "0224 224 21 62"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Mudanya Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bursa",
+   "ilce": "Mudanya",
+   "telefon": [
+    "0224 544 94 84"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Orhangazi Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bursa",
+   "ilce": "Orhangazi",
+   "telefon": [
+    "0554 177 82 80"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Ayvacık Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çanakkale",
+   "ilce": "Ayvacık",
+   "telefon": [
+    "0286 712 12 03"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Bayramiç Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çanakkale",
+   "ilce": "Bayramiç",
+   "telefon": [
+    "0286 773 59 85"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "EceabatSabancı Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çanakkale",
+   "ilce": "Eceabaat",
+   "telefon": [
+    "0286 814 14 99"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Ezine Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çanakkale",
+   "ilce": "Ezine",
+   "telefon": [
+    "0555 195 64 17"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Gelibolu Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çanakkale",
+   "ilce": "Gelibolu",
+   "telefon": [
+    "0286 566 18 10"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Gökçeada Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çanakkale",
+   "ilce": "Gökçeada",
+   "telefon": [
+    "0286 887 33 05"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "fiyat_2026": "2 kişilik 3.000 / 3 kişilik 3.500 / 4 kişilik 4.000 TL — kahvaltı hariç",
+   "deniz": "Ada merkezinde (Çınarlı Mah.)",
+   "kaynak_fiyat": "https://gokceadaogretmenevi.meb.k12.tr/",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Lapseki Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çanakkale",
+   "ilce": "Lapseki",
+   "telefon": [
+    "0286 512 15 04"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çanakkale",
+   "ilce": "Merkez",
+   "telefon": [
+    "0286 213 78 31"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Eldivan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çankırı",
+   "ilce": "Eldivan",
+   "telefon": [
+    "0376 311 21 63"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Ilgaz Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çankırı",
+   "ilce": "Ilgaz",
+   "telefon": [
+    "0376 416 17 91"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Kızılırmak Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çankırı",
+   "ilce": "Kızılırmak",
+   "telefon": [
+    "0376 324 11 05"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Korgun Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çankırı",
+   "ilce": "Korgun",
+   "telefon": [
+    "0376 343 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Çankırı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çankırı",
+   "ilce": "Merkez",
+   "telefon": [
+    "0376 213 30 27"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Orta Atatürk Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çankırı",
+   "ilce": "Orta",
+   "telefon": [
+    "0376 615 11 66"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Şabanözü Gel-Al Çorap Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çankırı",
+   "ilce": "Şabanözü",
+   "telefon": [
+    "0376 518 16 00"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Alaca Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çorum",
+   "ilce": "Alaca",
+   "telefon": [
+    "0364 411 26 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 2.5
+  },
+  {
+   "ad": "Bayat Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çorum",
+   "ilce": "Bayat",
+   "telefon": [
+    "0364 381 21 92"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 2.5
+  },
+  {
+   "ad": "İskilip Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çorum",
+   "ilce": "İskilip",
+   "telefon": [
+    "0364 511 63 08"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 2.5
+  },
+  {
+   "ad": "Mecitözü Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çorum",
+   "ilce": "Mecitözü",
+   "telefon": [
+    "0364 461 25 39"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 2.5
+  },
+  {
+   "ad": "Çorum Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çorum",
+   "ilce": "Merkez",
+   "telefon": [
+    "0364 221 75 47"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 2.5
+  },
+  {
+   "ad": "Osmancık Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çorum",
+   "ilce": "Osmancık",
+   "telefon": [
+    "0364 611 49 94"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 2.5
+  },
+  {
+   "ad": "Sungurlu Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Çorum",
+   "ilce": "Sungurlu",
+   "telefon": [
+    "0364 311 98 98"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 2.5
+  },
+  {
+   "ad": "Denizli 80 Yıl Öğretmenevi İktisadi İşletmesi ve Akşam Sanat Okuluı",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Denizli",
+   "ilce": "Pamukkale",
+   "telefon": [
+    "0258 266 31 35"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6
+  },
+  {
+   "ad": "Bismil Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Diyarbakır",
+   "ilce": "Bismil",
+   "telefon": [
+    "0412 415 30 76"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Çüngüş Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Diyarbakır",
+   "ilce": "Çüngüş",
+   "telefon": [
+    "0412 541 21 84"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Dicle Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Diyarbakır",
+   "ilce": "Dicle",
+   "telefon": [
+    "0412 561 33 90"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Eğil Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Diyarbakır",
+   "ilce": "Eğil",
+   "telefon": [
+    "0412 581 21 10"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Ergani Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Diyarbakır",
+   "ilce": "Ergani",
+   "telefon": [
+    "0412 611 58 23"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Hazro Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Diyarbakır",
+   "ilce": "Hazro",
+   "telefon": [
+    "0546 546 76 21"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Şehit Orhan Korkmaz Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Diyarbakır",
+   "ilce": "Kulp",
+   "telefon": [
+    "0412 831 34 94"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Lice Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Diyarbakır",
+   "ilce": "Lice",
+   "telefon": [
+    "0412 861 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Silvan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Diyarbakır",
+   "ilce": "Silvan",
+   "telefon": [
+    "0412 711 20 55"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Yenişehir Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Diyarbakır",
+   "ilce": "Yenişehir",
+   "telefon": [
+    "0412 223 91 91"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Diyarbakır Büyükşehir Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Diyarbakır",
+   "ilce": "Yenişehir",
+   "telefon": [
+    "0412 262 29 89"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Keşan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Edirne",
+   "ilce": "Keşan",
+   "telefon": [
+    "0284 715 32 00"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8.5
+  },
+  {
+   "ad": "Edirne Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Edirne",
+   "ilce": "Merkez",
+   "telefon": [
+    "0284 213 48 88"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8.5
+  },
+  {
+   "ad": "Uzunköprü Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Edirne",
+   "ilce": "Uzunköprü",
+   "telefon": [
+    "0284 518 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8.5
+  },
+  {
+   "ad": "Ağın Yusuf Karabatak Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Elazığ",
+   "ilce": "Ağın",
+   "telefon": [
+    "0532 382 15 23"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Arıcak Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Elazığ",
+   "ilce": "Arıcak",
+   "telefon": [
+    "0424 771 23 03"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Karakoçan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Elazığ",
+   "ilce": "Karakoçan",
+   "telefon": [
+    "0424 711 26 89"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Keban Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Elazığ",
+   "ilce": "Keban",
+   "telefon": [
+    "0424 571 21 57"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Kovancılar Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Elazığ",
+   "ilce": "Kovancılar",
+   "telefon": [
+    "0424 611 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Elazığ Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Elazığ",
+   "ilce": "Merkez",
+   "telefon": [
+    "0424 233 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Sivrice Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Elazığ",
+   "ilce": "Sivrice",
+   "telefon": [
+    "0555 088 64 23"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Çayırlı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzincan",
+   "ilce": "Çayırlı",
+   "telefon": [
+    "0446 311 20 53"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "İliç Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzincan",
+   "ilce": "İliç",
+   "telefon": [
+    "0551 233 36 22"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Kemah Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzincan",
+   "ilce": "Kemah",
+   "telefon": [
+    "0446 511 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Kemaliye Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzincan",
+   "ilce": "Kemaliye",
+   "telefon": [
+    "0446 751 20 21"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Erzincan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzincan",
+   "ilce": "Merkez",
+   "telefon": [
+    "0533 412 40 24"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Otlukbeli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzincan",
+   "ilce": "Otlukbeli",
+   "telefon": [
+    "0446 361 21 79"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Refahiye Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzincan",
+   "ilce": "Refahiye",
+   "telefon": [
+    "0446 611 21 27"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Tercan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzincan",
+   "ilce": "Tercan",
+   "telefon": [
+    "0446 441 30 84"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Üzümlü Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzincan",
+   "ilce": "Üzümlü",
+   "telefon": [
+    "0446 411 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Aşkale Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzurum",
+   "ilce": "Aşkale",
+   "telefon": [
+    "0442 415 18 48"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzurum",
+   "ilce": "Büyükşehir",
+   "telefon": [
+    "0442 235 45 25"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Çat Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzurum",
+   "ilce": "Çat",
+   "telefon": [
+    "0442 611 25 52"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Hınıs Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzurum",
+   "ilce": "Hınıs",
+   "telefon": [
+    "0442 511 28 95"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Horasan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzurum",
+   "ilce": "Horasan",
+   "telefon": [
+    "0442 711 32 18"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "İspir Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzurum",
+   "ilce": "İspir",
+   "telefon": [
+    "0442 451 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Karaçoban Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzurum",
+   "ilce": "Karaçoban",
+   "telefon": [
+    "0442 591 25 25"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Karayazı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzurum",
+   "ilce": "Karayazı",
+   "telefon": [
+    "0442 541 28 87"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Narman Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzurum",
+   "ilce": "Narman",
+   "telefon": [
+    "0442 741 24 80"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Oltu Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzurum",
+   "ilce": "Oltu",
+   "telefon": [
+    "0442 816 11 28"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Olur Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzurum",
+   "ilce": "Olur",
+   "telefon": [
+    "0442 841 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Pazaryolu Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzurum",
+   "ilce": "Pazaryolu",
+   "telefon": [
+    "0442 481 23 99"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Şenkaya Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzurum",
+   "ilce": "Şenkaya",
+   "telefon": [
+    "0442 861 25 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Tekman Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzurum",
+   "ilce": "Tekman",
+   "telefon": [
+    "0442 561 25 66"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Tortum Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzurum",
+   "ilce": "Tortum",
+   "telefon": [
+    "0442 761 20 27"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Uzundere Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Erzurum",
+   "ilce": "Uzundere",
+   "telefon": [
+    "0442 791 24 79"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Eskişehir Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Eskişehir",
+   "ilce": "Büyükşehir",
+   "telefon": [
+    "0222 230 68 38"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 2.5
+  },
+  {
+   "ad": "Çifteler Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Eskişehir",
+   "ilce": "Çifteler",
+   "telefon": [
+    "0222 541 46 71"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 2.5
+  },
+  {
+   "ad": "Sabancı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Gaziantep",
+   "ilce": "Islahiye",
+   "telefon": [
+    "0552 806 31 00"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Karkamış Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Gaziantep",
+   "ilce": "Karkamış",
+   "telefon": [
+    "0342 561 20 33"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Nizip Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Gaziantep",
+   "ilce": "Nizip",
+   "telefon": [
+    "0342 518 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Oğuzeli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Gaziantep",
+   "ilce": "Oğuzeli",
+   "telefon": [
+    "0538 213 69 27"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Şahinbey Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Gaziantep",
+   "ilce": "Şahinbey",
+   "telefon": [
+    "0342 231 31 10"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Alucra Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Giresun",
+   "ilce": "Alucra",
+   "telefon": [
+    "0454 751 35 92"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Bulancak Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Giresun",
+   "ilce": "Bulancak",
+   "telefon": [
+    "0454 318 15 35"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Çamoluk Çamoluk Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Giresun",
+   "ilce": "Çamoluk",
+   "telefon": [
+    "0454 781 51 52"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Dereli Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Giresun",
+   "ilce": "Dereli",
+   "telefon": [
+    "0454 381 21 25"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Doğankent Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Giresun",
+   "ilce": "Doğankent",
+   "telefon": [
+    "0454 471 54 54"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Espiye Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Giresun",
+   "ilce": "Espiye",
+   "telefon": [
+    "0454 611 44 63"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Eynesil Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Giresun",
+   "ilce": "Eynesil",
+   "telefon": [
+    "0454 581 43 10"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Görele Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Giresun",
+   "ilce": "Görele",
+   "telefon": [
+    "0454 513 31 59"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Keşap Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Giresun",
+   "ilce": "Kesap",
+   "telefon": [
+    "0454 641 43 56"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Merkez Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Giresun",
+   "ilce": "Merkez",
+   "telefon": [
+    "0454 216 22 16"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Piraziz Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Giresun",
+   "ilce": "Piraziz",
+   "telefon": [
+    "0532 523 35 06"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Şebinkarahisar Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Giresun",
+   "ilce": "Şebinkarahisar",
+   "telefon": [
+    "0454 711 41 38"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Tirebolu Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Giresun",
+   "ilce": "Tirebolu",
+   "telefon": [
+    "0454 411 41 20"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Yağlıdere Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Giresun",
+   "ilce": "Yağlıdere",
+   "telefon": [
+    "0454 671 23 87"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Kelkit Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Gümüşhane",
+   "ilce": "Kelkit",
+   "telefon": [
+    "0456 317 13 50"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Kürtün Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Gümüşhane",
+   "ilce": "Kürtün",
+   "telefon": [
+    "0456 711 65 62"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Merkez/ Fevzi Ataç Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Gümüşhane",
+   "ilce": "Merkez",
+   "telefon": [
+    "0456 213 30 07"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Şiran/ Beşbinaz Şeker Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Gümüşhane",
+   "ilce": "Şiran",
+   "telefon": [
+    "0456 511 78 42"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Torul Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Gümüşhane",
+   "ilce": "Torul",
+   "telefon": [
+    "0456 611 20 65"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Çukurca Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Hakkari",
+   "ilce": "Çukurca",
+   "telefon": [
+    "0542 698 49 83"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Hakkari Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Hakkari",
+   "ilce": "Merkez",
+   "telefon": [
+    "0438 216 00 04"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Şemdinli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Hakkari",
+   "ilce": "Şemdinli",
+   "telefon": [
+    "0438 411 24 02"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Yüksekova Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Hakkari",
+   "ilce": "Yüksekova",
+   "telefon": [
+    "0438 351 60 68"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Antakya Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Hatay",
+   "ilce": "Antakya",
+   "telefon": [
+    "0326 216 11 56"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8.5
+  },
+  {
+   "ad": "Arsuz Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Hatay",
+   "ilce": "Arsuz",
+   "telefon": [
+    "0507 550 22 31"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8.5
+  },
+  {
+   "ad": "Belen Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Hatay",
+   "ilce": "Belen",
+   "telefon": [
+    "0326 441 24 24"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8.5
+  },
+  {
+   "ad": "Dörtyol Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Hatay",
+   "ilce": "Dörtyol",
+   "telefon": [
+    "0326 712 28 51"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8.5
+  },
+  {
+   "ad": "Erzin Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Hatay",
+   "ilce": "Erzin",
+   "telefon": [
+    "0326 681 50 78"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8.5
+  },
+  {
+   "ad": "Hassa Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Hatay",
+   "ilce": "Hassa",
+   "telefon": [
+    "0326 771 63 31"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8.5
+  },
+  {
+   "ad": "İskenderun Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Hatay",
+   "ilce": "İskenderun",
+   "telefon": [
+    "0326 612 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8.5
+  },
+  {
+   "ad": "Kırıkhan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Hatay",
+   "ilce": "Kırıkhan",
+   "telefon": [
+    "0326 344 18 98"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8.5
+  },
+  {
+   "ad": "Payas Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Hatay",
+   "ilce": "Payas",
+   "telefon": [
+    "0326 755 19 30"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8.5
+  },
+  {
+   "ad": "Reyhanlı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Hatay",
+   "ilce": "Reyhanlı",
+   "telefon": [
+    "0326 413 39 61"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8.5
+  },
+  {
+   "ad": "Samandağ Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Hatay",
+   "ilce": "Samandağ",
+   "telefon": [
+    "0326 512 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "fiyat_2026": "3 kişilik kamu 3.750 TL, suit 4.250 TL; 0–6 yaş ücretsiz, kahvaltı hariç",
+   "deniz": "Çevlik, denize sıfır",
+   "kaynak_fiyat": "https://samandagogretmenevi.meb.k12.tr/icerikler/guncelfiyatlistesi_14136328.html",
+   "ankara_saat": 8.5
+  },
+  {
+   "ad": "Yayladağı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Hatay",
+   "ilce": "Yayladağı",
+   "telefon": [
+    "0326 471 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8.5
+  },
+  {
+   "ad": "Atabey Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Isparta",
+   "ilce": "Atabey",
+   "telefon": [
+    "0246 271 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Eğirdir Sabancı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Isparta",
+   "ilce": "Eğirdir",
+   "telefon": [
+    "0246 311 25 25"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Merkez Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Isparta",
+   "ilce": "Merkez",
+   "telefon": [
+    "0246 232 51 82"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Şarkikaraağaç Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Isparta",
+   "ilce": "Şarkikaraağaç",
+   "telefon": [
+    "0246 411 20 54"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Yalvaç Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Isparta",
+   "ilce": "Yalvaç",
+   "telefon": [
+    "0246 441 28 22"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Anamur Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Mersin",
+   "ilce": "Anamur",
+   "telefon": [
+    "0324 814 50 10"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Aydıncık Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Mersin",
+   "ilce": "Aydıncık",
+   "telefon": [
+    "0324 841 32 67"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Bozyazı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Mersin",
+   "ilce": "Bozyazı",
+   "telefon": [
+    "0324 851 31 36"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Erdemli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Mersin",
+   "ilce": "Erdemli",
+   "telefon": [
+    "0324 515 25 37"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Gülnar Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Mersin",
+   "ilce": "Gülnar",
+   "telefon": [
+    "0324 751 75 88"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Mut Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Mersin",
+   "ilce": "Mut",
+   "telefon": [
+    "0324 774 16 29"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Silifke Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Mersin",
+   "ilce": "Silifke",
+   "telefon": [
+    "0324 714 70 16"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Tarsus Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Mersin",
+   "ilce": "Tarsus",
+   "telefon": [
+    "0324 613 26 10"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Silifke Taşucu Lütfi Elvan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Mersin",
+   "ilce": "Taşucu",
+   "telefon": [
+    "0324 741 44 66"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Suphi Öner Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Mersin",
+   "ilce": "Yenişehir",
+   "telefon": [
+    "0324 328 81 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Burgazada Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İstanbul",
+   "ilce": "Adalar",
+   "telefon": [
+    "0216 381 27 21"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Asım ve Nurhan Kocabıyık Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İstanbul",
+   "ilce": "Avcılar",
+   "telefon": [
+    "0212 695 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Bağcılar Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İstanbul",
+   "ilce": "Bağcılar",
+   "telefon": [
+    "0212 433 03 13"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Bahçelievler Abidin Pak Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İstanbul",
+   "ilce": "Bahçelievler",
+   "telefon": [
+    "0212 502 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Sabancı Öğretmenevi ve Akşam Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İstanbul",
+   "ilce": "Beykoz",
+   "telefon": [
+    "0216 332 36 34"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Beylikdüzü Atatürk Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İstanbul",
+   "ilce": "Beylikdüzü",
+   "telefon": [
+    "0212 871 30 01"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Beyoğlu Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İstanbul",
+   "ilce": "Beyoğlu",
+   "telefon": [
+    "0212 252 43 43"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Çatalca Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İstanbul",
+   "ilce": "Çatalca",
+   "telefon": [
+    "0212 789 21 89"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Cankurtaran Öğretmenevi ve Akşam Sanat Ok",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İstanbul",
+   "ilce": "Fatih",
+   "telefon": [
+    "0212 517 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Şehit Fethi Sekin Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İstanbul",
+   "ilce": "Küçükçekmece",
+   "telefon": [
+    "0212 541 05 05"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Silivri Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İstanbul",
+   "ilce": "Silivri",
+   "telefon": [
+    "0212 727 79 82"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Şişli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İstanbul",
+   "ilce": "Şişli",
+   "telefon": [
+    "0212 296 89 72"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Adile Sultan Kasrı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İstanbul",
+   "ilce": "Üsküdar",
+   "telefon": [
+    "0216 325 64 44"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Bayındır Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İzmir",
+   "ilce": "Bayındır",
+   "telefon": [
+    "0232 581 48 38"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Alaçatı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İzmir",
+   "ilce": "Çeşme",
+   "telefon": [
+    "0232 723 21 01"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Karaburun Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İzmir",
+   "ilce": "Karaburun",
+   "telefon": [
+    "0232 731 27 52"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Kınık Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İzmir",
+   "ilce": "Kınık",
+   "telefon": [
+    "0232 687 10 59"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Kiraz Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İzmir",
+   "ilce": "Kiraz",
+   "telefon": [
+    "0232 572 43 53"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Ödemiş Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İzmir",
+   "ilce": "Ödemiş",
+   "telefon": [
+    "0530 308 79 41"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Selçuk Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İzmir",
+   "ilce": "Selçuk",
+   "telefon": [
+    "0232 892 68 50"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Tire Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "İzmir",
+   "ilce": "Tire",
+   "telefon": [
+    "0232 512 63 42"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Digor Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kars",
+   "ilce": "Diğor",
+   "telefon": [
+    "0474 311 21 02"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Kağızman Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kars",
+   "ilce": "Kağızman",
+   "telefon": [
+    "0501 755 04 75"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Kars Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kars",
+   "ilce": "Merkez",
+   "telefon": [
+    "0474 212 00 49"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Sarıkamış Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kars",
+   "ilce": "Sarıkamış",
+   "telefon": [
+    "0474 413 40 47"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Selim Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kars",
+   "ilce": "Selim",
+   "telefon": [
+    "0474 461 33 88"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Araç Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kastamonu",
+   "ilce": "Araç",
+   "telefon": [
+    "0366 362 13 64"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4
+  },
+  {
+   "ad": "Çatalzeytin Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kastamonu",
+   "ilce": "Çatalzeytin",
+   "telefon": [
+    "0366 516 19 89"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4
+  },
+  {
+   "ad": "Daday Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kastamonu",
+   "ilce": "Daday",
+   "telefon": [
+    "0366 616 20 22"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4
+  },
+  {
+   "ad": "Doğanyurt Necdet Ruhi Aygün Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kastamonu",
+   "ilce": "Doğanyurt",
+   "telefon": [
+    "0366 843 17 99"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4
+  },
+  {
+   "ad": "İnebolu Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kastamonu",
+   "ilce": "İnebolu",
+   "telefon": [
+    "0366 811 32 60"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4
+  },
+  {
+   "ad": "Şehit Şerifebacı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kastamonu",
+   "ilce": "Merkez",
+   "telefon": [
+    "0366 214 64 40"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4
+  },
+  {
+   "ad": "Pınarbaşı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kastamonu",
+   "ilce": "Pınarbaşı",
+   "telefon": [
+    "0366 771 29 55"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4
+  },
+  {
+   "ad": "Şenpazarı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kastamonu",
+   "ilce": "Şenpazar",
+   "telefon": [
+    "0539 241 79 70"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4
+  },
+  {
+   "ad": "Taşköprü Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kastamonu",
+   "ilce": "Taşköprü",
+   "telefon": [
+    "0366 417 16 32"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4
+  },
+  {
+   "ad": "Tosya Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kastamonu",
+   "ilce": "Tosya",
+   "telefon": [
+    "0366 313 10 54"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4
+  },
+  {
+   "ad": "Bünyan Sabancı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kayseri",
+   "ilce": "Bünyan",
+   "telefon": [
+    "0352 712 11 58"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Muammer Bakkaloğlu Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kayseri",
+   "ilce": "Develi",
+   "telefon": [
+    "0352 621 11 24"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Şehit Soner Akbulut Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kayseri",
+   "ilce": "Pınarbaşı",
+   "telefon": [
+    "0352 512 22 32"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Kayseri Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kayseri",
+   "ilce": "Talas",
+   "telefon": [
+    "0352 222 26 06"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Yahyalı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kayseri",
+   "ilce": "Yahyalı",
+   "telefon": [
+    "0352 611 22 87"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Babaeski Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kırklareli",
+   "ilce": "Babaeski",
+   "telefon": [
+    "0288 512 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Lüleburgaz Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kırklareli",
+   "ilce": "Lüleburgaz",
+   "telefon": [
+    "0288 412 27 87"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Kırklareli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kırklareli",
+   "ilce": "Merkez",
+   "telefon": [
+    "0554 012 77 52"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Şehit Yücel Yılmaz Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kırşehir",
+   "ilce": "Çiçekdağı",
+   "telefon": [
+    "0386 612 30 40"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Merkez Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kırşehir",
+   "ilce": "Merkez",
+   "telefon": [
+    "0386 213 45 65"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Sabancı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kırşehir",
+   "ilce": "Mucur",
+   "telefon": [
+    "0386 812 21 69"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Gebze Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kocaeli",
+   "ilce": "Gebze",
+   "telefon": [
+    "0262 759 17 78"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4.5
+  },
+  {
+   "ad": "Gölcük Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kocaeli",
+   "ilce": "Gölcük",
+   "telefon": [
+    "0262 412 78 67"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4.5
+  },
+  {
+   "ad": "İzmit Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kocaeli",
+   "ilce": "İzmit",
+   "telefon": [
+    "0262 321 06 34"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4.5
+  },
+  {
+   "ad": "Kandıra Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kocaeli",
+   "ilce": "Kandıra",
+   "telefon": [
+    "0262 551 49 15"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4.5
+  },
+  {
+   "ad": "Karamürsel Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kocaeli",
+   "ilce": "Karamürsel",
+   "telefon": [
+    "0262 452 10 19"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4.5
+  },
+  {
+   "ad": "Akşehir Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Akşehir",
+   "telefon": [
+    "0332 813 63 10"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "Beyşehir Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Beyşehir",
+   "telefon": [
+    "0332 512 16 63"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "Bozkır Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Bozkır",
+   "telefon": [
+    "0332 426 31 86"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "Mevlana Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Büyükşehir",
+   "telefon": [
+    "0332 355 24 46"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "Merkez Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Büyükşehir",
+   "telefon": [
+    "0332 351 22 65"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "Cihanbeyli 75. Yıl Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Cihanbeyli",
+   "telefon": [
+    "0332 673 40 73"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "Çumra Sabancı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Çumra",
+   "telefon": [
+    "0332 447 10 56"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "Emirgazi 15 Temmuz Şehitleri Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Emirgazi",
+   "telefon": [
+    "0332 747 24 24"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "Ereğli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Ereğli",
+   "telefon": [
+    "0332 713 45 60"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "Hadim Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Hadim",
+   "telefon": [
+    "0332 418 12 05"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "Hüyük Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Hüyük",
+   "telefon": [
+    "0332 543 11 09"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "Ilgın Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Ilgın",
+   "telefon": [
+    "0332 882 63 96"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "Kadınhanı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Kadınhanı",
+   "telefon": [
+    "0332 834 03 29"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "KarapınarÖğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Karapınar",
+   "telefon": [
+    "0332 755 22 99"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "Kulu Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Kulu",
+   "telefon": [
+    "0535 617 62 42"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "Seydişehir Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Seydişehir",
+   "telefon": [
+    "0332 582 20 76"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "Tuzlukçu Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Tuzlukçu",
+   "telefon": [
+    "0332 861 26 96"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "Yunak Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Konya",
+   "ilce": "Yunak",
+   "telefon": [
+    "0332 851 20 23"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3
+  },
+  {
+   "ad": "Emet Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kütahya",
+   "ilce": "Emet",
+   "telefon": [
+    "0274 461 35 35"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Gediz Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kütahya",
+   "ilce": "Gediz",
+   "telefon": [
+    "0274 412 40 61"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Kütahya Merkez Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kütahya",
+   "ilce": "Merkez",
+   "telefon": [
+    "0274 223 62 49"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Pazarlar Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kütahya",
+   "ilce": "Pazarlar",
+   "telefon": [
+    "0274 571 29 41"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Simav Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kütahya",
+   "ilce": "Simav",
+   "telefon": [
+    "0274 513 53 80"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Şaphane Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kütahya",
+   "ilce": "Şaphane",
+   "telefon": [
+    "0274 551 23 99"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Tavşanlı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kütahya",
+   "ilce": "Tavşanlı",
+   "telefon": [
+    "0274 614 10 64"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Şehit Hüsnü Bilgiç Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Malatya",
+   "ilce": "Arapgir",
+   "telefon": [
+    "0422 811 47 03"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Darende Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Malatya",
+   "ilce": "Darende",
+   "telefon": [
+    "0422 615 16 55"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Doğanşehir Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Malatya",
+   "ilce": "Doğanşehir",
+   "telefon": [
+    "0422 517 14 36"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Doğanyol Tanrıverdi Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Malatya",
+   "ilce": "Doğanyol",
+   "telefon": [
+    "0422 881 66 66"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Hekimhan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Malatya",
+   "ilce": "Hekimhan",
+   "telefon": [
+    "0422 713 15 60"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Akhisar Ali Şefik Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Manisa",
+   "ilce": "Akhisar",
+   "telefon": [
+    "0236 414 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Büyükşehir Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Manisa",
+   "ilce": "Büyükşehir",
+   "telefon": [
+    "0236 231 18 43"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Demirci Sabancı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Manisa",
+   "ilce": "Demirci",
+   "telefon": [
+    "0236 462 34 10"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Gördes Ataman-Koç Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Manisa",
+   "ilce": "Gördes",
+   "telefon": [
+    "0236 547 33 47"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Salihli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Manisa",
+   "ilce": "Salihli",
+   "telefon": [
+    "0236 714 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Soma Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Manisa",
+   "ilce": "Soma",
+   "telefon": [
+    "0236 613 31 65"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Turgutlu Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Manisa",
+   "ilce": "Turgutlu",
+   "telefon": [
+    "0236 312 23 53"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Afşin Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "K.Maraş",
+   "ilce": "Afşin",
+   "telefon": [
+    "0344 511 24 34"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Şehit Hakan Taşgıt Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "K.Maraş",
+   "ilce": "Andırın",
+   "telefon": [
+    "0344 561 25 48"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Çağlayancerit Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "K.Maraş",
+   "ilce": "Çağlayancerit",
+   "telefon": [
+    "0344 351 24 45"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Şehit Hanifi Çakallıoğlu Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "K.Maraş",
+   "ilce": "Dulkadiroğlu",
+   "telefon": [
+    "0344 225 55 80"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Ekinözü Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "K.Maraş",
+   "ilce": "Ekinözü",
+   "telefon": [
+    "0534 507 16 46"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Elbistan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "K.Maraş",
+   "ilce": "Elbistan",
+   "telefon": [
+    "0344 415 30 25"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Prf. Dr. Mehmet Sağlam Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "K.Maraş",
+   "ilce": "Göksun",
+   "telefon": [
+    "0344 714 35 60"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Nurhak Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "K.Maraş",
+   "ilce": "Nurhak",
+   "telefon": [
+    "0506 511 6578"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Prof. Dr. Aydın Ayaydın Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Mardin",
+   "ilce": "Derik",
+   "telefon": [
+    "0482 251 31 94"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Kızıltepe Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Mardin",
+   "ilce": "Kızıltepe",
+   "telefon": [
+    "0482 312 52 27"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Mazıdağı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Mardin",
+   "ilce": "Mazıdağı",
+   "telefon": [
+    "0482 511 14 14"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Artuklu Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Mardin",
+   "ilce": "Merkez",
+   "telefon": [
+    "0482 213 70 80"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Midyat Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Mardin",
+   "ilce": "Midyat",
+   "telefon": [
+    "0535 766 47 00"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Ömerli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Mardin",
+   "ilce": "Ömerli",
+   "telefon": [
+    "0543 896 90 17"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Savur Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Mardin",
+   "ilce": "Savur",
+   "telefon": [
+    "0542 272 52 06"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Bodrum Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Muğla",
+   "ilce": "Bodrum",
+   "telefon": [
+    "0252 316 11 21"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Fethiye Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Muğla",
+   "ilce": "Fethiye",
+   "telefon": [
+    "0545 573 70 30"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Köyceğiz Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Muğla",
+   "ilce": "Köyceğiz",
+   "telefon": [
+    "0252 262 47 12"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Marmaris Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Muğla",
+   "ilce": "Marmaris",
+   "telefon": [
+    "0252 413 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Menteşe Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Muğla",
+   "ilce": "Menteşe",
+   "telefon": [
+    "0252 214 53 36"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Milas Orhan Menteşe Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Muğla",
+   "ilce": "Milas",
+   "telefon": [
+    "0252 512 50 28"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Ula Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Muğla",
+   "ilce": "Ula",
+   "telefon": [
+    "0539 775 57 77"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "BulanıkÖğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Muş",
+   "ilce": "Bulanık",
+   "telefon": [
+    "0436 311 40 50"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Hasköy Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Muş",
+   "ilce": "Hasköy",
+   "telefon": [
+    "0436 411 30 04"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Malazgirt Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Muş",
+   "ilce": "Malazgirt",
+   "telefon": [
+    "0436 511 23 84"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Muş",
+   "ilce": "Merkez",
+   "telefon": [
+    "0538 810 33 27"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Varto Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Muş",
+   "ilce": "Varto",
+   "telefon": [
+    "0436 411 30 04"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Avanos Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Nevşehir",
+   "ilce": "Avanos",
+   "telefon": [
+    "0384 511 40 82"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Gülşehir Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Nevşehir",
+   "ilce": "Gülşehir",
+   "telefon": [
+    "0384 411 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Hacıbektaş Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Nevşehir",
+   "ilce": "Hacıbektaş",
+   "telefon": [
+    "0384 441 31 19"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Merkez Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Nevşehir",
+   "ilce": "Merkez",
+   "telefon": [
+    "0384 502 41 55"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Ürgüp Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Nevşehir",
+   "ilce": "Ürgüp",
+   "telefon": [
+    "0384 341 40 92"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Altunhisar Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Niğde",
+   "ilce": "Altunhisar",
+   "telefon": [
+    "0388 611 27 60"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Bor Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Niğde",
+   "ilce": "Bor",
+   "telefon": [
+    "0388 311 70 82"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Çamardı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Niğde",
+   "ilce": "Çamardı",
+   "telefon": [
+    "0388 711 24 74"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Çiftlik Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Niğde",
+   "ilce": "Çiftlik",
+   "telefon": [
+    "0553 318 96 83"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Niğde Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Niğde",
+   "ilce": "Merkez",
+   "telefon": [
+    "0388 232 34 92"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Ulukışla Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Niğde",
+   "ilce": "Ulukışla",
+   "telefon": [
+    "0388 511 22 50"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Akkuş Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ordu",
+   "ilce": "Akkuş",
+   "telefon": [
+    "0452 611 22 88"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Çaybaşı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ordu",
+   "ilce": "Çaybaşı",
+   "telefon": [
+    "0452 391 32 70"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Fatsa Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ordu",
+   "ilce": "Fatsa",
+   "telefon": [
+    "0452 423 12 75"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Korgan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ordu",
+   "ilce": "Korgan",
+   "telefon": [
+    "0452 671 30 25"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Merkez Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ordu",
+   "ilce": "Merkez",
+   "telefon": [
+    "0452 225 43 58"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Ünye Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ordu",
+   "ilce": "Ünye",
+   "telefon": [
+    "0452 323 94 49"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Ardeşen Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Rize",
+   "ilce": "Ardeşen",
+   "telefon": [
+    "0464 715 25 38"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9.5
+  },
+  {
+   "ad": "Çamlıhemşin Yamantürk Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Rize",
+   "ilce": "Çamlıhemşin",
+   "telefon": [
+    "0464 651 70 07"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9.5
+  },
+  {
+   "ad": "Çayeli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Rize",
+   "ilce": "Çayeli",
+   "telefon": [
+    "0464 532 30 22"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9.5
+  },
+  {
+   "ad": "Fındıklı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Rize",
+   "ilce": "Fındıklı",
+   "telefon": [
+    "0464 511 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9.5
+  },
+  {
+   "ad": "Güneysu Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Rize",
+   "ilce": "Güneysu",
+   "telefon": [
+    "0464 344 20 82"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9.5
+  },
+  {
+   "ad": "İkizdere Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Rize",
+   "ilce": "İkizdere",
+   "telefon": [
+    "0464 416 12 54"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9.5
+  },
+  {
+   "ad": "Kalkandere Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Rize",
+   "ilce": "Kalkandere",
+   "telefon": [
+    "0464 331 49 67"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9.5
+  },
+  {
+   "ad": "Rize Merkez Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Rize",
+   "ilce": "Merkez",
+   "telefon": [
+    "0464 226 09 16"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9.5
+  },
+  {
+   "ad": "Pazar Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Rize",
+   "ilce": "Pazar",
+   "telefon": [
+    "0464 612 26 48"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9.5
+  },
+  {
+   "ad": "Akyazı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sakarya",
+   "ilce": "Akyazı",
+   "telefon": [
+    "0264 418 14 96"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4
+  },
+  {
+   "ad": "Sakarya Büyükşehir Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sakarya",
+   "ilce": "Büyükşehir",
+   "telefon": [
+    "0264 277 37 69"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4
+  },
+  {
+   "ad": "Hendek Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sakarya",
+   "ilce": "Hendek",
+   "telefon": [
+    "0264 614 79 55"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4
+  },
+  {
+   "ad": "Karasu Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sakarya",
+   "ilce": "Karasu",
+   "telefon": [
+    "0264 718 11 26"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4
+  },
+  {
+   "ad": "Pamukova Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sakarya",
+   "ilce": "Pamukova",
+   "telefon": [
+    "0264 551 32 30"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4
+  },
+  {
+   "ad": "Söğütlü Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sakarya",
+   "ilce": "Söğütlü",
+   "telefon": [
+    "0 264 502 2494"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4
+  },
+  {
+   "ad": "Taraklı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sakarya",
+   "ilce": "Taraklı",
+   "telefon": [
+    "0264 491 30 20"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4
+  },
+  {
+   "ad": "Alaçam Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Samsun",
+   "ilce": "Alaçam",
+   "telefon": [
+    "0362 622 10 30"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Bafra Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Samsun",
+   "ilce": "Bafra",
+   "telefon": [
+    "0362 537 29 28"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Samsun",
+   "ilce": "Büyükşehir",
+   "telefon": [
+    "0362 432 38 36"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Çarşamba Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Samsun",
+   "ilce": "Çarşamba",
+   "telefon": [
+    "0362 833 34 74"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Havza Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Samsun",
+   "ilce": "Havza",
+   "telefon": [
+    "0362 714 12 65"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Kavak Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Samsun",
+   "ilce": "Kavak",
+   "telefon": [
+    "0362 741 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Ladik Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Samsun",
+   "ilce": "Ladik",
+   "telefon": [
+    "0362 771 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Tekkeköy Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Samsun",
+   "ilce": "Tekkeköy",
+   "telefon": [
+    "0362 256 05 10"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Terme Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Samsun",
+   "ilce": "Terme",
+   "telefon": [
+    "0362 876 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Vezirköprü Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Samsun",
+   "ilce": "Vezirköprü",
+   "telefon": [
+    "0362 647 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Baykan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Siirt",
+   "ilce": "Baykan",
+   "telefon": [
+    "0484 561 24 91"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Eruh Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Siirt",
+   "ilce": "Eruh",
+   "telefon": [
+    "0484 311 28 28"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Kurtalan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Siirt",
+   "ilce": "Kurtalan",
+   "telefon": [
+    "0484 411 25 29"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Merkez Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Siirt",
+   "ilce": "Merkez",
+   "telefon": [
+    "0484 223 12 54"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Pervari Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Siirt",
+   "ilce": "Pervari",
+   "telefon": [
+    "0484 361 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Şirvan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Siirt",
+   "ilce": "Şirvan",
+   "telefon": [
+    "0484 511 21 42"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Ayancık Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sinop",
+   "ilce": "Ayancık",
+   "telefon": [
+    "0368 613 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Boyabat Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sinop",
+   "ilce": "Boyabat",
+   "telefon": [
+    "0368 315 19 61"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Dikmen Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sinop",
+   "ilce": "Dikmen",
+   "telefon": [
+    "0368 771 24 30"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Durağan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sinop",
+   "ilce": "Durağan",
+   "telefon": [
+    "0368 416 11 98"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Sinop Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sinop",
+   "ilce": "Merkez",
+   "telefon": [
+    "0368 261 26 82"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Türkeli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sinop",
+   "ilce": "Türkeli",
+   "telefon": [
+    "0368 671 24 42"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Akıncılar Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sivas",
+   "ilce": "Akıncılar",
+   "telefon": [
+    "0346 361 55 93"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Doğanşar Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sivas",
+   "ilce": "Doğanşar",
+   "telefon": [
+    "0346 881 23 30"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Gemerek Sabancı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sivas",
+   "ilce": "Gemerek",
+   "telefon": [
+    "0346 614 23 93"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Gölova Selahattin Ayan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sivas",
+   "ilce": "Gölova",
+   "telefon": [
+    "0346 381 20 58"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Gürün Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sivas",
+   "ilce": "Gürün",
+   "telefon": [
+    "0346 715 22 48"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Kangal Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sivas",
+   "ilce": "Kangal",
+   "telefon": [
+    "0346 457 13 29"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Koyulhisar Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sivas",
+   "ilce": "Koyulhisar",
+   "telefon": [
+    "0346 341 20 58"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Sivas Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sivas",
+   "ilce": "Merkez",
+   "telefon": [
+    "0346 223 96 62"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Suşehri Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sivas",
+   "ilce": "Suşehri",
+   "telefon": [
+    "0346 311 40 02"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "ŞarkışlaÖğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sivas",
+   "ilce": "Şarkışla",
+   "telefon": [
+    "0346 512 31 91"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Yıldızeli Ahmet Remzi Küçükoran Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sivas",
+   "ilce": "Yıldızeli",
+   "telefon": [
+    "0346 751 20 72"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Zara Mehmet Habib Soluk Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Sivas",
+   "ilce": "Zara",
+   "telefon": [
+    "0346 816 10 49"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Hayrabolu Sadi Kıyak Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Tekirdağ",
+   "ilce": "Hayrabolu",
+   "telefon": [
+    "0282 315 13 33"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7
+  },
+  {
+   "ad": "Malkara Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Tekirdağ",
+   "ilce": "Malkara",
+   "telefon": [
+    "0282 427 44 12"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7
+  },
+  {
+   "ad": "Süleymanpaşa Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Tekirdağ",
+   "ilce": "Süleymanpaşa",
+   "telefon": [
+    "0282 216 08 35"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7
+  },
+  {
+   "ad": "Artova Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Tokat",
+   "ilce": "Artova",
+   "telefon": [
+    "0356 611 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Erbaa Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Tokat",
+   "ilce": "Erbaa",
+   "telefon": [
+    "0356 715 17 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Niksar Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Tokat",
+   "ilce": "Niksar",
+   "telefon": [
+    "0356 527 80 85"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Reşadiye Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Tokat",
+   "ilce": "Reşadiye",
+   "telefon": [
+    "0356 461 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Turhal Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Tokat",
+   "ilce": "Turhal",
+   "telefon": [
+    "0356 276 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Zile Dinçerler Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Tokat",
+   "ilce": "Zile",
+   "telefon": [
+    "0356 317 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Hakkı Zeki Başaran Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Trabzon",
+   "ilce": "Akçaabat",
+   "telefon": [
+    "0462 228 27 98"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Araklı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Trabzon",
+   "ilce": "Araklı",
+   "telefon": [
+    "0462 721 67 50"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Arsin Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Trabzon",
+   "ilce": "Arsin",
+   "telefon": [
+    "0462 711 16 20"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Beşikdüzü Sabancı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Trabzon",
+   "ilce": "Beşikdüzü",
+   "telefon": [
+    "0462 871 20 38"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Çarşıbaşı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Trabzon",
+   "ilce": "Çarşıbaşı",
+   "telefon": [
+    "0462 821 24 85"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Çaykara Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Trabzon",
+   "ilce": "Çaykara",
+   "telefon": [
+    "0462 616 15 35"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Düzköy Lütfü Ofluoğlu Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Trabzon",
+   "ilce": "Düzköy",
+   "telefon": [
+    "0462 811 26 31"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Trabzon",
+   "ilce": "Merkez",
+   "telefon": [
+    "0462 322 36 57"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Of Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Trabzon",
+   "ilce": "Of",
+   "telefon": [
+    "0462 771 50 74"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Sürmene İnci Hamitcan Aksoy Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Trabzon",
+   "ilce": "Sürmene",
+   "telefon": [
+    "0462 747 14 53"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Tonya Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Trabzon",
+   "ilce": "Tonya",
+   "telefon": [
+    "0462 881 25 32"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Vakfıkebir Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Trabzon",
+   "ilce": "Vakfıkebir",
+   "telefon": [
+    "0462 841 21 61"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Şehit Öğrtemen Necmettin Yılmaz Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Tunceli",
+   "ilce": "Merkez",
+   "telefon": [
+    "0428 212 33 65"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Ovacık Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Tunceli",
+   "ilce": "Ovacık",
+   "telefon": [
+    "0428 511 30 80"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Pertek Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Tunceli",
+   "ilce": "Pertek",
+   "telefon": [
+    "0428 651 32 41"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Akçakale Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Şanlıurfa",
+   "ilce": "Akçakale",
+   "telefon": [
+    "0414 411 23 29"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Birecik Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Şanlıurfa",
+   "ilce": "Birecik",
+   "telefon": [
+    "0414 652 26 73"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Ceylanpınar Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Şanlıurfa",
+   "ilce": "Ceylanpınar",
+   "telefon": [
+    "0414 471 43 68"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Harran Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Şanlıurfa",
+   "ilce": "Harran",
+   "telefon": [
+    "0414 441 24 26"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Karaköprü Onikilier Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Şanlıurfa",
+   "ilce": "Karaköprü",
+   "telefon": [
+    "0414 347 20 30"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Şanlıurfa Büyükşehir Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Şanlıurfa",
+   "ilce": "Merkez",
+   "telefon": [
+    "0414 315 78 73"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Siverek Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Şanlıurfa",
+   "ilce": "Siverek",
+   "telefon": [
+    "0414 552 21 63"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Suruç Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Şanlıurfa",
+   "ilce": "Suruç",
+   "telefon": [
+    "0414 611 21 95"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Viranşehir Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Şanlıurfa",
+   "ilce": "Viranşehir",
+   "telefon": [
+    "0414 511 31 89"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Eşme Sabancı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Uşak",
+   "ilce": "Eşme",
+   "telefon": [
+    "0276 414 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Uşak Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Uşak",
+   "ilce": "Merkez",
+   "telefon": [
+    "0276 227 08 01"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Bahçesaray Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Van",
+   "ilce": "Bahçesaray",
+   "telefon": [
+    "0432 751 24 33"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Başkale Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Van",
+   "ilce": "Başkale",
+   "telefon": [
+    "0432 651 21 43"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Çaldıran Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Van",
+   "ilce": "Çaldıran",
+   "telefon": [
+    "0432 412 28 00"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Çatak Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Van",
+   "ilce": "Çatak",
+   "telefon": [
+    "0432 512 31 14"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Mev Deprem Şehitleri Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Van",
+   "ilce": "Erciş",
+   "telefon": [
+    "0531 204 11 41"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Gevaş Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Van",
+   "ilce": "Gevaş",
+   "telefon": [
+    "0432 612 31 06"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Gürpınar Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Van",
+   "ilce": "Gürpınar",
+   "telefon": [
+    "0432 551 23 21"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Van Şişli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Van",
+   "ilce": "İpekyolu",
+   "telefon": [
+    "0432 216 46 58"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Muradiye Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Van",
+   "ilce": "Muradiye",
+   "telefon": [
+    "0432 451 25 50"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "ÖzalpÖğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Van",
+   "ilce": "Özalp",
+   "telefon": [
+    "0432 712 22 76"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Saray Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Van",
+   "ilce": "Saray",
+   "telefon": [
+    "0432 781 22 14"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "İskele Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Van",
+   "ilce": "Tuşba",
+   "telefon": [
+    "0530 212 06 98"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Akdağmadeni Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Yozgat",
+   "ilce": "Akdağmadeni",
+   "telefon": [
+    "0354 314 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "75. Yıl Aydıncık Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Yozgat",
+   "ilce": "Aydıncık",
+   "telefon": [
+    "0354 487 12 91"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Boğazlıyan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Yozgat",
+   "ilce": "Boğazlıyan",
+   "telefon": [
+    "0354 645 16 32"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Çayıralan Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Yozgat",
+   "ilce": "Çayıralan",
+   "telefon": [
+    "0354 736 22 30"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Çekerek Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Yozgat",
+   "ilce": "Çekerek",
+   "telefon": [
+    "0354 468 11 60"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "KadışehriÖğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Yozgat",
+   "ilce": "Kadışehri",
+   "telefon": [
+    "0354 375 44 69"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Yozgat Öğretmenevi ve Akşam Sanat Okulu İktisadi İşletmesi",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Yozgat",
+   "ilce": "Merkez",
+   "telefon": [
+    "0354 212 80 37"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Saraykent Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Yozgat",
+   "ilce": "Saraykent",
+   "telefon": [
+    "0354 368 64 60"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Sarıkaya Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Yozgat",
+   "ilce": "Sarıkaya",
+   "telefon": [
+    "0354 772 38 08"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Sorgun Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Yozgat",
+   "ilce": "Sorgun",
+   "telefon": [
+    "0354 415 21 46"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Şefaatli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Yozgat",
+   "ilce": "Şefaatli",
+   "telefon": [
+    "0354 564 15 35"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Yenifakılı Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Yozgat",
+   "ilce": "Yenifakılı",
+   "telefon": [
+    "0354 612 18 14"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Yerköy Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Yozgat",
+   "ilce": "Yerköy",
+   "telefon": [
+    "0354 516 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Çaycuma-Öğretmen Evi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Zonguldak",
+   "ilce": "Çaycuma",
+   "telefon": [
+    "0372 615 21 35"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4.5
+  },
+  {
+   "ad": "Devrek Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Zonguldak",
+   "ilce": "Devrek",
+   "telefon": [
+    "0372 556 30 53"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4.5
+  },
+  {
+   "ad": "Ereğli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Zonguldak",
+   "ilce": "Ereğli",
+   "telefon": [
+    "0372 322 24 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4.5
+  },
+  {
+   "ad": "Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Zonguldak",
+   "ilce": "Merkez",
+   "telefon": [
+    "0372 257 79 11"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4.5
+  },
+  {
+   "ad": "Ağaçören Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Aksaray",
+   "ilce": "Ağaçören",
+   "telefon": [
+    "0382 331 27 12"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Eskil Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Aksaray",
+   "ilce": "Eskil",
+   "telefon": [
+    "0382 411 42 46"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Aksaray Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Aksaray",
+   "ilce": "Merkez",
+   "telefon": [
+    "0382 213 23 03"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Ortaköy Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Aksaray",
+   "ilce": "Ortaköy",
+   "telefon": [
+    "0382 351 25 08"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Sarıyahşi Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Aksaray",
+   "ilce": "Sarıyahşi",
+   "telefon": [
+    "0382 311 24 34"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Bayburt Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bayburt",
+   "ilce": "Merkez",
+   "telefon": [
+    "0458 211 71 06"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Karaman Merkez Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Karaman",
+   "ilce": "Merkez",
+   "telefon": [
+    "0541 780 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Şehit Pilot Komiser Gökhun Mete Altunbaş Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kırıkkale",
+   "ilce": "Keskin",
+   "telefon": [
+    "0318 515 40 49"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Kırıkkale Merkez Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kırıkkale",
+   "ilce": "Merkez",
+   "telefon": [
+    "0318 224 54 04"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Beşiri Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Batman",
+   "ilce": "Beşiri",
+   "telefon": [
+    "0488 311 22 55"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Gercüş Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Batman",
+   "ilce": "Gercüş",
+   "telefon": [
+    "0488 341 29 27"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Kozluk Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Batman",
+   "ilce": "Kozluk",
+   "telefon": [
+    "0488 411 40 40"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Batman Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Batman",
+   "ilce": "Merkez",
+   "telefon": [
+    "0488 215 46 03"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Sason Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Batman",
+   "ilce": "Sason",
+   "telefon": [
+    "0488 461 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Beytüşşebap Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Şırnak",
+   "ilce": "Beytüşşebap",
+   "telefon": [
+    "0486 311 28 37"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Cizre Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Şırnak",
+   "ilce": "Cizre",
+   "telefon": [
+    "0486 616 11 45"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Güçlükonak Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Şırnak",
+   "ilce": "Güçlükonak",
+   "telefon": [
+    "0486 681 30 06"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "İdil Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Şırnak",
+   "ilce": "İdil",
+   "telefon": [
+    "0486 551 21 94"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Şırnak Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Şırnak",
+   "ilce": "Merkez",
+   "telefon": [
+    "0486 216 50 15"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Silopi Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Şırnak",
+   "ilce": "Silopi",
+   "telefon": [
+    "0486 504 84 40"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Uludere Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Şırnak",
+   "ilce": "Uludere",
+   "telefon": [
+    "0486 351 22 23"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "AmasraÖğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bartın",
+   "ilce": "Amasra",
+   "telefon": [
+    "0378 315 27 30"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4.5
+  },
+  {
+   "ad": "Bartın Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bartın",
+   "ilce": "Merkez",
+   "telefon": [
+    "0378 227 13 29"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4.5
+  },
+  {
+   "ad": "Ulus Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Bartın",
+   "ilce": "Ulus",
+   "telefon": [
+    "0378 416 10 01"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 4.5
+  },
+  {
+   "ad": "Hanak Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ardahan",
+   "ilce": "Hanak",
+   "telefon": [
+    "0478 611 21 43"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Merkez Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ardahan",
+   "ilce": "Merkez",
+   "telefon": [
+    "0478 211 27 50"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Posof Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Ardahan",
+   "ilce": "Posof",
+   "telefon": [
+    "0478 511 22 69"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Iğdır Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Iğdır",
+   "ilce": "Merkez",
+   "telefon": [
+    "0476 227 67 15"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Tuzluca Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Iğdır",
+   "ilce": "Tuzluca",
+   "telefon": [
+    "0476 311 20 97"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Yalova",
+   "ilce": "Merkez",
+   "telefon": [
+    "0226 814 94 00"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Eflani Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Karabük",
+   "ilce": "Eflani",
+   "telefon": [
+    "0370 461 20 44"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3.5
+  },
+  {
+   "ad": "Merkez Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Karabük",
+   "ilce": "Karabük",
+   "telefon": [
+    "0370 415 24 11"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3.5
+  },
+  {
+   "ad": "Safranbolu Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Karabük",
+   "ilce": "Safranbolu",
+   "telefon": [
+    "0370 725 24 00"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3.5
+  },
+  {
+   "ad": "Kilis Merkez Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Kilis",
+   "ilce": "Merkez",
+   "telefon": [
+    "0348 813 11 78"
+   ],
+   "kiyi": false,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx"
+  },
+  {
+   "ad": "Düziçi Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Osmaniye",
+   "ilce": "Düziçi",
+   "telefon": [
+    "0537 607 00 17"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Kadirli Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Osmaniye",
+   "ilce": "Kadirli",
+   "telefon": [
+    "0328 718 11 68"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Osmaniye Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Osmaniye",
+   "ilce": "Merkez",
+   "telefon": [
+    "0328 813 87 68"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Akçakoca Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Düzce",
+   "ilce": "Akçakoca",
+   "telefon": [
+    "0380 611 92 79"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3.5
+  },
+  {
+   "ad": "Cumayeri Pakmaya Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Düzce",
+   "ilce": "Cumayeri",
+   "telefon": [
+    "0380 735 36 02"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3.5
+  },
+  {
+   "ad": "Düzce Avni Akyol Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Düzce",
+   "ilce": "Merkez",
+   "telefon": [
+    "0380 523 73 60"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3.5
+  },
+  {
+   "ad": "Yığılca Öğretmenevi ve Akşam Sanat Okulu",
+   "tur": "Öğretmenevi",
+   "kurum": "MEB",
+   "il": "Düzce",
+   "ilce": "Yığılca",
+   "telefon": [
+    "0380 651 41 07"
+   ],
+   "kiyi": true,
+   "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
+   "ankara_saat": 3.5
+  },
+  {
+   "ad": "Ayvalık Polis Moral Eğitim Merkezi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Balıkesir",
+   "ilce": "Ayvalık",
+   "telefon": [
+    "0266 324 60 09",
+    "0505 318 10 40"
+   ],
+   "eposta": "ayvalikpmem@egm.gov.tr",
+   "deniz": "Sarımsaklı plajı bölgesinde, kıyıda",
+   "olanaklar": [
+    "104 oda / 368 yatak",
+    "çoğu deniz manzaralı",
+    "yetişkin havuzu",
+    "çocuk havuzu"
+   ],
+   "kaynak": "https://www.ayvalikpmem.pol.tr/iletisim",
+   "kiyi": true,
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Didim Polis Moral Eğitim Merkezi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Aydın",
+   "ilce": "Didim",
+   "telefon": [
+    "0256 835 3 835"
+   ],
+   "eposta": "didimpmemkonaklama@egm.gov.tr",
+   "deniz": "Denize sıfır, kendi koyu",
+   "olanaklar": [
+    "~375 oda / 1.388 yatak",
+    "otel + kamp bölümü",
+    "kahvaltı ve akşam yemeği dahil"
+   ],
+   "not": "Kamu personeli kabul ediliyor (29.08.2026 e-posta cevabı). Dönem sistemi var.",
+   "kaynak": "https://www.didimpmem.pol.tr/iletisim1",
+   "kiyi": true,
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "İzmir PMEM Çeşme Hizmet Binası",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "İzmir",
+   "ilce": "Çeşme",
+   "telefon": [
+    "0232 446 46 80"
+   ],
+   "eposta": "izmpmmkonaklama@egm.gov.tr",
+   "deniz": "Denize ~2 km",
+   "olanaklar": [
+    "24 oda / 66 yatak",
+    "havuz",
+    "restoran"
+   ],
+   "kaynak": "https://www.izmirpmem.pol.tr/iletisim",
+   "kiyi": true,
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Fethiye Ovacık Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Muğla",
+   "ilce": "Fethiye",
+   "telefon": [
+    "0252 616 65 35"
+   ],
+   "eposta": "fethiyeovacikpolisevi@egm.gov.tr",
+   "deniz": "Ölüdeniz plajına birkaç km, çam ormanı içinde",
+   "olanaklar": [
+    "28 oda",
+    "açık yüzme havuzu",
+    "restoran",
+    "otopark"
+   ],
+   "kaynak": "https://www.mugla.pol.tr/iletisim",
+   "kiyi": true,
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Marmaris Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Muğla",
+   "ilce": "Marmaris",
+   "telefon": [
+    "0252 413 24 75",
+    "0252 413 34 10"
+   ],
+   "eposta": "muglabilgi@egm.gov.tr",
+   "deniz": "Halk plajına ~50 m",
+   "olanaklar": [
+    "merkez 37 oda + Armutalan 30 oda",
+    "restoran"
+   ],
+   "kaynak": "https://www.mugla.pol.tr/marmaris-polisevi",
+   "kiyi": true,
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Mersin Polisevi (Şehit Altuğ Verdi Sosyal Tesisleri)",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Mersin",
+   "ilce": "Yenişehir",
+   "telefon": [
+    "0324 341 18 89",
+    "0505 318 33 12"
+   ],
+   "deniz": "Deniz manzaralı odalar, kıyıya yakın",
+   "fiyat_2026": "Emniyet personeli 815–2.980 TL; onaylı misafir 2 katı",
+   "olanaklar": [
+    "80 oda / 140 yatak",
+    "restoran",
+    "sauna",
+    "kapalı otopark"
+   ],
+   "kaynak": "https://www.mersin.pol.tr/polisevi-sube-mudurlugu-sehit-altug-verdi-sosyal-tesisleri",
+   "kiyi": true,
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Trabzon Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Trabzon",
+   "ilce": "Ortahisar",
+   "telefon": [],
+   "deniz": "Denize ~1 km",
+   "fiyat_2026": "Personel 735–2.572 TL; onaylı misafir 2 katı",
+   "olanaklar": [
+    "32 oda / 64 yatak",
+    "20 aile odası",
+    "restoran"
+   ],
+   "kaynak": "https://trabzon.pol.tr/polisevi-fiyat-listesi",
+   "kiyi": true,
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Urla Polis Kampı",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "İzmir",
+   "ilce": "Urla",
+   "telefon": [],
+   "deniz": "Denize sıfır kamp",
+   "fiyat_2026": "2026 dönemleri 1 Haziran–27 Eylül, 6 gece/7 gün",
+   "olanaklar": [
+    "76 adet 1+1 oda"
+   ],
+   "kaynak": "https://www.izmir.pol.tr/2026-yili-kamp-donem-ve-fiyatlari",
+   "kiyi": true,
+   "ankara_saat": 8
+  },
+  {
+   "ad": "OGM Gümüldür Eğitim Merkezi",
+   "tur": "Kamu Misafirhanesi",
+   "kurum": "Orman Genel Müdürlüğü",
+   "il": "İzmir",
+   "ilce": "Menderes",
+   "telefon": [
+    "0232 793 12 35"
+   ],
+   "eposta": "gumuldurems@ogm.gov.tr",
+   "deniz": "Gümüldür sahil beldesinde",
+   "not": "Haziran–Eylül açık, başvuru mayısta, %20 avans",
+   "kaynak": "https://www.ogm.gov.tr/izmirobm/duyurular/ifade",
+   "kiyi": true,
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Foça Eğitim ve Dinlenme Tesisi",
+   "tur": "Kamu Misafirhanesi",
+   "kurum": "Tarım ve Orman Bakanlığı",
+   "il": "İzmir",
+   "ilce": "Foça",
+   "telefon": [
+    "0232 812 24 16"
+   ],
+   "eposta": "dhdb.sosyalisler@tarimorman.gov.tr",
+   "deniz": "Kıyı ilçesi",
+   "kaynak": "https://kampbasvuru.tarimorman.gov.tr/",
+   "kiyi": true,
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Mersin Alata Eğitim ve Dinlenme Tesisi",
+   "tur": "Kamu Misafirhanesi",
+   "kurum": "Tarım ve Orman Bakanlığı",
+   "il": "Mersin",
+   "ilce": "Erdemli",
+   "telefon": [
+    "0324 515 60 80"
+   ],
+   "eposta": "dhdb.sosyalisler@tarimorman.gov.tr",
+   "deniz": "Alata sahilinde",
+   "kaynak": "https://kampbasvuru.tarimorman.gov.tr/",
+   "kiyi": true,
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Gökçeada Eğitim ve Dinlenme Tesisi",
+   "tur": "Kamu Misafirhanesi",
+   "kurum": "Adalet Bakanlığı",
+   "il": "Çanakkale",
+   "ilce": "Gökçeada",
+   "telefon": [
+    "0286 897 62 47",
+    "0312 414 71 32"
+   ],
+   "eposta": "dhdb@adalet.gov.tr",
+   "deniz": "Ada içinde, Dereköy-Şahinkaya mevkii",
+   "olanaklar": [
+    "70 oda / 210 yatak",
+    "a la carte restoran",
+    "spor sahaları",
+    "çocuk parkı"
+   ],
+   "kaynak": "https://dhdb.adalet.gov.tr/Home/sayfadetay/gokceada-egitim-ve-dinlenme-tesisi",
+   "kiyi": true,
+   "ankara_saat": 8
+  },
+  {
+   "ad": "DSİ 6. Bölge Kapızlı Eğitim ve Dinlenme Tesisi",
+   "tur": "Kamu Misafirhanesi",
+   "kurum": "DSİ",
+   "il": "Mersin",
+   "ilce": "Silifke",
+   "telefon": [
+    "0324 722 27 37",
+    "0322 459 05 90"
+   ],
+   "eposta": "dsi6@dsi.gov.tr",
+   "deniz": "Susanoğlu-Kapızlı, denize sıfır, kendi plajı",
+   "kaynak": "https://bolge06.dsi.gov.tr/Sayfa/Detay/1026",
+   "kiyi": true,
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Didim ÖRSEM (Didim Otel)",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Ankara Üniversitesi",
+   "il": "Aydın",
+   "ilce": "Didim",
+   "telefon": [],
+   "eposta": "sosyaltesisler@ankara.edu.tr",
+   "deniz": "Kendi plajı, denize doğrudan erişim",
+   "olanaklar": [
+    "101 klimalı oda",
+    "yetişkin + çocuk havuzu",
+    "su kaydırağı",
+    "açık büfe kahvaltı ve akşam yemeği",
+    "animasyon"
+   ],
+   "kaynak": "https://sosyaltesisler.ankara.edu.tr/didim-orsem/",
+   "kiyi": true,
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Manavgat ÖRSEM (Çolaklı)",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Ankara Üniversitesi",
+   "il": "Antalya",
+   "ilce": "Manavgat",
+   "telefon": [],
+   "eposta": "orsem@ankara.edu.tr",
+   "deniz": "Denize sıfır",
+   "not": "Yönetmelik diğer kamu kurumu personeline kurum tarifesi veriyor",
+   "kaynak": "https://sosyaltesisler.ankara.edu.tr/",
+   "kiyi": true,
+   "ankara_saat": 6
+  },
+  {
+   "ad": "Çeşme Shipley-Altındağ Konukevi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Ege Üniversitesi",
+   "il": "İzmir",
+   "ilce": "Çeşme",
+   "telefon": [
+    "0232 202 26 61"
+   ],
+   "eposta": "sksdb@mail.ege.edu.tr",
+   "not": "Kamu görevlilerine ve kamu dışı kişilere hizmet veriyor (kurum sayfası)",
+   "kaynak": "https://sksdb.ege.edu.tr/",
+   "kiyi": true,
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Özdere Eğitim ve Dinlenme Tesisi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Ege Üniversitesi",
+   "il": "İzmir",
+   "ilce": "Menderes",
+   "telefon": [],
+   "eposta": "sksdb@mail.ege.edu.tr",
+   "deniz": "Denize sıfır, Mavi Bayrak",
+   "not": "10 Haziran'dan sonra diğer kamu çalışanları kabul ediliyor",
+   "kaynak": "https://sksdb.ege.edu.tr/",
+   "kiyi": true,
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Didim Sosyal Tesisleri ve Uygulama Oteli",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Aydın Adnan Menderes Üniversitesi",
+   "il": "Aydın",
+   "ilce": "Didim",
+   "telefon": [
+    "0256 820 11 63",
+    "0535 976 61 09"
+   ],
+   "eposta": "didimrezervasyon@adu.edu.tr",
+   "not": "Kamu personeli ve sivillere de hizmet veriyor",
+   "kaynak": "https://idari.adu.edu.tr/didimotel/",
+   "kiyi": true,
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Marmaris İçmeler Uygulama Oteli",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Muğla Sıtkı Koçman Üniversitesi",
+   "il": "Muğla",
+   "ilce": "Marmaris",
+   "telefon": [],
+   "fiyat_2026": "Kamu personeli tarifesi 3.150–5.850 TL; 0–6 yaş ücretsiz, 7–12 yaş yarım",
+   "kaynak": "https://sksd.mu.edu.tr/",
+   "kiyi": true,
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Akyaka Uygulama Oteli",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Muğla Sıtkı Koçman Üniversitesi",
+   "il": "Muğla",
+   "ilce": "Ula",
+   "telefon": [],
+   "fiyat_2026": "Kamu personeline %10 indirim; 0–6 yaş ücretsiz",
+   "kaynak": "https://sksd.mu.edu.tr/",
+   "kiyi": true,
+   "ankara_saat": 9
+  },
+  {
+   "ad": "Seferihisar Eğitim ve Dinlenme Tesisi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Dokuz Eylül Üniversitesi",
+   "il": "İzmir",
+   "ilce": "Seferihisar",
+   "telefon": [
+    "0232 742 58 52",
+    "0232 742 64 45"
+   ],
+   "deniz": "Doğanbey",
+   "kaynak": "https://deu.edu.tr/",
+   "kiyi": true,
+   "ankara_saat": 8
+  },
+  {
+   "ad": "Sağlık Bakanlığı Gökçeada Eğitim ve Dinlenme Tesisi",
+   "tur": "Kamu Misafirhanesi",
+   "kurum": "Sağlık Bakanlığı",
+   "il": "Çanakkale",
+   "ilce": "Gökçeada",
+   "telefon": [
+    "0286 897 62 05",
+    "0286 897 62 07"
+   ],
+   "not": "10'ar günlük tam pansiyon devreler, öncelik bakanlık personeli",
+   "kaynak": "https://www.saglik.gov.tr/",
+   "kiyi": true,
+   "ankara_saat": 8
+  },
+  {
+   "ad": "TKİ Didim Eğitim ve Dinlenme Tesisi",
+   "tur": "Kamu Misafirhanesi",
+   "kurum": "TKİ",
+   "il": "Aydın",
+   "ilce": "Didim",
+   "telefon": [],
+   "deniz": "Mersindere, kendi plajı",
+   "not": "Diğer kamu kurumu personeli dilekçeyle başvurabiliyor (TKİ 2026 talimatı)",
+   "kaynak": "https://www.tki.gov.tr/",
+   "kiyi": true,
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "İLKSAN Didim Sosyal Tesisi",
+   "tur": "Kamu Misafirhanesi",
+   "kurum": "İLKSAN",
+   "il": "Aydın",
+   "ilce": "Didim",
+   "telefon": [
+    "0256 813 34 60"
+   ],
+   "deniz": "Altınkum plaj bölgesi",
+   "not": "İLKSAN üyelerine özel",
+   "kaynak": "https://www.ilksan.gov.tr/",
+   "kiyi": true,
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Kilyos Sosyal Tesisleri (Misafirhane)",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Boğaziçi Üniversitesi",
+   "il": "İstanbul",
+   "ilce": "Sarıyer",
+   "telefon": [
+    "0212 359 65 47"
+   ],
+   "eposta": "kilyosmisafirhane@bogazici.edu.tr",
+   "deniz": "Karadeniz kıyısında, deniz manzaralı odalar, Burc Beach girişi ücretsiz",
+   "fiyat_2026": "Kamu mensupları kişi başı hafta içi 1.800 TL / hafta sonu 2.200 TL — oda+kahvaltı+plaj dahil; 0–6 yaş ücretsiz, 6–12 yaş %50",
+   "olanaklar": [
+    "36 oda",
+    "özel plaj",
+    "deniz manzaralı odalar"
+   ],
+   "not": "Fiyat tablosunda 'tüm kamu mensupları' ayrı kategori olarak tanımlı",
+   "kaynak": "https://sosyaltesisler.bogazici.edu.tr/tr/pages/kilyos-sosyal-tesisleri/2572",
+   "kiyi": true,
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Cide Konukevi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Kastamonu Üniversitesi",
+   "il": "Kastamonu",
+   "ilce": "Cide",
+   "telefon": [
+    "0366 866 25 59"
+   ],
+   "eposta": "cide@kastamonu.edu.tr",
+   "deniz": "Cide sahilinde; fiyat listesinde ayrı 'deniz tarafı odalar' kategorisi",
+   "fiyat_2026": "Deniz tarafı 2 kişi 4.300 TL, normal oda 4.100 TL — kahvaltı ve havuz dahil",
+   "olanaklar": [
+    "27 oda / 59 yatak",
+    "açık yüzme havuzu",
+    "deniz tarafı odalar"
+   ],
+   "not": "Diğer tüm kamu mensubu personel ve ailesi yararlanabiliyor (kurum sayfası)",
+   "kaynak": "https://cidekonukevi.kastamonu.edu.tr/index.php/fiyatlar/oda-fiyatlari",
+   "kiyi": true,
+   "ankara_saat": 4
+  },
+  {
+   "ad": "OMÜ Konuk Evi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Ondokuz Mayıs Üniversitesi",
+   "il": "Samsun",
+   "ilce": "Atakum",
+   "telefon": [
+    "0362 457 60 46",
+    "0552 855 93 19"
+   ],
+   "eposta": "saglikkultur@omu.edu.tr",
+   "deniz": "Kurupelit Kampüsü, orman ve deniz manzaralı (sahil şeridinde değil)",
+   "fiyat_2026": "Çift kişilik 1.900 TL, tek 1.300 TL, suit 2.300 TL — kahvaltı dahil; 0–3 yaş ücretsiz, 4–6 yaş %50",
+   "not": "Üniversite ve kamu kurumlarında görevli personele açık, kurum kimliği şart",
+   "kaynak": "https://sks.omu.edu.tr/konuk-evi/",
+   "kiyi": true,
+   "ankara_saat": 5
+  },
+  {
+   "ad": "OMTEL Sahil Tesisleri",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Ondokuz Mayıs Üniversitesi",
+   "il": "Samsun",
+   "ilce": "Atakum",
+   "telefon": [
+    "0362 312 19 69",
+    "0505 938 55 19"
+   ],
+   "eposta": "omtel@omu.edu.tr",
+   "deniz": "Denize sıfır, şezlong ve plaj hizmeti",
+   "not": "OMÜ mensupları ve halka açık; sezonluk (yaz) çalışıyor",
+   "kaynak": "https://omtel.omu.edu.tr/",
+   "kiyi": true,
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Ahmet Muhip Dıranas Uygulama Oteli",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Sinop Üniversitesi",
+   "il": "Sinop",
+   "ilce": "Merkez",
+   "telefon": [
+    "0368 287 62 00"
+   ],
+   "eposta": "uygulamaoteli@sinop.edu.tr",
+   "deniz": "Hamsilos-Akliman mevkii, otelin kendi özel plajı var",
+   "olanaklar": [
+    "63 oda / 135 yatak",
+    "özel plaj",
+    "konferans salonu"
+   ],
+   "kaynak": "https://uygulamaoteli.sinop.edu.tr/contact/",
+   "kiyi": true,
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Akdeniz Üniversitesi Sosyal Tesisleri (Otel)",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Akdeniz Üniversitesi",
+   "il": "Antalya",
+   "ilce": "Konyaaltı",
+   "telefon": [
+    "0242 310 20 03",
+    "0242 227 44 73"
+   ],
+   "eposta": "sosyaltesisler@akdeniz.edu.tr",
+   "deniz": "Kampüs içi — Konyaaltı sahiline birkaç km (kıyıda değil)",
+   "olanaklar": [
+    "56 standart + 4 suit + 4 aile odası",
+    "yarı olimpik havuz",
+    "çocuk havuzu",
+    "4 tenis kortu"
+   ],
+   "not": "Tüm üniversite personeli, aileleri ve kamu çalışanlarına açık; kahvaltı fiyata dahil",
+   "kaynak": "https://sosyaltesis.akdeniz.edu.tr/tr/genel_bilgiler-7239",
+   "kiyi": true,
+   "ankara_saat": 6
+  },
+  {
+   "ad": "Avrupa-Akdeniz Adrasan Eğitim ve Dinlenme Tesisi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Akdeniz Üniversitesi",
+   "il": "Antalya",
+   "ilce": "Kumluca",
+   "telefon": [
+    "0242 883 13 30",
+    "0242 883 13 31"
+   ],
+   "eposta": "adrasan@akdeniz.edu.tr",
+   "deniz": "Adrasan koyu, Deniz Caddesi — kıyıda",
+   "fiyat_2026": "1 Eyl–31 Eki: çift kişilik 6.000–6.500 TL — oda+kahvaltı+akşam yemeği dahil; 0–6 yaş ücretsiz, 7–12 yaş %50",
+   "olanaklar": [
+    "56 oda",
+    "9.500 m² alan",
+    "yarım pansiyon"
+   ],
+   "not": "Diğer kamu kurumlarında çalışanlar ve kamudan emekliler kamu tarifesinden yararlanır",
+   "kaynak": "https://adrasan.akdeniz.edu.tr/tr/tesis_fiyat_listesi-7165",
+   "kiyi": true,
+   "ankara_saat": 6
+  },
+  {
+   "ad": "Amasya Üniversitesi Misafirhanesi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Amasya Üniversitesi",
+   "il": "Amasya",
+   "ilce": "Merkez",
+   "telefon": [
+    "0358 240 00 22"
+   ],
+   "kiyi": false,
+   "fiyat_2026": "Kamu personeli ve ailesi 1.200 TL — açık büfe kahvaltı dahil; 0–3 yaş ücretsiz, 3–6 yaş %50",
+   "not": "Kamu çalışanları ve aileleri için ayrı tarife tanımlı",
+   "kaynak": "https://misafirhane.amasya.edu.tr/odalar/oda-fiyatlarımız.aspx",
+   "ankara_saat": 3.5
+  },
+  {
+   "ad": "Hitit Üniversitesi Uygulama ve Araştırma Oteli",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Hitit Üniversitesi",
+   "il": "Çorum",
+   "ilce": "Merkez",
+   "kiyi": false,
+   "telefon": [
+    "0364 222 17 78",
+    "0552 763 39 07"
+   ],
+   "eposta": "otelrezervasyon@hitit.edu.tr",
+   "fiyat_2026": "Diğer üniversite ve kamu personeli: tek 1.200 / çift 1.600 TL, çocuk 400 TL — kahvaltı dahil; 2022 sonrası doğumlular ücretsiz",
+   "not": "Kurum dışı kamu personeli için açıkça ayrı tarife var",
+   "kaynak": "https://uygulamaoteli.hitit.edu.tr/ucretler",
+   "ankara_saat": 2.5
+  },
+  {
+   "ad": "Nilüfer Hatun Konukevi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Bursa Uludağ Üniversitesi",
+   "il": "Bursa",
+   "ilce": "Nilüfer",
+   "kiyi": false,
+   "telefon": [
+    "0224 294 01 50"
+   ],
+   "eposta": "sksdb@uludag.edu.tr",
+   "fiyat_2026": "Üniversite ve kamu personeli: tek 1.350 / çift 2.250 / suit çift 3.000 TL — kahvaltı dahil",
+   "not": "Fiyat tablosunda 'Kamu Personeli' ayrı kolon",
+   "kaynak": "https://uludag.edu.tr/saglikkultur/nilufer-hatun-konukevi-ucret-69550",
+   "ankara_saat": 5
+  },
+  {
+   "ad": "Yılmaz Akdoruk Öğrenci Konukevi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "İstanbul Teknik Üniversitesi",
+   "il": "İstanbul",
+   "ilce": "Sarıyer",
+   "kiyi": false,
+   "fiyat_2026": "Kamu personeli: 2 kişilik odada kişi başı 1.500 TL, tek kişilik 2.000 TL",
+   "not": "Kamu personeli için ayrı tarife",
+   "kaynak": "https://yurtburs.itu.edu.tr/konukevi/konukevi-fiyatlari",
+   "ankara_saat": 5.5
+  },
+  {
+   "ad": "Düzce Üniversitesi Misafirhanesi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Düzce Üniversitesi",
+   "il": "Düzce",
+   "ilce": "Merkez",
+   "kiyi": false,
+   "telefon": [
+    "0380 542 11 16"
+   ],
+   "eposta": "saglikkultur@duzce.edu.tr",
+   "fiyat_2026": "Kamu kurum personeli: 2 yataklı odada kişi başı 650 TL, tek kişilik 900 TL, aile odası 1.700 TL — kahvaltı yok, nakit kabul edilmiyor",
+   "not": "Akçakoca sahiline ~35 km",
+   "kaynak": "https://sks.duzce.edu.tr/Sayfa/f5f0/misafirhane",
+   "ankara_saat": 3.5
+  },
+  {
+   "ad": "Osmaniye Korkut Ata Üniversitesi Misafirhanesi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Osmaniye Korkut Ata Üniversitesi",
+   "il": "Osmaniye",
+   "ilce": "Merkez",
+   "kiyi": false,
+   "telefon": [
+    "0328 827 13 45"
+   ],
+   "fiyat_2026": "İndirimli/sivil: tek kişilik 1.000/1.500 TL, suit 2.000/3.500 TL",
+   "not": "Kamu kuruluşları temsilcileri yararlanabiliyor; geçici görevli kamu personeline harcırah bazlı tavan tarife",
+   "kaynak": "https://www.osmaniye.edu.tr/tr/sks/duyurular/33514-universitemiz-sosyal-ve-spor-tesisleri-guncel-fiyat-listesi",
+   "ankara_saat": 7.5
+  },
+  {
+   "ad": "Çukurova Üniversitesi Balcalı Konukevi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Çukurova Üniversitesi",
+   "il": "Adana",
+   "ilce": "Sarıçam",
+   "kiyi": false,
+   "telefon": [
+    "0322 338 60 84"
+   ],
+   "eposta": "sks@cu.edu.tr",
+   "deniz": "Seyhan Baraj gölü kıyısında (deniz değil)",
+   "fiyat_2026": "Tek kişi 1.800 TL, çift 2.700 TL, üç kişi 4.000 TL",
+   "kaynak": "https://sks.cu.edu.tr/cu/birimler/konukevleri/balcali-konukevi",
+   "ankara_saat": 6.5
+  },
+  {
+   "ad": "Trakya Üniversitesi Enez Uygulama Oteli",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Trakya Üniversitesi",
+   "il": "Edirne",
+   "ilce": "Enez",
+   "telefon": [
+    "0530 234 98 52"
+   ],
+   "eposta": "tuotel@trakya.edu.tr",
+   "deniz": "Saros Körfezi sahili, 25 bungalov",
+   "fiyat_2026": "Kamu personeli ve emeklileri: 6 gece 7 gün bungalov + 2 öğün, 1–2 kişi 50.400 TL; 3–6 yaş 7.500 TL (dönem sistemi)",
+   "not": "Sezon 15.06–06.09.2026, 12 dönem, %20 avans",
+   "kaynak": "https://enezkampi.trakya.edu.tr/news/2026-enez-uygulama-oteli-yaz-kampi-duyurusu",
+   "kiyi": true,
+   "ankara_saat": 8.5
+  },
+  {
+   "ad": "İstanbul Üniversitesi Enez Prof. Dr. Nazım Terzioğlu Tesisleri",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "İstanbul Üniversitesi",
+   "il": "Edirne",
+   "ilce": "Enez",
+   "telefon": [
+    "0530 243 71 60"
+   ],
+   "eposta": "rezervasyon@istanbul.edu.tr",
+   "deniz": "Saros Körfezi, denize sıfır",
+   "olanaklar": [
+    "80 bungalov",
+    "34 otel odası"
+   ],
+   "not": "İstanbul Üniversitesi mensupları ve kamu çalışanlarına hizmet veriyor",
+   "kaynak": "https://enez.istanbul.edu.tr/",
+   "kiyi": true,
+   "ankara_saat": 8.5
+  },
+  {
+   "ad": "ÇOMÜ Dardanos Hotel Eğitim ve Dinlenme Tesisi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Çanakkale Onsekiz Mart Üniversitesi",
+   "il": "Çanakkale",
+   "ilce": "Merkez",
+   "telefon": [
+    "0530 543 10 28"
+   ],
+   "deniz": "Çanakkale Boğazı kıyısı, Mavi Bayraklı plaj, deniz manzaralı balkonlar",
+   "olanaklar": [
+    "62 oda",
+    "Mavi Bayrak plaj"
+   ],
+   "kaynak": "https://dardanos.comu.edu.tr/",
+   "kiyi": true,
+   "ankara_saat": 8
+  }
+ ]
+}
