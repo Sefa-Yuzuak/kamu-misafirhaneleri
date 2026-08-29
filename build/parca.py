@@ -269,6 +269,8 @@ def il_karti(il: str, sayi: int, deniz_sayi: int, gorseller: dict) -> str:
 GEZ = [
     ("/il/", "İller"),
     ("/harita/", "Harita"),
+    ("/araclar/", "Araçlar"),
+    ("/liste/", "Listeler"),
     ("/deniz/", "Denize yakın"),
     ("/tur/ogretmenevleri/", "Öğretmenevleri"),
     ("/rehber/", "Rehber"),
@@ -297,6 +299,7 @@ def kabuk(
     aktif: str = "",
     ek_bas: str = "",
     harita: bool = False,
+    arac: bool = False,
 ) -> str:
     kanonik = SITE + yol
     ld = "".join(
@@ -364,10 +367,17 @@ misafirhanelerinin bağımsız dizini. Rezervasyon alınmaz; her tesis doğrudan
 <li><a href="/il/">81 il</a></li>
 <li><a href="/harita/">Harita</a></li>
 <li><a href="/ara/">Tesis ara</a></li>
+<li><a href="/liste/">Sıralı listeler</a></li>
 <li><a href="/deniz/">Denize yakın tesisler</a></li>
 <li><a href="/tur/ogretmenevleri/">Öğretmenevleri</a></li>
 <li><a href="/tur/polisevleri/">Polisevleri</a></li>
 <li><a href="/tur/universite-misafirhaneleri/">Üniversite misafirhaneleri</a></li>
+</ul></div>
+<div><h3>Araçlar</h3><ul>
+<li><a href="/araclar/en-yakin/">Bana en yakın tesis</a></li>
+<li><a href="/araclar/tatil-butcesi/">Tatil bütçesi</a></li>
+<li><a href="/araclar/mesafe/">Mesafe ve süre</a></li>
+<li><a href="/araclar/karsilastir/">Tesis karşılaştır</a></li>
 </ul></div>
 <div><h3>Rehber</h3><ul>
 <li><a href="/rehber/ogretmenevinde-kimler-kalabilir/">Kimler kalabilir?</a></li>
@@ -389,6 +399,7 @@ misafirhanelerinin bağımsız dizini. Rezervasyon alınmaz; her tesis doğrudan
 </div>
 </footer>
 <script src="/static/a.js" defer></script>
+{'<script src="/static/t.js" defer></script>' if arac else ""}
 {'<script src="/static/harita/leaflet.js" defer></script><script src="/static/harita/markercluster.js" defer></script><script src="/static/h.js" defer></script>' if harita else ""}
 </body>
 </html>"""

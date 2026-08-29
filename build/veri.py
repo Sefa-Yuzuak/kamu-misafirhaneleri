@@ -98,3 +98,53 @@ def sayfa_basligi(t: dict) -> str:
         if len(aday) <= 68:
             return aday
     return ad
+
+
+_TUTAR = re.compile(r"\b(\d{1,3}(?:\.\d{3})+|\d{3,6})\b")
+
+
+def fiyat_taban(metin: str | None) -> int:
+    """Yayımlanan fiyat metnindeki en düşük gerçekçi tutar.
+
+    Metinlerde birden çok oda tipi geçiyor ("2 kişilik 3.000 / 4 kişilik 4.000 TL").
+    Sıralama için en düşük tutarı almak, "şu fiyattan başlıyor" anlamına gelir ve
+    yanıltmaz; en büyüğü almak dört kişilik odayı tek kişilik gibi gösterirdi.
+    Yıl sayıları (2026) ve küçük rakamlar elenir.
+    """
+    if not metin:
+        return 0
+    tutarlar = []
+    for ham in _TUTAR.findall(metin):
+        try:
+            n = int(ham.replace(".", ""))
+        except ValueError:
+            continue
+        if 500 <= n <= 200000 and not (2000 <= n <= 2100 and "." not in ham):
+            tutarlar.append(n)
+    return min(tutarlar) if tutarlar else 0
+
+
+_SESLI = "aeıioöuü"
+_KALIN = "aıou"
+_SERT = "fstkçşhp"
+
+
+def _son_sesli(ad: str) -> str:
+    for h in reversed(ad.lower()):
+        if h in _SESLI:
+            return h
+    return "a"
+
+
+def yonelme(ad: str) -> str:
+    """Yönelme hâli: Ankara -> Ankara'ya, İstanbul -> İstanbul'a, İzmir -> İzmir'e."""
+    kalin = _son_sesli(ad) in _KALIN
+    kaynastirma = "y" if ad and ad[-1].lower() in _SESLI else ""
+    return f"{ad}'{kaynastirma}{'a' if kalin else 'e'}"
+
+
+def cikma(ad: str) -> str:
+    """Ayrılma hâli: Ankara -> Ankara'dan, İzmir -> İzmir'den, Sinop -> Sinop'tan."""
+    kalin = _son_sesli(ad) in _KALIN
+    d = "t" if ad and ad[-1].lower() in _SERT else "d"
+    return f"{ad}'{d}{'a' if kalin else 'e'}n"

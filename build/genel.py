@@ -171,6 +171,39 @@ kurumlara aittir; kaynağı göstermek için kullanılmaktadır.</p></div>
         },
         {
             "@context": "https://schema.org",
+            "@type": "Dataset",
+            "@id": SITE + "/#veri",
+            "name": "Türkiye kamu konaklama tesisleri veri kümesi",
+            "description": (
+                f"81 ildeki {len(tesisler)} öğretmenevi, polisevi, üniversite ve "
+                "bakanlık misafirhanesi: ad, tür, bağlı kurum, il, ilçe, telefon, "
+                "e-posta, denize konum, yayımlanmış 2026 fiyatı ve kaynak bağlantısı. "
+                "Kurumların kendi yayınlarından derlendi; tahmini veri içermez."
+            ),
+            "url": SITE + "/kaynaklar/",
+            "license": "https://creativecommons.org/licenses/by/4.0/",
+            "isAccessibleForFree": True,
+            "inLanguage": "tr-TR",
+            "dateModified": BUGUN.isoformat(),
+            "creator": {"@type": "Organization", "name": AD, "url": SITE},
+            "spatialCoverage": {"@type": "Place", "name": "Türkiye"},
+            "keywords": ["öğretmenevi", "polisevi", "kamu misafirhanesi",
+                         "üniversite misafirhanesi", "konaklama", "Türkiye"],
+            "distribution": [{
+                "@type": "DataDownload",
+                "encodingFormat": "application/json",
+                "contentUrl": SITE + "/tesisler.json",
+            }],
+            "variableMeasured": [
+                {"@type": "PropertyValue", "name": "tesis sayısı", "value": len(tesisler)},
+                {"@type": "PropertyValue", "name": "telefon doğrulanmış",
+                 "value": len(telefonlu)},
+                {"@type": "PropertyValue", "name": "denize yakın", "value": len(deniz)},
+                {"@type": "PropertyValue", "name": "yayımlanmış fiyat", "value": len(fiyatli)},
+            ],
+        },
+        {
+            "@context": "https://schema.org",
             "@type": "CollectionPage",
             "name": AD,
             "url": SITE + "/",
@@ -431,10 +464,40 @@ def rehber_sayfasi(anahtar: str, baslik: str, ikon: str, tesisler: list[dict]) -
 <div class="yazi">{govde}
 <h2>Sık sorulan sorular</h2></div>
 {sss_html(sss)}
-<div class="not" style="margin:26px 0 40px">{ik("bilgi")}<div>
+<div style="display:flex;flex-wrap:wrap;gap:9px;margin:26px 0 6px">
+<a class="dg dg-2 dg-sm" href="/araclar/en-yakin/">{ik("konum")}Bana en yakın tesis</a>
+<a class="dg dg-2 dg-sm" href="/araclar/tatil-butcesi/">{ik("para")}Tatil bütçesi hesapla</a>
+<a class="dg dg-2 dg-sm" href="/liste/">{ik("harita")}Sıralı listeler</a>
+</div>
+<div class="not" style="margin:18px 0 40px">{ik("bilgi")}<div>
 Bu sayfa bağımsız bir dizin tarafından hazırlanmıştır ve resmî bir kaynak değildir.
 Bağlayıcı bilgi için tesisin bağlı olduğu kuruma başvurun.</div></div>
 </div>"""
+
+    ek_ld: list[dict] = []
+    if anahtar == "rezervasyon-nasil-yapilir":
+        ek_ld.append({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "Kamu misafirhanesinde rezervasyon nasıl yapılır?",
+            "totalTime": "PT15M",
+            "estimatedCost": {"@type": "MonetaryAmount", "currency": "TRY", "value": "0"},
+            "step": [
+                {"@type": "HowToStep", "position": 1, "name": "İli seçin",
+                 "text": "Gideceğiniz ili 81 il listesinden açın.",
+                 "url": SITE + "/il/"},
+                {"@type": "HowToStep", "position": 2, "name": "Tesisi açın",
+                 "text": "Tesis sayfasında telefon, varsa e-posta ve yol tarifi bulunur."},
+                {"@type": "HowToStep", "position": 3, "name": "Arayın",
+                 "text": "Kamu personeli olduğunuzu, kaç kişi ve hangi tarihler için yer "
+                         "aradığınızı baştan söyleyin."},
+                {"@type": "HowToStep", "position": 4, "name": "Alternatif bırakın",
+                 "text": "Doluysa aynı ildeki diğer tesisleri sorun; tesisler birbirini "
+                         "yönlendirir."},
+                {"@type": "HowToStep", "position": 5, "name": "Kaydı teyit edin",
+                 "text": "Rezervasyonun kimin adına ve hangi tarihe alındığını tekrar ettirin."},
+            ],
+        })
 
     ld = {
         "@context": "https://schema.org",
@@ -455,7 +518,7 @@ Bağlayıcı bilgi için tesisin bağlı olduğu kuruma başvurun.</div></div>
         icerik=icerik,
         kirintilar=kirintilar,
         aktif="/rehber/",
-        jsonld=[ld, sss_ld(sss), kirinti_ld(kirintilar)],
+        jsonld=[ld, *ek_ld, sss_ld(sss), kirinti_ld(kirintilar)],
     )
 
 

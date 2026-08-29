@@ -149,7 +149,7 @@ def main() -> int:
         if "�" in h:
             bul("YUKSEK", y, "bozuk karakter (U+FFFD) var")
         temiz = h.replace("{search_term_string}", "")  # SearchAction şablonu
-        kalinti = re.search(r"None|nan|\{[a-z_]+\}", temiz)
+        kalinti = re.search(r"\bNone\b|\bnan\b|\{[a-z_]+\}", temiz)
         if kalinti:
             kusur = kalinti.group(0)
             bul("ORTA", y, f"işlenmemiş şablon/None izi: {kusur}")

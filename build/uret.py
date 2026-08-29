@@ -33,6 +33,8 @@ from parca import (  # noqa: E402
     tesis_karti,
     yol_tarifi_url,
 )
+from mesafe import cikis_mesafeleri, sure_metni  # noqa: E402
+from veri import cikma  # noqa: E402
 from veri import TURLER, kisa_ad, sayfa_basligi, slug, tesis_slug, tur_slug  # noqa: E402
 
 KOK = Path(__file__).resolve().parent.parent
@@ -207,7 +209,7 @@ def kirinti_ld(ogeler: list[tuple[str, str]]) -> dict:
 # --------------------------------------------------------------------------
 
 
-def tesis_sayfasi(t: dict, gorseller: dict, komsular: list[dict],
+def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
                   konum: dict | None = None) -> str:
     s = tesis_slug(t)
     yol = f"/tesis/{s}/"
@@ -315,16 +317,52 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list[dict],
         harita_html = ""
         konum_notu = f'{t["ilce"]}, {t["il"]} — tam adres için tesisi arayın.'
 
+    mesafe_kutusu = ""
+    mesafe_cumlesi = ""
+    if konum:
+        satirlar_m = cikis_mesafeleri(konum)
+        if satirlar_m:
+            govde_m = "".join(
+                f"<tr><th>{e(sehir)}</th><td><b>{km} km</b></td>"
+                f"<td>{e(sure_metni(saat))}</td></tr>"
+                for sehir, km, saat in satirlar_m
+            )
+            mesafe_kutusu = (
+                '<div class="kutu"><h3>Nereden ne kadar?</h3>'
+                f'<table class="mesafe-tablo"><tbody>{govde_m}</tbody></table>'
+                '<p style="font-size:.79rem;color:var(--soluk);margin:11px 0 12px">'
+                "Koordinatlardan hesaplanan tahmini karayolu mesafesi ve mola hariç "
+                "sürüş süresi.</p>"
+                '<a class="dg dg-2 dg-sm dg-blok" href="/araclar/mesafe/">'
+                f'{ik("yol")}Kendi ilinden hesapla</a></div>'
+            )
+            mesafe_cumlesi = " " + " ".join(
+                f"{cikma(sehir)} yaklaşık {km} km ({sure_metni(saat)} sürüş) "
+                "uzaklıkta."
+                for sehir, km, saat in satirlar_m[:2]
+            )
+
     komsu_html = ""
     if komsular:
+        kartlar_k = "".join(
+            tesis_karti(k, gorseller) if isinstance(k, dict) else tesis_karti(k[0], gorseller)
+            for k in komsular
+        )
+        mesafeli = all(not isinstance(k, dict) for k in komsular)
+        if mesafeli:
+            en_yakin_metni = ", ".join(
+                f"{kisa_ad(k[0]['ad'])} ({k[1]} km)" for k in komsular[:3]
+            )
+            alt_metin = f"Mesafeye göre en yakın olanlar: {en_yakin_metni}."
+        else:
+            alt_metin = "Aynı ildeki diğer kamu konaklama tesisleri."
         komsu_html = (
             f'<section class="bl bl-cizgi"><div class="bl-bas"><div>'
-            f'<h2>{e(t["il"])} ilindeki diğer tesisler</h2>'
-            f'<p>Aynı ildeki diğer kamu konaklama tesisleri.</p></div>'
-            f'<a class="dg dg-2 dg-sm" href="/il/{slug(t["il"])}/">Tümü{ik("ok")}</a></div>'
-            f'<div class="iz">'
-            + "".join(tesis_karti(k, gorseller, il_goster=False) for k in komsular)
-            + "</div></section>"
+            f"<h2>Bu tesise en yakın diğer tesisler</h2>"
+            f"<p>{e(alt_metin)}</p></div>"
+            f'<a class="dg dg-2 dg-sm" href="/il/{slug(t["il"])}/">'
+            f'{e(t["il"])} tesisleri{ik("ok")}</a></div>'
+            f'<div class="iz">{kartlar_k}</div></section>'
         )
 
     icerik = f"""<div class="ts-ust">{hero_img}{foto_not}<div class="kap">
@@ -334,7 +372,7 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list[dict],
 </div></div>
 <div class="kap ikili">
 <div>
-<p class="ozet">{ozet_metni(t)}</p>
+<p class="ozet">{ozet_metni(t)}{mesafe_cumlesi}</p>
 <h2 class="gizli">Künye</h2>
 {kunye}
 {olanak_html}
@@ -349,6 +387,7 @@ derlenmiştir ve değişebilir. Yola çıkmadan önce tesisi telefonla arayın.<
 <h2>İletişim</h2>
 <div style="display:grid;gap:8px">{eylemler(t, buyuk=True)}</div>
 </div>
+{mesafe_kutusu}
 <div class="kutu">
 <h3>{e(tur_ad)} hakkında</h3>
 <p style="font-size:.93rem;color:var(--soluk);margin:0 0 12px">{e(tur_aciklama)}</p>
@@ -386,6 +425,10 @@ target="_blank" rel="noopener nofollow">{ik("yildiz")}Google yorumlarını gör<
         },
         "isAccessibleForFree": False,
         "sameAs": [t["kaynak"]],
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".ozet", "h1"],
+        },
     }
     if t.get("telefon"):
         ld_tesis["telephone"] = "+9" + t["telefon"][0].replace(" ", "").lstrip("0")

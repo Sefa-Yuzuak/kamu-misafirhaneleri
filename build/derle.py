@@ -19,9 +19,19 @@ from genel import (  # noqa: E402
     rehber_sayfasi,
     yaz,
 )
+from araclar import (  # noqa: E402
+    ARACLAR,
+    araclar_dizini,
+    butce_sayfasi,
+    en_yakin_sayfasi,
+    karsilastir_sayfasi,
+    mesafe_sayfasi,
+)
+from listeler import liste_sayfasi, liste_tanimlari, listeler_dizini  # noqa: E402
+from mesafe import en_yakinlar, il_merkezleri  # noqa: E402
 from parca import AD, SITE, e, harita_kutusu, ik, il_karti, kabuk, tesis_karti  # noqa: E402
 from uret import CIKTI, KOK, il_sayfasi, kirinti_ld, sss_html, sss_ld, tesis_sayfasi  # noqa: E402
-from veri import TURLER, kisa_ad, slug, tesis_slug, tur_slug  # noqa: E402
+from veri import TURLER, fiyat_taban, kisa_ad, slug, tesis_slug, tur_slug  # noqa: E402
 
 
 # --------------------------------------------------------------------------
@@ -413,7 +423,11 @@ Son güncelleme: {TARIH_TR}
 - Bu site rezervasyon almaz. Rezervasyon her tesisin kendi telefonundan yapılır;
   merkezî bir rezervasyon sistemi yoktur.
 - Fiyat yalnızca tesisin kendisi yayımlamışsa yazılır; tahmini fiyat verilmez.
-- Ankara mesafeleri yaklaşık karayolu değerleridir, ölçülmemiştir.
+- Mesafeler koordinatlardan (OpenStreetMap Nominatim) hesaplanan tahminlerdir:
+  kuş uçuşu uzaklık × 1,27. Bilinen güzergâhlarda sapma ortalama %6'dır.
+  Ölçülmüş karayolu mesafesi değildir.
+- 161 tesisin konumu OSM kaydından birebir alındı; kalan 400 tesiste ilçe merkezi
+  kullanılır ve bu `kesinlik` alanıyla işaretlidir.
 - Site hiçbir kuruma ait değildir ve hiçbir kurumu temsil etmez.
 """
 
@@ -462,6 +476,33 @@ def main() -> int:
     yaz("/kaynaklar/", kaynaklar_sayfasi(tesisler, gorseller, kurumlar))
     yaz("/rehber/", rehber_dizini(tesisler))
     yaz("/ara/", ara_sayfasi(tesisler))
+
+    if konumlar:
+        il_merkez = il_merkezleri(konumlar)
+        yaz("/araclar/", araclar_dizini(tesisler, konumlar))
+        yollar.append("/araclar/")
+        for anahtar, uretici in (
+            ("en-yakin", en_yakin_sayfasi),
+            ("tatil-butcesi", butce_sayfasi),
+            ("mesafe", mesafe_sayfasi),
+        ):
+            yaz(f"/araclar/{anahtar}/", uretici(tesisler, konumlar, il_merkez))
+            yollar.append(f"/araclar/{anahtar}/")
+        yaz("/araclar/karsilastir/", karsilastir_sayfasi(tesisler))
+        yollar.append("/araclar/karsilastir/")
+
+        tanimlar = liste_tanimlari(konumlar)
+        yaz("/liste/", listeler_dizini(tanimlar, tesisler, konumlar))
+        yollar.append("/liste/")
+        for anahtar, tanim in tanimlar.items():
+            sayfa = liste_sayfasi(anahtar, tanim, tesisler, konumlar)
+            if sayfa:
+                yaz(f"/liste/{anahtar}/", sayfa)
+                yollar.append(f"/liste/{anahtar}/")
+    else:
+        import parca
+
+        parca.GEZ = [g for g in parca.GEZ if g[0] not in ("/araclar/", "/liste/")]
     if konumlar:
         yaz("/harita/", harita_sayfasi(tesisler, konumlar))
     (CIKTI / "404.html").write_text(dortyuzdort(), "utf-8")
@@ -482,7 +523,16 @@ def main() -> int:
             yollar.append(f"/tur/{tur_slug(tur)}/")
 
     for t in tesisler:
-        komsular = [k for k in il_grup[t["il"]] if k is not t][:3]
+        s_t = tesis_slug(t)
+        if konumlar.get(s_t):
+            slug_tesis = {tesis_slug(x): x for x in tesisler}
+            komsular = [
+                (slug_tesis[sl], km)
+                for sl, km in en_yakinlar(s_t, konumlar, 3)
+                if sl in slug_tesis
+            ]
+        else:
+            komsular = [k for k in il_grup[t["il"]] if k is not t][:3]
         yaz(f"/tesis/{tesis_slug(t)}/",
             tesis_sayfasi(t, gorseller, komsular, konumlar.get(tesis_slug(t))))
         yollar.append(f"/tesis/{tesis_slug(t)}/")
@@ -513,6 +563,28 @@ def main() -> int:
         (CIKTI / "data" / "harita.json").write_text(
             json.dumps({"turler": list(TURLER), "t": hnoktalar}, ensure_ascii=False,
                        separators=(",", ":")), "utf-8")
+
+    if konumlar:
+        tk = {k: i for i, k in enumerate(TURLER)}
+        satirlar = []
+        for t in tesisler:
+            k = konumlar.get(tesis_slug(t))
+            if not k:
+                continue
+            satirlar.append([
+                tesis_slug(t), kisa_ad(t["ad"]), t["il"], t["ilce"], tk[t["tur"]],
+                k["lat"], k["lon"], t.get("deniz") or 0,
+                1 if any("havuz" in o.lower() for o in t.get("olanaklar") or []) else 0,
+                t.get("fiyat_2026") or "", fiyat_taban(t.get("fiyat_2026")),
+                (t.get("telefon") or [""])[0],
+                ", ".join(t.get("olanaklar") or []),
+            ])
+        (CIKTI / "data" / "tesis-tam.json").write_text(
+            json.dumps({"turler": list(TURLER),
+                        "iller": {a: [round(b[0], 5), round(b[1], 5)]
+                                  for a, b in il_merkezleri(konumlar).items()},
+                        "t": satirlar},
+                       ensure_ascii=False, separators=(",", ":")), "utf-8")
 
     (CIKTI / "sitemap.xml").write_text(sitemap(yollar), "utf-8")
     (CIKTI / "robots.txt").write_text(robots(), "utf-8")

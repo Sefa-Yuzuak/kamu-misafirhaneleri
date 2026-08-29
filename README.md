@@ -18,6 +18,8 @@ bilinmediği açıkça söylenir. Aynı ilke fotoğraflar ve harita için de ge�
 ```
 /                      arama, tesis türleri, kıyı illeri, rehber, 81 il
 /ara/                  istemci tarafı arama
+/araclar/              4 hesaplama aracı (en yakın, bütçe, mesafe, karşılaştırma)
+/liste/                7 sıralı liste (en yakın sahil, en ucuz, havuzlu, ...)
 /harita/               562 tesis, kümelenmiş harita
 /il/                   81 il, alfabetik
 /il/<il>/              ilin tesisleri + il haritası + SSS
@@ -41,6 +43,7 @@ bilinmediği açıkça söylenir. Aynı ilke fotoğraflar ve harita için de ge�
 | İl fotoğrafları | Wikimedia Commons, serbest lisanslı — yazar ve lisans her sayfada |
 | Kurum amblemleri | Kurumun kendi sitesindeki ikon dosyası |
 | Koordinatlar | OpenStreetMap Nominatim; bulunamayanda ilçe merkezi, `kesinlik` alanıyla işaretli |
+| Mesafeler | Koordinatlardan hesap: kuş uçuşu × 1,27. Bilinen güzergâhlarda sapma ortalama %6, ölçülmüş değil |
 
 ## Tasarım
 
@@ -64,6 +67,16 @@ build/gorsel.py    Wikimedia'dan 81 il fotoğrafı  -> img/il/, data/gorseller.j
 build/logo2.py     kurum amblemleri               -> img/kurum/, data/kurumlar.json
 build/konum.py     Nominatim koordinatları        -> data/konumlar.json
 ```
+
+Denetim:
+
+```
+python build/denetim.py       673 sayfayı tarar; 0 bulgu bekleniyor
+```
+
+Kırık bağlantı, eksik görsel, bozuk JSON-LD, tekrarlanan başlık/kanonik, öksüz
+sayfa, eksik `alt`, boyutsuz görsel (CLS), bozuk karakter ve site haritası
+tutarlılığı denetlenir. Bulgu varsa çıkış kodu 1 olur.
 
 ## Yayın
 
