@@ -110,8 +110,8 @@ p{margin:0 0 1em}
   color:var(--orta);text-decoration:none;white-space:nowrap;transition:background .15s,color .15s}
 .gez a:hover{background:var(--yuzey2);color:var(--murekkep)}
 .gez a[aria-current]{background:var(--vurgu-yumusak);color:var(--vurgu)}
-@media(max-width:860px){.gez a:not(.her)}
-@media(max-width:700px){
+@media (max-width:860px){.gez a:not(.her)}
+@media (max-width:700px){
   .ust .kap{height:56px;gap:4px}
   .gez{overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .gez::-webkit-scrollbar{display:none}
@@ -128,7 +128,7 @@ p{margin:0 0 1em}
 .dg-1{background:var(--vurgu);color:#fff;box-shadow:var(--golge-sm)}
 .dg-1:hover{background:var(--vurgu-koyu);color:#fff;box-shadow:var(--golge)}
 :root[data-tema="koyu"] .dg-1,html:not([data-tema="acik"]) .dg-1{color:#07211B}
-@media(prefers-color-scheme:light){:root:not([data-tema="koyu"]) .dg-1{color:#fff}}
+@media (prefers-color-scheme:light){:root:not([data-tema="koyu"]) .dg-1{color:#fff}}
 .dg-2{background:var(--yuzey);color:var(--murekkep);border-color:var(--cizgi2)}
 .dg-2:hover{background:var(--yuzey2);border-color:var(--soluk);color:var(--murekkep)}
 .dg-3{background:transparent;color:var(--orta);padding:0 12px;min-height:40px}
@@ -165,7 +165,7 @@ p{margin:0 0 1em}
 .ara kbd{position:absolute;right:14px;top:50%;translate:0 -50%;font:inherit;font-size:.72rem;font-weight:600;
   color:var(--soluk);background:var(--yuzey2);border:1px solid var(--cizgi);border-bottom-width:2px;
   border-radius:6px;padding:2px 7px}
-@media(max-width:600px){.ara kbd{display:none}.ara input{padding-right:16px}}
+@media (max-width:600px){.ara kbd{display:none}.ara input{padding-right:16px}}
 .oneri{position:absolute;top:calc(100% + 8px);left:0;right:0;z-index:30;
   background:var(--yuzey);border:1px solid var(--cizgi);border-radius:var(--r);
   box-shadow:var(--golge-lg);overflow:hidden;max-height:min(420px,60vh);overflow-y:auto}
@@ -194,7 +194,7 @@ p{margin:0 0 1em}
 /* ---------- ızgaralar ---------- */
 .iz{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(272px,1fr))}
 .iz-il{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
-@media(max-width:520px){.iz{grid-template-columns:1fr}.iz-il{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:11px}}
+@media (max-width:520px){.iz{grid-template-columns:1fr}.iz-il{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:11px}}
 
 /* ---------- il kartı ---------- */
 .il-k{position:relative;display:block;border-radius:var(--r);overflow:hidden;text-decoration:none;
@@ -251,7 +251,7 @@ p{margin:0 0 1em}
 /* ---------- süzgeç çubuğu ---------- */
 .szg{position:sticky;top:62px;z-index:30;background:color-mix(in srgb,var(--kagit) 92%,transparent);
   backdrop-filter:blur(10px);border-bottom:1px solid var(--cizgi);padding-block:11px}
-@media(max-width:700px){.szg{top:56px}}
+@media (max-width:700px){.szg{top:56px}}
 .szg .kap{display:flex;gap:8px;align-items:center;overflow-x:auto;scrollbar-width:none}
 .szg .kap::-webkit-scrollbar{display:none}
 .szg-d{display:inline-flex;align-items:center;gap:6px;height:38px;padding:0 14px;flex:none;
@@ -282,9 +282,9 @@ p{margin:0 0 1em}
 
 .ikili{display:grid;gap:30px;grid-template-columns:minmax(0,1fr) 336px;align-items:start;
   padding-block:clamp(26px,4vw,42px)}
-@media(max-width:940px){.ikili{grid-template-columns:1fr;gap:24px}}
+@media (max-width:940px){.ikili{grid-template-columns:1fr;gap:24px}}
 .yan{position:sticky;top:82px;display:grid;gap:14px}
-@media(max-width:940px){.yan{position:static}}
+@media (max-width:940px){.yan{position:static}}
 .kutu{background:var(--yuzey);border:1px solid var(--cizgi);border-radius:var(--r);
   padding:18px;box-shadow:var(--golge-sm)}
 .kutu h2,.kutu h3{font-size:1.06rem;margin:0 0 12px}
@@ -345,8 +345,8 @@ p{margin:0 0 1em}
 .alt{border-top:1px solid var(--cizgi);background:var(--yuzey2);margin-top:52px;
   padding-block:44px 30px;font-size:.9rem;color:var(--soluk)}
 .alt-iz{display:grid;gap:26px;grid-template-columns:1.4fr 1fr 1fr 1fr;margin-bottom:30px}
-@media(max-width:820px){.alt-iz{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.alt-iz{grid-template-columns:1fr}}
+@media (max-width:820px){.alt-iz{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.alt-iz{grid-template-columns:1fr}}
 .alt h3{font-size:.83rem;font-family:var(--sans);font-weight:700;letter-spacing:.06em;
   text-transform:uppercase;color:var(--murekkep);margin:0 0 11px}
 .alt ul{list-style:none;padding:0;margin:0;display:grid;gap:7px}
@@ -471,7 +471,7 @@ p{margin:0 0 1em}
 .arac-satir{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
 .alan{display:flex;flex-direction:column;gap:5px;position:relative;min-width:0}
 .alan-genis{grid-column:span 2}
-@media(max-width:640px){.alan-genis{grid-column:span 1}}
+@media (max-width:640px){.alan-genis{grid-column:span 1}}
 .alan > span{font-size:.815rem;font-weight:600;color:var(--orta);letter-spacing:.005em}
 .alan small{font-size:.74rem;color:var(--soluk);line-height:1.4;min-height:1em}
 .alan input,.alan select{width:100%;height:44px;padding:0 12px;font:inherit;font-size:.95rem;
@@ -512,7 +512,7 @@ p{margin:0 0 1em}
 .yakin-ad > span{font-size:.82rem;color:var(--soluk)}
 .yakin-fiyat{font-size:.8rem;color:var(--altin);font-weight:600;margin-top:2px}
 .yakin-sure{flex:none;font-size:.85rem;color:var(--soluk);font-variant-numeric:tabular-nums}
-@media(max-width:560px){.yakin-sure{display:none}}
+@media (max-width:560px){.yakin-sure{display:none}}
 
 /* hesap sonucu */
 .hesap-sonuc{margin-top:20px;display:grid;gap:12px}
@@ -572,7 +572,7 @@ p{margin:0 0 1em}
 .gez-dg[aria-expanded="true"] .gez-cizgi::before{translate:0 0;rotate:45deg}
 .gez-dg[aria-expanded="true"] .gez-cizgi::after{translate:0 0;rotate:-45deg}
 
-@media(max-width:1000px){
+@media (max-width:1000px){
   .gez-dg{display:inline-flex}
   .gez{position:absolute;top:calc(100% + 9px);right:20px;left:auto;z-index:50;
     flex-direction:column;align-items:stretch;gap:2px;min-width:min(248px,calc(100vw - 40px));
@@ -582,7 +582,7 @@ p{margin:0 0 1em}
   .gez a{padding:11px 14px;border-radius:var(--r-sm);font-size:.96rem;font-weight:500}
   .ust .kap{position:relative}
 }
-@media(max-width:700px){
+@media (max-width:700px){
   .gez{right:16px}
   .gez-dg{padding:0 12px}
 }

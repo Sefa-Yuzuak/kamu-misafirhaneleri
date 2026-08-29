@@ -21,21 +21,37 @@ KOK = Path(__file__).resolve().parent.parent
 
 
 def kucult(css: str) -> str:
-    """Güvenli CSS küçültme: yorumları ve gereksiz boşlukları atar."""
+    """Güvenli CSS küçültme.
+
+    İki nokta üst üste etrafındaki boşluğa DOKUNULMAZ. Daha önce dokunuyordu ve
+    medya sorgularını korumak için eklenen `not(` -> `not (` düzeltmesi
+    `.gez:not([data-acik])` seçicisini de bozup kuralı geçersiz kılmıştı;
+    mobil menü hiç kapanmıyordu. Kazanç birkaç yüz bayt, risk buydu.
+    """
     css = re.sub(r"/\*.*?\*/", "", css, flags=re.S)
     css = re.sub(r"\s+", " ", css)
-    css = re.sub(r"\s*([{}:;,>~])\s*", r"\1", css)
+    css = re.sub(r"\s*([{};,>~])\s*", r"\1", css)
     css = re.sub(r";}", "}", css)
-    # "and(" bozulmasın: medya sorgularında parantez öncesi boşluk gerekir
-    css = css.replace("and(", "and (").replace("not(", "not (")
-    css = re.sub(r"\)\s*and", ") and", css)
+    css = css.replace("@media(", "@media (")
     return css.strip()
+
+
+def _kural_sayisi(css: str) -> int:
+    return css.count("{")
 
 
 def yayimla(cikti_kok: Path) -> str:
     """s.css'i küçültüp karma adıyla yazar, sayfada kullanılacak yolu döndürür."""
     ham = (KOK / "static" / "s.css").read_text("utf-8")
     kucuk = kucult(ham)
+    # Küçültme hiçbir kuralı düşürmemeli
+    once, sonra = _kural_sayisi(re.sub(r"/\*.*?\*/", "", ham, flags=re.S)), _kural_sayisi(kucuk)
+    if once != sonra:
+        raise SystemExit(f"CSS küçültme {once - sonra} kural kaybetti — durduruldu")
+    for zorunlu in (".gez:not([data-acik])", "@media (max-width:1000px)",
+                    ".gez-dg", "size-adjust"):
+        if zorunlu not in kucuk:
+            raise SystemExit(f"CSS küçültme sonrası kayıp: {zorunlu}")
     karma = hashlib.sha256(kucuk.encode("utf-8")).hexdigest()[:10]
     ad = f"s.{karma}.css"
     hedef = cikti_kok / "static"

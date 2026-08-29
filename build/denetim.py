@@ -192,6 +192,17 @@ def main() -> int:
                 bul("YUKSEK", "/" + js.name,
                     "JavaScript sözdizimi hatası: " + " ".join(ilk[:3])[:150])
 
+    # --- gomulu kritik CSS: mobil menuyu kapatan kural yerinde mi
+    ana = (SITE / 'index.html').read_text('utf-8')
+    kritik = re.search(r'<style>(.*?)</style>', ana, re.S)
+    if not kritik:
+        bul('YUKSEK', '/', 'gomulu kritik CSS yok')
+    else:
+        for zorunlu in ('.gez:not([data-acik])', '@media (max-width:1000px)',
+                        '.gez-dg', 'size-adjust'):
+            if zorunlu not in kritik.group(1):
+                bul('YUKSEK', '/', 'kritik CSS eksik: ' + zorunlu)
+
     # --- veri dosyaları
     for ad in ("data/ara.json", "tesisler.json", "robots.txt", "llms.txt", "404.html"):
         if not (SITE / ad).exists():
