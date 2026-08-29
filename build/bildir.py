@@ -153,6 +153,17 @@ def indexnow(adet: int = 10000) -> int:
         "keyLocation": f"{SITE}/{INDEXNOW_ANAHTAR}.txt",
         "urlList": adresler,
     }
+    # Yeni alan adında toplu POST 403 donuyor: anahtar henuz taninmiyor.
+    # Once tek adresi GET ile bildirip anahtari tanitiyoruz, sonra toplu gonderim.
+    isinma = (
+        f"https://www.bing.com/indexnow?url={urllib.request.quote(SITE + '/', safe='')}"
+        f"&key={INDEXNOW_ANAHTAR}"
+    )
+    try:
+        urllib.request.urlopen(isinma, timeout=25).read()
+    except Exception:
+        pass
+
     print(f"{len(adresler)} adres bildiriliyor "
           f"(anahtar dosyası: /{INDEXNOW_ANAHTAR}.txt)")
     for sunucu in INDEXNOW_SUNUCULARI:
