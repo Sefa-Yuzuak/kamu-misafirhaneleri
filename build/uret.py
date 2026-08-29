@@ -58,7 +58,7 @@ def kurum_tam(k: str) -> str:
     return KURUM_TAM.get(k, k)
 
 
-def ozet_metni(t: dict) -> str:
+def ozet_metni(t: dict, mesafe_var: bool = False) -> str:
     """Sayfanın ilk paragrafı: tek başına okunduğunda da tam cevap verir."""
     tur = t["tur"].lower()
     c = [
@@ -83,7 +83,8 @@ def ozet_metni(t: dict) -> str:
         c.append(f'Denize konumu: {e(t["deniz"])}.')
     elif t.get("kiyi"):
         c.append(f'{e(t["il"])} kıyı ilidir; tesisin denize uzaklığı telefonla teyit edilmelidir.')
-    if t.get("ankara_saat"):
+    if t.get("ankara_saat") and not mesafe_var:
+        # mesafe cumlesi varsa ayni bilgi iki kez, ustelik iki farkli sureyle yazilmasin
         c.append(
             f'Ankara\'dan karayoluyla yaklaşık <strong>{e(t["ankara_saat"])} saat</strong> sürer.'
         )
@@ -226,7 +227,9 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
     foto_not = ""
     if g:
         hero_img = (
-            f'<img src="/img/il/{g["lg"]}" width="1200" height="675" '
+            f'<img src="/img/il/{g["lg"]}" '
+            f'srcset="/img/il/{g.get("md", g["lg"])} 800w, /img/il/{g["lg"]} 1200w" '
+            f'sizes="100vw" width="1200" height="675" '
             f'fetchpriority="high" decoding="async" '
             f'alt="{e(t["il"])} ilinden bir görünüm">'
         )
@@ -324,7 +327,7 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
         if satirlar_m:
             govde_m = "".join(
                 f"<tr><th>{e(sehir)}</th><td><b>{km} km</b></td>"
-                f"<td>{e(sure_metni(saat))}</td></tr>"
+                f"<td>{e(str(t['ankara_saat']).replace('.', ',') + ' saat') if sehir == 'Ankara' and t.get('ankara_saat') else e(sure_metni(saat))}</td></tr>"
                 for sehir, km, saat in satirlar_m
             )
             mesafe_kutusu = (
@@ -336,9 +339,14 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
                 '<a class="dg dg-2 dg-sm dg-blok" href="/araclar/mesafe/">'
                 f'{ik("yol")}Kendi ilinden hesapla</a></div>'
             )
+            def _sure(sehir: str, saat: float) -> str:
+                # Ankara için elle doğrulanmış süre varsa hesaplanana tercih edilir
+                if sehir == "Ankara" and t.get("ankara_saat"):
+                    return f"{str(t['ankara_saat']).replace('.', ',')} saat"
+                return sure_metni(saat)
+
             mesafe_cumlesi = " " + " ".join(
-                f"{cikma(sehir)} yaklaşık {km} km ({sure_metni(saat)} sürüş) "
-                "uzaklıkta."
+                f"{cikma(sehir)} yaklaşık {km} km, karayoluyla {_sure(sehir, saat)}."
                 for sehir, km, saat in satirlar_m[:2]
             )
 
@@ -372,7 +380,7 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
 </div></div>
 <div class="kap ikili">
 <div>
-<p class="ozet">{ozet_metni(t)}{mesafe_cumlesi}</p>
+<p class="ozet">{ozet_metni(t, bool(mesafe_cumlesi))}{mesafe_cumlesi}</p>
 <h2 class="gizli">Künye</h2>
 {kunye}
 {olanak_html}
@@ -460,6 +468,7 @@ target="_blank" rel="noopener nofollow">{ik("yildiz")}Google yorumlarını gör<
         yol=yol,
         icerik=icerik,
         og_gorsel=f"/img/il/{g['lg']}" if g else None,
+        on_gorsel=f"/img/il/{g['lg']}" if g else "",
         kirintilar=kirintilar,
         harita=bool(konum),
         jsonld=[ld_tesis, sss_ld(sss), kirinti_ld(kirintilar)],
@@ -536,7 +545,9 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
     hero = ""
     if g:
         hero = (
-            f'<img src="/img/il/{g["lg"]}" width="1200" height="675" fetchpriority="high" '
+            f'<img src="/img/il/{g["lg"]}" '
+            f'srcset="/img/il/{g.get("md", g["lg"])} 800w, /img/il/{g["lg"]} 1200w" '
+            f'sizes="100vw" width="1200" height="675" fetchpriority="high" '
             f'decoding="async" alt="{e(il)} ilinden bir görünüm">'
             f'<a class="foto-not" href="{e(g["sayfa"])}" target="_blank" rel="noopener nofollow">'
             f'{e(g["yazar"])[:46]} · {e(g["lisans"])}</a>'
@@ -567,6 +578,7 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
 <p class="ozet" style="max-width:78ch">{ozet}</p>
 </div>
 <section class="bl kap" style="padding-top:6px">
+<h2 class="gizli">{e(il)} ilindeki tesisler</h2>
 <div class="iz">{kartlar}</div>
 </section>
 {harita_bolum}
@@ -602,6 +614,7 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
         yol=yol,
         icerik=icerik,
         og_gorsel=f"/img/il/{g['lg']}" if g else None,
+        on_gorsel=f"/img/il/{g['lg']}" if g else "",
         kirintilar=kirintilar,
         aktif="/il/",
         harita=haritali,

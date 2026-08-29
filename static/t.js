@@ -227,7 +227,7 @@
         '<span><b>' + tl(yakit * 2) + "</b><small>gidiş-dönüş</small></span></div>" +
         "<p class='hs-not'>" + esc(il) + " → " + esc(mTesis.ad) + " (" +
         esc(mTesis.ilce) + ", " + esc(mTesis.il) + "). " +
-        '<a href="/tesis/' + mTesis.s + '/">Tesis sayfası</a></p></div>";
+        '<a href="/tesis/' + mTesis.s + '/">Tesis sayfası</a></p></div>';
     };
     secici("m-tesis", "m-oneri", function (t) { mTesis = t; mHesap(); });
     veri().then(function () {

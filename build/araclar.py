@@ -90,8 +90,11 @@ def _arac_kabugu(anahtar: str, baslik: str, ikon: str, ozet: str, govde: str,
     )
 
 
-def _il_secenekleri(il_merkez: dict) -> str:
-    return "".join(f'<option value="{e(i)}">{e(i)}</option>' for i in sorted(il_merkez))
+def _il_secenekleri(il_merkez: dict, varsayilan: str = "Ankara") -> str:
+    return "".join(
+        f'<option value="{e(i)}"{" selected" if i == varsayilan else ""}>{e(i)}</option>'
+        for i in sorted(il_merkez)
+    )
 
 
 # --------------------------------------------------------------------------

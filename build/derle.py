@@ -29,6 +29,7 @@ from araclar import (  # noqa: E402
 )
 from listeler import liste_sayfasi, liste_tanimlari, listeler_dizini  # noqa: E402
 from mesafe import en_yakinlar, il_merkezleri  # noqa: E402
+from stil import yayimla  # noqa: E402
 from parca import AD, SITE, e, harita_kutusu, ik, il_karti, kabuk, tesis_karti  # noqa: E402
 from uret import CIKTI, KOK, il_sayfasi, kirinti_ld, sss_html, sss_ld, tesis_sayfasi  # noqa: E402
 from veri import TURLER, fiyat_taban, kisa_ad, slug, tesis_slug, tur_slug  # noqa: E402
@@ -118,6 +119,7 @@ def tur_sayfasi(tur: str, tesisler: list[dict], gorseller: dict) -> str:
 <span class="rz rz-vurgu">{ik(ikon)}{e(kisa)}</span>
 <h1 style="margin-top:10px">{e(cogul)}</h1></div></div>
 <p class="ozet" style="max-width:78ch">{ozet}</p>
+<h2 class="gizli">{e(cogul)} listesi</h2>
 <div class="iz" style="margin-top:26px">
 {"".join(tesis_karti(t, gorseller) for t in goster)}</div>
 {f'<p style="color:var(--soluk);margin-top:22px">Listede ilk {len(goster)} tesis gösteriliyor. Kalan {kalan} tesise il sayfalarından ulaşabilirsiniz.</p>' if kalan > 0 else ""}
@@ -187,6 +189,7 @@ def deniz_sayfasi(tesisler: list[dict], gorseller: dict) -> str:
 <a class="dg dg-2 dg-sm" href="/rehber/ankaraya-yakin-deniz-tatili/">
 Ankara'ya yakın olanlar{ik("ok")}</a></div>
 <p class="ozet" style="max-width:78ch">{ozet}</p>
+<h2 class="gizli">Denize yakın tesislerin listesi</h2>
 <div class="iz" style="margin-top:26px">
 {"".join(tesis_karti(t, gorseller) for t in deniz)}</div>
 </section>
@@ -453,9 +456,14 @@ def main() -> int:
         else {}
     )
 
-    if CIKTI.exists():
-        shutil.rmtree(CIKTI)
-    CIKTI.mkdir(parents=True)
+    # Klasörün kendisi silinmez: yerel bir sunucu onu açık tutuyor olabilir.
+    CIKTI.mkdir(parents=True, exist_ok=True)
+    for cocuk in CIKTI.iterdir():
+        shutil.rmtree(cocuk) if cocuk.is_dir() else cocuk.unlink()
+
+    import parca
+
+    parca.STIL_YOLU = yayimla(CIKTI)
 
     il_grup: dict[str, list[dict]] = defaultdict(list)
     for t in tesisler:
@@ -591,7 +599,8 @@ def main() -> int:
     (CIKTI / "llms.txt").write_text(llms_txt(tesisler, il_grup), "utf-8")
     shutil.copy(KOK / "tesisler.json", CIKTI / "tesisler.json")
     shutil.copy(KOK / "favicon.svg", CIKTI / "favicon.svg")
-    shutil.copytree(KOK / "static", CIKTI / "static")
+    shutil.copytree(KOK / "static", CIKTI / "static", dirs_exist_ok=True)
+    (CIKTI / "static" / "s.css").unlink(missing_ok=True)
     shutil.copytree(KOK / "img", CIKTI / "img")
 
     boyut = sum(f.stat().st_size for f in CIKTI.rglob("*") if f.is_file())

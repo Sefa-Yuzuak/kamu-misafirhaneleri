@@ -131,3 +131,31 @@
     });
   }
 })();
+
+/* Gezinti menüsü: 1000px altında açılır panel. */
+(function () {
+  var dg = document.getElementById("gez-dg"), gez = document.getElementById("gez");
+  if (!dg || !gez) return;
+  function kapat() {
+    gez.removeAttribute("data-acik");
+    dg.setAttribute("aria-expanded", "false");
+    dg.setAttribute("aria-label", "Menüyü aç");
+  }
+  dg.addEventListener("click", function (ev) {
+    ev.stopPropagation();
+    var acik = gez.hasAttribute("data-acik");
+    if (acik) return kapat();
+    gez.setAttribute("data-acik", "");
+    dg.setAttribute("aria-expanded", "true");
+    dg.setAttribute("aria-label", "Menüyü kapat");
+  });
+  document.addEventListener("click", function (ev) {
+    if (gez.hasAttribute("data-acik") && !ev.target.closest("#gez, #gez-dg")) kapat();
+  });
+  document.addEventListener("keydown", function (ev) {
+    if (ev.key === "Escape" && gez.hasAttribute("data-acik")) { kapat(); dg.focus(); }
+  });
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 1000) kapat();
+  });
+})();

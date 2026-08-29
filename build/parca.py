@@ -1,21 +1,16 @@
 """HTML parçaları: ikon takımı, sayfa iskeleti, kartlar, düğmeler."""
-
 from __future__ import annotations
-
 import html
 import json
 import re
-
+from stil import KRITIK
 from veri import TURLER, kisa_ad, slug, tesis_slug
-
 SITE = "https://kamumisafirhaneler.com"
+# derle.py karma adlı dosyayı üretince bunu günceller
+STIL_YOLU = "/static/s.css"
 AD = "Kamu Misafirhaneleri"
-
-
 def e(x) -> str:
     return html.escape(str(x or ""), quote=True)
-
-
 # --------------------------------------------------------------------------
 # İkonlar — hepsi tek renk (currentColor), 24x24 çizgi, kalınlık CSS'ten.
 # --------------------------------------------------------------------------
@@ -52,16 +47,12 @@ IKONLAR = {
     "yildiz": "m12 3.5 2.6 5.4 5.9.8-4.3 4.2 1 5.9-5.2-2.8-5.2 2.8 1-5.9L3.5 9.7l5.9-.8Z",
     "kurum": "M12 3.2 3 7.8h18ZM5.4 10.4v6.9M9.8 10.4v6.9M14.2 10.4v6.9M18.6 10.4v6.9M3.4 20.4h17.2",
 }
-
-
 def ik(ad: str, sinif: str = "ik") -> str:
     d = IKONLAR[ad]
     return (
         f'<svg class="{sinif}" viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
         f'<path d="{d}"/></svg>'
     )
-
-
 # --------------------------------------------------------------------------
 # Olanak metninden ikon çıkarma
 # --------------------------------------------------------------------------
@@ -80,8 +71,6 @@ _OLANAK = [
     (r"(\d+)\s*yatak", "yatak", None),
     (r"toplantı|konferans", "bina", "Toplantı salonu"),
 ]
-
-
 def olanak_ikonlari(olanaklar: list[str] | None) -> list[tuple[str, str]]:
     """Serbest metin olanakları (ikon, etiket) çiftlerine çevirir."""
     if not olanaklar:
@@ -106,39 +95,26 @@ def olanak_ikonlari(olanaklar: list[str] | None) -> list[tuple[str, str]]:
                 goruldu.add(ham.lower())
                 cikti.append(("bilgi", ham[0].upper() + ham[1:]))
     return cikti
-
-
 # --------------------------------------------------------------------------
 # İletişim düğmeleri
 # --------------------------------------------------------------------------
 def _rakam(no: str) -> str:
     d = re.sub(r"\D", "", no)
     return d[1:] if d.startswith("0") else d
-
-
 def cep_mi(no: str) -> bool:
     return _rakam(no).startswith("5")
-
-
 def yol_tarifi_url(t: dict) -> str:
     hedef = f"{t['ad']} {t['ilce']} {t['il']}"
     import urllib.parse
-
     return "https://www.google.com/maps/dir/?api=1&destination=" + urllib.parse.quote(hedef)
-
-
 def google_yer_url(t: dict) -> str:
     """Tesisin Google Haritalar kaydı — yorumlar orada okunur."""
     import urllib.parse
-
     return "https://www.google.com/maps/search/?api=1&query=" + urllib.parse.quote(
         f"{t['ad']} {t['ilce']} {t['il']}"
     )
-
-
 def osm_adres(konum: dict | None) -> str:
     """OSM display_name'den okunur bir sokak adresi çıkarır.
-
     Yalnızca tesis olarak eşleşen kayıtlarda anlamlıdır; ilçe merkezlerinde boş döner.
     """
     if not konum or konum.get("kesinlik") != "tesis":
@@ -154,18 +130,13 @@ def osm_adres(konum: dict | None) -> str:
             goruldu.add(a)
             govde.append(x)
     return ", ".join(govde)
-
-
 def wa_url(t: dict, no: str) -> str:
     import urllib.parse
-
     mesaj = (
         f"Merhaba, {t['ad']} için müsaitlik ve fiyat bilgisi almak istiyorum. "
         "(kamumisafirhaneler.com üzerinden ulaşıyorum)"
     )
     return f"https://wa.me/9{_rakam(no)}?text=" + urllib.parse.quote(mesaj)
-
-
 def eylemler(t: dict, buyuk: bool = False) -> str:
     """Ara / WhatsApp / Yol tarifi / E-posta düğmeleri."""
     sinif = "dg" if buyuk else "dg dg-sm"
@@ -175,7 +146,8 @@ def eylemler(t: dict, buyuk: bool = False) -> str:
     if tel:
         p.append(
             f'<a class="{sinif} dg-1" href="tel:+9{_rakam(tel)}" '
-            f'aria-label="{e(t["ad"])} telefonla ara">{ik("telefon")}'
+            f'aria-label="{e(tel) if buyuk else "Ara"}'
+            f' — {e(kisa_ad(t["ad"]))} telefonla ara">{ik("telefon")}'
             f'<span>{e(tel) if buyuk else "Ara"}</span></a>'
         )
     if cep:
@@ -194,8 +166,6 @@ def eylemler(t: dict, buyuk: bool = False) -> str:
             f'aria-label="E-posta gönder">{ik("mail")}<span>E-posta</span></a>'
         )
     return "".join(p)
-
-
 # --------------------------------------------------------------------------
 # Kartlar
 # --------------------------------------------------------------------------
@@ -204,36 +174,33 @@ def tesis_karti(t: dict, gorseller: dict, il_goster: bool = True) -> str:
     s = tesis_slug(t)
     ikon = TURLER[t["tur"]][2]
     kisa_tur = TURLER[t["tur"]][1]
-
     if g:
         gorsel = (
-            f'<img src="/img/il/{g["sm"]}" srcset="/img/il/{g["sm"]} 640w, /img/il/{g["lg"]} 1200w" '
-            f'sizes="(max-width:520px) 100vw, 300px" width="640" height="360" loading="lazy" decoding="async" '
+            f'<img src="/img/il/{g["sm"]}" '
+            f'srcset="/img/il/{g["sm"]} 640w, /img/il/{g.get("md", g["lg"])} 800w, '
+            f'/img/il/{g["lg"]} 1200w" '
+            f'sizes="(max-width:520px) 92vw, (max-width:900px) 44vw, 300px" '
+            f'width="640" height="360" loading="lazy" decoding="async" '
             f'alt="{e(t["il"])} — tesis bu ilde yer alıyor">'
         )
     else:
         gorsel = ""
-
     rozetler = f'<span class="rz rz-tur">{ik(ikon)}{e(kisa_tur)}</span>'
     if t.get("deniz"):
         rozetler += f'<span class="rz rz-deniz">{ik("deniz")}Sahilde</span>'
-
     olanak = olanak_ikonlari(t.get("olanaklar"))[:4]
     ol_html = ""
     if olanak:
         ol_html = '<ul class="ol">' + "".join(
             f"<li>{ik(i)}{e(m)}</li>" for i, m in olanak
         ) + "</ul>"
-
     meta = [f'{ik("konum")}{e(t["ilce"])}' + (f", {e(t['il'])}" if il_goster else "")]
     if t.get("ankara_saat"):
         meta.append(f'{ik("saat")}Ankara {e(t["ankara_saat"])} sa')
-
     fiyat = ""
     if t.get("fiyat_2026"):
         kisa = t["fiyat_2026"].split(";")[0].strip()
         fiyat = f'<p class="tk-fiyat">{ik("para")} {e(kisa)}</p>'
-
     return f"""<article class="tk">
 <div class="tk-gorsel">{gorsel}<span class="rzs-k">{rozetler}</span><span class="yer-et">{ik("konum")}{e(t["il"])}</span></div>
 <div class="tk-govde">
@@ -242,13 +209,14 @@ def tesis_karti(t: dict, gorseller: dict, il_goster: bool = True) -> str:
 {fiyat}{ol_html}</div>
 <div class="tk-alt">{eylemler(t)}</div>
 </article>"""
-
-
 def il_karti(il: str, sayi: int, deniz_sayi: int, gorseller: dict) -> str:
     g = gorseller.get(il)
     s = slug(il)
     gorsel = (
-        f'<img src="/img/il/{g["sm"]}" width="640" height="360" loading="lazy" decoding="async" '
+        f'<img src="/img/il/{g["sm"]}" '
+        f'srcset="/img/il/{g["sm"]} 640w, /img/il/{g.get("md", g["lg"])} 800w" '
+        f'sizes="(max-width:520px) 44vw, 210px" '
+        f'width="640" height="360" loading="lazy" decoding="async" '
         f'alt="{e(il)} ilinden bir görünüm">'
         if g
         else ""
@@ -261,8 +229,6 @@ def il_karti(il: str, sayi: int, deniz_sayi: int, gorseller: dict) -> str:
         f'<span class="yz"><strong>{e(il)}</strong>'
         f'<span>{sayi} tesis</span></span></a>'
     )
-
-
 # --------------------------------------------------------------------------
 # Sayfa iskeleti
 # --------------------------------------------------------------------------
@@ -275,7 +241,22 @@ GEZ = [
     ("/tur/ogretmenevleri/", "Öğretmenevleri"),
     ("/rehber/", "Rehber"),
 ]
+HARITA_ON = (
+    '<link rel="preconnect" href="https://tile.openstreetmap.org" crossorigin>'
+    '<link rel="dns-prefetch" href="https://tile.openstreetmap.org">'
+) + "".join(
+    f'<link rel="preload" href="/static/harita/{ad}" as="style" '
+    "onload=\"this.rel='stylesheet'\">"
+    for ad in ("leaflet.css", "markercluster.css", "markercluster-default.css")
+)
 
+
+NOSCRIPT_GEZ = (
+    "<noscript><style>.gez-dg{display:none!important}"
+    "@media(max-width:1000px){.gez{position:static!important;display:flex!important;"
+    "flex-direction:row!important;overflow-x:auto;background:none!important;"
+    "border:0!important;box-shadow:none!important;padding:0!important}}</style></noscript>"
+)
 MARKA_SVG = (
     '<svg viewBox="0 0 32 32" fill="none" aria-hidden="true">'
     '<rect x="1.2" y="1.2" width="29.6" height="29.6" rx="8" fill="var(--vurgu)"/>'
@@ -285,8 +266,6 @@ MARKA_SVG = (
     'stroke-linecap="round" stroke-linejoin="round"/>'
     '<path d="M6 22.6h20" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>'
 )
-
-
 def kabuk(
     *,
     baslik: str,
@@ -298,6 +277,7 @@ def kabuk(
     kirintilar: list[tuple[str, str]] | None = None,
     aktif: str = "",
     ek_bas: str = "",
+    on_gorsel: str = "",
     harita: bool = False,
     arac: bool = False,
 ) -> str:
@@ -319,7 +299,6 @@ def kabuk(
             parcalar.append(f"<span>›</span>" if i else "")
             parcalar.append(a if son else f'<a href="{u}">{a}</a>')
         krnt = f'<nav class="kap krnt" aria-label="Sayfa yolu">{"".join(parcalar)}</nav>'
-
     return f"""<!doctype html>
 <html lang="tr">
 <head>
@@ -339,16 +318,21 @@ def kabuk(
 <meta name="theme-color" content="#0D5C4E" media="(prefers-color-scheme:light)">
 <meta name="theme-color" content="#0F1413" media="(prefers-color-scheme:dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="/static/f/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/static/f/newsreader-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
-{'<link rel="stylesheet" href="/static/harita/leaflet.css"><link rel="stylesheet" href="/static/harita/markercluster.css"><link rel="stylesheet" href="/static/harita/markercluster-default.css">' if harita else ""}<link rel="stylesheet" href="/static/s.css">
-{ek_bas}{ld}</head>
+<link rel="preload" href="/static/f/newsreader-latin-ext-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>{KRITIK}</style>
+<link rel="preload" href="{STIL_YOLU}" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{STIL_YOLU}"></noscript>
+{HARITA_ON if harita else ""}
+{NOSCRIPT_GEZ}
+{f'<link rel="preload" as="image" href="{on_gorsel}" fetchpriority="high">' if on_gorsel else ''}{ek_bas}{ld}</head>
 <body>
 <a class="atla" href="#ana">İçeriğe atla</a>
 <header class="ust">
 <div class="kap">
 <a class="marka" href="/">{MARKA_SVG}<b>Kamu</b><span>Misafirhaneleri</span></a>
-<nav class="gez" aria-label="Ana menü">{gez}</nav>
+<button class="gez-dg" id="gez-dg" aria-expanded="false" aria-controls="gez"
+aria-label="Menüyü aç"><span class="gez-cizgi"></span>Menü</button>
+<nav class="gez" id="gez" aria-label="Ana menü">{gez}</nav>
 </div>
 </header>
 {krnt}
@@ -403,8 +387,6 @@ misafirhanelerinin bağımsız dizini. Rezervasyon alınmaz; her tesis doğrudan
 {'<script src="/static/harita/leaflet.js" defer></script><script src="/static/harita/markercluster.js" defer></script><script src="/static/h.js" defer></script>' if harita else ""}
 </body>
 </html>"""
-
-
 # --------------------------------------------------------------------------
 # Harita bileşeni
 # --------------------------------------------------------------------------
@@ -412,8 +394,6 @@ HARITA_ACIKLAMA = (
     "Tesislerin bir kısmı OpenStreetMap'te kayıtlı; kalanlar için ilçe merkezi "
     "gösterilir. Tam adres için tesisi arayın."
 )
-
-
 def harita_kutusu(*, ozellikler: str, sinif: str = "", aciklama: bool = True,
                   say_kimlik: bool = False) -> str:
     """#harita kabı + gösterge. `ozellikler` data-* niteliklerini taşır."""

@@ -55,8 +55,11 @@ def ana_sayfa(tesisler: list[dict], gorseller: dict, kurumlar: dict) -> str:
         key=lambda x: -sum(1 for t in x[1] if t.get("deniz")),
     )[:8]
 
-    il_kartlari = "".join(
-        il_karti(il, len(ts), sum(1 for t in ts if t.get("deniz")), gorseller)
+    # 81 ilin tamamına bağlantı korunur ama görsel kart yerine metin listesiyle:
+    # bağlantı değeri aynı kalır, DOM ~400 öğe küçülür, LCP hızlanır.
+    il_baglantilari = "".join(
+        f'<li><a href="/il/{slug(il)}/">{e(il)}'
+        f'<span>{len(ts)}</span></a></li>'
         for il, ts in sorted(il_grup.items())
     )
     kiyi_kartlari = "".join(
@@ -136,8 +139,9 @@ role="combobox" aria-expanded="false" aria-controls="oneri" aria-label="Tesis ar
 
 <section class="bl kap bl-cizgi">
 <div class="bl-bas"><div><h2>Tüm iller</h2>
-<p>81 ilin tamamı, tesis sayılarıyla.</p></div></div>
-<div class="iz-il">{il_kartlari}</div>
+<p>81 ilin tamamı, parantez içinde tesis sayısıyla.</p></div>
+<a class="dg dg-2 dg-sm" href="/harita/">Haritada gör{ik("harita")}</a></div>
+<ul class="il-liste">{il_baglantilari}</ul>
 </section>
 
 <section class="bl kap bl-cizgi">

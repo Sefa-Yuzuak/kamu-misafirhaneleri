@@ -180,6 +180,18 @@ def main() -> int:
         if y != "/" and y not in baglanilan:
             bul("ORTA", y, "hiçbir sayfadan bağlantı verilmemiş (öksüz)")
 
+    # --- JavaScript sözdizimi (node varsa)
+    import shutil as _sh
+    import subprocess
+
+    if _sh.which("node"):
+        for js in sorted((SITE / "static").glob("*.js")):
+            r = subprocess.run(["node", "--check", str(js)], capture_output=True, text=True)
+            if r.returncode != 0:
+                ilk = (r.stderr or "").strip().splitlines()
+                bul("YUKSEK", "/" + js.name,
+                    "JavaScript sözdizimi hatası: " + " ".join(ilk[:3])[:150])
+
     # --- veri dosyaları
     for ad in ("data/ara.json", "tesisler.json", "robots.txt", "llms.txt", "404.html"):
         if not (SITE / ad).exists():
