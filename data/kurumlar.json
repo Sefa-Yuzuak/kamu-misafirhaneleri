@@ -1,0 +1,82 @@
+{
+ "MEB": {
+  "ad": "Millî Eğitim Bakanlığı",
+  "site": "https://www.meb.gov.tr/",
+  "dosya": "meb.png"
+ },
+ "EGM": {
+  "ad": "Emniyet Genel Müdürlüğü",
+  "site": "https://www.egm.gov.tr/",
+  "dosya": null
+ },
+ "Tarım ve Orman Bakanlığı": {
+  "ad": "Tarım ve Orman Bakanlığı",
+  "site": "https://www.tarimorman.gov.tr/",
+  "dosya": null
+ },
+ "Adalet Bakanlığı": {
+  "ad": "Adalet Bakanlığı",
+  "site": "https://www.adalet.gov.tr/",
+  "dosya": "adalet-bakanligi.png"
+ },
+ "Sağlık Bakanlığı": {
+  "ad": "Sağlık Bakanlığı",
+  "site": "https://www.saglik.gov.tr/",
+  "dosya": null
+ },
+ "Orman Genel Müdürlüğü": {
+  "ad": "Orman Genel Müdürlüğü",
+  "site": "https://www.ogm.gov.tr/",
+  "dosya": "orman-genel-mudurlugu.png"
+ },
+ "DSİ": {
+  "ad": "Devlet Su İşleri",
+  "site": "https://www.dsi.gov.tr/",
+  "dosya": null
+ },
+ "TKİ": {
+  "ad": "Türkiye Kömür İşletmeleri",
+  "site": "https://www.tki.gov.tr/",
+  "dosya": "tki.png"
+ },
+ "İLKSAN": {
+  "ad": "İlkokul Öğretmenleri Sağlık ve Sosyal Yardım Sandığı",
+  "site": "https://www.ilksan.gov.tr/",
+  "dosya": "ilksan.png"
+ },
+ "Ankara Üniversitesi": {
+  "ad": "Ankara Üniversitesi",
+  "site": "https://www.ankara.edu.tr/",
+  "dosya": "ankara-universitesi.png"
+ },
+ "Ege Üniversitesi": {
+  "ad": "Ege Üniversitesi",
+  "site": "https://ege.edu.tr/",
+  "dosya": "ege-universitesi.png"
+ },
+ "Boğaziçi Üniversitesi": {
+  "ad": "Boğaziçi Üniversitesi",
+  "site": "https://bogazici.edu.tr/",
+  "dosya": null
+ },
+ "İstanbul Teknik Üniversitesi": {
+  "ad": "İstanbul Teknik Üniversitesi",
+  "site": "https://www.itu.edu.tr/",
+  "dosya": "istanbul-teknik-universitesi.png"
+ },
+ "Akdeniz Üniversitesi": {
+  "ad": "Akdeniz Üniversitesi",
+  "site": "https://www.akdeniz.edu.tr/",
+  "dosya": "akdeniz-universitesi.png"
+ },
+ "Dokuz Eylül Üniversitesi": {
+  "ad": "Dokuz Eylül Üniversitesi",
+  "site": "https://www.deu.edu.tr/",
+  "dosya": "dokuz-eylul-universitesi.png"
+ },
+ "Ondokuz Mayıs Üniversitesi": {
+  "ad": "Ondokuz Mayıs Üniversitesi",
+  "site": "https://www.omu.edu.tr/",
+  "dosya": "ondokuz-mayis-universitesi.png"
+ }
+}

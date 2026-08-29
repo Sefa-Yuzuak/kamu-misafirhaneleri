@@ -1,3 +1,6 @@
 .git
 .gitignore
+.venv
+site
 README.md
+**/__pycache__

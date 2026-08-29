@@ -1,48 +1,76 @@
 # Kamu Misafirhaneleri
 
-**kamumisfirhaneleri.com** — Türkiye'nin 81 ilindeki kamu konaklama tesislerinin dizini:
-öğretmenevi, polisevi, bakanlık misafirhanesi ve üniversite sosyal tesisleri.
+**[kamumisafirhaneler.com](https://kamumisafirhaneler.com)** — Türkiye'nin 81 ilindeki
+kamu konaklama tesislerinin dizini: öğretmenevi, polisevi, bakanlık misafirhanesi ve
+üniversite sosyal tesisleri.
 
-Statik site. Tesisler HTML'e basılır (arama motorları ve JavaScript'siz tarayıcılar için),
-JavaScript yalnızca filtreleme yapar.
+Statik site. 562 tesisin her biri için ayrı sayfa üretilir; JavaScript yalnızca arama
+ve harita için kullanılır, içeriğin tamamı HTML'de hazır gelir.
+
+## İlke
+
+**Hiçbir alan tahminle doldurulmaz.** Telefon, e-posta, fiyat ve denize konum yalnızca
+kurumun kendi yayınında varsa yazılır; yoksa alan boş bırakılır ve sayfada bunun
+bilinmediği açıkça söylenir. Aynı ilke fotoğraflar ve harita için de geçerlidir.
+
+## Sayfa yapısı
+
+```
+/                      arama, tesis türleri, kıyı illeri, rehber, 81 il
+/ara/                  istemci tarafı arama
+/harita/               562 tesis, kümelenmiş harita
+/il/                   81 il, alfabetik
+/il/<il>/              ilin tesisleri + il haritası + SSS
+/tesis/<il>-<ad>/      künye, olanaklar, SSS, harita, iletişim (562 sayfa)
+/tur/<tür>/            öğretmenevleri, polisevleri, üniversite, kamu
+/deniz/                denize konumu doğrulanmış tesisler
+/rehber/<yazı>/        veriye dayalı 5 rehber
+/kaynaklar/            kurum amblemleri, fotoğraf lisansları, düzeltme
+/tesisler.json         ham veri, CORS açık
+/llms.txt              üretken arama motorları için özet
+```
 
 ## Veri nereden geliyor
 
 | Alan | Kaynak |
 |---|---|
 | Öğretmenevi adı, il, ilçe, telefon | [MEB Destek Hizmetleri öğretmenevi listesi](https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx) |
-| Polisevi, bakanlık ve üniversite tesisleri | Kurumun kendi `.gov.tr` / `.edu.tr` sayfası — her kayıtta `kaynak` alanı var |
-| 2026 fiyatları | Tesisin kendi yayımladığı fiyat listesi — kartta kaynak bağlantısıyla |
+| Polisevi, bakanlık ve üniversite tesisleri | Kurumun kendi `.gov.tr` / `.edu.tr` sayfası — her kayıtta `kaynak` alanı |
+| 2026 fiyatları | Tesisin kendi yayımladığı fiyat listesi |
 | Ankara mesafesi | Bilinen karayolu mesafelerinden yaklaşık hesap, ölçülmüş değil |
+| İl fotoğrafları | Wikimedia Commons, serbest lisanslı — yazar ve lisans her sayfada |
+| Kurum amblemleri | Kurumun kendi sitesindeki ikon dosyası |
+| Koordinatlar | OpenStreetMap Nominatim; bulunamayanda ilçe merkezi, `kesinlik` alanıyla işaretli |
 
-Hiçbir e-posta, telefon veya fiyat tahminle yazılmadı. Bulunamayan alan boş bırakıldı.
+## Tasarım
 
-## Dosyalar
+- **Yazı**: Newsreader (başlık) + Inter (arayüz), kendi sunucumuzdan, `latin` ve
+  `latin-ext` alt kümeleri `unicode-range` ile — üçüncü parti istek yok.
+- **Renk**: sıcak kâğıt zemin, derin çam yeşili vurgu. Karanlık tema desteklenir.
+- **İkonlar**: tek renk (`currentColor`), 24×24 çizgi, satır içi SVG.
+- **Kart**: 16:9 görsel → ad → konum → olanak ikonları → iletişim düğmeleri.
+- **Birincil eylem**: telefonla arama. Dizinde dönüşüm budur, her kartta ilk sırada.
+
+## Derleme
 
 ```
-index.html      tüm site (tesisler gömülü)
-tesisler.json   ham veri, /tesisler.json adresinden CORS ile açık
-Dockerfile      nginx:alpine
-nginx.conf      gzip, önbellek başlıkları, güvenlik başlıkları
+python build/derle.py          tesisler.json + data/ -> site/
 ```
 
-## Veriyi güncelleme
-
-Kaynak betikler `scratchpad` klasöründe:
+Yardımcı betikler (bir kez çalışır, çıktıları `data/` ve `img/` altında saklanır):
 
 ```
-tesis_topla.py        MEB listesini çeker    -> tesisler.json
-tesis_zenginlestir.py doğrulanmış kayıtları ekler
-tesis_ek2.py          ikinci tur kayıtlar + Ankara mesafeleri
-site_uret.py          tesisler.json -> bu klasör
+build/gorsel.py    Wikimedia'dan 81 il fotoğrafı  -> img/il/, data/gorseller.json
+build/logo2.py     kurum amblemleri               -> img/kurum/, data/kurumlar.json
+build/konum.py     Nominatim koordinatları        -> data/konumlar.json
 ```
 
 ## Yayın
 
-Coolify üzerinden Dockerfile ile derlenir ve `kamumisfirhaneleri.com` alan adına bağlanır.
-`main` dalına push yeterlidir.
+Coolify, `main` dalına push ile. `Dockerfile` iki aşamalı: python aşaması siteyi
+üretir, nginx aşaması yayımlar. `site/` sürüm kontrolüne girmez.
 
 ## Uyarı
 
-Bağımsız bir dizindir; hiçbir kuruma ait değildir, rezervasyon almaz.
-Fiyat ve koşullar kurumlar tarafından değiştirilebilir.
+Bağımsız bir dizindir; hiçbir kuruma ait değildir, hiçbir kurumu temsil etmez ve
+rezervasyon almaz. Fiyat ve koşullar kurumlar tarafından değiştirilebilir.
