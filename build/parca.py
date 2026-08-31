@@ -9,6 +9,9 @@ SITE = "https://kamumisafirhaneler.com"
 # derle.py karma adlı dosyayı üretince bunu günceller
 STIL_YOLU = "/static/s.css"
 AD = "Kamu Misafirhaneleri"
+GA_ETIKET = ('<script async src="https://www.googletagmanager.com/gtag/js?id=G-MWVMNR7S6M"></script>'
+             '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}'
+             "gtag('js',new Date());gtag('config','G-MWVMNR7S6M',{anonymize_ip:true});</script>")
 def e(x) -> str:
     return html.escape(str(x or ""), quote=True)
 # --------------------------------------------------------------------------
@@ -328,7 +331,7 @@ def kabuk(
 <noscript><link rel="stylesheet" href="{STIL_YOLU}"></noscript>
 {HARITA_ON if harita else ""}
 {NOSCRIPT_GEZ}
-{f'<link rel="preload" as="image" href="{on_gorsel}" fetchpriority="high">' if on_gorsel else ''}{ek_bas}{ld}</head>
+{f'<link rel="preload" as="image" href="{on_gorsel}" fetchpriority="high">' if on_gorsel else ''}{ek_bas}{ld}{GA_ETIKET}</head>
 <body>
 <a class="atla" href="#ana">İçeriğe atla</a>
 <header class="ust">
