@@ -4,7 +4,7 @@ import html
 import json
 import re
 from stil import KRITIK
-from veri import TURLER, kisa_ad, slug, tesis_slug
+from veri import TURLER, e164, kisa_ad, slug, tesis_slug, ulusal_rakam, wa_numarasi
 SITE = "https://kamumisafirhaneler.com"
 # derle.py karma adlı dosyayı üretince bunu günceller
 STIL_YOLU = "/static/s.css"
@@ -101,9 +101,7 @@ def olanak_ikonlari(olanaklar: list[str] | None) -> list[tuple[str, str]]:
 # --------------------------------------------------------------------------
 # İletişim düğmeleri
 # --------------------------------------------------------------------------
-def _rakam(no: str) -> str:
-    d = re.sub(r"\D", "", no)
-    return d[1:] if d.startswith("0") else d
+_rakam = ulusal_rakam
 def cep_mi(no: str) -> bool:
     return _rakam(no).startswith("5")
 def yol_tarifi_url(t: dict) -> str:
@@ -139,7 +137,7 @@ def wa_url(t: dict, no: str) -> str:
         f"Merhaba, {t['ad']} için müsaitlik ve fiyat bilgisi almak istiyorum. "
         "(kamumisafirhaneler.com üzerinden ulaşıyorum)"
     )
-    return f"https://wa.me/9{_rakam(no)}?text=" + urllib.parse.quote(mesaj)
+    return f"https://wa.me/{wa_numarasi(no)}?text=" + urllib.parse.quote(mesaj)
 def eylemler(t: dict, buyuk: bool = False) -> str:
     """Ara / WhatsApp / Yol tarifi / E-posta düğmeleri."""
     sinif = "dg" if buyuk else "dg dg-sm"
@@ -148,7 +146,7 @@ def eylemler(t: dict, buyuk: bool = False) -> str:
     p = []
     if tel:
         p.append(
-            f'<a class="{sinif} dg-1" href="tel:+9{_rakam(tel)}" '
+            f'<a class="{sinif} dg-1" href="tel:{e164(tel)}" '
             f'aria-label="{e(tel) if buyuk else "Ara"}'
             f' — {e(kisa_ad(t["ad"]))} telefonla ara">{ik("telefon")}'
             f'<span>{e(tel) if buyuk else "Ara"}</span></a>'
@@ -358,9 +356,12 @@ misafirhanelerinin bağımsız dizini. Rezervasyon alınmaz; her tesis doğrudan
 <li><a href="/il/">81 il</a></li>
 <li><a href="/harita/">Harita</a></li>
 <li><a href="/ara/">Tesis ara</a></li>
+<li><a href="/tesis/">Tüm tesisler</a></li>
 <li><a href="/liste/">Sıralı listeler</a></li>
 <li><a href="/gezi/">Gezi rehberi</a></li>
+<li><a href="/etiket/">Gezi konuları</a></li>
 <li><a href="/deniz/">Denize yakın tesisler</a></li>
+<li><a href="/tur/">Tesis türleri</a></li>
 <li><a href="/tur/ogretmenevleri/">Öğretmenevleri</a></li>
 <li><a href="/tur/polisevleri/">Polisevleri</a></li>
 <li><a href="/tur/universite-misafirhaneleri/">Üniversite misafirhaneleri</a></li>

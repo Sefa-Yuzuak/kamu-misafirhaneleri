@@ -35,7 +35,7 @@ from parca import (  # noqa: E402
 )
 from mesafe import cikis_mesafeleri, sure_metni  # noqa: E402
 from veri import cikma  # noqa: E402
-from veri import TURLER, kisa_ad, sayfa_basligi, slug, tesis_slug, tur_slug  # noqa: E402
+from veri import TURLER, e164, kisa_ad, sayfa_basligi, slug, tesis_slug, tur_slug  # noqa: E402
 
 KOK = Path(__file__).resolve().parent.parent
 CIKTI = KOK / "site"
@@ -264,7 +264,7 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
             (
                 "Telefon",
                 "<br>".join(
-                    f'<a href="tel:+9{n.replace(" ", "").lstrip("0")}">{e(n)}</a>'
+                    f'<a href="tel:{e164(n)}">{e(n)}</a>'
                     for n in t["telefon"]
                 ),
             )
@@ -439,7 +439,7 @@ target="_blank" rel="noopener nofollow">{ik("yildiz")}Google yorumlarını gör<
         },
     }
     if t.get("telefon"):
-        ld_tesis["telephone"] = "+9" + t["telefon"][0].replace(" ", "").lstrip("0")
+        ld_tesis["telephone"] = e164(t["telefon"][0])
     if t.get("eposta"):
         ld_tesis["email"] = t["eposta"]
     if g:

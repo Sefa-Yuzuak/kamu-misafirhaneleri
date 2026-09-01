@@ -429,6 +429,69 @@ hesaplandı; her tanım Vikipedi'den alınıp kaynağı gösterildi.</p></div></
     )
 
 
+def etiket_dizini(sayilar: dict[str, int], iller: dict[str, int]) -> str:
+    """/etiket/ kök sayfası: konu başlıklarının dizini.
+
+    Alt sayfalar (/etiket/kale/ gibi) üretiliyordu ama kök adres boş kalıyor
+    ve sunucu 403 dönüyordu: hem ziyaretçiye hem tarayıcıya kapalı bir düğüm.
+    """
+    from uret import kirinti_ld, sss_html, sss_ld
+
+    kirintilar = [("/", "Ana sayfa"), ("/gezi/", "Gezi rehberi"), ("/etiket/", "Konular")]
+    toplam = sum(sayilar.values())
+    varlar = [(t, ETIKET[t]) for t in ETIKET if sayilar.get(t)]
+
+    kartlar = "".join(
+        f'<a class="tur-k" href="/etiket/{t}/">{ik(ikon, "ik tur-ik")}'
+        f'<strong>{e(ad)}</strong>'
+        f'<em>{sayilar[t]} yer · {iller.get(t, 0)} il</em>'
+        f'<span class="tur-ok">{ik("ok")}</span></a>'
+        for t, (ad, ikon) in varlar
+    )
+
+    sss = [
+        ("Konu sayfaları neyi listeler?",
+         f"Her konu sayfası, kamu tesislerinin 10 kilometrelik çevresinde Vikipedi'de "
+         f"kaydı bulunan yerleri türlerine göre gruplar. Toplam {toplam} yer "
+         f"{len(varlar)} konu başlığı altında toplanmıştır."),
+        ("Uzaklıklar neye göre hesaplanıyor?",
+         "Her yerin yanındaki kilometre, o ilçedeki kamu konaklama tesisine olan "
+         "kuş uçuşu mesafedir; tesisin kendi koordinatından hesaplanır."),
+    ]
+
+    icerik = f"""<section class="bl kap">
+<div class="bl-bas"><div><h1>Konu başlıkları</h1>
+<p>Kamu tesislerinin çevresindeki <strong>{toplam} gezilecek yer</strong>,
+{len(varlar)} konu başlığı altında gruplandı. Bir konu seçin, o türdeki yerleri
+tesise uzaklığıyla birlikte görün.</p></div></div>
+<div class="tur-iz" style="margin-top:24px">{kartlar}</div>
+</section>
+<section class="bl kap bl-cizgi">
+<h2>Sık sorulan sorular</h2>{sss_html(sss)}</section>"""
+
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Gezilecek yer konuları",
+        "numberOfItems": len(varlar),
+        "itemListElement": [
+            {"@type": "ListItem", "position": i, "name": ad,
+             "url": f"{SITE}/etiket/{t}/"}
+            for i, (t, (ad, _)) in enumerate(varlar, 1)
+        ],
+    }
+    return kabuk(
+        baslik=f"Konu Başlıkları — {toplam} gezilecek yer, {len(varlar)} konu",
+        aciklama=f"Kale, müze, antik kent, sahil ve doğa: {toplam} gezilecek yer "
+        f"{len(varlar)} konu başlığında. Her yerin en yakın kamu tesisine uzaklığı.",
+        yol="/etiket/",
+        icerik=icerik,
+        kirintilar=kirintilar,
+        aktif="/gezi/",
+        jsonld=[ld, sss_ld(sss), kirinti_ld(kirintilar)],
+    )
+
+
 def etiket_sayfasi(tur: str, kayitlar: list[tuple[str, str, dict]],
                    tarih: str) -> str:
     """kayitlar: [(il, ilce, yer), ...]"""
@@ -461,7 +524,8 @@ def etiket_sayfasi(tur: str, kayitlar: list[tuple[str, str, dict]],
          "Her satırdaki ilçe bağlantısı, o ilçenin gezi sayfasına gider; orada "
          "ilçedeki kamu konaklama tesisleri telefon ve fiyatlarıyla listelenir."),
     ]
-    kirintilar = [("/", "Ana sayfa"), ("/gezi/", "Gezi rehberi"), (yol, ad)]
+    kirintilar = [("/", "Ana sayfa"), ("/gezi/", "Gezi rehberi"),
+                  ("/etiket/", "Konular"), (yol, ad)]
     icerik = f"""<section class="bl kap" style="max-width:1000px">
 <span class="rz rz-vurgu">{ik(ikon)}Konu</span>
 <h1 style="margin-top:10px">{e(ad)}</h1>

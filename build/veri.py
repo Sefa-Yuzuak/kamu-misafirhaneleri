@@ -63,8 +63,28 @@ def tur_slug(tur: str) -> str:
     return slug(TURLER[tur][0])
 
 
+def ulusal_rakam(no: str) -> str:
+    """Yalnız rakamlar, baştaki 0 atılmış: "0322 453 31 58" -> "3224533158"."""
+    d = re.sub(r"\D", "", no)
+    return d[1:] if d.startswith("0") else d
+
+
+def e164(no: str) -> str:
+    """Uluslararası biçim: "0322 453 31 58" -> "+903224533158".
+
+    Türkiye ülke kodu 90'dır. Baştaki 0 atıldıktan sonra "+9" eklenirse
+    "+9322…" çıkıyordu ve telefon uygulaması yanlış numara çeviriyordu.
+    """
+    return "+90" + ulusal_rakam(no)
+
+
+def wa_numarasi(no: str) -> str:
+    """wa.me biçimi: artı işaretsiz, "903224533158"."""
+    return "90" + ulusal_rakam(no)
+
+
 def telefon_link(no: str) -> str:
-    return "tel:+9" + re.sub(r"\D", "", no)
+    return "tel:" + e164(no)
 
 
 _UZANTI = re.compile(

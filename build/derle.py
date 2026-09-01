@@ -29,6 +29,7 @@ from araclar import (  # noqa: E402
 )
 from blog import (  # noqa: E402
     ETIKET,
+    etiket_dizini,
     etiket_sayfasi,
     gezi_dizini,
     il_gezi_sayfasi,
@@ -101,7 +102,7 @@ toplam {toplam} kayıt. İl seçin, tesislerin telefon ve fiyat bilgilerine ula�
 def tur_sayfasi(tur: str, tesisler: list[dict], gorseller: dict) -> str:
     cogul, kisa, ikon, aciklama = TURLER[tur]
     yol = f"/tur/{tur_slug(tur)}/"
-    kirintilar = [("/", "Ana sayfa"), (yol, cogul)]
+    kirintilar = [("/", "Ana sayfa"), ("/tur/", "Tesis türleri"), (yol, cogul)]
     iller = sorted({t["il"] for t in tesisler})
     deniz = [t for t in tesisler if t.get("deniz")]
     fiyatli = [t for t in tesisler if t.get("fiyat_2026")]
@@ -169,6 +170,146 @@ def tur_sayfasi(tur: str, tesisler: list[dict], gorseller: dict) -> str:
             sss_ld(sss),
             kirinti_ld(kirintilar),
         ],
+    )
+
+
+def tur_dizini(tesisler: list[dict]) -> str:
+    """/tur/ kök sayfası: tesis türlerinin dizini.
+
+    Tür sayfaları üretiliyordu ama kök adres boştu ve canlıda 403 dönüyordu.
+    """
+    kirintilar = [("/", "Ana sayfa"), ("/tur/", "Tesis türleri")]
+    gruplar = [(tur, [t for t in tesisler if t["tur"] == tur]) for tur in TURLER]
+    gruplar = [(tur, alt) for tur, alt in gruplar if alt]
+
+    kartlar = ""
+    for tur, alt in gruplar:
+        cogul, kisa, ikon, aciklama = TURLER[tur]
+        iller = len({t["il"] for t in alt})
+        deniz = sum(1 for t in alt if t.get("deniz"))
+        kartlar += (
+            f'<a class="tur-k" href="/tur/{tur_slug(tur)}/">{ik(ikon, "ik tur-ik")}'
+            f'<strong>{e(cogul)}</strong>'
+            f'<em>{len(alt)} tesis · {iller} il'
+            + (f" · {deniz} deniz kıyısı" if deniz else "")
+            + f'</em><span class="tur-ok">{ik("ok")}</span></a>'
+        )
+
+    satirlar = "".join(
+        f"<tr><td><a href=\"/tur/{tur_slug(tur)}/\">{e(TURLER[tur][0])}</a></td>"
+        f"<td>{len(alt)}</td>"
+        f"<td>{len({t['il'] for t in alt})}</td>"
+        f"<td>{sum(1 for t in alt if t.get('fiyat_2026'))}</td></tr>"
+        for tur, alt in gruplar
+    )
+
+    sss = [
+        ("Kamu misafirhaneleri kaç türe ayrılır?",
+         "Bu dizinde " + ", ".join(TURLER[t][0].lower() for t, _ in gruplar)
+         + f" olmak üzere {len(gruplar)} tür bulunuyor; toplam {len(tesisler)} tesis "
+         "kayıtlıdır."),
+        ("Hangi türde konaklayabilirim?",
+         "Her tür kendi kurumunun personeline ve birinci derece yakınlarına önceliklidir; "
+         "boş kapasite durumunda diğer kamu personeli ve kimi tesislerde herkes "
+         "konaklayabilir. Kesin bilgi için tesisin telefonundan teyit alın."),
+    ]
+
+    icerik = f"""<section class="bl kap">
+<div class="bl-bas"><div><h1>Tesis türleri</h1>
+<p>Türkiye'deki <strong>{len(tesisler)} kamu konaklama tesisi</strong> bağlı olduğu
+kuruma göre {len(gruplar)} türe ayrılıyor. Tür seçin, o türdeki tesisleri telefon
+ve fiyat bilgileriyle görün.</p></div></div>
+<div class="tur-iz" style="margin-top:24px">{kartlar}</div>
+</section>
+<section class="bl kap bl-cizgi">
+<h2>Türlere göre sayılar</h2>
+<div class="yazi"><table>
+<thead><tr><th>Tür</th><th>Tesis</th><th>İl</th><th>Fiyatı yayımlanan</th></tr></thead>
+<tbody>{satirlar}</tbody></table></div>
+</section>
+<section class="bl kap bl-cizgi">
+<h2>Sık sorulan sorular</h2>{sss_html(sss)}</section>"""
+
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Kamu konaklama tesisi türleri",
+        "numberOfItems": len(gruplar),
+        "itemListElement": [
+            {"@type": "ListItem", "position": i, "name": TURLER[tur][0],
+             "url": f"{SITE}/tur/{tur_slug(tur)}/"}
+            for i, (tur, _) in enumerate(gruplar, 1)
+        ],
+    }
+    return kabuk(
+        baslik=f"Tesis Türleri — {len(tesisler)} kamu misafirhanesi {len(gruplar)} türde",
+        aciklama=f"Öğretmenevi, polisevi, üniversite ve kamu misafirhanesi: "
+        f"{len(tesisler)} tesis türlerine göre ayrılmış, telefon ve fiyatlarıyla.",
+        yol="/tur/",
+        icerik=icerik,
+        kirintilar=kirintilar,
+        jsonld=[ld, sss_ld(sss), kirinti_ld(kirintilar)],
+    )
+
+
+def tesis_dizini(tesisler: list[dict], il_grup: dict) -> str:
+    """/tesis/ kök sayfası: bütün tesislerin il il tam dizini.
+
+    562 tesis sayfası bu kökün altında duruyordu ama kökün kendisi boştu ve
+    canlıda 403 dönüyordu. Tam dizin aynı zamanda her tesis sayfasına doğrudan
+    bir iç bağlantı verir.
+    """
+    kirintilar = [("/", "Ana sayfa"), ("/tesis/", "Tüm tesisler")]
+    iller = sorted(il_grup)
+    harfler = sorted({i[0] for i in iller})
+    harf_iz = "".join(f'<a href="#h-{slug(h)}">{e(h)}</a>' for h in harfler)
+
+    bloklar = ""
+    for h in harfler:
+        bloklar += f'<h2 id="h-{slug(h)}" style="margin:30px 0 12px">{e(h)}</h2>'
+        for il in [i for i in iller if i[0] == h]:
+            alt = sorted(il_grup[il], key=lambda t: kisa_ad(t["ad"]))
+            baglar = " · ".join(
+                f'<a href="/tesis/{tesis_slug(t)}/">{e(kisa_ad(t["ad"]))}</a>'
+                for t in alt
+            )
+            bloklar += (
+                f'<h3 style="margin:18px 0 6px"><a href="/il/{slug(il)}/">{e(il)}</a> '
+                f'<span style="color:var(--soluk);font-weight:400">({len(alt)})</span></h3>'
+                f'<p style="color:var(--soluk);line-height:2.1">{baglar}</p>'
+            )
+
+    fiyatli = sum(1 for t in tesisler if t.get("fiyat_2026"))
+    icerik = f"""<section class="bl kap">
+<div class="bl-bas"><div><h1>Tüm tesisler</h1>
+<p>Dizindeki <strong>{len(tesisler)} kamu konaklama tesisinin</strong> tamamı,
+{len(iller)} ile göre sıralanmış hâlde. {fiyatli} tesisin yayımlanmış 2026 fiyatı
+sayfasında yer alıyor. Tesis adına tıklayarak telefon, adres ve yol tarifine
+ulaşabilirsiniz.</p></div></div>
+<ul class="harf-iz">{harf_iz}</ul>
+{bloklar}</section>"""
+
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Türkiye'deki kamu konaklama tesislerinin tam listesi",
+        "numberOfItems": len(tesisler),
+        "itemListElement": [
+            {"@type": "ListItem", "position": i, "name": t["ad"],
+             "url": f"{SITE}/tesis/{tesis_slug(t)}/"}
+            for i, t in enumerate(
+                sorted(tesisler, key=lambda t: (t["il"], kisa_ad(t["ad"]))), 1
+            )
+        ],
+    }
+    return kabuk(
+        baslik=f"Tüm Tesisler — {len(tesisler)} kamu misafirhanesi tam liste",
+        aciklama=f"Türkiye'deki {len(tesisler)} öğretmenevi, polisevi ve kamu "
+        f"misafirhanesinin il il tam listesi; telefon, fiyat ve konum bilgileriyle.",
+        yol="/tesis/",
+        icerik=icerik,
+        kirintilar=kirintilar,
+        jsonld=[ld, kirinti_ld(kirintilar)],
     )
 
 
@@ -557,6 +698,11 @@ def main() -> int:
         yaz(f"/il/{slug(il)}/", il_sayfasi(il, ts, gorseller, il_haritali))
         yollar.append(f"/il/{slug(il)}/")
 
+    yaz("/tur/", tur_dizini(tesisler))
+    yollar.append("/tur/")
+    yaz("/tesis/", tesis_dizini(tesisler, il_grup))
+    yollar.append("/tesis/")
+
     for tur in TURLER:
         alt = [t for t in tesisler if t["tur"] == tur]
         if alt:
@@ -670,6 +816,12 @@ def main() -> int:
             if tur in ETIKET and len(kayitlar) >= 5:
                 yaz(f"/etiket/{tur}/", etiket_sayfasi(tur, kayitlar, TARIH_TR))
                 yollar.append(f"/etiket/{tur}/")
+        etiket_sayi = {t: len(k) for t, k in etiket_kayit.items()
+                       if t in ETIKET and len(k) >= 5}
+        etiket_il = {t: len({il for il, _, _ in etiket_kayit[t]}) for t in etiket_sayi}
+        if etiket_sayi:
+            yaz("/etiket/", etiket_dizini(etiket_sayi, etiket_il))
+            yollar.append("/etiket/")
         print(f"gezi: {len(il_ilce)} il, "
               f"{sum(len(v) for v in il_ilce.values())} ilçe, {toplam_yer} yer")
     else:
