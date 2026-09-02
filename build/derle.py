@@ -551,6 +551,12 @@ def sitemap(yollar: list[str]) -> str:
 def llms_txt(tesisler: list[dict], il_grup: dict) -> str:
     deniz = [t for t in tesisler if t.get("deniz")]
     fiyatli = [t for t in tesisler if t.get("fiyat_2026")]
+    # 81 il sayfasi tek tek listeleniyor: llms.txt yalnizca 5 rehber
+    # sayfasini gosterdigi icin AI motorlari sitenin govdesini bulamiyordu.
+    il_satirlari = "\n".join(
+        f"- [{il} ({len(ts)} tesis)]({SITE}/il/{slug(il)}/)"
+        for il, ts in sorted(il_grup.items())
+    )
     return f"""# {AD}
 
 > Türkiye'nin 81 ilindeki {len(tesisler)} kamu konaklama tesisinin (öğretmenevi,
@@ -558,6 +564,19 @@ def llms_txt(tesisler: list[dict], il_grup: dict) -> str:
 > Bilgiler kurumların kendi yayınlarından derlenmiştir; tahmini veri yoktur.
 
 Son güncelleme: {TARIH_TR}
+
+## Site haritası
+- Bütün adresler: {SITE}/sitemap.xml ({len(tesisler)} tesis sayfası dahil)
+- Düz metin adres listesi: {SITE}/urls.txt
+- Tüm tesisler (il il): {SITE}/tesis/
+- Tesis türleri: {SITE}/tur/
+- İl dizini: {SITE}/il/
+- Gezi rehberi: {SITE}/gezi/  ·  Konu başlıkları: {SITE}/etiket/
+- Sıralı listeler: {SITE}/liste/  ·  Hesaplama araçları: {SITE}/araclar/
+- Harita: {SITE}/harita/  ·  Açık veri: {SITE}/veri/
+
+## İl sayfaları
+{il_satirlari}
 
 ## Veri kümesi
 - Toplam tesis: {len(tesisler)}

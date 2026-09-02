@@ -144,6 +144,25 @@ def fiyat_taban(metin: str | None) -> int:
     return min(tutarlar) if tutarlar else 0
 
 
+def fiyat_araligi(metin: str | None) -> tuple[int, int]:
+    """Yayımlanan fiyat metnindeki en düşük ve en yüksek gerçekçi tutar.
+
+    schema.org priceRange için gerekiyor. fiyat_taban ile aynı süzgeci
+    kullanır; tek tutar varsa iki uç da odur.
+    """
+    if not metin:
+        return (0, 0)
+    tutarlar = []
+    for ham in _TUTAR.findall(metin):
+        try:
+            n = int(ham.replace(".", ""))
+        except ValueError:
+            continue
+        if 500 <= n <= 200000 and not (2000 <= n <= 2100 and "." not in ham):
+            tutarlar.append(n)
+    return (min(tutarlar), max(tutarlar)) if tutarlar else (0, 0)
+
+
 _SESLI = "aeıioöuü"
 _KALIN = "aıou"
 _SERT = "fstkçşhp"

@@ -268,6 +268,26 @@ MARKA_SVG = (
     'stroke-linecap="round" stroke-linejoin="round"/>'
     '<path d="M6 22.6h20" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>'
 )
+#: Sitenin kanonik kuruluş düğümü. Tek @id ile tanımlanır ve Dataset.creator,
+#: Article.publisher, WebSite.publisher hep buna işaret eder; yoksa varlıklar
+#: birbirine baglanmiyor ve Google kimin yayinladigini cozemiyor.
+KURULUS = {
+    "@type": "Organization",
+    "@id": SITE + "/#kurulus",
+    "name": AD,
+    "url": SITE + "/",
+    "logo": {
+        "@type": "ImageObject",
+        "url": SITE + "/img/og.png",
+        "width": 1200,
+        "height": 630,
+    },
+}
+
+#: Baska dugumlerden kisa gonderme: tam tanim yalnizca ana sayfada basilir.
+KURULUS_REF = {"@id": SITE + "/#kurulus"}
+
+
 def kabuk(
     *,
     baslik: str,
@@ -313,6 +333,7 @@ def kabuk(
 <meta name="description" content="{e(aciklama)}">
 {f'<meta name="keywords" content="{e(", ".join(anahtarlar[:12]))}">' if anahtarlar else ""}
 <link rel="canonical" href="{kanonik}">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta name="google-site-verification" content="yD5FFmNqygHuVF-pcouKiUd2NsBxSfG9vHiCoqgYHFc">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{AD}">

@@ -35,7 +35,8 @@ from parca import (  # noqa: E402
 )
 from mesafe import cikis_mesafeleri, sure_metni  # noqa: E402
 from veri import cikma  # noqa: E402
-from veri import TURLER, e164, kisa_ad, sayfa_basligi, slug, tesis_slug, tur_slug  # noqa: E402
+from veri import TURLER, e164, fiyat_araligi, kisa_ad, sayfa_basligi, slug  # noqa: E402
+from veri import tesis_slug, tur_slug  # noqa: E402
 
 KOK = Path(__file__).resolve().parent.parent
 CIKTI = KOK / "site"
@@ -89,6 +90,10 @@ def _ilgili_listeler(tesisler: list[dict]) -> list[tuple[str, str]]:
             bulunan.append((f"/liste/{anahtar}/", tanim["baslik"]))
     return bulunan
 BUGUN = date.today().isoformat()
+AY_TR = ("Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
+         "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık")
+_B = date.today()
+TARIH_TR = f"{_B.day} {AY_TR[_B.month - 1]} {_B.year}"
 
 KURUM_TAM = {
     "MEB": "Millî Eğitim Bakanlığı",
@@ -453,6 +458,7 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
 <p class="ozet">{ozet_metni(t, bool(mesafe_cumlesi))}{mesafe_cumlesi}</p>
 <h2 class="gizli">Künye</h2>
 {kunye}
+<p class="guncel">Son güncelleme: <time datetime="{BUGUN}">{TARIH_TR}</time> — bilgiler kurumun kendi yayınından derlendi.</p>
 {olanak_html}
 <h2 style="margin-top:2em">Sık sorulan sorular</h2>
 {sss_html(sss)}
@@ -522,6 +528,19 @@ target="_blank" rel="noopener nofollow">{ik("yildiz")}Google yorumlarını gör<
             "latitude": konum["lat"],
             "longitude": konum["lon"],
         }
+    # Fiyat yalnizca tesisin kendi yayinindan geliyorsa yazilir; tahmini
+    # aralik uydurmak hem sitenin kuralina hem Google'a aykiri.
+    dusuk, yuksek = fiyat_araligi(t.get("fiyat_2026"))
+    if dusuk:
+        ld_tesis["priceRange"] = (
+            f"{dusuk:,}".replace(",", ".") + " - " + f"{yuksek:,}".replace(",", ".") + " TL"
+            if yuksek > dusuk
+            else f"{dusuk:,}".replace(",", ".") + " TL"
+        )
+        ld_tesis["currenciesAccepted"] = "TRY"
+    # Tarihsiz "2026 fiyatlari" iddiasi guven kirici; sayfa ne zaman
+    # derlendiyse hem gorunur hem makine-okunur olarak yaziliyor.
+    ld_tesis["dateModified"] = BUGUN
     if olanak:
         ld_tesis["amenityFeature"] = [
             {"@type": "LocationFeatureSpecification", "name": m, "value": True}

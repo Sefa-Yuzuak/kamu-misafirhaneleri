@@ -11,7 +11,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from parca import AD, SITE, e, ik, il_karti, kabuk, tesis_karti  # noqa: E402
+from parca import AD, KURULUS, KURULUS_REF, SITE, e, ik, il_karti, kabuk, tesis_karti  # noqa: E402
 from uret import (  # noqa: E402
     CIKTI,
     KOK,
@@ -153,6 +153,9 @@ kurumlara aittir; kaynağı göstermek için kullanılmaktadır.</p></div>
 </section>"""
 
     ld = [
+        # Kanonik kurulus dugumu yalnizca burada tam haliyle basilir;
+        # diger sayfalar @id ile gonderme yapar.
+        {"@context": "https://schema.org", **KURULUS},
         {
             "@context": "https://schema.org",
             "@type": "WebSite",
@@ -160,6 +163,7 @@ kurumlara aittir; kaynağı göstermek için kullanılmaktadır.</p></div>
             "name": AD,
             "url": SITE + "/",
             "inLanguage": "tr-TR",
+            "publisher": KURULUS_REF,
             "description": (
                 f"Türkiye'nin 81 ilindeki {len(tesisler)} kamu konaklama tesisinin "
                 "bağımsız dizini."
@@ -189,7 +193,7 @@ kurumlara aittir; kaynağı göstermek için kullanılmaktadır.</p></div>
             "isAccessibleForFree": True,
             "inLanguage": "tr-TR",
             "dateModified": BUGUN.isoformat(),
-            "creator": {"@type": "Organization", "name": AD, "url": SITE},
+            "creator": KURULUS_REF,
             "spatialCoverage": {"@type": "Place", "name": "Türkiye"},
             "keywords": ["öğretmenevi", "polisevi", "kamu misafirhanesi",
                          "üniversite misafirhanesi", "konaklama", "Türkiye"],
@@ -511,7 +515,7 @@ Bağlayıcı bilgi için tesisin bağlı olduğu kuruma başvurun.</div></div>
         "dateModified": BUGUN.isoformat(),
         "inLanguage": "tr-TR",
         "isAccessibleForFree": True,
-        "publisher": {"@type": "Organization", "name": AD, "url": SITE},
+        "publisher": KURULUS_REF,
         "mainEntityOfPage": SITE + yol,
     }
     return kabuk(
