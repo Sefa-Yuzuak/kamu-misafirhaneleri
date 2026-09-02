@@ -234,6 +234,15 @@ def main() -> int:
             bul("YUKSEK", f"/tesis/{anahtar}/",
                 f"koordinat {kayit['il']} yerine {yabanci_il} ilinde: {kayit['osm'][:60]}")
 
+    # --- yazi tipleri alt kumelenmis mi
+    # Docker imajinda fonttools kurulu olmadigi icin alt kumeleme sessizce
+    # atlanmis ve canlida tam boy dosyalar yayimlanmisti; kural nobette.
+    for font in sorted((SITE / "static" / "f").glob("*latin-ext*.woff2")):
+        kb = font.stat().st_size // 1024
+        if kb > 12:
+            bul("ORTA", "/static/f/",
+                f"{font.name} alt kumelenmemis ({kb} KB) - fonttools kurulu mu?")
+
     # --- rapor
     say = Counter(a for a, _, _ in bulgular)
     print(f"\n{len(sayfalar)} sayfa, {gorsel_sayisi} görsel etiketi denetlendi")

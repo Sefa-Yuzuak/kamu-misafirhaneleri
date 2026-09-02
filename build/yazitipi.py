@@ -68,6 +68,18 @@ def uygula(kok: Path, cikti: Path) -> None:
     hedef_dizin = cikti / "static" / "f"
     if not hedef_dizin.exists():
         return
+    try:
+        from fontTools import subset  # noqa: F401
+    except ImportError:
+        # Sessizce gecilirse fark edilmiyor: canlida tam boy dosyalar
+        # yayinlandi ve sayfa basina ~150 KB fazladan indi.
+        print(
+            "UYARI: fonttools kurulu degil, yazi tipi alt kumeleme ATLANDI. "
+            "latin-ext dosyalari tam boy yayimlanacak (~150 KB fazla). "
+            "Kurulum: pip install fonttools brotli"
+        )
+        return
+
     kodlar = kullanilan_kodlar(cikti)
     if not kodlar:
         return

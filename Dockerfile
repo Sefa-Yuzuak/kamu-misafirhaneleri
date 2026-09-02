@@ -1,7 +1,10 @@
 # 1) Siteyi üret
 FROM python:3.12-slim AS derleyici
 WORKDIR /src
-# derle.py yalnızca standart kütüphane kullanır
+# Tek dış bağımlılık: yazı tipi alt kümeleme (build/yazitipi.py). Kurulu
+# değilse derleme çalışır ama latin-ext dosyaları tam boy kalır ve sayfa
+# başına ~150 KB fazladan iner — bu yüzden imaja kuruluyor.
+RUN pip install --no-cache-dir fonttools==4.* brotli
 COPY build/ build/
 COPY static/ static/
 COPY img/ img/
