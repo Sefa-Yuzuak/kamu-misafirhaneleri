@@ -178,13 +178,15 @@ def ilce_sayfasi(il: str, ilce: str, yerler: list[dict], tesisler: list[dict],
     yer_adi = f"{ilce}, {il}" if ilce.lower() != il.lower() else il
 
     turler = sorted({y["tur"] for y in yerler})
-    tur_ozet = ", ".join(ETIKET[t][0].lower() for t in turler[:4])
+    tur_ozet = ", ".join(
+        f'<a href="/etiket/{t}/">{e(ETIKET[t][0].lower())}</a>' for t in turler[:4]
+    )
     fiyatli = [t for t in tesisler if t.get("fiyat_2026")]
 
     ozet = (
         f"<strong>{e(yer_adi)}</strong> çevresinde, 10 kilometrelik yarıçapta "
         f"Vikipedi'de kaydı bulunan <strong>{len(yerler)} gezilecek yer</strong> "
-        f"listelendi: {e(tur_ozet)}. En yakını "
+        f"listelendi: {tur_ozet}. En yakını "
         f"<strong>{e(yerler[0]['ad'])}</strong> ({yerler[0]['km']} km). "
     )
     if tesisler:
@@ -314,14 +316,14 @@ def il_gezi_sayfasi(il: str, ilce_yerleri: dict[str, list[dict]],
     for y in tum:
         turler[y["tur"]] += 1
     tur_ozet = ", ".join(
-        f"{n} {ETIKET[t][0].lower()}"
+        f'{n} <a href="/etiket/{t}/">{e(ETIKET[t][0].lower())}</a>'
         for t, n in sorted(turler.items(), key=lambda x: -x[1])[:4]
     )
 
     ozet = (
         f"<strong>{e(il)}</strong> ilinde, kamu tesislerinin bulunduğu "
         f"{len(ilceler)} ilçe çevresinde Vikipedi'de kaydı bulunan "
-        f"<strong>{len(tum)} gezilecek yer</strong> derlendi: {e(tur_ozet)}. "
+        f"<strong>{len(tum)} gezilecek yer</strong> derlendi: {tur_ozet}. "
         f"İlde {len(tesisler)} kamu konaklama tesisi bulunuyor. "
     )
     if mesafe_cumlesi:

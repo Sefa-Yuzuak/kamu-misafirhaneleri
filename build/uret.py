@@ -39,6 +39,55 @@ from veri import TURLER, e164, kisa_ad, sayfa_basligi, slug, tesis_slug, tur_slu
 
 KOK = Path(__file__).resolve().parent.parent
 CIKTI = KOK / "site"
+
+
+def _gezi_verisi() -> dict:
+    """Sayfasi URETILEN gezi kayitlari; anahtar "Il|Ilce".
+
+    derle.py ile ayni suzgec uygulanir (temiz_yerler + en az 2 yer), yoksa
+    buradan sayfasi olmayan ilcelere baglanti verilir ve kirik link cikar.
+    """
+    global _GEZI
+    if _GEZI is None:
+        from blog import temiz_yerler
+
+        yol = KOK / "data" / "gezi.json"
+        ham = json.loads(yol.read_text("utf-8")) if yol.exists() else {}
+        _GEZI = {}
+        for anahtar, yerler in ham.items():
+            temiz = temiz_yerler(yerler)
+            if len(temiz) >= 2:
+                _GEZI[anahtar] = temiz
+    return _GEZI
+
+
+_GEZI: dict | None = None
+_LISTELER: dict | None = None
+
+
+def _liste_tanimlari() -> dict:
+    """Sıralı liste tanımları bir kez kurulur (süzgeç işlevleriyle birlikte)."""
+    global _LISTELER
+    if _LISTELER is None:
+        from listeler import liste_tanimlari
+
+        yol = KOK / "data" / "konumlar.json"
+        konumlar = json.loads(yol.read_text("utf-8")) if yol.exists() else {}
+        _LISTELER = liste_tanimlari({k: v for k, v in konumlar.items() if v})
+    return _LISTELER
+
+
+def _ilgili_listeler(tesisler: list[dict]) -> list[tuple[str, str]]:
+    """[(yol, başlık)] — bu ilden en az bir tesis içeren listeler."""
+    bulunan = []
+    for anahtar, tanim in _liste_tanimlari().items():
+        try:
+            uyan = any(tanim["suzgec"](t) for t in tesisler)
+        except Exception:
+            uyan = False
+        if uyan:
+            bulunan.append((f"/liste/{anahtar}/", tanim["baslik"]))
+    return bulunan
 BUGUN = date.today().isoformat()
 
 KURUM_TAM = {
@@ -216,6 +265,27 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
     yol = f"/tesis/{s}/"
     g = gorseller.get(t["il"])
     tur_ad, kisa_tur, ikon, tur_aciklama = TURLER[t["tur"]]
+
+    yakin_yerler = _gezi_verisi().get(f"{t['il']}|{t['ilce']}") or []
+    gezi_html = ""
+    if yakin_yerler:
+        ilk = yakin_yerler[:6]
+        satirlar = "".join(
+            f'<li><strong>{e(y["ad"])}</strong> — {y["km"]} km'
+            + (f' · {e(y["aciklama"])}' if y.get("aciklama") else "")
+            + "</li>"
+            for y in ilk
+        )
+        gezi_yolu = f"/gezi/{slug(t['il'])}/{slug(t['ilce'])}/"
+        gezi_html = (
+            f'<section class="bl bl-cizgi"><div class="bl-bas"><div>'
+            f'<h2>{e(t["ilce"])} çevresinde gezilecek yerler</h2>'
+            f'<p>Bu tesise en yakın {len(yakin_yerler)} gezilecek yer '
+            f"kaydedildi; uzaklıklar tesisin koordinatından hesaplandı.</p></div>"
+            f'<a class="dg dg-2 dg-sm" href="{gezi_yolu}">'
+            f'Tümünü gör{ik("ok")}</a></div>'
+            f'<ul class="il-liste">{satirlar}</ul></section>'
+        )
 
     kirintilar = [
         ("/", "Ana sayfa"),
@@ -413,7 +483,7 @@ target="_blank" rel="noopener nofollow">{ik("yildiz")}Google yorumlarını gör<
 </div>
 </aside>
 </div>
-{komsu_html}"""
+{komsu_html}{gezi_html}"""
 
     ld_tesis: dict = {
         "@context": "https://schema.org",
@@ -497,6 +567,54 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
     turler = defaultdict(list)
     for t in tesisler:
         turler[t["tur"]].append(t)
+
+    # Bu ildeki ilçelerin gezi sayfaları — veri data/gezi.json'da hazır.
+    gezi = _gezi_verisi()
+    il_gezi = sorted(
+        (
+            (anahtar.split("|", 1)[1], yerler)
+            for anahtar, yerler in gezi.items()
+            if anahtar.startswith(f"{il}|") and yerler
+        ),
+        key=lambda x: -len(x[1]),
+    )
+    gezi_bolum = ""
+    if il_gezi:
+        toplam_yer = sum(len(y) for _, y in il_gezi)
+        baglar = " · ".join(
+            f'<a href="/gezi/{slug(il)}/{slug(ilce)}/">{e(ilce)}</a> '
+            f'<span style="color:var(--soluk)">({len(yerler)})</span>'
+            for ilce, yerler in il_gezi
+        )
+        one_cikan = ", ".join(
+            y["ad"] for _, yerler in il_gezi[:3] for y in yerler[:1]
+        )
+        gezi_bolum = (
+            f'<section class="bl kap bl-cizgi"><div class="bl-bas"><div>'
+            f'<h2>{e(il)} çevresinde gezilecek yerler</h2>'
+            f'<p>{e(il)} ilinde tesislere yakın <strong>{toplam_yer} gezilecek yer</strong> '
+            f'{len(il_gezi)} ilçede kayıtlı'
+            + (f" — {e(one_cikan)} gibi." if one_cikan else ".")
+            + '</p></div>'
+            f'<a class="dg dg-2 dg-sm" href="/gezi/{slug(il)}/">'
+            f'{e(il)} gezi rehberi{ik("ok")}</a></div>'
+            f'<p style="color:var(--soluk);line-height:2.2">{baglar}</p></section>'
+        )
+
+    ilgili = _ilgili_listeler(tesisler)
+    liste_bolum = ""
+    if ilgili:
+        ogeler = "".join(
+            f'<li><a href="{e(l_yol)}">{e(l_bas)}</a></li>' for l_yol, l_bas in ilgili
+        )
+        liste_bolum = (
+            f'<section class="bl kap bl-cizgi"><div class="bl-bas"><div>'
+            f'<h2>{e(il)} tesislerinin geçtiği listeler</h2>'
+            f'<p>Bu ildeki tesislerden en az biri aşağıdaki sıralı listelerde '
+            f'yer alıyor.</p></div>'
+            f'<a class="dg dg-2 dg-sm" href="/liste/">Tüm listeler{ik("ok")}</a></div>'
+            f'<ul class="il-liste">{ogeler}</ul></section>'
+        )
 
     kirintilar = [("/", "Ana sayfa"), ("/il/", "İller"), (yol, il)]
 
@@ -590,6 +708,8 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
 <div class="iz">{kartlar}</div>
 </section>
 {harita_bolum}
+{gezi_bolum}
+{liste_bolum}
 <section class="bl kap bl-cizgi">
 <h2>{e(il)} hakkında sık sorulanlar</h2>
 {sss_html(sss)}
