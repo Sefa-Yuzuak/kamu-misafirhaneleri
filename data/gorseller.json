@@ -779,16 +779,6 @@
   "sm": "hakkari-sm.webp",
   "md": "hakkari-md.webp"
  },
- "K.Maraş": {
-  "yazar": "Myrat",
-  "lisans": "CC BY-SA 4.0",
-  "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "sayfa": "https://commons.wikimedia.org/wiki/File:Kahramanmara%C5%9F_city_center.jpg",
-  "aciklama": "Kahramanmaraş'ın genel bir görünümü",
-  "lg": "k-maras-lg.webp",
-  "sm": "k-maras-sm.webp",
-  "md": "k-maras-md.webp"
- },
  "Ordu": {
   "yazar": "Ahmet Gürsakal",
   "lisans": "CC BY-SA 3.0",
@@ -808,5 +798,15 @@
   "lg": "tokat-lg.webp",
   "sm": "tokat-sm.webp",
   "md": "tokat-md.webp"
+ },
+ "Kahramanmaraş": {
+  "yazar": "Myrat",
+  "lisans": "CC BY-SA 4.0",
+  "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sayfa": "https://commons.wikimedia.org/wiki/File:Kahramanmara%C5%9F_city_center.jpg",
+  "aciklama": "Kahramanmaraş'ın genel bir görünümü",
+  "lg": "kahramanmaras-lg.webp",
+  "sm": "kahramanmaras-sm.webp",
+  "md": "kahramanmaras-md.webp"
  }
 }

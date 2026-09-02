@@ -84,13 +84,8 @@ def _ilce_uyar(sonuc: dict, ilce: str, il: str) -> bool:
     return any(_esit(adres.get(alan, ""), ilce) for alan in _ILCE_ALANLARI)
 
 
-#: Veride kısaltılmış yazılan il adları; doğrulamada tam ada çevrilir
-_IL_ESANLAM = {"k-maras": "kahramanmaras"}
-
-
 def _il_slug(il: str) -> str:
-    s = slug(il)
-    return _IL_ESANLAM.get(s, s)
+    return slug(il)
 
 
 def yanlis_il(kayit: dict, il_sluglari: set[str]) -> str | None:

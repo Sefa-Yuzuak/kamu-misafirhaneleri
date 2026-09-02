@@ -31,8 +31,6 @@ KALITE = 72
 # Wikipedia sayfa adı ille birebir aynı değilse
 SAYFA_ADI = {
     "İçel": "Mersin",
-    "K. Maraş": "Kahramanmaraş",
-    "K.Maraş": "Kahramanmaraş",
     "Hakkari": "Hakkâri (il)",
     "Ordu": "Ordu (il)",
     "Tokat": "Tokat (il)",
