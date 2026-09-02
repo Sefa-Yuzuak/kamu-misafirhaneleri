@@ -268,7 +268,11 @@ noktalardan seçildi. Adlar, tanımlar ve özetler Vikipedi'den alınmıştır
         yol=yol,
         icerik=icerik,
         og_gorsel=f"/img/il/{g['lg']}" if g else None,
-        on_gorsel=f"/img/il/{g['lg']}" if g else "",
+        on_gorsel=f"/img/il/{g.get('md', g['lg'])}" if g else "",
+        on_srcset=(
+            f"/img/il/{g.get('md', g['lg'])} 800w, /img/il/{g['lg']} 1200w"
+            if g else ""
+        ),
         anahtarlar=[
             f"{ilce} gezilecek yerler", f"{il} gezilecek yerler",
             f"{ilce} nerede kalınır", f"{ilce} {il} gezi rehberi",
@@ -383,7 +387,11 @@ def il_gezi_sayfasi(il: str, ilce_yerleri: dict[str, list[dict]],
         yol=yol,
         icerik=icerik,
         og_gorsel=f"/img/il/{g['lg']}" if g else None,
-        on_gorsel=f"/img/il/{g['lg']}" if g else "",
+        on_gorsel=f"/img/il/{g.get('md', g['lg'])}" if g else "",
+        on_srcset=(
+            f"/img/il/{g.get('md', g['lg'])} 800w, /img/il/{g['lg']} 1200w"
+            if g else ""
+        ),
         anahtarlar=[
             f"{il} gezilecek yerler", f"{il} gezi rehberi", f"{il} tarihi yerler",
             f"{il} nerede kalınır", f"{il} kamu misafirhanesi",

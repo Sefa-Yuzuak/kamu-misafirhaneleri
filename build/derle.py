@@ -45,6 +45,7 @@ from dagitim import (  # noqa: E402
 )
 from listeler import liste_sayfasi, liste_tanimlari, listeler_dizini  # noqa: E402
 from mesafe import en_yakinlar, il_merkezleri  # noqa: E402
+import yazitipi  # noqa: E402
 from stil import yayimla  # noqa: E402
 from parca import AD, SITE, e, harita_kutusu, ik, il_karti, kabuk, tesis_karti  # noqa: E402
 from uret import CIKTI, KOK, il_sayfasi, kirinti_ld, sss_html, sss_ld, tesis_sayfasi  # noqa: E402
@@ -868,6 +869,9 @@ def main() -> int:
     shutil.copy(KOK / "tesisler.json", CIKTI / "tesisler.json")
     shutil.copy(KOK / "favicon.svg", CIKTI / "favicon.svg")
     shutil.copytree(KOK / "static", CIKTI / "static", dirs_exist_ok=True)
+    # Yazi tipleri sayfa agirliginin %42'siydi; latin-ext dosyalari
+    # sayfalarda gercekten gecen harflere indirilir (kaynak tam kalir).
+    yazitipi.uygula(KOK, CIKTI)
     (CIKTI / "static" / "s.css").unlink(missing_ok=True)
     shutil.copytree(KOK / "img", CIKTI / "img")
 

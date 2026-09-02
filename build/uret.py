@@ -538,7 +538,13 @@ target="_blank" rel="noopener nofollow">{ik("yildiz")}Google yorumlarını gör<
         yol=yol,
         icerik=icerik,
         og_gorsel=f"/img/il/{g['lg']}" if g else None,
-        on_gorsel=f"/img/il/{g['lg']}" if g else "",
+        # preload, <img>'nin srcset'iyle birebir ayni: yoksa tarayici md
+        # secerken preload lg indiriyor ve iki dosya birden iniyor.
+        on_gorsel=f"/img/il/{g.get('md', g['lg'])}" if g else "",
+        on_srcset=(
+            f"/img/il/{g.get('md', g['lg'])} 800w, /img/il/{g['lg']} 1200w"
+            if g else ""
+        ),
         anahtarlar=[
             kisa_ad(t["ad"]), f"{kisa_ad(t['ad'])} telefon",
             f"{t['ilce']} {t['tur'].lower()}", f"{t['il']} {t['tur'].lower()}",
@@ -742,7 +748,13 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
         yol=yol,
         icerik=icerik,
         og_gorsel=f"/img/il/{g['lg']}" if g else None,
-        on_gorsel=f"/img/il/{g['lg']}" if g else "",
+        # preload, <img>'nin srcset'iyle birebir ayni: yoksa tarayici md
+        # secerken preload lg indiriyor ve iki dosya birden iniyor.
+        on_gorsel=f"/img/il/{g.get('md', g['lg'])}" if g else "",
+        on_srcset=(
+            f"/img/il/{g.get('md', g['lg'])} 800w, /img/il/{g['lg']} 1200w"
+            if g else ""
+        ),
         anahtarlar=[
             f"{il} öğretmenevi", f"{il} kamu misafirhanesi", f"{il} polisevi",
             f"{il} öğretmenevi fiyatları", f"{il} öğretmenevi telefon",

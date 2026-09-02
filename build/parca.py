@@ -280,6 +280,8 @@ def kabuk(
     aktif: str = "",
     ek_bas: str = "",
     on_gorsel: str = "",
+    on_srcset: str = "",
+    on_sizes: str = "100vw",
     anahtarlar: list[str] | None = None,
     harita: bool = False,
     arac: bool = False,
@@ -329,7 +331,7 @@ def kabuk(
 <noscript><link rel="stylesheet" href="{STIL_YOLU}"></noscript>
 {HARITA_ON if harita else ""}
 {NOSCRIPT_GEZ}
-{f'<link rel="preload" as="image" href="{on_gorsel}" fetchpriority="high">' if on_gorsel else ''}{ek_bas}{ld}{GA_ETIKET}</head>
+{f'<link rel="preload" as="image" href="{on_gorsel}"' + (f' imagesrcset="{on_srcset}" imagesizes="{on_sizes}"' if on_srcset else '') + ' fetchpriority="high">' if on_gorsel else ''}{ek_bas}{ld}{GA_ETIKET}</head>
 <body>
 <a class="atla" href="#ana">İçeriğe atla</a>
 <header class="ust">
