@@ -236,8 +236,10 @@ p{margin:0 0 1em}
 .tk{position:relative}
 .tk-meta{font-size:.845rem;color:var(--soluk);margin:0 0 11px;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
 .tk-fiyat{font-size:.86rem;color:var(--altin);font-weight:600;margin:0 0 10px;line-height:1.45}
-.tk-alt{padding:12px 16px 14px;display:flex;gap:8px;align-items:center;position:relative;z-index:2}
-.tk-alt .dg{flex:1}
+.tk-alt{padding:12px 16px 14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;position:relative;z-index:2}
+/* Dort dugmeli kartlarda "E-posta" karttan tasip tamamen kirpiliyordu;
+   sarmalayip her dugmeye taban genislik veriyoruz. */
+.tk-alt .dg{flex:1 1 auto;min-width:calc(50% - 4px)}
 
 /* ---------- olanak ikonları ---------- */
 .ol{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;padding:0;list-style:none}
@@ -413,8 +415,14 @@ p{margin:0 0 1em}
 /* ---------- harita ---------- */
 .harita-sar{position:relative;border:1px solid var(--cizgi);border-radius:var(--r);
   overflow:hidden;box-shadow:var(--golge-sm);background:var(--yuzey2)}
-#harita{width:100%;height:340px;background:var(--yuzey2)}
+#harita{width:100%;height:340px;background:var(--yuzey2);position:relative}
+/* Mobilde harita ekranin %71'ini kapliyordu; sayfayi gecmek zorlasiyordu. */
 .harita-tam #harita{height:min(72vh,680px)}
+@media (max-width:700px){.harita-tam #harita{height:min(55vh,420px)}}
+.harita-ac{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);
+z-index:500;padding:10px 18px;border:0;border-radius:99px;cursor:pointer;
+font:600 .9rem/1 var(--govde);color:#fff;background:rgba(17,17,17,.82);
+box-shadow:0 2px 10px rgba(0,0,0,.28)}
 .harita-yan #harita{height:230px}
 .harita-alt{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;
   padding:11px 15px;border-top:1px solid var(--cizgi);background:var(--yuzey);

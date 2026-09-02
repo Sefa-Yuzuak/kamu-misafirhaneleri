@@ -5,8 +5,15 @@
 
   var SAPMA = 1.27, HIZ = 78;
   var HARF = { ç: "c", ğ: "g", ı: "i", ö: "o", ş: "s", ü: "u", â: "a", î: "i", û: "u" };
+  // Turkce buyuk I (U+0130) tuzagi: "Istanbul".toLowerCase() bunu
+  // i + U+0307 (birlesen nokta) yapiyor ve kullanicinin yazdigi duz
+  // "istanbul" ile eslesmiyordu — Istanbul ve Izmir'deki 49 tesis
+  // aramada hic cikmiyordu. Once duz i'ye ceviriyoruz, sonra kalan
+  // birlesen isaretleri temizliyoruz.
   function sade(s) {
-    return String(s).toLowerCase().replace(/[çğıöşüâîû]/g, function (h) { return HARF[h] || h; });
+    return String(s).replace(/İ/g, "i").toLowerCase()
+      .normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .replace(/[çğıöşüâîû]/g, function (h) { return HARF[h] || h; });
   }
   function tl(n) {
     return new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 0 }).format(Math.round(n)) + " TL";
@@ -34,7 +41,10 @@
         t: d.t.map(function (x) {
           return { s: x[0], ad: x[1], il: x[2], ilce: x[3], tur: d.turler[x[4]],
                    k: [x[5], x[6]], dz: x[7], hv: x[8], fiyat: x[9], fs: x[10],
-                   tel: x[11], ol: x[12], anahtar: sade(x[1] + " " + x[3] + " " + x[2]) };
+                   tel: x[11], ol: x[12],
+                   // Ayni kor nokta buradaydi: tur ve bosluksuz ad da girer.
+                   anahtar: sade(x[1] + " " + x[3] + " " + x[2] + " " +
+                                 d.turler[x[4]] + " " + x[1].replace(/\s+/g, "")) };
         }),
       };
       return D;
@@ -49,39 +59,82 @@
   }
 
   /* --- tesis seçici: metin kutusu + öneri listesi --------------------- */
+  /* Klavyeyle de kullanilabilir olmasi sart: eskiden ok tuslari hicbir sey
+     yapmiyor, Enter secmiyor, Tab listeyi kapatiyordu — secici yalnizca
+     fareyle calisiyordu. Ana sayfadaki arama kutusuyla ayni davranis. */
   function secici(girdiId, oneriId, secildi) {
     var g = el(girdiId), o = el(oneriId);
     if (!g || !o) return null;
-    var durum = { tesis: null };
-    function kapat() { o.innerHTML = ""; g.setAttribute("aria-expanded", "false"); }
+    var durum = { tesis: null }, bulunan = [], aktif = -1;
+
+    function kapat() {
+      o.innerHTML = "";
+      bulunan = [];
+      aktif = -1;
+      g.setAttribute("aria-expanded", "false");
+      g.removeAttribute("aria-activedescendant");
+    }
+    function ogeler() { return o.querySelectorAll("a"); }
+    function isaretle(i) {
+      var liste = ogeler();
+      if (!liste.length) return;
+      if (aktif >= 0 && liste[aktif]) liste[aktif].classList.remove("sec");
+      aktif = (i + liste.length) % liste.length;
+      liste[aktif].classList.add("sec");
+      g.setAttribute("aria-activedescendant", liste[aktif].id);
+      liste[aktif].scrollIntoView({ block: "nearest" });
+    }
+    function uygula(i) {
+      if (!bulunan[i]) return;
+      durum.tesis = bulunan[i];
+      g.value = bulunan[i].ad;
+      var secilen = bulunan[i];
+      kapat();
+      secildi(secilen);
+    }
     function ciz() {
       var q = sade(g.value.trim());
       if (!q || !D) return kapat();
-      var bulunan = D.t.filter(function (t) { return t.anahtar.indexOf(q) >= 0; }).slice(0, 8);
+      bulunan = D.t.filter(function (t) { return t.anahtar.indexOf(q) >= 0; }).slice(0, 8);
       if (!bulunan.length) return kapat();
+      aktif = -1;
       o.innerHTML = bulunan.map(function (t, i) {
-        return '<a href="#" data-i="' + i + '" role="option"><span>' +
+        return '<a href="#" id="' + oneriId + "-" + i + '" data-i="' + i +
+          '" role="option"><span>' +
           '<span class="o-ad">' + esc(t.ad) + "</span><br>" +
           '<span class="o-yer">' + esc(t.ilce) + ", " + esc(t.il) + " · " + esc(t.tur) +
           "</span></span></a>";
       }).join("");
       g.setAttribute("aria-expanded", "true");
-      Array.prototype.forEach.call(o.querySelectorAll("a"), function (a, i) {
-        a.addEventListener("click", function (ev) {
-          ev.preventDefault();
-          durum.tesis = bulunan[i];
-          g.value = bulunan[i].ad;
-          kapat();
-          secildi(bulunan[i]);
-        });
+      g.removeAttribute("aria-activedescendant");
+      Array.prototype.forEach.call(ogeler(), function (a, i) {
+        // mousedown'da varsayilani engellemek girdinin odagini korur;
+        // yoksa blur once calisip listeyi kapatiyor ve tiklama kayboluyor.
+        a.addEventListener("mousedown", function (ev) { ev.preventDefault(); });
+        a.addEventListener("click", function (ev) { ev.preventDefault(); uygula(i); });
       });
     }
+
     g.addEventListener("input", function () {
       durum.tesis = null;
       veri().then(ciz);
       secildi(null);
     });
     g.addEventListener("focus", function () { veri().then(ciz); });
+    g.addEventListener("keydown", function (ev) {
+      var liste = ogeler();
+      if (ev.key === "ArrowDown" || ev.key === "ArrowUp") {
+        if (!liste.length) return;
+        ev.preventDefault();
+        isaretle(aktif < 0 ? (ev.key === "ArrowDown" ? 0 : liste.length - 1)
+                           : aktif + (ev.key === "ArrowDown" ? 1 : -1));
+      } else if (ev.key === "Enter") {
+        if (aktif >= 0) { ev.preventDefault(); uygula(aktif); }
+        else if (bulunan.length === 1) { ev.preventDefault(); uygula(0); }
+      } else if (ev.key === "Escape") {
+        kapat();
+      }
+    });
     g.addEventListener("blur", function () { setTimeout(kapat, 180); });
     return durum;
   }

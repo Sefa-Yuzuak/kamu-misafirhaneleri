@@ -3,10 +3,17 @@
   "use strict";
 
   var HARF = { ç: "c", ğ: "g", ı: "i", ö: "o", ş: "s", ü: "u", â: "a", î: "i", û: "u" };
+  // Turkce buyuk I (U+0130) tuzagi: "Istanbul".toLowerCase() bunu
+  // i + U+0307 (birlesen nokta) yapiyor ve kullanicinin yazdigi duz
+  // "istanbul" ile eslesmiyordu — Istanbul ve Izmir'deki 49 tesis
+  // aramada hic cikmiyordu. Once duz i'ye ceviriyoruz, sonra kalan
+  // birlesen isaretleri temizliyoruz.
   function sade(s) {
-    return String(s).toLowerCase().replace(/[çğıöşüâîû]/g, function (h) {
-      return HARF[h] || h;
-    });
+    return String(s).replace(/İ/g, "i").toLowerCase()
+      .normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .replace(/[çğıöşüâîû]/g, function (h) {
+        return HARF[h] || h;
+      });
   }
 
   var kutu = document.getElementById("q");
@@ -21,8 +28,12 @@
       .then(function (r) { return r.json(); })
       .then(function (d) {
         veri = d.t.map(function (x) {
+          // Anahtara tur ve bosluksuz ad da giriyor: "izmir polisevi" hic
+          // sonuc vermiyordu ve adi "Ogretmen Evi" diye ayri yazilan 23
+          // tesis "ogretmenevi" aramasinda cikmiyordu.
           return { ad: x[0], ilce: x[1], il: x[2], s: x[3], tur: d.turler[x[4]], dz: x[5],
-                   k: sade(x[0] + " " + x[1] + " " + x[2]) };
+                   k: sade(x[0] + " " + x[1] + " " + x[2] + " " + d.turler[x[4]] +
+                           " " + x[0].replace(/\s+/g, "")) };
         });
         yukleniyor = false;
         return veri;
@@ -90,6 +101,12 @@
       ogeler[secili].scrollIntoView({ block: "nearest" });
     } else if (ev.key === "Enter") {
       if (secili >= 0 && ogeler[secili]) { ev.preventDefault(); ogeler[secili].click(); }
+      // Ok tusuyla secim yapilmadiysa Enter (ve mobil klavyedeki "Git")
+      // hicbir sey yapmiyordu; tam sonuc sayfasina goturuyoruz.
+      else if (kutu.value.trim() && !document.getElementById("sonuclar")) {
+        ev.preventDefault();
+        location.href = "/ara/?q=" + encodeURIComponent(kutu.value.trim());
+      }
     } else if (ev.key === "Escape") {
       panel.innerHTML = ""; kutu.setAttribute("aria-expanded", "false"); kutu.blur();
     }

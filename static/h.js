@@ -40,14 +40,33 @@
   });
 
   function kur(merkez, zum) {
+    // Dokunmatikte surukleme kapali baslar: harita ekranin buyuk bolumunu
+    // kapladigi icin parmak hareketini yutuyor ve sayfa asagi kaydirilamiyordu.
+    // Kullanici haritaya dokununca surukleme aciliyor.
+    var mobil = L.Browser.mobile;
     var h = L.map(kutu, {
       scrollWheelZoom: false,
+      dragging: !mobil,
+      tap: true,
       center: merkez,
       zoom: zum,
     });
     katman.addTo(h);
     h.on("click", function () { h.scrollWheelZoom.enable(); });
     h.on("mouseout", function () { h.scrollWheelZoom.disable(); });
+
+    if (mobil) {
+      var ipucu = document.createElement("button");
+      ipucu.type = "button";
+      ipucu.className = "harita-ac";
+      ipucu.textContent = "Haritayı etkinleştir";
+      var ac = function () {
+        h.dragging.enable();
+        if (ipucu.parentNode) ipucu.parentNode.removeChild(ipucu);
+      };
+      ipucu.addEventListener("click", ac);
+      kutu.appendChild(ipucu);
+    }
     return h;
   }
 

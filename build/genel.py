@@ -94,13 +94,13 @@ def ana_sayfa(tesisler: list[dict], gorseller: dict, kurumlar: dict) -> str:
 <h1>Türkiye'nin kamu misafirhaneleri, <em>tek yerde</em>.</h1>
 <p class="giris">81 ilde {len(tesisler)} öğretmenevi, polisevi, üniversite ve bakanlık
 tesisi. Telefon numarası, yayımlanmış fiyatlar ve yol tarifi — reklamsız, ücretsiz.</p>
-<div class="ara">
+<form class="ara" action="/ara/" method="get" role="search">
 <svg class="ik ik-ara" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 17.5 21 21M19.5 11.2a8.2 8.2 0 1 1-16.5 0 8.2 8.2 0 0 1 16.5 0Z"/></svg>
-<input type="search" id="q" placeholder="Tesis, ilçe veya il ara — örn. Ayvalık" autocomplete="off"
+<input type="search" id="q" name="q" placeholder="Tesis, ilçe veya il ara — örn. Ayvalık" autocomplete="off"
 role="combobox" aria-expanded="false" aria-controls="oneri" aria-label="Tesis ara">
 <kbd>/</kbd>
 <div class="oneri" id="oneri" role="listbox"></div>
-</div>
+</form>
 <ul class="sayilar">
 <li><b>{len(tesisler)}</b> tesis</li>
 <li><b>81</b> il</li>
