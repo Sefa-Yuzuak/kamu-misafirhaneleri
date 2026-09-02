@@ -217,6 +217,23 @@ def main() -> int:
         kesin = sum(1 for x in hd["t"] if x[8])
         print(f"harita: {len(hd['t'])} nokta, {kesin} kesin konum")
 
+    # --- koordinatlar kendi illerinde mi
+    # 25 tesis başka bir ile oturmuştu (Muş Merkez -> Edirne, 9 farklı ilin
+    # Merkez öğretmenevi -> tek bir Tunceli noktası). Eşleştirici düzeltildi;
+    # bu kural nöbette kalıyor.
+    kyol = KOK / "data" / "konumlar.json"
+    tyol = KOK / "tesisler.json"
+    if kyol.exists() and tyol.exists():
+        sys.path.insert(0, str(Path(__file__).parent))
+        from konum import bozuk_kayitlar
+
+        konumlar = json.loads(kyol.read_text("utf-8"))
+        tesisler = json.loads(tyol.read_text("utf-8"))["tesisler"]
+        for anahtar, yabanci_il in bozuk_kayitlar(konumlar, tesisler).items():
+            kayit = konumlar[anahtar]
+            bul("YUKSEK", f"/tesis/{anahtar}/",
+                f"koordinat {kayit['il']} yerine {yabanci_il} ilinde: {kayit['osm'][:60]}")
+
     # --- rapor
     say = Counter(a for a, _, _ in bulgular)
     print(f"\n{len(sayfalar)} sayfa, {gorsel_sayisi} görsel etiketi denetlendi")

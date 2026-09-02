@@ -19,6 +19,10 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from veri import slug  # noqa: E402
+
 KOK = Path(__file__).resolve().parent.parent
 HEDEF = KOK / "data" / "konumlar.json"
 UA = {"User-Agent": "kamumisafirhaneler.com/1.0 (https://kamumisafirhaneler.com)"}
@@ -48,10 +52,74 @@ def _icerde(lat: float, lon: float) -> bool:
     return a <= lat <= b and c <= lon <= d
 
 
+#: Nominatim'in il karşılığı olarak kullandığı alanlar (sırayla denenir)
+_IL_ALANLARI = ("province", "state")
+#: İlçe karşılığı olabilecek alanlar; hangisinin dolduğu yere göre değişiyor
+_ILCE_ALANLARI = ("town", "county", "district", "municipality", "city", "suburb")
+
+
+def _esit(a: str, b: str) -> bool:
+    """Türkçe karakter ve yazım farklarını yutarak tam eşitlik."""
+    return bool(a) and bool(b) and slug(str(a)) == slug(str(b))
+
+
+def adres_ili(adres: dict) -> str:
+    for alan in _IL_ALANLARI:
+        if adres.get(alan):
+            return str(adres[alan])
+    return ""
+
+
 def _ilce_uyar(sonuc: dict, ilce: str, il: str) -> bool:
+    """Sonuç gerçekten bu ilin bu ilçesinde mi?
+
+    İl eşleşmesi ZORUNLU: eskiden `or` ile gevşetildiği için "Merkez" ilçesi
+    başka ilin "… Merkez" adresine takılıp kabul ediliyordu ve tesis yüzlerce
+    kilometre uzağa oturuyordu. Alanlar ayrı ayrı ve tam eşitlikle bakılır;
+    birleştirilmiş metinde alt-dize araması yapılmaz.
+    """
     adres = sonuc.get("address") or {}
-    hepsi = " ".join(str(v).lower() for v in adres.values())
-    return ilce.lower() in hepsi or il.lower() in hepsi
+    if not _esit(adres_ili(adres), il):
+        return False
+    return any(_esit(adres.get(alan, ""), ilce) for alan in _ILCE_ALANLARI)
+
+
+#: Veride kısaltılmış yazılan il adları; doğrulamada tam ada çevrilir
+_IL_ESANLAM = {"k-maras": "kahramanmaras"}
+
+
+def _il_slug(il: str) -> str:
+    s = slug(il)
+    return _IL_ESANLAM.get(s, s)
+
+
+def yanlis_il(kayit: dict, il_sluglari: set[str]) -> str | None:
+    """Kayıt başka bir ile mi oturmuş? Oturmuşsa o ilin slug'ını döndürür.
+
+    Ölçüt bilerek dar: `osm` metni 120 karakterde kesildiği için "kendi ili
+    geçmiyor" tek başına kanıt değil. Kanıt, kendi ili GEÇMEZKEN metinde
+    BAŞKA bir il adının geçmesidir — Muş Merkez kaydının adresinde Edirne
+    yazması gibi.
+    """
+    if not kayit or not kayit.get("il"):
+        return None
+    parcalar = {slug(x) for x in str(kayit.get("osm", "")).split(",")}
+    kendi = _il_slug(kayit["il"])
+    if kendi in parcalar:
+        return None
+    yabanci = sorted(parcalar & il_sluglari - {kendi})
+    return yabanci[0] if yabanci else None
+
+
+def bozuk_kayitlar(konumlar: dict, tesisler: list[dict]) -> dict[str, str]:
+    """{tesis_slug: yanlış il} — başka ile oturmuş bütün kayıtlar."""
+    il_sluglari = {_il_slug(t["il"]) for t in tesisler}
+    bulunan = {}
+    for anahtar, kayit in konumlar.items():
+        y = yanlis_il(kayit, il_sluglari)
+        if y:
+            bulunan[anahtar] = y
+    return bulunan
 
 
 def tesis_konumu(t: dict, ilce_hazir: dict | None = None) -> dict | None:
