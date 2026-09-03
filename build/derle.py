@@ -48,6 +48,14 @@ from mesafe import en_yakinlar, il_merkezleri  # noqa: E402
 import yazitipi  # noqa: E402
 from stil import yayimla  # noqa: E402
 from parca import AD, SITE, e, harita_kutusu, ik, il_karti, kabuk, tesis_karti  # noqa: E402
+from rota import (  # noqa: E402
+    duraklar as rota_duraklari,
+    rota_dizini,
+    rota_sayfasi,
+    rota_slug,
+    rotalar_uret,
+    veriyi_yukle as rota_verisi,
+)
 from uret import CIKTI, KOK, il_sayfasi, kirinti_ld, sss_html, sss_ld, tesis_sayfasi  # noqa: E402
 from veri import TURLER, fiyat_taban, kisa_ad, slug, tesis_slug, tur_slug  # noqa: E402
 
@@ -572,6 +580,7 @@ Son güncelleme: {TARIH_TR}
 - Tesis türleri: {SITE}/tur/
 - İl dizini: {SITE}/il/
 - Gezi rehberi: {SITE}/gezi/  ·  Konu başlıkları: {SITE}/etiket/
+- Çok duraklı rotalar (harita, gezi, yöresel yemek, maliyet): {SITE}/rota/
 - Sıralı listeler: {SITE}/liste/  ·  Hesaplama araçları: {SITE}/araclar/
 - Harita: {SITE}/harita/  ·  Açık veri: {SITE}/veri/
 
@@ -717,6 +726,18 @@ def main() -> int:
         il_haritali = any(konumlar.get(tesis_slug(t)) for t in ts)
         yaz(f"/il/{slug(il)}/", il_sayfasi(il, ts, gorseller, il_haritali))
         yollar.append(f"/il/{slug(il)}/")
+
+    # Rotalar: koordinati dogrulanmis tesisleri gunluk surus mesafesinde
+    # zincirleyip cok duraklı gezi programlari uretir.
+    _gezi_v, _mutfak_v = rota_verisi()
+    _rotalar = rotalar_uret(rota_duraklari(tesisler, konumlar, _gezi_v))
+    if _rotalar:
+        yaz("/rota/", rota_dizini(_rotalar))
+        yollar.append("/rota/")
+        for _r in _rotalar:
+            yaz(f"/rota/{rota_slug(_r)}/", rota_sayfasi(_r, _mutfak_v, gorseller))
+            yollar.append(f"/rota/{rota_slug(_r)}/")
+        print(f"rota: {len(_rotalar)} rota, {sum(len(r) for r in _rotalar)} durak")
 
     yaz("/tur/", tur_dizini(tesisler))
     yollar.append("/tur/")

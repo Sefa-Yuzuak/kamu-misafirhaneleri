@@ -651,3 +651,40 @@ box-shadow:0 2px 10px rgba(0,0,0,.28)}
 
 .guncel{margin:14px 0 0;font-size:.85rem;color:var(--soluk)}
 .guncel time{font-weight:600}
+
+.hi-p.hi-no{display:flex;align-items:center;justify-content:center;font:700 .78rem/1 var(--govde);color:#fff}
+
+/* --- Rotalar --------------------------------------------------------- */
+.rota-iz{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(268px,1fr))}
+.rota-k{display:flex;flex-direction:column;gap:5px;padding:20px;border:1px solid var(--cizgi);
+border-radius:var(--r);background:var(--yuzey);box-shadow:var(--golge-sm);
+color:var(--murekkep);text-decoration:none;transition:transform .18s,box-shadow .18s,border-color .18s}
+.rota-k:hover{transform:translateY(-3px);box-shadow:var(--golge-lg);border-color:var(--vurgu-cizgi)}
+.rota-k strong{font-family:var(--serif);font-size:1.08rem;font-weight:600;letter-spacing:-.01em}
+.rota-k-ol{font-size:.85rem;color:var(--vurgu);font-weight:600}
+.rota-k em{font-style:normal;font-size:.86rem;color:var(--soluk);line-height:1.5}
+.rota-k-tl{margin-top:6px;font-size:.9rem;font-weight:600;color:var(--altin)}
+
+.rota-durak{border:1px solid var(--cizgi);border-radius:var(--r);background:var(--yuzey);
+padding:20px;margin:14px 0;box-shadow:var(--golge-sm)}
+.rota-bas{display:flex;gap:14px;align-items:flex-start;margin-bottom:14px}
+.rota-no{flex:none;width:34px;height:34px;border-radius:99px;background:var(--vurgu);color:#fff;
+display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.95rem}
+.rota-bas h3{font-size:1.14rem}
+.rota-bas h3 a{color:var(--murekkep);text-decoration:none}
+.rota-bas h3 a:hover{color:var(--vurgu)}
+.rota-iki{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.rota-iki h4{display:flex;align-items:center;gap:7px;font-size:.95rem;margin-bottom:8px}
+.rota-iki h4 .ik{width:17px;height:17px;color:var(--vurgu)}
+.rota-liste{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.rota-liste li{font-size:.92rem;line-height:1.45;padding-left:13px;position:relative}
+.rota-liste li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;
+border-radius:99px;background:var(--cizgi2)}
+.rota-liste em{display:block;font-style:normal;font-size:.85rem;color:var(--soluk)}
+.rota-km{font-size:.82rem;color:var(--vurgu);font-weight:600;margin-left:5px}
+.rota-adim{display:flex;align-items:center;gap:7px;margin:0 0 0 17px;padding:9px 0;
+font-size:.88rem;color:var(--soluk);border-left:2px dashed var(--cizgi2);padding-left:17px}
+.rota-adim .ik{width:16px;height:16px;color:var(--vurgu)}
+.rota-fiyat{margin:14px 0 0;padding-top:12px;border-top:1px solid var(--cizgi);
+font-size:.9rem;color:var(--soluk)}
+@media (max-width:600px){.rota-durak{padding:16px}.rota-iki{gap:14px}}

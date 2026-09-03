@@ -239,6 +239,7 @@ GEZ = [
     ("/araclar/", "Araçlar"),
     ("/liste/", "Listeler"),
     ("/gezi/", "Gezi"),
+    ("/rota/", "Rotalar"),
     ("/deniz/", "Denize yakın"),
     ("/tur/ogretmenevleri/", "Öğretmenevleri"),
     ("/rehber/", "Rehber"),
@@ -382,6 +383,7 @@ misafirhanelerinin bağımsız dizini. Rezervasyon alınmaz; her tesis doğrudan
 <li><a href="/tesis/">Tüm tesisler</a></li>
 <li><a href="/liste/">Sıralı listeler</a></li>
 <li><a href="/gezi/">Gezi rehberi</a></li>
+<li><a href="/rota/">Rotalar</a></li>
 <li><a href="/etiket/">Gezi konuları</a></li>
 <li><a href="/deniz/">Denize yakın tesisler</a></li>
 <li><a href="/tur/">Tesis türleri</a></li>

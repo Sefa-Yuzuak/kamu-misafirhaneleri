@@ -85,6 +85,34 @@
     return;
   }
 
+  // --- 4) rota: numarali duraklar + aralarini birlestiren cizgi
+  if (kutu.dataset.rota) {
+    var duraklar;
+    try { duraklar = JSON.parse(kutu.dataset.rota); } catch (e) { return; }
+    if (!duraklar.length) return;
+    var hr = kur([duraklar[0].lat, duraklar[0].lon], 8);
+    var cizgi = L.polyline(
+      duraklar.map(function (d) { return [d.lat, d.lon]; }),
+      { color: RENK.tesis, weight: 3, opacity: 0.75, dashArray: "7 6" }
+    ).addTo(hr);
+    duraklar.forEach(function (d, i) {
+      L.marker([d.lat, d.lon], {
+        icon: L.divIcon({
+          className: "hi",
+          html: '<span class="hi-p hi-no" style="--p:' + RENK.tesis + '">' +
+                (i + 1) + "</span>",
+          iconSize: [28, 28], iconAnchor: [14, 28], popupAnchor: [0, -26],
+        }),
+        title: (i + 1) + ". " + d.ad,
+      })
+        .bindPopup('<a class="hb" href="/tesis/' + d.s + '/"><strong>' +
+                   (i + 1) + ". " + d.ad + "</strong><span>" + d.yer + "</span></a>")
+        .addTo(hr);
+    });
+    hr.fitBounds(cizgi.getBounds(), { padding: [34, 34], maxZoom: 11 });
+    return;
+  }
+
   // --- 2 ve 3) çoklu
   var il = kutu.dataset.il || "";
   var tum = kutu.dataset.tum === "1";
