@@ -93,7 +93,7 @@ def ana_sayfa(tesisler: list[dict], gorseller: dict, kurumlar: dict) -> str:
     icerik = f"""<section class="kahraman"><div class="kap">
 <h1>Türkiye'nin kamu misafirhaneleri, <em>tek yerde</em>.</h1>
 <p class="giris">81 ilde {len(tesisler)} öğretmenevi, polisevi, üniversite ve bakanlık
-tesisi. Telefon numarası, yayımlanmış fiyatlar ve yol tarifi — reklamsız, ücretsiz.</p>
+tesisi. Telefon numarası, yayımlanmış fiyatlar ve yol tarifi — ücretsiz.</p>
 <form class="ara" action="/ara/" method="get" role="search">
 <svg class="ik ik-ara" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 17.5 21 21M19.5 11.2a8.2 8.2 0 1 1-16.5 0 8.2 8.2 0 0 1 16.5 0Z"/></svg>
 <input type="search" id="q" name="q" placeholder="Tesis, ilçe veya il ara — örn. Ayvalık" autocomplete="off"
@@ -224,7 +224,7 @@ kurumlara aittir; kaynağı göstermek için kullanılmaktadır.</p></div>
         baslik=f"{AD} — 81 ilde {len(tesisler)} öğretmenevi ve kamu tesisi",
         aciklama=(
             f"Türkiye'nin 81 ilindeki {len(tesisler)} kamu misafirhanesi: telefon numaraları, "
-            f"2026 fiyatları, denize yakın {len(deniz)} tesis. Ücretsiz, reklamsız dizin."
+            f"2026 fiyatları, denize yakın {len(deniz)} tesis. Ücretsiz, bağımsız dizin."
         ),
         yol="/",
         icerik=icerik,

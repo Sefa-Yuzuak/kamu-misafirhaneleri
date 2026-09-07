@@ -165,8 +165,9 @@ tarayıcıdan doğrudan çekebilirsiniz.</p>
 <div class="yazi" style="margin-top:1.8em">
 <h2>Düzeltme ve katkı</h2>
 <p>Yanlış telefon, kapanmış tesis ya da değişmiş fiyat gördüyseniz kaynağıyla
-birlikte bildirin; düzeltilir. Bu dizin ticari değildir, reklam almaz ve
-hiçbir kurumla ilişkisi yoktur.</p>
+birlikte bildirin; düzeltilir. Bu dizin bağımsızdır, hiçbir kurumla ilişkisi
+yoktur ve hiçbir tesis ödeme karşılığı listelenmez; site giderleri sayfalardaki
+reklamlarla karşılanır (<a href="/gizlilik/">gizlilik politikası</a>).</p>
 <h2>Sık sorulan sorular</h2>
 </div>
 {sss_html(sss)}

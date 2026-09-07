@@ -12,6 +12,9 @@ AD = "Kamu Misafirhaneleri"
 GA_ETIKET = ('<script async src="https://www.googletagmanager.com/gtag/js?id=G-MWVMNR7S6M"></script>'
              '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}'
              "gtag('js',new Date());gtag('config','G-MWVMNR7S6M',{anonymize_ip:true});</script>")
+ADSENSE_ID = "ca-pub-5424881701309211"
+ADSENSE_ETIKET = ('<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+                  f'?client={ADSENSE_ID}" crossorigin="anonymous"></script>')
 def e(x) -> str:
     return html.escape(str(x or ""), quote=True)
 # --------------------------------------------------------------------------
@@ -353,7 +356,7 @@ def kabuk(
 <noscript><link rel="stylesheet" href="{STIL_YOLU}"></noscript>
 {HARITA_ON if harita else ""}
 {NOSCRIPT_GEZ}
-{f'<link rel="preload" as="image" href="{on_gorsel}"' + (f' imagesrcset="{on_srcset}" imagesizes="{on_sizes}"' if on_srcset else '') + ' fetchpriority="high">' if on_gorsel else ''}{ek_bas}{ld}{GA_ETIKET}</head>
+{f'<link rel="preload" as="image" href="{on_gorsel}"' + (f' imagesrcset="{on_srcset}" imagesizes="{on_sizes}"' if on_srcset else '') + ' fetchpriority="high">' if on_gorsel else ''}{ek_bas}{ld}{GA_ETIKET}{ADSENSE_ETIKET}</head>
 <body>
 <a class="atla" href="#ana">İçeriğe atla</a>
 <header class="ust">
@@ -410,6 +413,7 @@ misafirhanelerinin bağımsız dizini. Rezervasyon alınmaz; her tesis doğrudan
 <li><a href="/feed.xml">RSS beslemesi</a></li>
 <li><a href="/sitemap.xml">Site haritası</a></li>
 <li><a href="/kaynaklar/">Kaynaklar ve katkı</a></li>
+<li><a href="/gizlilik/">Gizlilik ve çerezler</a></li>
 </ul></div>
 </div>
 <div class="alt-son">

@@ -47,7 +47,7 @@ from listeler import liste_sayfasi, liste_tanimlari, listeler_dizini  # noqa: E4
 from mesafe import en_yakinlar, il_merkezleri  # noqa: E402
 import yazitipi  # noqa: E402
 from stil import yayimla  # noqa: E402
-from parca import AD, SITE, e, harita_kutusu, ik, il_karti, kabuk, tesis_karti  # noqa: E402
+from parca import ADSENSE_ID, AD, SITE, e, harita_kutusu, ik, il_karti, kabuk, tesis_karti  # noqa: E402
 from rota import (  # noqa: E402
     duraklar as rota_duraklari,
     rota_dizini,
@@ -386,6 +386,71 @@ Ankara'ya yakın olanlar{ik("ok")}</a></div>
     )
 
 
+def gizlilik_sayfasi() -> str:
+    kirintilar = [("/", "Ana sayfa"), ("/gizlilik/", "Gizlilik ve çerezler")]
+    icerik = f"""<div class="kap" style="max-width:860px;padding-block:34px 0">
+<h1>Gizlilik ve çerez politikası</h1>
+<div class="yazi">
+<p>Bu site statik bir dizindir; üyelik almaz, form doldurtmaz ve rezervasyon
+yapmaz. Aşağıda hangi verilerin işlendiği açıkça belirtilmiştir.
+Son güncelleme: {TARIH_TR}.</p>
+
+<h2>Bizim topladığımız veri</h2>
+<p>Sunucumuzda kişisel veri saklanmaz. Arama, karşılaştırma ve "bana yakın"
+gibi araçlar tümüyle <strong>tarayıcınızda</strong> çalışır; girdiğiniz değerler
+ve konum bilginiz bize gönderilmez.</p>
+
+<h2>Ölçümleme</h2>
+<p>Ziyaretçi sayısını anonim ölçmek için <strong>Google Analytics 4</strong>
+kullanılır; IP anonimleştirme açıktır. Bu veriler kişiyi tanımlamaz.</p>
+
+<h2>Reklamlar (Google AdSense)</h2>
+<p>Site giderlerini karşılamak için sayfalarda <strong>Google AdSense</strong>
+reklamları gösterilir. Bu kapsamda:</p>
+<ul>
+<li>Google, üçüncü taraf sağlayıcı olarak çerezleri kullanarak bu sitede ve
+internetteki diğer sitelerde yaptığınız ziyaretlere dayalı reklam gösterebilir.</li>
+<li>Google'ın <strong>reklam çerezi</strong> kullanımı, kullanıcıların bu siteye
+ve diğer sitelere yaptıkları ziyaretlere göre reklam sunmasına olanak tanır.</li>
+<li>Kişiselleştirilmiş reklamları
+<a href="https://www.google.com/settings/ads" target="_blank" rel="noopener nofollow">Google
+Reklam Ayarları</a> üzerinden kapatabilirsiniz.</li>
+<li>Üçüncü taraf satıcıların çerezlerini
+<a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener nofollow">aboutads.info</a>
+adresinden yönetebilirsiniz.</li>
+<li>Reklamlar içeriğe göre yerleştirilir; <strong>hiçbir tesis ödeme karşılığı
+listelenmez ya da sıralamada öne çıkarılmaz</strong>.</li>
+</ul>
+
+<h2>Üçüncü taraf içerikler</h2>
+<ul>
+<li>Haritalar <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener nofollow">OpenStreetMap</a>
+karolarıyla gösterilir; karo sunucusu IP adresinizi görebilir.</li>
+<li>"Yol tarifi" bağlantıları Google Haritalar'a gider.</li>
+<li>Fotoğraflar Wikimedia Commons'tan alınır; yazar ve lisansı sayfada belirtilir.</li>
+</ul>
+
+<h2>Çerezleri reddetme</h2>
+<p>Tarayıcı ayarlarınızdan çerezleri her zaman silebilir veya engelleyebilirsiniz;
+sitenin dizin işlevi bundan etkilenmez.</p>
+
+<h2>Yasal dayanak ve iletişim</h2>
+<p>Bu politika 6698 sayılı KVKK çerçevesinde hazırlanmıştır. Sorularınız ve
+düzeltme talepleriniz için <a href="/kaynaklar/">kaynaklar ve katkı</a>
+sayfasındaki yönergeyi kullanabilirsiniz.</p>
+</div>
+</div>"""
+    return kabuk(
+        baslik="Gizlilik ve çerez politikası",
+        aciklama="Kamu Misafirhaneleri hangi verileri işler, hangi çerezleri "
+        "kullanır ve reklamlar nasıl çalışır.",
+        yol="/gizlilik/",
+        icerik=icerik,
+        kirintilar=kirintilar,
+        jsonld=[kirinti_ld(kirintilar)],
+    )
+
+
 def kaynaklar_sayfasi(tesisler: list[dict], gorseller: dict, kurumlar: dict) -> str:
     kirintilar = [("/", "Ana sayfa"), ("/kaynaklar/", "Kaynaklar")]
     logolar = "".join(
@@ -437,7 +502,10 @@ Commons'tan serbest lisanslarla alınmıştır.</p>
 
 <h2>Düzeltme bildirin</h2>
 <p>Yanlış bir telefon, kapanmış bir tesis veya değişmiş bir fiyat gördüyseniz
-bildirin — kaynağıyla birlikte düzeltilir. Bu dizin ticari değildir, reklam almaz.</p>
+bildirin — kaynağıyla birlikte düzeltilir. Dizin bağımsızdır; hiçbir tesis ödeme
+karşılığı listelenmez veya sıralamada öne çıkarılmaz. Site giderleri sayfalarda
+gösterilen reklamlarla karşılanır — ayrıntı: <a href="/gizlilik/">gizlilik ve
+çerez politikası</a>.</p>
 </div>
 <div class="not" style="margin:24px 0 40px">{ik("uyari")}<div>
 <strong>Bağımsız dizindir.</strong> Hiçbir kuruma ait değildir, hiçbir kurumu temsil
@@ -672,7 +740,7 @@ def main() -> int:
     for t in tesisler:
         il_grup[t["il"]].append(t)
 
-    yollar = ["/", "/il/", "/deniz/", "/rehber/", "/kaynaklar/", "/ara/"]
+    yollar = ["/", "/il/", "/deniz/", "/rehber/", "/kaynaklar/", "/gizlilik/", "/ara/"]
     if konumlar:
         yollar.append("/harita/")
     else:
@@ -685,6 +753,7 @@ def main() -> int:
     yaz("/il/", il_dizini(il_grup, gorseller))
     yaz("/deniz/", deniz_sayfasi(tesisler, gorseller))
     yaz("/kaynaklar/", kaynaklar_sayfasi(tesisler, gorseller, kurumlar))
+    yaz("/gizlilik/", gizlilik_sayfasi())
     yaz("/rehber/", rehber_dizini(tesisler))
     yaz("/ara/", ara_sayfasi(tesisler))
 
@@ -905,6 +974,9 @@ def main() -> int:
 
     (CIKTI / "sitemap.xml").write_text(sitemap(yollar), "utf-8")
     (CIKTI / "robots.txt").write_text(robots(), "utf-8")
+    # AdSense yetkili satici beyani: /ads.txt yoksa Google reklam talebini kisitlar.
+    (CIKTI / "ads.txt").write_text(
+        f"google.com, {ADSENSE_ID.removeprefix('ca-')}, DIRECT, f08c47fec0942fa0\n", "utf-8")
     (CIKTI / "llms.txt").write_text(llms_txt(tesisler, il_grup), "utf-8")
     shutil.copy(KOK / "tesisler.json", CIKTI / "tesisler.json")
     shutil.copy(KOK / "favicon.svg", CIKTI / "favicon.svg")
