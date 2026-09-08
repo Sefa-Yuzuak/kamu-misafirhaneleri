@@ -171,12 +171,21 @@ def rota_ozeti(rota: list[dict]) -> dict:
 
 
 def rota_slug(rota: list[dict]) -> str:
+    """Rotanin adresi. Gectigi TUM iller kullanilir.
+
+    Eskiden yalnizca ilk uc il yaziliyordu (`iller[:3]`). Ayni ilk uc ili ayni
+    sayida durakla gezen iki farkli rota o zaman ayni adresi uretiyor ve ikincisi
+    birincinin sayfasinin uzerine yaziliyordu: 33 rota uretilirken diske 32 sayfa
+    dusuyor, sitemap ayni adresi iki kez listeliyordu (Rize-Trabzon-Artvin,
+    dorduncu il Erzurum'du ve adreste hic gorunmuyordu). rota_adi zaten butun
+    illeri yaziyor; adres de artik adla ayni.
+    """
     iller = []
     for d in rota:
         il = d["tesis"]["il"]
         if il not in iller:
             iller.append(il)
-    return "-".join(slug(i) for i in iller[:3]) + f"-{len(rota)}-durak"
+    return "-".join(slug(i) for i in iller) + f"-{len(rota)}-durak"
 
 
 def rota_adi(rota: list[dict]) -> str:
