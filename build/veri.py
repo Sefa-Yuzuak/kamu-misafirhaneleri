@@ -111,11 +111,18 @@ def kisa_ad(ad: str) -> str:
 
 
 def sayfa_basligi(t: dict) -> str:
-    """Benzersiz, 65 karakteri aşmayan sayfa başlığı."""
+    """Benzersiz, 62 karakteri asmayan sayfa basligi.
+
+    Esik 68'di, docstring ise 65 diyordu; ikisi de fazlaydi. OLCULDU
+    (08.09.2026 denetimi): 1049 sayfanin 43'unde baslik 62'yi asiyor, yani
+    Google SERP'te sonu kirpiliyordu. Basamak zaten hazirdi; esik 62'ye cekildi,
+    sigmayan basliktan once " — telefon ve fiyat", sonra ilce dusuyor.
+    Tesis adi hicbir zaman kirpilmiyor: yarim bir ad baska tesisi gosterir.
+    """
     ad = kisa_ad(t["ad"])
     yer = t["il"] if t["ilce"].lower() in ad.lower() else f"{t['ilce']}, {t['il']}"
     for aday in (f"{ad}, {yer} — telefon ve fiyat", f"{ad}, {yer}", f"{ad}, {t['il']}", ad):
-        if len(aday) <= 68:
+        if len(aday) <= 62:
             return aday
     return ad
 
