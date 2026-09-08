@@ -806,7 +806,27 @@ def main() -> int:
         for _r in _rotalar:
             yaz(f"/rota/{rota_slug(_r)}/", rota_sayfasi(_r, _mutfak_v, gorseller))
             yollar.append(f"/rota/{rota_slug(_r)}/")
-        print(f"rota: {len(_rotalar)} rota, {sum(len(r) for r in _rotalar)} durak")
+        # rota_slug eskiden yalnizca ilk uc ili yaziyordu; cakismayi gidermek icin
+        # butun iller yazilinca 33 rotanin 18'inin adresi degisti ve eski adresler
+        # canlida 404 vermeye basladi. Tasinmis adres 404 degil 301 dondurmeli;
+        # nginx bu dosyayi include ediyor (bkz. nginx.conf).
+        _yon: dict[str, str] = {}
+        for _r in _rotalar:
+            _iller: list[str] = []
+            for _d in _r:
+                if _d["tesis"]["il"] not in _iller:
+                    _iller.append(_d["tesis"]["il"])
+            if len(_iller) > 3:
+                _eski = "-".join(slug(i) for i in _iller[:3]) + f"-{len(_r)}-durak"
+                # Iki rota ayni eski adrese dusuyordu (rize-trabzon-artvin-5-durak).
+                # Ilkine yonlendiriliyor: o adres zaten belirsizdi, hangi rotayi
+                # gosterdigi derleme sirasina bagliydi.
+                _yon.setdefault(_eski, rota_slug(_r))
+        (CIKTI / "_yonlendirme.conf").write_text(
+            "".join(f"location = /rota/{e}/ {{ return 301 /rota/{y}/; }}\n"
+                    for e, y in sorted(_yon.items())), "utf-8")
+        print(f"rota: {len(_rotalar)} rota, {sum(len(r) for r in _rotalar)} durak, "
+              f"{len(_yon)} eski adres 301'e baglandi")
 
     yaz("/tur/", tur_dizini(tesisler))
     yollar.append("/tur/")
