@@ -1,6 +1,6 @@
 {
- "cekim_tarihi": "2026-08-29",
- "tesis_sayisi": 562,
+ "cekim_tarihi": "2026-09-09",
+ "tesis_sayisi": 597,
  "tesisler": [
   {
    "ad": "Aladağ Öğretmenevi ve Akşam Sanat Okulu",
@@ -7255,6 +7255,476 @@
    "kaynak": "https://dardanos.comu.edu.tr/",
    "kiyi": true,
    "ankara_saat": 8
+  },
+  {
+   "ad": "Ağrı Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Ağrı",
+   "ilce": "",
+   "telefon": [
+    "0472 215 29 76",
+    "0505 318 04 13"
+   ],
+   "kaynak": "https://www.agri.pol.tr/polis-evi"
+  },
+  {
+   "ad": "Ankara Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Ankara",
+   "ilce": "",
+   "telefon": [
+    "0312 303 69 33",
+    "0505 318 06 15"
+   ],
+   "kaynak": "https://www.ankara.pol.tr/polisevi",
+   "adres": "Karşıyaka Mahallesi Karşıyaka Küme Evleri 228 Ada/1 Parsel No:427 Gölbaşı",
+   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
+   "kaynak_fiyat": "https://www.ankara.pol.tr/polisevi"
+  },
+  {
+   "ad": "Aydın Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Aydın",
+   "ilce": "Efeler",
+   "telefon": [
+    "0256 214 41 40",
+    "0256 225 74 66",
+    "0505 318 09 40"
+   ],
+   "kaynak": "https://www.aydin.pol.tr/polisevi",
+   "adres": "Güzelhisar Mahallesi Albayrak Caddesi No:39 Efeler / AYDIN"
+  },
+  {
+   "ad": "Çanakkale Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Çanakkale",
+   "ilce": "",
+   "telefon": [
+    "0286 218 07 68",
+    "0286 213 80 89",
+    "0286 217 52 60",
+    "0505 318 17 02"
+   ],
+   "kaynak": "https://www.canakkale.pol.tr/polisevi-sube-mudurlugu"
+  },
+  {
+   "ad": "Diyarbakır Sosyal Tesisler",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Diyarbakır",
+   "ilce": "",
+   "telefon": [
+    "0412 237 41 31",
+    "0412 237 41 60",
+    "0412 504 40 15",
+    "0505 196 47 10"
+   ],
+   "kaynak": "https://www.diyarbakir.pol.tr/konaklama",
+   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
+   "kaynak_fiyat": "https://www.diyarbakir.pol.tr/konaklama"
+  },
+  {
+   "ad": "Elazığ Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Elazığ",
+   "ilce": "",
+   "telefon": [
+    "0424 247 69 11"
+   ],
+   "kaynak": "https://www.elazig.pol.tr/polis-evi"
+  },
+  {
+   "ad": "Giresun Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Giresun",
+   "ilce": "",
+   "telefon": [
+    "0454 215 02 19",
+    "0505 318 28 21"
+   ],
+   "kaynak": "https://www.giresun.pol.tr/polis-evi"
+  },
+  {
+   "ad": "Giresun Doğankent Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Giresun",
+   "ilce": "Doğankent",
+   "telefon": [
+    "0454 471 57 26"
+   ],
+   "kaynak": "https://www.giresun.pol.tr/dogankentpolisevi",
+   "adres": "Sadaklı Mahallesi. Harşit Caddesi. No: 3 Doğankent/GİRESUN"
+  },
+  {
+   "ad": "Hatay Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Hatay",
+   "ilce": "Antakya",
+   "telefon": [
+    "0326 502 31 52",
+    "0505 318 31 15"
+   ],
+   "kaynak": "https://www.hatay.pol.tr/polisevi",
+   "adres": "Odabaşı Mahallesi Atatürk 10 Bulvarı No:43 Antakya / HATAY",
+   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
+   "kaynak_fiyat": "https://www.hatay.pol.tr/polisevi"
+  },
+  {
+   "ad": "İstanbul Sosyal Tesisler",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "İstanbul",
+   "ilce": "",
+   "telefon": [
+    "0212 484 58 00",
+    "0212 229 60 83",
+    "0212 277 99 18",
+    "0505 175 53 68"
+   ],
+   "kaynak": "https://www.istanbul.pol.tr/sosyal-tesisler",
+   "adres": "Maltepe Mah. Eski Çırpıcı Çıkmazı Sok. No :6",
+   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
+   "kaynak_fiyat": "https://www.istanbul.pol.tr/sosyal-tesisler"
+  },
+  {
+   "ad": "Kars Polis Evi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Kars",
+   "ilce": "Merkez",
+   "telefon": [
+    "0474 502 36 55",
+    "0552 034 89 36"
+   ],
+   "kaynak": "https://www.kars.pol.tr/polis-evi-sube-mudurlugu",
+   "adres": "Ortakapı Mahallesi Faikbey Caddesi No: 13 Merkez/ KARS",
+   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
+   "kaynak_fiyat": "https://www.kars.pol.tr/polis-evi-sube-mudurlugu"
+  },
+  {
+   "ad": "Kırklareli Polis Evi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Kırklareli",
+   "ilce": "Merkez",
+   "telefon": [
+    "0288 214 29 54",
+    "0554 188 00 39"
+   ],
+   "kaynak": "https://www.kirklareli.pol.tr/polis-evi",
+   "adres": "Karacaibrahim Mah. Fevzi Çakmak Blv. No:7 Merkez / KIRKLARELİ",
+   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
+   "kaynak_fiyat": "https://www.kirklareli.pol.tr/polis-evi"
+  },
+  {
+   "ad": "Kırşehir PolisEvi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Kırşehir",
+   "ilce": "",
+   "telefon": [
+    "0386 213 28 30",
+    "0505 318 40 30"
+   ],
+   "kaynak": "https://www.kirsehir.pol.tr/polis-evi",
+   "adres": "Ahi Evran Mah. Dr.M.Ali Altun Bul. No 4 PK:40100 KIRŞEHİR"
+  },
+  {
+   "ad": "Kocaeli Polis Sosyal Tesisleri",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Kocaeli",
+   "ilce": "İzmit",
+   "telefon": [
+    "0262 321 48 80",
+    "0262 315 73 76",
+    "0505 318 41 60"
+   ],
+   "kaynak": "https://www.kocaeli.pol.tr/kocaeli-polisevi",
+   "adres": "Karabaş Mahallesi Belde Sokak No:3 İZMİT/KOCAELİ"
+  },
+  {
+   "ad": "Konya Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Konya",
+   "ilce": "",
+   "telefon": [
+    "0332 251 09 25",
+    "0505 318 42 24"
+   ],
+   "kaynak": "https://www.konya.pol.tr/konya-polisevi"
+  },
+  {
+   "ad": "Malatya Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Malatya",
+   "ilce": "Battalgazi",
+   "telefon": [
+    "0422 212 85 32",
+    "0422 212 85 34"
+   ],
+   "kaynak": "https://www.malatya.pol.tr/polisevi-sosyal-tesislerimiz",
+   "adres": "Orduzu Mah. Elazığ Bulvarı No:57/2 Battalgazi/MALATYA"
+  },
+  {
+   "ad": "Kahramanmaraş Polisevi Müdürlüğü",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Kahramanmaraş",
+   "ilce": "",
+   "telefon": [
+    "0344 221 25 55"
+   ],
+   "kaynak": "https://www.kahramanmaras.pol.tr/polisevi",
+   "adres": "Bahçelievler Mahallesi 90015 Sokak Kahramanmaraş İl Emniyet Müdürlüğü Ana Hizmet Binası D Blok Yerleşkesi"
+  },
+  {
+   "ad": "Mardin Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Mardin",
+   "ilce": "",
+   "telefon": [
+    "0482 212 98 72",
+    "0505 318 47 15"
+   ],
+   "kaynak": "https://www.mardin.pol.tr/polisevi-sube-mudurlugu",
+   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
+   "kaynak_fiyat": "https://www.mardin.pol.tr/polisevi-sube-mudurlugu"
+  },
+  {
+   "ad": "Muğla Polisevi Şube Müdürlüğü Ula Ek tesisi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Muğla",
+   "ilce": "",
+   "telefon": [
+    "0252 242 22 48"
+   ],
+   "kaynak": "https://www.mugla.pol.tr/mugla-polisevi-sube-mudurlugu-ula-ek-tesisi"
+  },
+  {
+   "ad": "Nevşehir Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Nevşehir",
+   "ilce": "",
+   "telefon": [
+    "0384 213 57 51",
+    "0384 213 57 52"
+   ],
+   "kaynak": "https://www.nevsehir.pol.tr/polis-evi",
+   "adres": "Güzelyurt Mahallesi, Ürgüp Cd. No:45 Merkez/Nevşehir",
+   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
+   "kaynak_fiyat": "https://www.nevsehir.pol.tr/polis-evi"
+  },
+  {
+   "ad": "Niğde Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Niğde",
+   "ilce": "",
+   "telefon": [
+    "0388 232 97 90"
+   ],
+   "kaynak": "https://www.nigde.pol.tr/polis-evimiz",
+   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
+   "kaynak_fiyat": "https://www.nigde.pol.tr/polis-evimiz"
+  },
+  {
+   "ad": "Ordu Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Ordu",
+   "ilce": "",
+   "telefon": [
+    "0452 234 49 11"
+   ],
+   "kaynak": "https://www.ordu.pol.tr/ordu-polisevi"
+  },
+  {
+   "ad": "Sakarya Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Sakarya",
+   "ilce": "",
+   "telefon": [
+    "0264 276 54 50",
+    "0264 502 33 76",
+    "0264 582 92 10",
+    "0505 318 54 50"
+   ],
+   "kaynak": "https://www.sakarya.pol.tr/sosyal-tesisler",
+   "adres": "Maltepe Mah. Önderevler Sokak No:80/D",
+   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
+   "kaynak_fiyat": "https://www.sakarya.pol.tr/sosyal-tesisler"
+  },
+  {
+   "ad": "Siirt Polis Evi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Siirt",
+   "ilce": "",
+   "telefon": [
+    "0484 223 70 83",
+    "0505 318 56 03"
+   ],
+   "kaynak": "https://www.siirt.pol.tr/siirt-polis-evi",
+   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
+   "kaynak_fiyat": "https://www.siirt.pol.tr/siirt-polis-evi"
+  },
+  {
+   "ad": "Sivas POLİSEVİ",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Sivas",
+   "ilce": "",
+   "telefon": [
+    "0346 215 11 07",
+    "0346 215 12 07",
+    "0505 318 58 12"
+   ],
+   "kaynak": "https://www.sivas.pol.tr/polisevi",
+   "adres": "Kızılırmak Mahallesi,",
+   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
+   "kaynak_fiyat": "https://www.sivas.pol.tr/polisevi"
+  },
+  {
+   "ad": "Tekirdağ Polis Evi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Tekirdağ",
+   "ilce": "Süleymanpaşa",
+   "telefon": [
+    "0282 260 41 01",
+    "0282 263 90 89"
+   ],
+   "kaynak": "https://www.tekirdag.pol.tr/tekirdag-polis-evi",
+   "adres": "Polisevi Şube Müdürlüğü Ertuğrul Mahallesi Yalı Sokak No: 19 Süleymanpaşa/TEKİRDAĞ"
+  },
+  {
+   "ad": "Tunceli Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Tunceli",
+   "ilce": "Merkez",
+   "telefon": [
+    "0428 212 55 44",
+    "0428 212 55 45"
+   ],
+   "kaynak": "https://www.tunceli.pol.tr/polis-evi-sube-mudurlugu",
+   "adres": "Atatürk Mahallesi 25. Sokak No:8 Merkez/TUNCELİ"
+  },
+  {
+   "ad": "Yozgat Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Yozgat",
+   "ilce": "",
+   "telefon": [
+    "0354 212 91 40",
+    "0505 318 66 17"
+   ],
+   "kaynak": "https://www.yozgat.pol.tr/polis-evi-sube-mudurlugu",
+   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
+   "kaynak_fiyat": "https://www.yozgat.pol.tr/polis-evi-sube-mudurlugu"
+  },
+  {
+   "ad": "Zonguldak Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Zonguldak",
+   "ilce": "",
+   "telefon": [
+    "0372 266 04 40",
+    "0505 318 67 24"
+   ],
+   "kaynak": "https://www.zonguldak.pol.tr/polisevi"
+  },
+  {
+   "ad": "Bayburt Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Bayburt",
+   "ilce": "",
+   "telefon": [
+    "0458 211 71 85",
+    "0505 318 69 20"
+   ],
+   "kaynak": "https://www.bayburt.pol.tr/bayburt-polis-evi"
+  },
+  {
+   "ad": "Batman Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Batman",
+   "ilce": "",
+   "telefon": [
+    "0488 214 30 68",
+    "0488 214 30 69",
+    "0505 318 72 41"
+   ],
+   "kaynak": "https://www.batman.pol.tr/batmanpolisevi2019",
+   "adres": "Turgut Özal Bulvarı Kültür Mahallesi No:297/B İl Emniyet Müdürlüğü"
+  },
+  {
+   "ad": "Şırnak POLİSEVİ ŞUBE MÜDÜRLÜKLERİMİZ",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Şırnak",
+   "ilce": "",
+   "telefon": [
+    "0486 216 69 16",
+    "0486 518 46 20",
+    "0505 318 73 08"
+   ],
+   "kaynak": "https://www.sirnak.pol.tr/sirnak-polisevi"
+  },
+  {
+   "ad": "Bartın Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Bartın",
+   "ilce": "",
+   "telefon": [
+    "0378 315 10 22"
+   ],
+   "kaynak": "https://www.bartin.pol.tr/bartin-polisevi"
+  },
+  {
+   "ad": "Karabük Polis Evi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Karabük",
+   "ilce": "",
+   "telefon": [
+    "0370 412 61 20"
+   ],
+   "kaynak": "https://www.karabuk.pol.tr/polis-evi",
+   "adres": "Ergenekon Mahallesi, Ergenekon Cd. No:14, 78200 Karabük Merkez/Karabük"
+  },
+  {
+   "ad": "Osmaniye Polisevi",
+   "tur": "Polisevi",
+   "kurum": "EGM",
+   "il": "Osmaniye",
+   "ilce": "",
+   "telefon": [
+    "0328 825 95 95",
+    "0328 825 15 00",
+    "0505 318 80 20"
+   ],
+   "kaynak": "https://www.osmaniye.pol.tr/polisevi"
   }
  ]
 }

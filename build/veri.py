@@ -123,7 +123,14 @@ def sayfa_basligi(t: dict) -> str:
     hicbir zaman kirpilmiyor: yarim bir ad baska tesisi gosterir.
     """
     ad = kisa_ad(t["ad"])
-    yer = t["il"] if t["ilce"].lower() in ad.lower() else f"{t['ilce']}, {t['il']}"
+    # Bos ilce `"" in ad` -> True verdigi icin yer=il oluyordu ve adi zaten
+    # ili iceren tesislerde "Ankara Polisevi, Ankara" gibi tekrar cikiyordu.
+    if not t.get("ilce"):
+        yer = "" if t["il"].lower() in ad.lower() else t["il"]
+    elif t["ilce"].lower() in ad.lower():
+        yer = t["il"]
+    else:
+        yer = f"{t['ilce']}, {t['il']}"
     if t.get("fiyat_2026"):
         ekler = (" — 2026 fiyatı ve telefon", " — fiyat ve telefon", " — fiyat")
     elif t.get("deniz"):

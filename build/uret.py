@@ -276,7 +276,10 @@ def tesis_aciklamasi(t: dict) -> str:
     varsa taban tutar, denize yakinsa konum notu, yoksa bagli kurum. Uydurma
     yok: her dal yalnizca dolu olan alani kullaniyor.
     """
-    ad, yer = kisa_ad(t["ad"]), f"{t['ilce']}, {t['il']}"
+    # Ilce bos olabilir (EGM sayfalarinda adres her zaman yok): "(, Ankara)"
+    # cikiyordu. Bos ise yalniz il yazilir.
+    ad = kisa_ad(t["ad"])
+    yer = f"{t['ilce']}, {t['il']}" if t.get("ilce") else t["il"]
     kurum = kurum_tam(t["kurum"])
     taban = fiyat_taban(t.get("fiyat_2026"))
     # Binlik ayraci TUM dizgede degil, YALNIZ sayida degistirilmeli: replace'i
