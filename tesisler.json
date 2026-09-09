@@ -7374,8 +7374,8 @@
    ],
    "kaynak": "https://www.hatay.pol.tr/polisevi",
    "adres": "Odabaşı Mahallesi Atatürk 10 Bulvarı No:43 Antakya / HATAY",
-   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
-   "kaynak_fiyat": "https://www.hatay.pol.tr/polisevi"
+   "kaynak_fiyat": "https://www.hatay.pol.tr/polisevi",
+   "fiyat_2026": "Kamu personeli: paylaşımlı odada tek yatak 1.050 TL, müstakil tek kişilik oda 1.365 TL, çift kişilik oda 2.100 TL, aile odası 3.150 TL"
   },
   {
    "ad": "İstanbul Sosyal Tesisler",
@@ -7421,8 +7421,8 @@
    ],
    "kaynak": "https://www.kirklareli.pol.tr/polis-evi",
    "adres": "Karacaibrahim Mah. Fevzi Çakmak Blv. No:7 Merkez / KIRKLARELİ",
-   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
-   "kaynak_fiyat": "https://www.kirklareli.pol.tr/polis-evi"
+   "kaynak_fiyat": "https://www.kirklareli.pol.tr/polis-evi",
+   "fiyat_2026": "Kamu personeli: paylaşımlı odada tek yatak 900 TL, aile odası 2.700 TL (konaklama vergisi dahil)"
   },
   {
    "ad": "Kırşehir PolisEvi",
@@ -7499,8 +7499,8 @@
     "0505 318 47 15"
    ],
    "kaynak": "https://www.mardin.pol.tr/polisevi-sube-mudurlugu",
-   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
-   "kaynak_fiyat": "https://www.mardin.pol.tr/polisevi-sube-mudurlugu"
+   "kaynak_fiyat": "https://www.mardin.pol.tr/polisevi-sube-mudurlugu",
+   "fiyat_2026": "Kamu personeli: paylaşımlı odada tek yatak 1.060 TL, çift kişilik oda 2.121 TL, aile odası 3.182 TL"
   },
   {
    "ad": "Muğla Polisevi Şube Müdürlüğü Ula Ek tesisi",
@@ -7525,8 +7525,8 @@
    ],
    "kaynak": "https://www.nevsehir.pol.tr/polis-evi",
    "adres": "Güzelyurt Mahallesi, Ürgüp Cd. No:45 Merkez/Nevşehir",
-   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
-   "kaynak_fiyat": "https://www.nevsehir.pol.tr/polis-evi"
+   "kaynak_fiyat": "https://www.nevsehir.pol.tr/polis-evi",
+   "fiyat_2026": "Kamu personeli: paylaşımlı odada tek yatak 800 TL, çift kişilik oda 1.600 TL, suit oda 2.400 TL"
   },
   {
    "ad": "Niğde Polisevi",
@@ -7538,8 +7538,8 @@
     "0388 232 97 90"
    ],
    "kaynak": "https://www.nigde.pol.tr/polis-evimiz",
-   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
-   "kaynak_fiyat": "https://www.nigde.pol.tr/polis-evimiz"
+   "kaynak_fiyat": "https://www.nigde.pol.tr/polis-evimiz",
+   "fiyat_2026": "Kamu personeli: paylaşımlı odada tek yatak 606 TL, müstakil tek kişilik oda 757 TL, çift kişilik oda 1.212 TL, aile odası 1.818 TL"
   },
   {
    "ad": "Ordu Polisevi",
@@ -7596,8 +7596,8 @@
    ],
    "kaynak": "https://www.sivas.pol.tr/polisevi",
    "adres": "Kızılırmak Mahallesi,",
-   "not": "Tesis 2026 konaklama fiyatlarını kendi sayfasında yayımlıyor.",
-   "kaynak_fiyat": "https://www.sivas.pol.tr/polisevi"
+   "kaynak_fiyat": "https://www.sivas.pol.tr/polisevi",
+   "fiyat_2026": "Kamu personeli: paylaşımlı odada tek yatak 1.050 TL, müstakil tek kişilik oda 1.350 TL, aile odası 2.100 TL, suit oda 3.950 TL (konaklama vergisi dahil)"
   },
   {
    "ad": "Tekirdağ Polis Evi",
