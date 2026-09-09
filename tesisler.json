@@ -1,6 +1,6 @@
 {
  "cekim_tarihi": "2026-09-09",
- "tesis_sayisi": 597,
+ "tesis_sayisi": 611,
  "tesisler": [
   {
    "ad": "Aladağ Öğretmenevi ve Akşam Sanat Okulu",
@@ -7725,6 +7725,188 @@
     "0505 318 80 20"
    ],
    "kaynak": "https://www.osmaniye.pol.tr/polisevi"
+  },
+  {
+   "ad": "Kahramanmaraş Sütçü İmam Üniversitesi Konuk Evi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Kahramanmaraş Sütçü İmam Üniversitesi",
+   "il": "Kahramanmaraş",
+   "ilce": "",
+   "telefon": [
+    "0344 300 34 34",
+    "0344 300 10 00",
+    "0344 300 10 37"
+   ],
+   "kaynak": "http://konukevi.ksu.edu.tr",
+   "adres": "Merak ettiğin yeri haritadan seç, kampüste keşfe çık!"
+  },
+  {
+   "ad": "Kafkas Üniversitesi Prof. Dr. Nihat Bayşu Konukevi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Kafkas Üniversitesi",
+   "il": "Kars",
+   "ilce": "",
+   "telefon": [
+    "0474 225 11 50",
+    "0474 225 11 60",
+    "0474 225 11 50"
+   ],
+   "kaynak": "https://www.kafkas.edu.tr/konukevi/tr",
+   "adres": "Kampüs Dışı Erişim(E-Kaynak Arama)"
+  },
+  {
+   "ad": "Erciyes Üniversitesi Hızıroğlu Uygulama Oteli",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Erciyes Üniversitesi",
+   "il": "Kayseri",
+   "ilce": "",
+   "telefon": [
+    "0352 437 31 40",
+    "0533 578 22 38"
+   ],
+   "kaynak": "https://otel.erciyes.edu.tr/"
+  },
+  {
+   "ad": "Bilecik Şeyh Edebali Üniversitesi Pelitözü Gölpark Misafirhanesi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Bilecik Şeyh Edebali Üniversitesi",
+   "il": "Bilecik",
+   "ilce": "",
+   "telefon": [
+    "0228 214 19 19",
+    "0228 214 10 92",
+    "0228 214 19 19"
+   ],
+   "kaynak": "https://bilecik.edu.tr/misafirhane"
+  },
+  {
+   "ad": "Şırnak Üniversitesi Sosyal Tesisleri",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Şırnak Üniversitesi",
+   "il": "Şırnak",
+   "ilce": "",
+   "telefon": [
+    "0486 216 40 08",
+    "0486 216 40 08"
+   ],
+   "kaynak": "https://sirnak.edu.tr/tr/menu/sosyal-tesisler/23",
+   "adres": "Mehmet Emin Acar Kampüsü / Yeni Mahalle / Cizre Caddesi / Şırnak - TÜRKİYE"
+  },
+  {
+   "ad": "Ardahan Üniversitesi Yenisey Konukevi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Ardahan Üniversitesi",
+   "il": "Ardahan",
+   "ilce": "",
+   "telefon": [
+    "0478 211 75 55",
+    "0552 770 78 75"
+   ],
+   "kaynak": "https://konukevi.ardahan.edu.tr/",
+   "adres": "Ardahan Üniversitesi Yenisey Kampüsü, Çamlıçatak Mevkii, Ardahan 75000"
+  },
+  {
+   "ad": "Süleyman Demirel Üniversitesi Konukevi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Süleyman Demirel Üniversitesi",
+   "il": "Isparta",
+   "ilce": "",
+   "telefon": [
+    "0246 232 35 60",
+    "0246 232 35 60"
+   ],
+   "kaynak": "https://konukevi.sdu.edu.tr",
+   "adres": "SDÜ Konukevi, H. İbrahim Parlar Cad. Müze altı, İl Milli Eğitim Müdürlüğü yanı, Isparta"
+  },
+  {
+   "ad": "Bingöl Üniversitesi Konukevi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Bingöl Üniversitesi",
+   "il": "Bingöl",
+   "ilce": "",
+   "telefon": [
+    "0426 216 01 12",
+    "0426 216 01 13",
+    "0426 216 00 23"
+   ],
+   "kaynak": "http://sks.bingol.edu.tr/konukevi/tanitim/"
+  },
+  {
+   "ad": "Burdur Mehmet Akif Ersoy Üniversitesi Sosyal Tesisleri",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Burdur Mehmet Akif Ersoy Üniversitesi",
+   "il": "Burdur",
+   "ilce": "",
+   "telefon": [
+    "0248 213 10 00",
+    "0248 213 10 00"
+   ],
+   "kaynak": "https://mehmetakif.edu.tr/tr/content/7486/sosyal-tesisler"
+  },
+  {
+   "ad": "Erzincan Binali Yıldırım Üniversitesi Konukevi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Erzincan Binali Yıldırım Üniversitesi",
+   "il": "Erzincan",
+   "ilce": "",
+   "telefon": [
+    "0446 220 06 06",
+    "0446 220 06 06"
+   ],
+   "kaynak": "https://konukevi.ebyu.edu.tr/",
+   "adres": "Erzincan Binali Yıldırım Üniversitesi , Yalnızbağ Yerleşkesi, 24002 / ERZİNCAN"
+  },
+  {
+   "ad": "Hitit Üniversitesi Sosyal Tesisleri",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Hitit Üniversitesi",
+   "il": "Çorum",
+   "ilce": "",
+   "telefon": [
+    "0364 219 19 19",
+    "0364 219 19 38",
+    "0364 219 19 19"
+   ],
+   "kaynak": "https://www.hitit.edu.tr/sosyal-tesisler",
+   "adres": "Üçtutlar Mah. Kuzey Kampüsü Çevre Yolu Bulvarı 19030 - ÇORUM"
+  },
+  {
+   "ad": "Tokat Gaziosmanpaşa Üniversitesi Sosyal Tesisleri",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Tokat Gaziosmanpaşa Üniversitesi",
+   "il": "Tokat",
+   "ilce": "",
+   "telefon": [
+    "0356 252 16 16",
+    "0356 252 16 16"
+   ],
+   "kaynak": "https://sosyaltesisler.gop.edu.tr/"
+  },
+  {
+   "ad": "Dokuz Eylül Üniversitesi Konukevi",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Dokuz Eylül Üniversitesi",
+   "il": "İzmir",
+   "ilce": "",
+   "telefon": [
+    "0232 412 12 12",
+    "0232 464 81 35",
+    "0232 412 12 12"
+   ],
+   "kaynak": "https://www.deu.edu.tr/konukevi",
+   "adres": "DOKUZ EYLÜL ÜNİVERSİTESİ REKTÖRLÜĞÜ Cumhuriyet Bulvarı No: 144 35210 Alsancak / İZMİR - Telefon:+90(232) 412 12 12 Faks:+90 (232) 464 81 35"
+  },
+  {
+   "ad": "Hacettepe Üniversitesi Sosyal Tesisleri",
+   "tur": "Üniversite Misafirhanesi",
+   "kurum": "Hacettepe Üniversitesi",
+   "il": "Ankara",
+   "ilce": "",
+   "telefon": [
+    "0312 299 21 20",
+    "0312 299 21 20"
+   ],
+   "kaynak": "https://sosyaltesisler.hacettepe.edu.tr/"
   }
  ]
 }
