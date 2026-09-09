@@ -185,7 +185,9 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://sincikogretmenevi.meb.k12.tr",
    "adres": "Karaman Mahallesi Dönmez Küme Evleri No25 Sincik/ADIYAMAN",
-   "ulasim": "Adıyaman Sincik arası 69 Km´dir.SİNCİK MERKEZ"
+   "ulasim": "Adıyaman Sincik arası 69 Km´dir.SİNCİK MERKEZ",
+   "fiyat_2026": "İki Kişilik Günlük: Öğretmen 1.000 TL, Kamu 1.000 TL, Sivil 1.500 TL · Suit Oda Günlük: Öğretmen 1.000 TL, Kamu 1.000 TL, Sivil 1.500 TL · Kral Odası: Öğretmen 2.000 TL, Kamu 2.000 TL, Sivil 2.500 TL",
+   "kaynak_fiyat": "https://sincikogretmenevi.meb.k12.tr/icerikler/2026-yili-konaklama-fiyatlari_17190927.html"
   },
   {
    "ad": "Tut Öğretmenevi ve Akşam Sanat Okulu",
@@ -494,7 +496,9 @@
    "ankara_saat": 0,
    "web": "https://beypazariogretmenevi.meb.k12.tr",
    "adres": "KURTULUŞ MAH. NAMAZGAH SK. ÖĞRETMENEVİ VE AKŞAM SANAT OKULU BLOK NO: 8/2 İÇ KAPI NO: 4 BEYPAZARI / ANKARA",
-   "ulasim": "İlçe MerkezindeTerminalden yürüyerek 5 dakika mesafede"
+   "ulasim": "İlçe MerkezindeTerminalden yürüyerek 5 dakika mesafede",
+   "fiyat_2026": "MEB çalışanları : 950 TL / Kişi · Gecelik Kamu : 1300 TL / Kişi · Gecelik Sivil : 1650 TL / Kişi",
+   "kaynak_fiyat": "https://beypazariogretmenevi.meb.k12.tr/icerikler/2026-güncel-konaklama-fiyat-listesi_17353656.html"
   },
   {
    "ad": "Çamlıdere Öğretmenevi ve Akşam Sanat Okulu",
@@ -665,7 +669,9 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 0,
    "web": "https://sereflikochisarogretmenevi.meb.k12.tr",
-   "adres": "YENİ MAH. ANKARA CAD. ŞEREFLIKOÇHISAR ÖĞRETMENEVI VE AKŞAM SANAT OKULU BLOK NO 98A ŞEREFLİKOÇHİSAR / ANKARA"
+   "adres": "YENİ MAH. ANKARA CAD. ŞEREFLIKOÇHISAR ÖĞRETMENEVI VE AKŞAM SANAT OKULU BLOK NO 98A ŞEREFLİKOÇHİSAR / ANKARA",
+   "fiyat_2026": "Sivil: 1000 TL · Kamu Personeli :750 TL · Meb Personeli: 500 TL",
+   "kaynak_fiyat": "https://sereflikochisarogretmenevi.meb.k12.tr/icerikler/güncel-fiyat-listesi_17330424.html"
   },
   {
    "ad": "Başkent Öğretmenevi ve Akşam Sanat Okulu",
@@ -847,7 +853,9 @@
    "ankara_saat": 11,
    "web": "https://ardanucogretmenevi.meb.k12.tr",
    "adres": "MERKEZ MAH. HÜRRİYET CAD. NO 10 İÇ KAPI NO 12 ARDANUÇ / ARTVİN",
-   "ulasim": "MERKEZ MAH. HÜRRİYET CAD. NO 10 İÇ KAPI NO 12 ARDANUÇ / ARTVİN - (466) 6112411"
+   "ulasim": "MERKEZ MAH. HÜRRİYET CAD. NO 10 İÇ KAPI NO 12 ARDANUÇ / ARTVİN - (466) 6112411",
+   "fiyat_2026": "Sivil: Paylaşımlı Oda 800 TL, Tek Kişi Oda Kapama 1.600 TL · Kamu Personeli: Paylaşımlı Oda 600 TL, Tek Kişi Oda Kapama 1.200 TL · Kamu Personeli Yakını: Paylaşımlı Oda 600 TL, Tek Kişi Oda Kapama 1.200 TL",
+   "kaynak_fiyat": "https://ardanucogretmenevi.meb.k12.tr/icerikler/fiyat-listemiz_17263787.html"
   },
   {
    "ad": "Borçka Öğretmenevi ve Akşam Sanat Okulu",
@@ -1478,7 +1486,9 @@
    "ankara_saat": 2.5,
    "web": "https://yenicagaogretmenevi.meb.k12.tr",
    "adres": "Asilbey Mah. Hükümet Meydanı No:7 YENİÇAĞA/BOLU",
-   "ulasim": "İLÇEMİZE BOLU 35 KM, ABANT 75 KM, GÖLCÜK 45 KM, YEDİGÖLLER 75 KM.dir.BOLU´YA HERGÜN SAAT BAŞI MİNİBÜSLE ULAŞIM İMKANI VARDIR."
+   "ulasim": "İLÇEMİZE BOLU 35 KM, ABANT 75 KM, GÖLCÜK 45 KM, YEDİGÖLLER 75 KM.dir.BOLU´YA HERGÜN SAAT BAŞI MİNİBÜSLE ULAŞIM İMKANI VARDIR.",
+   "fiyat_2026": "Kamu: 900 TL · Sivil : 1400 TL",
+   "kaynak_fiyat": "https://yenicagaogretmenevi.meb.k12.tr/icerikler/2026-yeni-fiyat-listesi_14758161.html"
   },
   {
    "ad": "Bucak Ahmet Kadriye Öztürk Öğretmenevi ve Akşam Sanat Okulu",
@@ -1555,7 +1565,9 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 5,
    "web": "https://iznikogretmenevi.meb.k12.tr",
-   "adres": "Beyler Mah.Konak Meydanı A Blok No 12 İznik / BURSA"
+   "adres": "Beyler Mah.Konak Meydanı A Blok No 12 İznik / BURSA",
+   "fiyat_2026": "Tek Kişilik: Öğretmen 675 TL, Kamu 1.000 TL, Sivil 1.350 TL · Çift Kişilik: Öğretmen 1.350 TL, Kamu 2.000 TL, Sivil 2.500 TL",
+   "kaynak_fiyat": "https://iznikogretmenevi.meb.k12.tr/icerikler/2026-yili-yeni-konaklama-ücretleri_11636978.html"
   },
   {
    "ad": "Karacabey Öğretmenevi ve Akşam Sanat Okulu",
@@ -1618,7 +1630,9 @@
    "ankara_saat": 5,
    "web": "https://mudanyaogretmenevi.meb.k12.tr",
    "adres": "GÜZELYALI EĞİTİM MAH. ANAFARTALAR CAD. NO 22/A MUDANYA / BURSA",
-   "ulasim": "Güzelyalı Eğitim Mahallesi´nde denize 300 metre mesafededir.Güzelyalı İDO iskelesine 300 mt mesafededir. Bursa´dan otobüs ve minübüs ile gelenler Güzelyalı´da Emniyet Müdürlüğü binasında indikten sonra Merkez Camii´nin sağ tarafından yukarı doğru dönüp Anafartalar Caddesinde sağa dönecektir. Kurumumuz Halk Eğitim Merkezi, Vergi Dairesi ve Nüfus Müdürlüğü ile aynı binada bulunmaktadır."
+   "ulasim": "Güzelyalı Eğitim Mahallesi´nde denize 300 metre mesafededir.Güzelyalı İDO iskelesine 300 mt mesafededir. Bursa´dan otobüs ve minübüs ile gelenler Güzelyalı´da Emniyet Müdürlüğü binasında indikten sonra Merkez Camii´nin sağ tarafından yukarı doğru dönüp Anafartalar Caddesinde sağa dönecektir. Kurumumuz Halk Eğitim Merkezi, Vergi Dairesi ve Nüfus Müdürlüğü ile aynı binada bulunmaktadır.",
+   "fiyat_2026": "Çift Kişilik Odada Kişi Başı Konaklama Fiyatı: MEB Personeli 1.000 TL, Kamu Personeli 1.200 TL, Sivil 1.400 TL · Çift Kişilik Odada Tek Konaklama Fiyatı: MEB Personeli 1.500 TL, Sivil 2.100 TL",
+   "kaynak_fiyat": "https://mudanyaogretmenevi.meb.k12.tr/icerikler/1-haziran-2026-tarihi-itibariyla-güncel-konaklama-fiyatlarimiz_15737635.html"
   },
   {
    "ad": "Orhangazi Öğretmenevi ve Akşam Sanat Okulu",
@@ -1800,7 +1814,8 @@
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://kizilirmakogretmeneviaso.meb.k12.tr",
-   "adres": "Yeni Mahalle Cumhuriyet Caddesi No23/11 Kızılırmak/ÇANKIRI"
+   "adres": "Yeni Mahalle Cumhuriyet Caddesi No23/11 Kızılırmak/ÇANKIRI",
+   "fiyat_2026": "Tek Kişilik Oda: MEB Çalışanları 250 TL, Kamu 300 TL, Diğer 500 TL · İki Kişilik Oda: MEB Çalışanları 350 TL, Kamu 400 TL, Diğer 700 TL · İki İkişilik Oda: MEB Çalışanları 600 TL, Kamu 800 TL, Diğer 1.000 TL"
   },
   {
    "ad": "Korgun Öğretmenevi ve Akşam Sanat Okulu",
@@ -1845,7 +1860,9 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://ortaogretmenevi.meb.k12.tr",
    "adres": "CEM SULTAN MAH. ŞEHİT AHMET YALÇINKAYA/2 SK. MILLI EĞITIM MÜDÜRLÜĞÜ BLOK NO 2 İÇ KAPI NO 9 ORTA / ÇANKIRI",
-   "ulasim": "Kurumumuz İlçe Merkezinde bulunmaktadır.HÜKÜMET KONAĞI ARKASINDADIR.YÜRÜYÜŞ MESAFESİNDEDİR."
+   "ulasim": "Kurumumuz İlçe Merkezinde bulunmaktadır.HÜKÜMET KONAĞI ARKASINDADIR.YÜRÜYÜŞ MESAFESİNDEDİR.",
+   "fiyat_2026": "Yatak Ücretleri: Öğretmen 440 TL, Kamu 650 TL, Sivil 700 TL · Oda Ücretleri: Öğretmen 590 TL, Kamu 920 TL, Sivil 1.000 TL",
+   "kaynak_fiyat": "https://ortaogretmenevi.meb.k12.tr/icerikler/konaklama-ücretlerimiz-güncellendi_13574986.html"
   },
   {
    "ad": "Şabanözü Gel-Al Çorap Öğretmenevi ve Akşam Sanat Okulu",
@@ -2104,7 +2121,8 @@
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://liceogretmenevi.meb.k12.tr",
-   "adres": "DELVAN MAH. ÖĞRETMEN EVİ CAD. NO 1 LİCE / DİYARBAKIR"
+   "adres": "DELVAN MAH. ÖĞRETMEN EVİ CAD. NO 1 LİCE / DİYARBAKIR",
+   "fiyat_2026": "Tek Kişilik Oda: Öğretmen(%50) 350 TL, Kamu(%20) 560 TL, Sivil 700 TL · Çift Kişilik Oda: Öğretmen(%50) 300 TL, Kamu(%20) 480 TL, Sivil 600 TL · Üç Kişilik Oda: Öğretmen(%50) 250 TL, Kamu(%20) 400 TL, Sivil 500 TL"
   },
   {
    "ad": "Silvan Öğretmenevi ve Akşam Sanat Okulu",
@@ -2484,7 +2502,9 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://hinisogretmeneviaso.meb.k12.tr",
    "adres": "YENİKENT MAH. CUMHURİYET CAD. ÖĞRETMENEVİ BLOK NO 13 HINIS / ERZURUM",
-   "ulasim": "İlçe merkezinde. İl Merkezine 150 km uzaklıkta.Taksi, yürüme mesafesi."
+   "ulasim": "İlçe merkezinde. İl Merkezine 150 km uzaklıkta.Taksi, yürüme mesafesi.",
+   "fiyat_2026": "MEB Personeli: Tek Yatak Ücreti 250 TL, Oda Kapatma Ücreti 350 TL · Kamu: Tek Yatak Ücreti 350 TL, Oda Kapatma Ücreti 450 TL · Sivil: Tek Yatak Ücreti 400 TL, Oda Kapatma Ücreti 550 TL",
+   "kaynak_fiyat": "https://hinisogretmeneviaso.meb.k12.tr/icerikler/oda-fiyatlarimiz-2026_16532815.html"
   },
   {
    "ad": "Horasan Öğretmenevi ve Akşam Sanat Okulu",
@@ -2648,7 +2668,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://tortumogretmenevi.meb.k12.tr",
    "adres": "YAVUZ SULTAN SELİM MAH. İSTİKLAL CAD. ILCE MILLI EĞITIM MUDURLUGU BLOK NO 40 İÇ KAPI NO 101 TORTUM / ERZURUM",
-   "ulasim": "Tortum ilçe merkezinde yer almaktadır."
+   "ulasim": "Tortum ilçe merkezinde yer almaktadır.",
+   "fiyat_2026": "Kamu Personeli: 800.00 TL (indirimli) 900 TL, 1600,00 TL (indirimli) 1.800 TL · Sivil Misafirler: 800.00 TL (indirimli) 1.000 TL, 1600,00 TL (indirimli) 2.000 TL"
   },
   {
    "ad": "Uzundere Öğretmenevi ve Akşam Sanat Okulu",
@@ -3253,7 +3274,8 @@
    "ankara_saat": 8.5,
    "web": "https://payasogretmenevi.meb.k12.tr",
    "adres": "Karacami Mah. Asal Sok No1 Payas/ Hatay",
-   "ulasim": "Payas İlçe Merkezinde yer alan kurumumuz İl merkezine 80 km uzaklıktadırŞehir merkezinde, d100 karayoluna 250 metre"
+   "ulasim": "Payas İlçe Merkezinde yer alan kurumumuz İl merkezine 80 km uzaklıktadırŞehir merkezinde, d100 karayoluna 250 metre",
+   "fiyat_2026": "Dooble Yataklı Odalar Tek Kişi Veya Evli Çiftler Kalabilir: Üye (meb Ve Yakını) 1.000 TL, Kamu 1.500 TL, Sivil 2.000 TL · Suit Odalar: Üye (meb Ve Yakını) 1.500 TL, Kamu 2.250 TL, Sivil 3.000 TL"
   },
   {
    "ad": "Reyhanlı Öğretmenevi ve Akşam Sanat Okulu",
@@ -3581,7 +3603,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 5.5,
    "web": "https://bagcilarogretmeneviaso.meb.k12.tr",
-   "adres": "Yavuz Selim Mah. 1024. Sok. No2 BAĞCILAR"
+   "adres": "Yavuz Selim Mah. 1024. Sok. No2 BAĞCILAR",
+   "fiyat_2026": "Öğretmen & Bakanlık Personeli: Paylaşımlı Oda Kişi Başı 1.200 TL, Paylaşımlı Odada Tek Kalış 1.800 TL, Tek Kişilik Oda 1.800 TL, Suit 3.000 TL"
   },
   {
    "ad": "Bahçelievler Abidin Pak Öğretmenevi ve Akşam Sanat Okulu",
@@ -3627,7 +3650,9 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 5.5,
    "web": "https://beylikduzuogretmenevi.meb.k12.tr",
-   "adres": "CUMHURİYET MAH. DERVİŞ EROĞLU CAD. NO 5 İÇ KAPI NO 1 BEYLİKDÜZÜ / İSTANBUL"
+   "adres": "CUMHURİYET MAH. DERVİŞ EROĞLU CAD. NO 5 İÇ KAPI NO 1 BEYLİKDÜZÜ / İSTANBUL",
+   "fiyat_2026": "Tek Kişi (MEB Personeli): 1650 TL · Tek Kişi (KAMU,ÖĞRENCİ): 2100 TL · Tek Kişi (SİVİL): 2400 TL · İki kişilik oda Aile(MEB Personeli): 2200 TL · İki kişilik oda Aile(KAMU,ÖĞRENCİ): 2800 TL · İki kişilik oda Aile(SİVİL): 3200 TL",
+   "kaynak_fiyat": "https://beylikduzuogretmenevi.meb.k12.tr/icerikler/konaklama-fiyatlari_11750093.html"
   },
   {
    "ad": "Beyoğlu Öğretmenevi ve Akşam Sanat Okulu",
@@ -3847,7 +3872,9 @@
    "ankara_saat": 8,
    "web": "https://selcukogretmenevi.meb.k12.tr",
    "adres": "Atatürk Mahallesi 1067 Sokak No15 Selçuk/İZMİR",
-   "ulasim": "İzmir İli´ne 76 kmİlçeden köylere, Aydın İline ve İzmir İline minibüs mevcut olup, Şehirler arası otobüs terminali vardır. Ayrıca İzmir İline çalışan İZBAN trenleri vardır."
+   "ulasim": "İzmir İli´ne 76 kmİlçeden köylere, Aydın İline ve İzmir İline minibüs mevcut olup, Şehirler arası otobüs terminali vardır. Ayrıca İzmir İline çalışan İZBAN trenleri vardır.",
+   "fiyat_2026": "Tek Kişi Oda Fiyatı: Öğretmen ve bakanlık 1.600 TL, Kamu 2.200 TL, Sivil 2.800 TL · İki Kişi Oda Fiyatı: Öğretmen ve bakanlık 2.500 TL, Kamu 3.400 TL, Sivil 4.300 TL",
+   "kaynak_fiyat": "https://selcukogretmenevi.meb.k12.tr/icerikler/selçuk-öğretmenevi-ve-aso-fiyat-listesi_11585309.html"
   },
   {
    "ad": "Tire Öğretmenevi ve Akşam Sanat Okulu",
@@ -3951,7 +3978,9 @@
    "ankara_saat": 4,
    "web": "https://aracogretmenevi.meb.k12.tr",
    "adres": "ÇAY MAH. KEMAL ÇAPRAZ SK. ARAÇ ÖĞRETMEN EVİ NO: 12 İÇ KAPI NO: 312 ARAÇ / KASTAMONU",
-   "ulasim": "İl Merkezine 46 Km, Binamız İlçe Merkezinin 1 km. dışındadır.Binamız İlçe Merkezi çıkışında iki bina olarak hizmet vermektedir."
+   "ulasim": "İl Merkezine 46 Km, Binamız İlçe Merkezinin 1 km. dışındadır.Binamız İlçe Merkezi çıkışında iki bina olarak hizmet vermektedir.",
+   "fiyat_2026": "1 kişi öğretmen: 70 0 TL – Odanın tek kişilik kullanımına tahsis edilmesi: 900 TL · 1 kişi kamu : 90 0 TL- Odanın tek kişilik kullanımına tahsis edilmesi: 1100 TL",
+   "kaynak_fiyat": "https://aracogretmenevi.meb.k12.tr/icerikler/konaklama-ve-yemek-fiyatlarimiz-güncellenmiştir_17626184.html"
   },
   {
    "ad": "Çatalzeytin Öğretmenevi ve Akşam Sanat Okulu",
@@ -4045,7 +4074,9 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 4,
    "web": "https://pinarbasiogrevi.meb.k12.tr",
-   "adres": "Atatürk Mahallesi Atatürk Caddesi No25/2 Pınarbaşı / KASTAMONU"
+   "adres": "Atatürk Mahallesi Atatürk Caddesi No25/2 Pınarbaşı / KASTAMONU",
+   "fiyat_2026": "Kamu: 400 TL · Sivil: 800 TL",
+   "kaynak_fiyat": "https://pinarbasiogrevi.meb.k12.tr/icerikler/pınarbaşı-öğretmenevi-konaklama-fiyatları_17264169.html"
   },
   {
    "ad": "Şenpazarı Öğretmenevi ve Akşam Sanat Okulu",
@@ -4137,7 +4168,9 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://pinarbasiogretmenevi.meb.k12.tr",
    "adres": "Yeni Cami Mahallesi Abdullah Aslan Sokak No1 Posta Kodu 38700 Pınarbaşı / KAYSERİ",
-   "ulasim": "İLÇE:1 KmYaya-Özel Araç-Dolmuş,Otobüs"
+   "ulasim": "İLÇE:1 KmYaya-Özel Araç-Dolmuş,Otobüs",
+   "fiyat_2026": "Tek Kişilik Oda: Öğretmen 750 TL, Kamu 1.100 TL, Sivil 1.250 TL · 2 Ve 3 Kişilik Odalar: Öğretmen 700 TL, Kamu 950 TL, Sivil 1.150 TL · Çift Kişilik Odada Tek Konaklama: Öğretmen 950 TL, Kamu 1.250 TL, Sivil 1.650 TL",
+   "kaynak_fiyat": "https://pinarbasiogretmenevi.meb.k12.tr/icerikler/konaklama-ucretlerimiz_13093274.html"
   },
   {
    "ad": "Kayseri Öğretmenevi ve Akşam Sanat Okulu",
@@ -4167,7 +4200,9 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://yahyaliogretmenevi.meb.k12.tr",
    "adres": "100.YIL MAH. MALAK HOCA SK. NO 20 YAHYALI / KAYSERİ",
-   "ulasim": "İlçe Merkezindedir.Her türlü ulaşım vardır"
+   "ulasim": "İlçe Merkezindedir.Her türlü ulaşım vardır",
+   "fiyat_2026": "ÖĞRETMEN: Paylaşımlı 400 TL · KAMU: Paylaşımlı 500 TL · SİVİL: Paylaşımlı 600 TL · ÖĞRETMEN: Tek Kişi 700 TL · KAMU: Tek Kişi 800 TL",
+   "kaynak_fiyat": "https://yahyaliogretmenevi.meb.k12.tr/icerikler/fiyatlarimiz-güncellenmiştir_17078600.html"
   },
   {
    "ad": "Babaeski Öğretmenevi ve Akşam Sanat Okulu",
@@ -4270,7 +4305,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 4.5,
    "web": "https://gebzeogretmenevi.meb.k12.tr",
-   "adres": "Muallim Köy Caddesi No 50 Muallimköy Gebze / KOCAELİ"
+   "adres": "Muallim Köy Caddesi No 50 Muallimköy Gebze / KOCAELİ",
+   "fiyat_2026": "İki/Üç Yataklı Oda: MEB Çalışanı 1.050 TL, Kamu / Kamu Yakını 1.250 TL, Diğer (Sivil Misafir) 1.500 TL · Oda Kapama: MEB Çalışanı 1.600 TL, Kamu / Kamu Yakını 1.900 TL, Diğer (Sivil Misafir) 2.200 TL"
   },
   {
    "ad": "Gölcük Öğretmenevi ve Akşam Sanat Okulu",
@@ -4426,7 +4462,9 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 3,
    "web": "https://cihanbeyliogretmenevi.meb.k12.tr",
-   "adres": "Atçeken Mah. Konya Cad.No16 Cihanbeyli/Konya"
+   "adres": "Atçeken Mah. Konya Cad.No16 Cihanbeyli/Konya",
+   "fiyat_2026": "MEB: 500 TL · KAMU:700 TL · SİVİL:1000 TL",
+   "kaynak_fiyat": "https://cihanbeyliogretmenevi.meb.k12.tr/icerikler/1-ocak-2026-1-ocak-2027-konaklama-ücretlerimiz_17371905.html"
   },
   {
    "ad": "Çumra Sabancı Öğretmenevi ve Akşam Sanat Okulu",
@@ -4457,7 +4495,9 @@
    "ankara_saat": 3,
    "web": "https://emirgaziogretmenevi.meb.k12.tr",
    "adres": "AKMESCİT MAH. ŞEHİT ALİ KOCATÜRK CAD. NO 26 İÇ KAPI NO 1 EMİRGAZİ / KONYA",
-   "ulasim": "Emirgazi ilçe merkezine 300 m uzaklıktadır. Konya şehir merkezine ise 130 km uzaklıktadır.Hafta içi her gün Konya şehir merkezine saat 07.00´da giden belediye otobüsü bulunmaktadır. Saat 15.00´da ise aynı otobüs ile Emirgazi ilçesine dönüş seferi düzenlenmektedir. Emirgazi ilçesinden Ereğli ve Karapınar ilçelerine de hafta içi hergün sabah seferleri düzenlenmektedir."
+   "ulasim": "Emirgazi ilçe merkezine 300 m uzaklıktadır. Konya şehir merkezine ise 130 km uzaklıktadır.Hafta içi her gün Konya şehir merkezine saat 07.00´da giden belediye otobüsü bulunmaktadır. Saat 15.00´da ise aynı otobüs ile Emirgazi ilçesine dönüş seferi düzenlenmektedir. Emirgazi ilçesinden Ereğli ve Karapınar ilçelerine de hafta içi hergün sabah seferleri düzenlenmektedir.",
+   "fiyat_2026": "MEB Personeli: Tek Kişi Yatak Ücreti 250 TL · Kamu Personeli: Tek Kişi Yatak Ücreti 375 TL · Sivil: Tek Kişi Yatak Ücreti 500 TL",
+   "kaynak_fiyat": "https://emirgaziogretmenevi.meb.k12.tr/icerikler/konaklama-fiyatlari_14251271.html"
   },
   {
    "ad": "Ereğli Öğretmenevi ve Akşam Sanat Okulu",
@@ -4685,7 +4725,9 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://simavogretmenevi.meb.k12.tr",
    "adres": "Hisarardı Mah.Osmanbey Cad.2 43500 Simav/Kütahya",
-   "ulasim": "Simav Öğretmenevi ve Aso Kütahya il merkezine 145 km,Uşak il merkezine 85 km,Bursa il merkezine 180 km,Balıkesir il merkezine 145 km,İzmir il merkezine 180km uzaklıkta olup,Simav ilçe merkezinde Eski Osmanbey İlköğretim Okulunun eğitim verdiği binanın öğretmenevine dönüştürülmesiyle hizmet vermektedir.İlçemiz Kent Müzesi ile aynı bahçede hizmet vermektedir.Ulaşım karayolu ile yapılamktadır."
+   "ulasim": "Simav Öğretmenevi ve Aso Kütahya il merkezine 145 km,Uşak il merkezine 85 km,Bursa il merkezine 180 km,Balıkesir il merkezine 145 km,İzmir il merkezine 180km uzaklıkta olup,Simav ilçe merkezinde Eski Osmanbey İlköğretim Okulunun eğitim verdiği binanın öğretmenevine dönüştürülmesiyle hizmet vermektedir.İlçemiz Kent Müzesi ile aynı bahçede hizmet vermektedir.Ulaşım karayolu ile yapılamktadır.",
+   "fiyat_2026": "Oda Fiyatlarımız kişi başı MEB:800 Kamu:900 Sivil:1000 TL olarak güncellendi. Ayrıca MEB PAYLAŞIMSIZ:1200 KAMU PAYLAŞIMS",
+   "kaynak_fiyat": "https://simavogretmenevi.meb.k12.tr/icerikler/konaklama-fiyatlarımız-güncellendi_17532583.html"
   },
   {
    "ad": "Şaphane Öğretmenevi ve Akşam Sanat Okulu",
@@ -5089,7 +5131,9 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://midyatogretmenevi.meb.k12.tr",
    "adres": "YENİ MAH. AV.TALAT OĞUZ CAD. NO 7 MİDYAT / MARDİN",
-   "ulasim": "Kurumumuz ilçe merkezinde bulunmakta olup Hükümet Konağına 2.1 Km uzaklıktadır.İlçe merkezindedir."
+   "ulasim": "Kurumumuz ilçe merkezinde bulunmakta olup Hükümet Konağına 2.1 Km uzaklıktadır.İlçe merkezindedir.",
+   "fiyat_2026": "MEB Üye Ve Yakını: Paylaşımlı Oda (kişi Başı) 850 TL, Tek Kişilik Oda 900 TL · Kamu Ve Yakını: Paylaşımlı Oda (kişi Başı) 1.200 TL, Tek Kişilik Oda 1.300 TL · Öğrenci: Paylaşımlı Oda (kişi Başı) 1.200 TL, Tek Kişilik Oda 1.300 TL",
+   "kaynak_fiyat": "https://midyatogretmenevi.meb.k12.tr/icerikler/midyat-öğretmenevi-ve-aso-müdürlüğü-2026-yili-konaklama-ücretleri_14953888.html"
   },
   {
    "ad": "Ömerli Öğretmenevi ve Akşam Sanat Okulu",
@@ -5639,7 +5683,9 @@
    "ankara_saat": 9.5,
    "web": "https://ikizdereogretmenevi.meb.k12.tr",
    "adres": "Çarşı Mahallesi Ekrem Orhon Caddesi no/13 İkizdere / RİZE",
-   "ulasim": "Kurumumuz ilçe merkezinde bulunup Rize iline olan uzaklığı 55 km´dir.İl merkezinden kalkan ilçe minibüsleriyle ulaşım sağlanmaktadır."
+   "ulasim": "Kurumumuz ilçe merkezinde bulunup Rize iline olan uzaklığı 55 km´dir.İl merkezinden kalkan ilçe minibüsleriyle ulaşım sağlanmaktadır.",
+   "fiyat_2026": "Öğretmen: Tek Kişilik 500 TL, Çift Kişilik 900 TL · Memur: Tek Kişilik 750 TL, Çift Kişilik 1.200 TL · Sivil: Tek Kişilik 1.000 TL, Çift Kişilik 1.500 TL",
+   "kaynak_fiyat": "https://ikizdereogretmenevi.meb.k12.tr/icerikler/ikizdere-öğretmenevi-konaklama-ücretleri_16579903.html"
   },
   {
    "ad": "Kalkandere Öğretmenevi ve Akşam Sanat Okulu",
@@ -5796,7 +5842,9 @@
    "ankara_saat": 4,
    "web": "https://774305.meb.k12.tr",
    "adres": "Ulu Camii Mah. Ankara Cad. Han Binası Sitesi Han Binası No 56 / 2 TARAKLI / SAKARYA",
-   "ulasim": "İle 63 Km, İlçeye 0 kmOtobüs veya mutad araç"
+   "ulasim": "İle 63 Km, İlçeye 0 kmOtobüs veya mutad araç",
+   "fiyat_2026": "MEB PERSONELİ: 1050 TL · KAMU PERSONELİ: 1575 TL · SİVİL: 2100 TL",
+   "kaynak_fiyat": "https://774305.meb.k12.tr/icerikler/oda-fiyatlari-ve-iletisim-bilgileri_17527343.html"
   },
   {
    "ad": "Alaçam Öğretmenevi ve Akşam Sanat Okulu",
@@ -5946,7 +5994,8 @@
    "ankara_saat": 5,
    "web": "https://vezirkopruogretmenevi.meb.k12.tr",
    "adres": "ÇAKIRTAŞ MAH. 2018 CAD. ÖĞRETMEN EVİ NO 14 İÇ KAPI NO 1 VEZİRKÖPRÜ / SAMSUN",
-   "ulasim": "ÇAKIRTAŞ MAH. 2018 CAD. ÖĞRETMEN EVİ NO 14 İÇ KAPI NO 1 VEZİRKÖPRÜ / SAMSUN - 0 362 647 2411"
+   "ulasim": "ÇAKIRTAŞ MAH. 2018 CAD. ÖĞRETMEN EVİ NO 14 İÇ KAPI NO 1 VEZİRKÖPRÜ / SAMSUN - 0 362 647 2411",
+   "fiyat_2026": "2 Yataklı Oda: Oda Fiyatı (Tek Kişi İçin) 750 TL, Müşterek Oda Yatak Fiyatı 980 TL, Oda Fiyatı (Tek Kişi İçin) 700 TL, Müşterek Oda Yatak Fiyatı 950 TL, Oda Fiyatı (Tek Kişi İçin) 600 TL, 780 TL"
   },
   {
    "ad": "Baykan Öğretmenevi ve Akşam Sanat Okulu",
@@ -6080,7 +6129,9 @@
    "ankara_saat": 5.5,
    "web": "https://sinopdikmenogretmenevi.meb.k12.tr",
    "adres": "KIRÇAL MAH. İTFAİYE CAD. KAYMAKAMLIK SİTESİ NO 30 İÇ KAPI NO 3 DİKMEN / SİNOP",
-   "ulasim": "İl Merkezine Uzaklık:75 km."
+   "ulasim": "İl Merkezine Uzaklık:75 km.",
+   "fiyat_2026": "KAMU PERSONELİ: 350 TL · SİVİL: 500 TL",
+   "kaynak_fiyat": "https://sinopdikmenogretmenevi.meb.k12.tr/icerikler/güncel-fiyat-listemiz-2026-yili-güncel-fiyat-listesi_17032840.html"
   },
   {
    "ad": "Durağan Öğretmenevi ve Akşam Sanat Okulu",
@@ -6595,7 +6646,8 @@
    "ankara_saat": 9,
    "web": "https://763082.meb.k12.tr",
    "adres": "ÇARŞI MAH.SELÇUK BAYRAKTAR CAD.NO:77 SÜRMENE / TRABZON",
-   "ulasim": "il merkezine 36 kmkara yolu"
+   "ulasim": "il merkezine 36 kmkara yolu",
+   "fiyat_2026": "Tek Kişilik: Sivil 1.600 TL · İki Kişilik: Sivil 2.400 TL · Üç Kişilik: Sivil 3.600 TL"
   },
   {
    "ad": "Tonya Öğretmenevi ve Akşam Sanat Okulu",
@@ -7048,7 +7100,9 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://bogazliyanogretmenevi.meb.k12.tr",
    "adres": "ÇARŞI MAH. ŞEHİT KINALI MUSTAFA SK. ÖĞRETMENEVI BLOK NO 3 İÇ KAPI NO 311 BOĞAZLIYAN / YOZGAT",
-   "ulasim": "İlçe Merkezinde. İl merkezine 90 Km.Kayseri ve Yozgat ili için her saat ulaşım imkanı mevcuttur."
+   "ulasim": "İlçe Merkezinde. İl merkezine 90 Km.Kayseri ve Yozgat ili için her saat ulaşım imkanı mevcuttur.",
+   "fiyat_2026": "Paylaşımlı Oda: Öğretmen 375 TL, Kamu 450 TL, Sivil 650 TL · Oda Kapatma: Öğretmen 375 TL, Kamu 550 TL, Sivil 750 TL · 212 Nolu Oda Tek Kişi: Öğretmen 675 TL, Kamu 900 TL, Sivil 1.350 TL",
+   "kaynak_fiyat": "https://bogazliyanogretmenevi.meb.k12.tr/icerikler/boğazliyan-öğretmenevi-ve-akşam-sanat-okulu-2026-temmuz-aralik-fiyatlari_17633672.html"
   },
   {
    "ad": "Çayıralan Öğretmenevi ve Akşam Sanat Okulu",
@@ -7650,7 +7704,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://posofogretmenevi.meb.k12.tr",
    "adres": "MERKEZ MAH. ALPARSLAN CAD. POSOF ÖĞRETMENEVI VE AKŞAM SANAT OKULU BLOK NO: 42 İÇ KAPI NO: 28 POSOF / ARDAHAN",
-   "ulasim": "MERKEZ MAH. ALPARSLAN CAD. POSOF ÖĞRETMENEVI VE AKŞAM SANAT OKULU BLOK NO: 42 İÇ KAPI NO: 28 POSOF / ARDAHAN - 0478 5112269"
+   "ulasim": "MERKEZ MAH. ALPARSLAN CAD. POSOF ÖĞRETMENEVI VE AKŞAM SANAT OKULU BLOK NO: 42 İÇ KAPI NO: 28 POSOF / ARDAHAN - 0478 5112269",
+   "fiyat_2026": "Tek Kişili Oda: Üye(tüm MEB Personeli 500 TL, Kamu 700 TL, Sivil 800 TL · Duble Oda: Üye(tüm MEB Personeli 1.100 TL, Kamu 1.400 TL, Sivil 1.600 TL · Duble Oda Tek Konaklama: Üye(tüm MEB Personeli 650 TL, Kamu 850 TL, Sivil 950 TL"
   },
   {
    "ad": "Iğdır Öğretmenevi ve Akşam Sanat Okulu",
@@ -7845,7 +7900,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 3.5,
    "web": "https://duzceavniakyologretmenevi.meb.k12.tr",
-   "adres": "Azmimilli Mah.Gazhane Cad. No70/2 Merkez DÜZCE"
+   "adres": "Azmimilli Mah.Gazhane Cad. No70/2 Merkez DÜZCE",
+   "fiyat_2026": "Standart Oda 1 Kişi Fiyatı: MEB Personeli 925 TL, Kamu Personeli 1.150 TL, Misafir 1.600 TL · Paylaşımlı Oda Fiyatı: MEB Personeli 700 TL, Kamu Personeli 850 TL, Misafir 1.150 TL"
   },
   {
    "ad": "Yığılca Öğretmenevi ve Akşam Sanat Okulu",
