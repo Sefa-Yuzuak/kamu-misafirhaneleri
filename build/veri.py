@@ -113,17 +113,31 @@ def kisa_ad(ad: str) -> str:
 def sayfa_basligi(t: dict) -> str:
     """Benzersiz, 62 karakteri asmayan sayfa basligi.
 
-    Esik 68'di, docstring ise 65 diyordu; ikisi de fazlaydi. OLCULDU
-    (08.09.2026 denetimi): 1049 sayfanin 43'unde baslik 62'yi asiyor, yani
-    Google SERP'te sonu kirpiliyordu. Basamak zaten hazirdi; esik 62'ye cekildi,
-    sigmayan basliktan once " — telefon ve fiyat", sonra ilce dusuyor.
-    Tesis adi hicbir zaman kirpilmiyor: yarim bir ad baska tesisi gosterir.
+    ESKI HALI HER SAYFAYA " — telefon ve fiyat" yaziyordu. OLCULDU: 562 tesisin
+    yalnizca 21'inde yayimlanmis fiyat var, yani 541 sayfa SERP'te tutamayacagi
+    bir soz veriyordu. Ustelik ayni ek her sayfada tekrarlandigi icin baslik
+    hicbir tesisi digerinden ayirmiyordu; Search Console'da tesis sayfalarinin
+    TO'su %0,3-1,7 arasinda (konum 7-13 iken) olculdu.
+
+    Artik vaat, kaydin GERCEKTEN tasidigi bilgiye gore seciliyor. Tesis adi
+    hicbir zaman kirpilmiyor: yarim bir ad baska tesisi gosterir.
     """
     ad = kisa_ad(t["ad"])
     yer = t["il"] if t["ilce"].lower() in ad.lower() else f"{t['ilce']}, {t['il']}"
-    for aday in (f"{ad}, {yer} — telefon ve fiyat", f"{ad}, {yer}", f"{ad}, {t['il']}", ad):
-        if len(aday) <= 62:
-            return aday
+    if t.get("fiyat_2026"):
+        ekler = (" — 2026 fiyatı ve telefon", " — fiyat ve telefon", " — fiyat")
+    elif t.get("deniz"):
+        ekler = (" — denize yakın, telefon", " — denize yakın", "")
+    elif t.get("telefon"):
+        ekler = (" — telefon ve konaklama", " — telefon", "")
+    else:
+        ekler = ("",)
+    for ek in ekler:
+        for y in (yer, t["il"], ""):
+            govde = ", ".join(x for x in (ad, y) if x)
+            aday = f"{govde}{ek}"
+            if len(aday) <= 62:
+                return aday
     return ad
 
 

@@ -35,7 +35,7 @@ from parca import (  # noqa: E402
 )
 from mesafe import cikis_mesafeleri, sure_metni  # noqa: E402
 from veri import cikma  # noqa: E402
-from veri import TURLER, e164, fiyat_araligi, kisa_ad, sayfa_basligi, slug  # noqa: E402
+from veri import TURLER, e164, fiyat_araligi, fiyat_taban, kisa_ad, sayfa_basligi, slug  # noqa: E402
 from veri import tesis_slug, tur_slug  # noqa: E402
 
 KOK = Path(__file__).resolve().parent.parent
@@ -262,6 +262,42 @@ def kirinti_ld(ogeler: list[tuple[str, str]]) -> dict:
 # --------------------------------------------------------------------------
 # Tesis sayfası
 # --------------------------------------------------------------------------
+
+
+def tesis_aciklamasi(t: dict) -> str:
+    """Arama sonucunda gorunen aciklama.
+
+    Eski hali 562 sayfada ayni kalibi tekrarliyordu ("… telefon numarasi,
+    kimlerin kalabildigi ve yol tarifi. X tesisi.") ve hicbir tesisi
+    digerinden ayirmiyordu. Search Console'da tesis sayfalarinin TO'su konum
+    7-13 iken %0,3-1,7 olculdu; sirasi degil, vaadi zayifti.
+
+    Simdi kaydin en ayirt edici GERCEK bilgisi one aliniyor: yayimlanmis fiyat
+    varsa taban tutar, denize yakinsa konum notu, yoksa bagli kurum. Uydurma
+    yok: her dal yalnizca dolu olan alani kullaniyor.
+    """
+    ad, yer = kisa_ad(t["ad"]), f"{t['ilce']}, {t['il']}"
+    kurum = kurum_tam(t["kurum"])
+    taban = fiyat_taban(t.get("fiyat_2026"))
+    # Binlik ayraci TUM dizgede degil, YALNIZ sayida degistirilmeli: replace'i
+    # f-string'in tamamina uygulamak "Nilufer, Bursa"yi "Nilufer. Bursa" yapiyordu.
+    tutar = f"{taban:,}".replace(",", ".") if taban else ""
+    if taban and t.get("deniz"):
+        bas = f"{ad} ({yer}) — {t['deniz']}; 2026 fiyatı {tutar} TL'den"
+    elif taban:
+        bas = f"{ad} ({yer}) 2026 fiyatı {tutar} TL'den başlıyor"
+    elif t.get("deniz"):
+        bas = f"{ad} ({yer}) — {t['deniz']}"
+    else:
+        bas = f"{ad} ({yer}) — {kurum} tesisi"
+    # Duz [:158] kelimenin ortasindan kesiyordu ("… nasil yapild"). Sigan en
+    # bilgili kuyruk seciliyor; hicbiri sigmazsa bas sozcuk sinirinda kirpiliyor.
+    for kuyruk in (". Telefon, kimler kalabilir ve rezervasyon bilgisi sayfada.",
+                   ". Telefon ve kimler kalabilir.",
+                   "."):
+        if len(bas) + len(kuyruk) <= 158:
+            return bas + kuyruk
+    return bas[:157].rsplit(" ", 1)[0].rstrip(" ,;—-") + "."
 
 
 def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
@@ -549,11 +585,7 @@ target="_blank" rel="noopener nofollow">{ik("yildiz")}Google yorumlarını gör<
 
     return kabuk(
         baslik=sayfa_basligi(t),
-        aciklama=(
-            f"{kisa_ad(t['ad'])} ({t['ilce']}, {t['il']}) telefon numarası, "
-            + (f"2026 fiyatları, " if t.get("fiyat_2026") else "")
-            + f"kimlerin kalabildiği ve yol tarifi. {kurum_tam(t['kurum'])} tesisi."
-        )[:158],
+        aciklama=tesis_aciklamasi(t),
         yol=yol,
         icerik=icerik,
         og_gorsel=f"/img/il/{g['lg']}" if g else None,
