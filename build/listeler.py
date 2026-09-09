@@ -81,6 +81,8 @@ def liste_tanimlari(konumlar: dict) -> dict:
             "sira": lambda t: _fiyat_sayisi(t) or 999999,
             "sehir": "Ankara",
             "sutunlar": ["fiyat", "mesafe", "deniz"],
+            "sirali_metin": "Yayımlanan en düşük tutara göre sıralı; yalnızca "
+            "tesisin kendisi fiyat açıklamışsa listede.",
             "adet": 40,
         },
         "cocuklu-aileler-icin-kamu-tesisleri": {
@@ -97,7 +99,33 @@ def liste_tanimlari(konumlar: dict) -> dict:
             ),
             "sehir": "Ankara",
             "sutunlar": ["mesafe", "olanak", "deniz", "fiyat"],
+            "sirali_metin": "Havuzu olanlar önce, sonra Ankara'ya uzaklığa göre "
+            "sıralı.",
             "adet": 40,
+        },
+        # SEARCH CONSOLE ILE SECILDI (09.09.2026). "denize sifir kamu
+        # misafirhaneleri" sorgusu 58 gosterim / konum 6,6 / TO %6,9 aliyordu ama
+        # jenerik bir sayfa YOKTU; yalniz sehre gore ("Ankara'ya en yakin")
+        # listeler vardi. Deniz kumesi sitenin en iyi donen kumesi: TO %5,21,
+        # site ortalamasi %1,1. Ayrica sehir listeleri koordinati bilinen tesisle
+        # sinirli; burada koordinati olmayan tesisler de yer aliyor.
+        "denize-sifir-kamu-misafirhaneleri": {
+            "baslik": "Denize sıfır ve deniz kenarı kamu misafirhaneleri",
+            "ikon": "deniz",
+            "olcut": "Denize konumu tesisin KENDİ yayınından doğrulanmış tesisler. "
+            "Tahmin yok: \"denize sıfır\", \"sahil şeridinde\" gibi ifadeler "
+            "tesisin kendi tanıtımından alındı ve tabloda olduğu gibi yazıldı. "
+            "İl adına göre sıralı. Ankara'ya uzaklık yalnızca koordinatı "
+            "doğrulanmış tesislerde gösterilir.",
+            "suzgec": lambda t: bool(t.get("deniz")),
+            # Turkce siralama tuzagi: duz sort "Corum"u "Cankiri"dan once koyar.
+            # slug() harfleri normallestirdigi icin liste okunur sirada cikiyor.
+            "sira": lambda t: (slug(t["il"]), slug(t["ilce"])),
+            "sehir": "Ankara",
+            "sutunlar": ["deniz", "mesafe", "fiyat", "kurum"],
+            "sirali_metin": "İl adına göre sıralı; denize konumu her tesisin "
+            "kendi yayınından alındı, tahmin yok.",
+            "adet": 60,
         },
         "universite-sosyal-tesisleri": {
             "baslik": "Üniversite sosyal tesisleri ve misafirhaneleri",
@@ -235,8 +263,17 @@ Kendi ilinizden mesafeyi görmek için
     }
     return kabuk(
         baslik=f"{tanim['baslik']} ({len(secilen)} tesis)",
-        aciklama=(f"{tanim['baslik']} — {len(secilen)} tesis, mesafe ve fiyatlarıyla "
-                  f"sıralı liste. İlk sırada {kisa_ad(ilk['ad'])}.")[:158],
+        # Aciklama SIRALAMAYI dogru anlatmali: her liste mesafeye gore sirali
+        # degil. "denize-sifir" listesi il adina gore siralaniyor ve "ilk sirada
+        # X" demek orayi en iyi tesis sanmaya yol aciyordu.
+        aciklama=(
+            f"{tanim['baslik']} — {len(secilen)} tesis. "
+            # Hal eki SABIT yazilamaz: "İstanbul'ya" / "İzmir'ya" cikiyordu.
+            + (f"{yonelme(tanim['sehir'])} uzaklığa göre sıralı; ilk sırada "
+               f"{kisa_ad(ilk['ad'])}."
+               if tanim.get("sirali_metin") is None
+               else tanim["sirali_metin"])
+        )[:158],
         yol=yol,
         icerik=icerik,
         kirintilar=kirintilar,
