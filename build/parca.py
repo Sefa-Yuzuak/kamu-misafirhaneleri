@@ -163,6 +163,17 @@ def eylemler(t: dict, buyuk: bool = False) -> str:
     tel = (t.get("telefon") or [None])[0]
     cep = next((n for n in (t.get("telefon") or []) if cep_mi(n)), None)
     p = []
+    # Olculdu: "rezervasyon" niyetli 156 sorgu 586 gosterim aliyor. Tesislerin
+    # bir kismi MEB'in <ilce>.mebogretmenevi.com platformunda online rezervasyon
+    # aliyor; adres tesisin kendi sitesinden alindi ve rezervasyon sayfasinin
+    # BASLIGI kurum adiyla karsilastirilarak dogrulandi.
+    if t.get("rezervasyon"):
+        p.append(
+            f'<a class="{sinif} dg-1" href="{e(t["rezervasyon"])}" target="_blank" '
+            f'rel="noopener nofollow" aria-label="{e(kisa_ad(t["ad"]))} '
+            f'online rezervasyon sayfası">{ik("saat")}'
+            f'<span>Online rezervasyon</span></a>'
+        )
     if tel:
         p.append(
             f'<a class="{sinif} dg-1" href="tel:{e164(tel)}" '

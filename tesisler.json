@@ -47,7 +47,8 @@
    "ankara_saat": 6.5,
    "web": "https://970990.meb.k12.tr",
    "adres": "İSLAM MAH. ULUS CAD. HIZMET BINASI BLOK NO 29 İÇ KAPI NO 301 FEKE / ADANA",
-   "ulasim": "İlçe merkezindedir. Adana İl merkezine uzaklığı 120 km´dir. İl merkezine saat başı toplu ulaşım aracı bulunmaktadır."
+   "ulasim": "İlçe merkezindedir. Adana İl merkezine uzaklığı 120 km´dir. İl merkezine saat başı toplu ulaşım aracı bulunmaktadır.",
+   "rezervasyon": "https://feke.mebogretmenevi.com/booking/"
   },
   {
    "ad": "İmamoğlu Öğretmenevi ve Akşam Sanat Okulu",
@@ -156,7 +157,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://kahtaogretmenevi.meb.k12.tr",
    "adres": "YAVUZSELİM MAH.ATATÜRK BULVARI NO41/A KAHTA / ADIYAMAN",
-   "ulasim": "Adıyaman İl merkezine 34 km,Kahta merkeze 1 km uzaklıkta bulunan Öğretmenevi Yeni Diyarbakır ve menzil yol güzergahında yer almaktadır. Yavuzselim Mahallesi Atatürk Bulvarı no: 41 Kahta /Adıyaman Adresinde bulunan Öğretmenevi Merkeze 1 km uzaklıkta yeni Diyarbakır yolu üzerindedir."
+   "ulasim": "Adıyaman İl merkezine 34 km,Kahta merkeze 1 km uzaklıkta bulunan Öğretmenevi Yeni Diyarbakır ve menzil yol güzergahında yer almaktadır. Yavuzselim Mahallesi Atatürk Bulvarı no: 41 Kahta /Adıyaman Adresinde bulunan Öğretmenevi Merkeze 1 km uzaklıkta yeni Diyarbakır yolu üzerindedir.",
+   "rezervasyon": "https://kahta.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Merkez Öğretmenevi ve Akşam Sanat Okulu",
@@ -216,7 +218,8 @@
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://bolvadinogretmenevi.meb.k12.tr",
-   "adres": "Konak Mah. İstasyon Cad. No121 Bolvadin / AFYONKARAHİSAR"
+   "adres": "Konak Mah. İstasyon Cad. No121 Bolvadin / AFYONKARAHİSAR",
+   "rezervasyon": "https://bolvadin.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Dazkırı Öğretmenevi ve Akşam Sanat Okulu",
@@ -260,7 +263,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://afyonogretmenevi.meb.k12.tr",
    "adres": "Cumhuriyet Mah. Cevat Ahmet Paşa Cad. No14 AFYONKARAHİSAR",
-   "ulasim": "500 metreŞehir içi halk otobüsleri ve minibüsleri yakınında geçmektedir."
+   "ulasim": "500 metreŞehir içi halk otobüsleri ve minibüsleri yakınında geçmektedir.",
+   "rezervasyon": "https://afyonkarahisar.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Sandıklı Öğretmenevi ve Akşam Sanat Okulu",
@@ -404,7 +408,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 3.5,
    "web": "https://gumushacikoyogretmenevi.meb.k12.tr",
-   "adres": "ARTIKABAT MAH. İMREN SK. NO 2 İÇ KAPI NO 3 ÖĞRETMENEVİ GÜMÜŞHACIKÖY / AMASYA"
+   "adres": "ARTIKABAT MAH. İMREN SK. NO 2 İÇ KAPI NO 3 ÖĞRETMENEVİ GÜMÜŞHACIKÖY / AMASYA",
+   "rezervasyon": "https://gumushacikoy.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Amasya Öğretmenevi ve Akşam Sanat Okulu",
@@ -420,7 +425,8 @@
    "ankara_saat": 3.5,
    "web": "https://amasyaogretmenevi.meb.k12.tr",
    "adres": "ÖĞRETMENEVİ VE ASO MÜDÜRLÜĞÜ HATUNİYE MAH. HACI TEVFİK HAFIZ SOK. NO1/A AMASYA",
-   "ulasim": "Kurumumuz İl Merkezindendir."
+   "ulasim": "Kurumumuz İl Merkezindendir.",
+   "rezervasyon": "https://amasya.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Merzifon Öğretmenevi ve Akşam Sanat Okulu",
@@ -465,7 +471,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 3.5,
    "web": "https://tasovaogretmenevi.meb.k12.tr",
-   "adres": "Sanayi Mahallesi Hastane Caddesi No42/1 05800 Taşova/AMASYA"
+   "adres": "Sanayi Mahallesi Hastane Caddesi No42/1 05800 Taşova/AMASYA",
+   "rezervasyon": "https://tasova.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Bala Öğretmenevi ve Akşam Sanat Okulu",
@@ -480,7 +487,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 0,
    "web": "https://balaogretmenevi.meb.k12.tr",
-   "adres": "Hamidiye Mahallesi 3.sok.No.21. Bala Öğretmenevi ve ASO Müdürlüğü BALA / ANKARA"
+   "adres": "Hamidiye Mahallesi 3.sok.No.21. Bala Öğretmenevi ve ASO Müdürlüğü BALA / ANKARA",
+   "rezervasyon": "https://bala.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Beypazarı Öğretmenevi ve Akşam Sanat Okulu",
@@ -561,7 +569,8 @@
    "ankara_saat": 0,
    "web": "https://haymanaogretmenevi.meb.k12.tr",
    "adres": "ÇALDAĞ MAH. CUMHURİYET CAD. ÖĞRETMENEVI VE AKŞAM SANAT OKULU BLOK NO 20 HAYMANA / ANKARA",
-   "ulasim": "İl merkezine 75 km. uzaklıktadır. Kurumumuz ilçe merkezindedir.Ulaşım Haymana Belediyesi´ne ait otobüsler ile sağlanmaktadır. Otobüsler AŞTİ´den hareket edip Gölbaşı ve Haymana istikametinde seyretmektedir."
+   "ulasim": "İl merkezine 75 km. uzaklıktadır. Kurumumuz ilçe merkezindedir.Ulaşım Haymana Belediyesi´ne ait otobüsler ile sağlanmaktadır. Otobüsler AŞTİ´den hareket edip Gölbaşı ve Haymana istikametinde seyretmektedir.",
+   "rezervasyon": "https://haymana.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Kahramankazan Öğretmenevi ve Akşam Sanat Okulu",
@@ -608,7 +617,8 @@
    "ankara_saat": 0,
    "web": "https://khamamogretmenevi.meb.k12.tr",
    "adres": "Ankara Caddesi No3 Kızılcahamam/Ankara",
-   "ulasim": "Kızılcahamam Öğretmenevi Ankara İl merkezine 80 km uzaklıkta olup, Kızılcahamam İlçe merkezinde merkezi bir konumdadır.Ankara - Kızılcahamam arası her yarım saatte bir kalkan özel halk otobüsleriyle ve gün içinde Ankara EGO´ya ait 527´nolu otobüs seferleriyle Kızılcahamam-Ankara arasında ulaşım sağlanabilir."
+   "ulasim": "Kızılcahamam Öğretmenevi Ankara İl merkezine 80 km uzaklıkta olup, Kızılcahamam İlçe merkezinde merkezi bir konumdadır.Ankara - Kızılcahamam arası her yarım saatte bir kalkan özel halk otobüsleriyle ve gün içinde Ankara EGO´ya ait 527´nolu otobüs seferleriyle Kızılcahamam-Ankara arasında ulaşım sağlanabilir.",
+   "rezervasyon": "https://kizilcahamam.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Nallıhan Öğretmenevi ve Akşam Sanat Okulu",
@@ -654,7 +664,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 0,
    "web": "https://sincanogretmenevi.meb.k12.tr",
-   "adres": "İstasyon Mahallesi Erdal Sokak.No12 Sincan/ANKARA"
+   "adres": "İstasyon Mahallesi Erdal Sokak.No12 Sincan/ANKARA",
+   "rezervasyon": "https://sincan.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Şereflikoçhisar Öğretmenevi ve Akşam Sanat Okulu",
@@ -671,7 +682,8 @@
    "web": "https://sereflikochisarogretmenevi.meb.k12.tr",
    "adres": "YENİ MAH. ANKARA CAD. ŞEREFLIKOÇHISAR ÖĞRETMENEVI VE AKŞAM SANAT OKULU BLOK NO 98A ŞEREFLİKOÇHİSAR / ANKARA",
    "fiyat_2026": "Sivil: 1000 TL · Kamu Personeli :750 TL · Meb Personeli: 500 TL",
-   "kaynak_fiyat": "https://sereflikochisarogretmenevi.meb.k12.tr/icerikler/güncel-fiyat-listesi_17330424.html"
+   "kaynak_fiyat": "https://sereflikochisarogretmenevi.meb.k12.tr/icerikler/güncel-fiyat-listesi_17330424.html",
+   "rezervasyon": "https://sereflikochisar.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Başkent Öğretmenevi ve Akşam Sanat Okulu",
@@ -717,7 +729,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 6,
    "web": "https://alanyaogretmenevi.meb.k12.tr",
-   "adres": "Alanya Öğretmenevi Kızlarpınarı Mh. Atatürk Cd. Otogar Yanı No200 Alanya/Antalya"
+   "adres": "Alanya Öğretmenevi Kızlarpınarı Mh. Atatürk Cd. Otogar Yanı No200 Alanya/Antalya",
+   "rezervasyon": "https://alanya.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Demre Öğretmenevi ve Akşam Sanat Okulu",
@@ -857,7 +870,8 @@
    "adres": "MERKEZ MAH. HÜRRİYET CAD. NO 10 İÇ KAPI NO 12 ARDANUÇ / ARTVİN",
    "ulasim": "MERKEZ MAH. HÜRRİYET CAD. NO 10 İÇ KAPI NO 12 ARDANUÇ / ARTVİN - (466) 6112411",
    "fiyat_2026": "Sivil: Paylaşımlı Oda 800 TL, Tek Kişi Oda Kapama 1.600 TL · Kamu Personeli: Paylaşımlı Oda 600 TL, Tek Kişi Oda Kapama 1.200 TL · Kamu Personeli Yakını: Paylaşımlı Oda 600 TL, Tek Kişi Oda Kapama 1.200 TL",
-   "kaynak_fiyat": "https://ardanucogretmenevi.meb.k12.tr/icerikler/fiyat-listemiz_17263787.html"
+   "kaynak_fiyat": "https://ardanucogretmenevi.meb.k12.tr/icerikler/fiyat-listemiz_17263787.html",
+   "rezervasyon": "https://ardanuc.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Borçka Öğretmenevi ve Akşam Sanat Okulu",
@@ -918,7 +932,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 11,
    "web": "https://murgulogretmenevi.meb.k12.tr",
-   "adres": "Murgul Öğretmenevi ve ASO Müdürlüğü Murgul/ARTVİN"
+   "adres": "Murgul Öğretmenevi ve ASO Müdürlüğü Murgul/ARTVİN",
+   "rezervasyon": "https://murgul.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Şavşat Öğretmenevi ve Akşam Sanat Okulu",
@@ -1061,7 +1076,8 @@
    "ankara_saat": 8,
    "web": "https://ayvalikogretmenevi.meb.k12.tr",
    "adres": "GAZİ KEMAL PAŞA MAH. ATATÜRK BUL. ÖĞRETMENEVİ VE AKŞAM SANAT OKULU NO 72/3 AYVALIK / BALIKESİR",
-   "ulasim": "İlçe Merkezinde yer almaktadır.Karayolu ve Edremit ilçesi Kocaseyit Hava limanı ile sağlanabilir."
+   "ulasim": "İlçe Merkezinde yer almaktadır.Karayolu ve Edremit ilçesi Kocaseyit Hava limanı ile sağlanabilir.",
+   "rezervasyon": "https://ayvalik.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Bandırma Öğretmenevi ve Akşam Sanat Okulu",
@@ -1076,7 +1092,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 8,
    "web": "https://bandirmaogretmenevi.meb.k12.tr",
-   "adres": "HACI YUSUF MAH. ORTAOKUL CAD. ÖĞRETMEN EVİ SİTESİ BANDIRMA ÖGRETMEN EVI NO: 13 İÇ KAPI NO: 2 BANDIRMA / BALIKESİR"
+   "adres": "HACI YUSUF MAH. ORTAOKUL CAD. ÖĞRETMEN EVİ SİTESİ BANDIRMA ÖGRETMEN EVI NO: 13 İÇ KAPI NO: 2 BANDIRMA / BALIKESİR",
+   "rezervasyon": "https://bandirma.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Burhaniye Öğretmenevi ve Akşam Sanat Okulu",
@@ -1095,7 +1112,8 @@
    "ankara_saat": 8,
    "web": "https://brhogretmenevi.meb.k12.tr",
    "adres": "BURHANIYE ÖĞRETMEN EVI VE AKŞAM SANAT OKULU ÖREN MAH. AYAKLI CADDESİ NO8. BURHANİYE / BALIKESİR",
-   "ulasim": "Burhaniye otogarına 3 km.Seyit Onbaşı Hava alanına 8 km.uzaklıktadır."
+   "ulasim": "Burhaniye otogarına 3 km.Seyit Onbaşı Hava alanına 8 km.uzaklıktadır.",
+   "rezervasyon": "https://burhaniye.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Karesibey Öğretmenevi ve Akşam Sanat Okulu",
@@ -1111,7 +1129,8 @@
    "ankara_saat": 8,
    "web": "https://balikesirogretmenevi.meb.k12.tr",
    "adres": "PLEVNE MAH. 12121 SK. BALIKESİR ÖĞRETMENEVİ BLOK NO 24 ALTIEYLÜL / BALIKESİR",
-   "ulasim": "Öğretmenevimiz Altıeylül ilçesinde Adliye ve Yeni yapılan Devlet Hastanesi Civarında bulunmaktadır 5 nolu Mehmetçik taksi dolmuşları, Çayırhisar minibüsleri ve TTM den kalkan D9A hat nolu Otobüs ile ulaşabilirsiniz"
+   "ulasim": "Öğretmenevimiz Altıeylül ilçesinde Adliye ve Yeni yapılan Devlet Hastanesi Civarında bulunmaktadır 5 nolu Mehmetçik taksi dolmuşları, Çayırhisar minibüsleri ve TTM den kalkan D9A hat nolu Otobüs ile ulaşabilirsiniz",
+   "rezervasyon": "https://balikesir.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Büyükşehir Öğretmenevi ve Akşam Sanat Okulu",
@@ -1127,7 +1146,8 @@
    "ankara_saat": 8,
    "web": "https://karesibeyogretmenevi.meb.k12.tr",
    "adres": "DUMLUPINAR MAH. DOĞUMEVİ SK. KARESIBEY ÖĞRETMENEVI BLOK NO 1 İÇ KAPI NO 413 KARESİ / BALIKESİR",
-   "ulasim": "MerkezKurumumuza B8 hat nolu toplu taşıma aracı ile TTM den ulaşabilirsiniz"
+   "ulasim": "MerkezKurumumuza B8 hat nolu toplu taşıma aracı ile TTM den ulaşabilirsiniz",
+   "rezervasyon": "https://balikesir.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Dursunbey Öğretmenevi ve Akşam Sanat Okulu",
@@ -1142,7 +1162,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 8,
    "web": "https://dursunbeyogretmenevi.meb.k12.tr",
-   "adres": "Bozyokuş Mahallesi Cumhuriyet Caddesi No6 Dursunbey/BALIKESİR"
+   "adres": "Bozyokuş Mahallesi Cumhuriyet Caddesi No6 Dursunbey/BALIKESİR",
+   "rezervasyon": "https://dursunbey.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Altınoluk Öğretmenevi ve Akşam Sanat Okulu",
@@ -1158,7 +1179,8 @@
    "ankara_saat": 8,
    "web": "https://altinolukogretmenevi.meb.k12.tr",
    "adres": "İSKELE MAHALLESİ ÇANAKKALE BULVARI NO 593 EDREMİT / BALIKESİR",
-   "ulasim": "Öğretmenevimiz il merkezine 110,Edremit ilçe merkezine 25 km mesafede bulunmaktadır.Edremit Körfez Hava Hava Alanı,Şehirler arası otabüslerle ulaşım sağlanmaktadır.İlçe merkezinden Öğretmenevimize dolmuş hatlarıyla ulaşabilinmektedir."
+   "ulasim": "Öğretmenevimiz il merkezine 110,Edremit ilçe merkezine 25 km mesafede bulunmaktadır.Edremit Körfez Hava Hava Alanı,Şehirler arası otabüslerle ulaşım sağlanmaktadır.İlçe merkezinden Öğretmenevimize dolmuş hatlarıyla ulaşabilinmektedir.",
+   "rezervasyon": "https://altinoluk.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Erdek Öğretmenevi ve Akşam Sanat Okulu",
@@ -1173,7 +1195,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 8,
    "web": "https://erdekogretmenevi.meb.k12.tr",
-   "adres": "ZEYTİNLİ MAH. 7041 SK. NO 60 ERDEK / BALIKESİR"
+   "adres": "ZEYTİNLİ MAH. 7041 SK. NO 60 ERDEK / BALIKESİR",
+   "rezervasyon": "https://erdek.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Gönen Öğretmenevi ve Akşam Sanat Okulu",
@@ -1236,7 +1259,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://bozuyukogretmenevi.meb.k12.tr",
    "adres": "KASIMPAŞA MAH. SERAMİK CAD. NO 14 BOZÜYÜK / BİLECİK",
-   "ulasim": "İl Merkezine Uzaklık: 35,5 km"
+   "ulasim": "İl Merkezine Uzaklık: 35,5 km",
+   "rezervasyon": "https://bozuyuk.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Gölpazarı Öğretmenevi ve Akşam Sanat Okulu",
@@ -1383,7 +1407,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://guroymakogretmenevi.meb.k12.tr",
    "adres": "BAĞLAR MAH. ÖZGÜRLÜK CAD. GÜROYMAK ÖĞRETMENEVI BLOK NO 19 İÇ KAPI NO 1 GÜROYMAK / BİTLİS",
-   "ulasim": "Güroymak İlçe Merkezinde olup Bitlis´e 24 km uzaklıktadır.Güroymak İlçe Merkezi"
+   "ulasim": "Güroymak İlçe Merkezinde olup Bitlis´e 24 km uzaklıktadır.Güroymak İlçe Merkezi",
+   "rezervasyon": "https://guroymak.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Hizan Öğretmenevi ve Akşam Sanat Okulu",
@@ -1521,7 +1546,8 @@
    "ankara_saat": 5.5,
    "web": "https://burdurogretmenevi.meb.k12.tr",
    "adres": "Konak Mahallesi İstasyon Caddesi No12 Burdur",
-   "ulasim": "Ayrıca Burdur Şehirlerarası Otobüs Terminali´ne yaklaşık 3 km uzaklıktadır.Öğretmenevimize Özel halk otobüsü ya da özel araçlarınızla ulaşabilirsiniz."
+   "ulasim": "Ayrıca Burdur Şehirlerarası Otobüs Terminali´ne yaklaşık 3 km uzaklıktadır.Öğretmenevimize Özel halk otobüsü ya da özel araçlarınızla ulaşabilirsiniz.",
+   "rezervasyon": "https://burdur.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Gemlik Daniş Ekim Öğretmenevi ve Akşam Sanat Okulu",
@@ -1537,7 +1563,8 @@
    "ankara_saat": 5,
    "web": "https://gemlikdanisekimogretmenevi.meb.k12.tr",
    "adres": "Kayhan Mah. Av. Özgür Aksoy Caddesi Kalealtı Sokak No 2 Gemlik/Bursa",
-   "ulasim": "Öğretmenevimiz İlçe Merkezinde olup Gemlik sahilinde bulunmaktadır. Bursa kent merkezine ise 30 km mesafededir.İlçemiz merkezinden (otogardan, iskeleden vs.) öğretmenevine ulaşım yürüme mesafesindedir. Bursa´dan gelmek isteyenler Merinos durağından Gemlik otobüslerine binerek,diğer illerden gelecek olan misafirlerimiz ise Gemlik Otogarında inerek öğretmenevimize rahatlıkla ulaşabilirler."
+   "ulasim": "Öğretmenevimiz İlçe Merkezinde olup Gemlik sahilinde bulunmaktadır. Bursa kent merkezine ise 30 km mesafededir.İlçemiz merkezinden (otogardan, iskeleden vs.) öğretmenevine ulaşım yürüme mesafesindedir. Bursa´dan gelmek isteyenler Merinos durağından Gemlik otobüslerine binerek,diğer illerden gelecek olan misafirlerimiz ise Gemlik Otogarında inerek öğretmenevimize rahatlıkla ulaşabilirler.",
+   "rezervasyon": "http://gemlik.mebogretmenevi.com/booking/"
   },
   {
    "ad": "İnegöl Öğretmenevi ve Akşam Sanat Okulu",
@@ -1650,7 +1677,8 @@
    "ankara_saat": 5,
    "web": "https://orhangaziogretmenevi.meb.k12.tr",
    "adres": "Camikebir Mh. Yalova Cd. No 1 Orhangazi/BURSA",
-   "ulasim": "Kurumumuz İl merkezine 47 km. uzaklıktadır. Orhangazi İlçe Merkezinde bulunmaktadır.Orhangazi Terminaline 10 dakikalık yürüme mesafesindedir. İlçe meydanında bulunmaktadır."
+   "ulasim": "Kurumumuz İl merkezine 47 km. uzaklıktadır. Orhangazi İlçe Merkezinde bulunmaktadır.Orhangazi Terminaline 10 dakikalık yürüme mesafesindedir. İlçe meydanında bulunmaktadır.",
+   "rezervasyon": "https://orhangazi.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Ayvacık Öğretmen Evi ve Akşam Sanat Okulu",
@@ -1847,7 +1875,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://cankiriogretmenevi.meb.k12.tr",
    "adres": "Otel Cumhuriyet Mah. 60. Yıl İşhanı Kat:4-5 Lokal Cumhuriyet Mah. Adnan Menderes Cad. Güneş İlkokulu Yanı No:4 ÇANKIRI",
-   "ulasim": "Otel Cumhuriyet Mah. 60. Yıl İşhanı Kat:4-5 Lokal Cumhuriyet Mah. Adnan Menderes Cad. Güneş İlkokulu Yanı No:4 ÇANKIRI - OTEL 0 376 213 30 27 İDARİ BİNA 0 376 212 93 07"
+   "ulasim": "Otel Cumhuriyet Mah. 60. Yıl İşhanı Kat:4-5 Lokal Cumhuriyet Mah. Adnan Menderes Cad. Güneş İlkokulu Yanı No:4 ÇANKIRI - OTEL 0 376 213 30 27 İDARİ BİNA 0 376 212 93 07",
+   "rezervasyon": "https://cankiri.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Orta Atatürk Öğretmenevi ve Akşam Sanat Okulu",
@@ -1880,7 +1909,8 @@
    "web": "https://sabanozugelalcorapogretmenevi.meb.k12.tr",
    "adres": "Sağlık Mah. Ahmet Erdem Cad. No6 Şabanözü / ÇANKIRI",
    "fiyat_2026": "Yatak Ücretleri: Öğretmen 300 TL, Kamu 500 TL, Sivil 600 TL · Oda Ücretleri: Öğretmen 450 TL, Kamu 750 TL, Sivil 900 TL",
-   "kaynak_fiyat": "https://sabanozugelalcorapogretmenevi.meb.k12.tr/icerikler/01012026-tarihi-itibariyle-konaklama-ücretlerimiz_13612098.html"
+   "kaynak_fiyat": "https://sabanozugelalcorapogretmenevi.meb.k12.tr/icerikler/01012026-tarihi-itibariyle-konaklama-ücretlerimiz_13612098.html",
+   "rezervasyon": "https://sabanozu.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Alaca Öğretmenevi ve Akşam Sanat Okulu",
@@ -2081,7 +2111,8 @@
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://erganiogretmenevi.meb.k12.tr",
-   "adres": "Kemertaş Mah. Konak Sokak No 3 Hükümet Konağı Bitişiği Ergani/DİYARBAKIR"
+   "adres": "Kemertaş Mah. Konak Sokak No 3 Hükümet Konağı Bitişiği Ergani/DİYARBAKIR",
+   "rezervasyon": "https://ergani.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Hazro Öğretmenevi ve Akşam Sanat Okulu",
@@ -2155,7 +2186,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://yenisehirogretmenevi.meb.k12.tr",
    "adres": "Yenişehir Mahallesi Elazığ Cad. No7 Yenişehir/Diyarbakır",
-   "ulasim": "0SORUNSUZ ŞEHİR MERKEZİNDE ÖĞRETMENEVİMİZ, DİYARBAKIR VALİLİĞİNE UZAKLIĞI 1 KM´DİR. YENİŞEHİR KAYMAKAMLIĞINA UZAKLIĞI 900 METREDİR. ŞEHİT 27 SAHABENİN BULUNDUĞU HAZRETİ SÜLEYMAN CAMİİ´NE UZAKLIĞI 1 KM. DİR. ŞEHRİN TAM MERKEZİNDEYİZ. ULU CAMİYE UZAKLIĞI 1 KM. DİR. TARİHİ SURLARA UZAKLIĞI 100 METREDİR. YENİ HAVAALANINA UZAKLIĞIMIZ 9,7 KM DİR. İL OTOGARINA UZAKLIĞIMIZ 11 KM. DİR."
+   "ulasim": "0SORUNSUZ ŞEHİR MERKEZİNDE ÖĞRETMENEVİMİZ, DİYARBAKIR VALİLİĞİNE UZAKLIĞI 1 KM´DİR. YENİŞEHİR KAYMAKAMLIĞINA UZAKLIĞI 900 METREDİR. ŞEHİT 27 SAHABENİN BULUNDUĞU HAZRETİ SÜLEYMAN CAMİİ´NE UZAKLIĞI 1 KM. DİR. ŞEHRİN TAM MERKEZİNDEYİZ. ULU CAMİYE UZAKLIĞI 1 KM. DİR. TARİHİ SURLARA UZAKLIĞI 100 METREDİR. YENİ HAVAALANINA UZAKLIĞIMIZ 9,7 KM DİR. İL OTOGARINA UZAKLIĞIMIZ 11 KM. DİR.",
+   "rezervasyon": "https://yenisehir.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Diyarbakır Büyükşehir Öğretmenevi ve Akşam Sanat Okulu",
@@ -2300,7 +2332,8 @@
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://elazigogretmenevi.meb.k12.tr",
-   "adres": "Nailbey Mah. Gazi Caddesi No3 Merkez/ELAZIĞ"
+   "adres": "Nailbey Mah. Gazi Caddesi No3 Merkez/ELAZIĞ",
+   "rezervasyon": "https://elazig.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Sivrice Öğretmenevi ve Akşam Sanat Okulu",
@@ -2553,7 +2586,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://karacobanogretmeneviveaso.meb.k12.tr",
    "adres": "HACILAR MAH. 29 SK. NO 2 İÇ KAPI NO 1 KARAÇOBAN / ERZURUM",
-   "ulasim": "Kurumumuz ilçe merkezinde olup ERZURUM il merkezine 165 km uzaklıktadır"
+   "ulasim": "Kurumumuz ilçe merkezinde olup ERZURUM il merkezine 165 km uzaklıktadır",
+   "rezervasyon": "https://karacoban.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Karayazı Öğretmenevi ve Akşam Sanat Okulu",
@@ -2673,7 +2707,8 @@
    "web": "https://tortumogretmenevi.meb.k12.tr",
    "adres": "YAVUZ SULTAN SELİM MAH. İSTİKLAL CAD. ILCE MILLI EĞITIM MUDURLUGU BLOK NO 40 İÇ KAPI NO 101 TORTUM / ERZURUM",
    "ulasim": "Tortum ilçe merkezinde yer almaktadır.",
-   "fiyat_2026": "Kamu Personeli: 800.00 TL (indirimli) 900 TL, 1600,00 TL (indirimli) 1.800 TL · Sivil Misafirler: 800.00 TL (indirimli) 1.000 TL, 1600,00 TL (indirimli) 2.000 TL"
+   "fiyat_2026": "Kamu Personeli: 800.00 TL (indirimli) 900 TL, 1600,00 TL (indirimli) 1.800 TL · Sivil Misafirler: 800.00 TL (indirimli) 1.000 TL, 1600,00 TL (indirimli) 2.000 TL",
+   "rezervasyon": "https://tortum.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Uzundere Öğretmenevi ve Akşam Sanat Okulu",
@@ -2884,7 +2919,8 @@
    "ankara_saat": 7.5,
    "web": "https://espiyeogretmenevi.meb.k12.tr",
    "adres": "Merkez Mah. Kemal Şahan Cad. Belediye İş Hanı. No:2 Kat 4-5 ESPİYE/GİRESUN",
-   "ulasim": "İl uzaklığı : 30 KM / İlçe merkezindeKarayolu"
+   "ulasim": "İl uzaklığı : 30 KM / İlçe merkezindeKarayolu",
+   "rezervasyon": "https://espiye.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Eynesil Öğretmen Evi ve Akşam Sanat Okulu",
@@ -3050,7 +3086,8 @@
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://fevziatacogretmenevi.meb.k12.tr",
-   "adres": "İNÖNÜ MAH. İNÖNÜ CAD. FEVZIATAC ÖĞRETMENEVI VE AKŞAM SANAT OKULU BLOK NO 32 MERKEZ / GÜMÜŞHANE"
+   "adres": "İNÖNÜ MAH. İNÖNÜ CAD. FEVZIATAC ÖĞRETMENEVI VE AKŞAM SANAT OKULU BLOK NO 32 MERKEZ / GÜMÜŞHANE",
+   "rezervasyon": "https://gumushane.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Şiran/ Beşbinaz Şeker Öğretmenevi ve Akşam Sanat Okulu",
@@ -3168,7 +3205,8 @@
    "ankara_saat": 8.5,
    "web": "https://arsuzogretmenevi.meb.k12.tr",
    "adres": "Gözcüler Mah. Hasan Ali Yücel Cad. No 1/CArsuz HATAY 0326 504 3948",
-   "ulasim": "Hatay il merkezine uzaklık: 90 km - Arsuz ilçe merkezine uzaklık: 2 km - İskenderun ilçe merkezine uzaklık: 30 kmArsuz ve İskenderun ilçe merkezlerine \"Arsuz\" ve \"Gözcüler\" minibüsleriyle ulaşım vardır. İskenderun ilçe merkezine vardıktan sonra ana cadde üzerinden geçen \"Pac\" minibüsleriyle Hatay il merkezine ulaşım mümkündür."
+   "ulasim": "Hatay il merkezine uzaklık: 90 km - Arsuz ilçe merkezine uzaklık: 2 km - İskenderun ilçe merkezine uzaklık: 30 kmArsuz ve İskenderun ilçe merkezlerine \"Arsuz\" ve \"Gözcüler\" minibüsleriyle ulaşım vardır. İskenderun ilçe merkezine vardıktan sonra ana cadde üzerinden geçen \"Pac\" minibüsleriyle Hatay il merkezine ulaşım mümkündür.",
+   "rezervasyon": "https://arsuz.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Belen Öğretmenevi ve Akşam Sanat Okulu",
@@ -3231,7 +3269,8 @@
    "ankara_saat": 8.5,
    "web": "https://hassaogretmenevi.meb.k12.tr",
    "adres": "DERVİŞ PAŞA MAH. DERVİŞPAŞA BUL. NO: 199 /1 HASSA / HATAY",
-   "ulasim": "İlçe Merkezinde Yer Alan Kurumumuz İl Merkezine 78 km. uzaklıktadır.Karayolu"
+   "ulasim": "İlçe Merkezinde Yer Alan Kurumumuz İl Merkezine 78 km. uzaklıktadır.Karayolu",
+   "rezervasyon": "https://hassa.mebogretmenevi.com/booking/"
   },
   {
    "ad": "İskenderun Öğretmenevi ve Akşam Sanat Okulu",
@@ -3374,7 +3413,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 5,
    "web": "https://ispartaogretmenevi.meb.k12.tr",
-   "adres": "İSTİKLAL MAH. 106 CAD. NO 21 İÇ KAPI NO 1 MERKEZ / ISPARTA"
+   "adres": "İSTİKLAL MAH. 106 CAD. NO 21 İÇ KAPI NO 1 MERKEZ / ISPARTA",
+   "rezervasyon": "https://isparta.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Şarkikaraağaç Öğretmenevi ve Akşam Sanat Okulu",
@@ -3405,7 +3445,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 5,
    "web": "https://yalvacogretmenevi.meb.k12.tr",
-   "adres": "Abacılar Mahallesi Kuşku İnişi Sokak No10 Yalvaç /ISPARTA"
+   "adres": "Abacılar Mahallesi Kuşku İnişi Sokak No10 Yalvaç /ISPARTA",
+   "rezervasyon": "https://yalvac.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Anamur Öğretmenevi ve Akşam Sanat Okulu",
@@ -3421,7 +3462,8 @@
    "ankara_saat": 6.5,
    "web": "https://anamurogretmenevi.meb.k12.tr",
    "adres": "YALIEVLERİ MAH. ADNAN MENDERES CAD. ANAMUR ÖĞRETMEN EVI BLOK NO 9 İÇ KAPI NO 5 ANAMUR / MERSİN",
-   "ulasim": "İl merkezine 210 km. İlçeye 3 km mesafededir.Özel ve halk otobüsleri"
+   "ulasim": "İl merkezine 210 km. İlçeye 3 km mesafededir.Özel ve halk otobüsleri",
+   "rezervasyon": "https://anamur.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Aydıncık Öğretmenevi ve Akşam Sanat Okulu",
@@ -3436,7 +3478,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 6.5,
    "web": "https://aydincikogretmenevi.meb.k12.tr",
-   "adres": "Merkez Mahallesi Sebahattin Çakmakoğlu CAddesi No:38/1 Aydıncık/MERSİN"
+   "adres": "Merkez Mahallesi Sebahattin Çakmakoğlu CAddesi No:38/1 Aydıncık/MERSİN",
+   "rezervasyon": "https://mersinaydincik.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Bozyazı Öğretmenevi ve Akşam Sanat Okulu",
@@ -3467,7 +3510,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 6.5,
    "web": "https://erdemliogretmenevi.meb.k12.tr",
-   "adres": "Merkez mah. Erdemoğlu Bulvarı 143/A Erdemli / MERSİN"
+   "adres": "Merkez mah. Erdemoğlu Bulvarı 143/A Erdemli / MERSİN",
+   "rezervasyon": "https://erdemli.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Gülnar Öğretmenevi ve Akşam Sanat Okulu",
@@ -3498,7 +3542,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 6.5,
    "web": "https://mutogretmenevi.meb.k12.tr",
-   "adres": "DOĞANCI MAH. SITKI SOYLU SK. ÖĞRETMENEVİ BLOK NO: 2 İÇ KAPI NO: 49 MUT / MERSİN"
+   "adres": "DOĞANCI MAH. SITKI SOYLU SK. ÖĞRETMENEVİ BLOK NO: 2 İÇ KAPI NO: 49 MUT / MERSİN",
+   "rezervasyon": "https://mut.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Silifke Öğretmenevi ve Akşam Sanat Okulu",
@@ -3530,7 +3575,8 @@
    "ankara_saat": 6.5,
    "web": "https://ogretmenevitarsus.meb.k12.tr",
    "adres": "Reşadiye mah. Adana Cd. No35 Tarsus/Mersin",
-   "ulasim": "il merkezine 27 km uzakta , Tarsus İlçe Merkezi Demirkapı civarındadır.Şehir içi toplu taşıma araçları,"
+   "ulasim": "il merkezine 27 km uzakta , Tarsus İlçe Merkezi Demirkapı civarındadır.Şehir içi toplu taşıma araçları,",
+   "rezervasyon": "https://tarsus.mebogretmenevi.com/booking?clear=true/booking/"
   },
   {
    "ad": "Silifke Taşucu Lütfi Elvan Öğretmenevi ve Akşam Sanat Okulu",
@@ -3546,7 +3592,8 @@
    "ankara_saat": 6.5,
    "web": "https://lutfielvanogretmenevi.meb.k12.tr",
    "adres": "Taşucu Mahallesi Atatürk Bulvarı No63 İç Kapı NoZ01 Silifke/Mersin",
-   "ulasim": "İl Merkezine 94 km İlçe Merkezine 12 km uzaklıktaBüyükşehir Otobüsleri ve Dolmuş"
+   "ulasim": "İl Merkezine 94 km İlçe Merkezine 12 km uzaklıktaBüyükşehir Otobüsleri ve Dolmuş",
+   "rezervasyon": "https://silifketasucu.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Suphi Öner Öğretmenevi ve Akşam Sanat Okulu",
@@ -3561,7 +3608,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 6.5,
    "web": "https://suphionerogretmenevi.meb.k12.tr",
-   "adres": "Dumlupınar Mahallesi Adnan Menderes Bulvarı No.124 YENİŞEHİR / MERSİN"
+   "adres": "Dumlupınar Mahallesi Adnan Menderes Bulvarı No.124 YENİŞEHİR / MERSİN",
+   "rezervasyon": "https://mersinsuphioner.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Burgazada Öğretmenevi ve Akşam Sanat Okulu",
@@ -3576,7 +3624,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 5.5,
    "web": "https://burgazadaogretmenevi.meb.k12.tr",
-   "ulasim": "Adalar Büyükada Mahallesine Şehir Hatları vapurlarıyla 30 Dakika ulaşılabilir.Şehirhatları Vapurları"
+   "ulasim": "Adalar Büyükada Mahallesine Şehir Hatları vapurlarıyla 30 Dakika ulaşılabilir.Şehirhatları Vapurları",
+   "rezervasyon": "https://burgazada.mebogretmenevi.com/booking/?KeepThis=true&amp;width=60&amp;height=75&amp;TB_iframe=true/booking/"
   },
   {
    "ad": "Asım ve Nurhan Kocabıyık Öğretmenevi ve Akşam Sanat Okulu",
@@ -3656,7 +3705,8 @@
    "web": "https://beylikduzuogretmenevi.meb.k12.tr",
    "adres": "CUMHURİYET MAH. DERVİŞ EROĞLU CAD. NO 5 İÇ KAPI NO 1 BEYLİKDÜZÜ / İSTANBUL",
    "fiyat_2026": "Tek Kişi (MEB Personeli): 1650 TL · Tek Kişi (KAMU,ÖĞRENCİ): 2100 TL · Tek Kişi (SİVİL): 2400 TL · İki kişilik oda Aile(MEB Personeli): 2200 TL · İki kişilik oda Aile(KAMU,ÖĞRENCİ): 2800 TL · İki kişilik oda Aile(SİVİL): 3200 TL",
-   "kaynak_fiyat": "https://beylikduzuogretmenevi.meb.k12.tr/icerikler/konaklama-fiyatlari_11750093.html"
+   "kaynak_fiyat": "https://beylikduzuogretmenevi.meb.k12.tr/icerikler/konaklama-fiyatlari_11750093.html",
+   "rezervasyon": "https://beylikduzu.mebogretmenevi.com/booking?clear=true/booking/"
   },
   {
    "ad": "Beyoğlu Öğretmenevi ve Akşam Sanat Okulu",
@@ -3672,7 +3722,8 @@
    "ankara_saat": 5.5,
    "web": "https://beyogluogretmenevi.meb.k12.tr",
    "adres": "EVLİYA ÇELEBİ MAH. MEŞRUTİYET CAD. ÖGRETMEN EVİ BLOK NO 58 İÇ KAPI NO 1 BEYOĞLU / İSTANBUL",
-   "ulasim": "EVLİYA ÇELEBİ MAH. MEŞRUTİYET CAD. ÖGRETMEN EVİ BLOK NO 58 İÇ KAPI NO 1 BEYOĞLU / İSTANBUL - 2122524343"
+   "ulasim": "EVLİYA ÇELEBİ MAH. MEŞRUTİYET CAD. ÖGRETMEN EVİ BLOK NO 58 İÇ KAPI NO 1 BEYOĞLU / İSTANBUL - 2122524343",
+   "rezervasyon": "https://beyoglu.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Çatalca Öğretmenevi ve Akşam Sanat Okulu",
@@ -3688,7 +3739,8 @@
    "ankara_saat": 5.5,
    "web": "https://catalcaogretmenevi.meb.k12.tr",
    "adres": "Ferhatpaşa Mah. Vezir Ferhatpaşa Cad. No 102 Çatalca/İstanbul",
-   "ulasim": "Kurumumuz ilçe merkezindedir.İstanbul merkezinden metrobüs ile Beylikdüzü son istasyonuna gelip Çatalca otobüslerine aktarma yapılarak ulaşılabilir. Metrobüs son duraktan (TÜYAP) 20 dakika uzaklıktadır. İstanbul Havalimanına yaklaşık 20 dk mesafededir. İlçe merkezinden havalimanına servis bulunmaktadır."
+   "ulasim": "Kurumumuz ilçe merkezindedir.İstanbul merkezinden metrobüs ile Beylikdüzü son istasyonuna gelip Çatalca otobüslerine aktarma yapılarak ulaşılabilir. Metrobüs son duraktan (TÜYAP) 20 dakika uzaklıktadır. İstanbul Havalimanına yaklaşık 20 dk mesafededir. İlçe merkezinden havalimanına servis bulunmaktadır.",
+   "rezervasyon": "https://catalca.mebogretmenevi.com/booking/...</p/booking/"
   },
   {
    "ad": "Cankurtaran Öğretmenevi ve Akşam Sanat Ok",
@@ -3797,7 +3849,8 @@
    "ankara_saat": 8,
    "web": "https://alacatiogretmenevi.meb.k12.tr",
    "adres": "ALAÇATI MAH. 16021 SK. NO 2 ÇEŞME / İZMİR",
-   "ulasim": "İl Merkezine 80 Km. Çeşme merkeze 8 Km.İzmir Merkeze Otobandan.Çeşme merkeze;alt sokaktan geçen ve yaz aylarında 5 dakika, kış aylarında 15 dakikada bir dolmuş ile yapılmaktadır."
+   "ulasim": "İl Merkezine 80 Km. Çeşme merkeze 8 Km.İzmir Merkeze Otobandan.Çeşme merkeze;alt sokaktan geçen ve yaz aylarında 5 dakika, kış aylarında 15 dakikada bir dolmuş ile yapılmaktadır.",
+   "rezervasyon": "https://alacati.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Karaburun Öğretmenevi ve Akşam Sanat Okulu",
@@ -3951,7 +4004,8 @@
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://sarikamisogretmenevi.meb.k12.tr",
-   "adres": "İNÖNÜ MAH. CAVİTARBAK CAD. SARIKAMIŞ ÖĞRETMENEVI VE AKŞAM SANAT OKULU BLOK NO: 33 İÇ KAPI NO: 1 SARIKAMIŞ / KARS"
+   "adres": "İNÖNÜ MAH. CAVİTARBAK CAD. SARIKAMIŞ ÖĞRETMENEVI VE AKŞAM SANAT OKULU BLOK NO: 33 İÇ KAPI NO: 1 SARIKAMIŞ / KARS",
+   "rezervasyon": "https://sarikamis.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Selim Öğretmenevi ve Akşam Sanat Okulu",
@@ -3984,7 +4038,8 @@
    "adres": "ÇAY MAH. KEMAL ÇAPRAZ SK. ARAÇ ÖĞRETMEN EVİ NO: 12 İÇ KAPI NO: 312 ARAÇ / KASTAMONU",
    "ulasim": "İl Merkezine 46 Km, Binamız İlçe Merkezinin 1 km. dışındadır.Binamız İlçe Merkezi çıkışında iki bina olarak hizmet vermektedir.",
    "fiyat_2026": "1 kişi öğretmen: 70 0 TL – Odanın tek kişilik kullanımına tahsis edilmesi: 900 TL · 1 kişi kamu : 90 0 TL- Odanın tek kişilik kullanımına tahsis edilmesi: 1100 TL",
-   "kaynak_fiyat": "https://aracogretmenevi.meb.k12.tr/icerikler/konaklama-ve-yemek-fiyatlarimiz-güncellenmiştir_17626184.html"
+   "kaynak_fiyat": "https://aracogretmenevi.meb.k12.tr/icerikler/konaklama-ve-yemek-fiyatlarimiz-güncellenmiştir_17626184.html",
+   "rezervasyon": "https://arac.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Çatalzeytin Öğretmenevi ve Akşam Sanat Okulu",
@@ -4157,7 +4212,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://develiogretmenevi.meb.k12.tr",
    "adres": "Camiicedit Mahallesi İbni Sina Caddesi No:18 38400 Develi / KAYSERİ",
-   "ulasim": "Kurumumuz İl merkezine 41km mesafede olup ilçe merkezinde bulunmaktadır. Çarşı merkezine yürüme mesafesindedir. Erciyes Kayak Merkezine 20 km uzaklıktadır.Araç, Yaya"
+   "ulasim": "Kurumumuz İl merkezine 41km mesafede olup ilçe merkezinde bulunmaktadır. Çarşı merkezine yürüme mesafesindedir. Erciyes Kayak Merkezine 20 km uzaklıktadır.Araç, Yaya",
+   "rezervasyon": "https://develi.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Şehit Soner Akbulut Öğretmenevi ve Akşam Sanat Okulu",
@@ -4251,7 +4307,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 8,
    "web": "https://kirklareliogretmenevi.meb.k12.tr",
-   "adres": "Demirtaş Mh. Mehmet Akif Cd. No1 KIRKLARELİ"
+   "adres": "Demirtaş Mh. Mehmet Akif Cd. No1 KIRKLARELİ",
+   "rezervasyon": "https://kirklareli.mebogretmenevi.com/booking/</p/booking/"
   },
   {
    "ad": "Şehit Yücel Yılmaz Öğretmenevi ve Akşam Sanat Okulu",
@@ -4312,7 +4369,8 @@
    "ankara_saat": 4.5,
    "web": "https://gebzeogretmenevi.meb.k12.tr",
    "adres": "Muallim Köy Caddesi No 50 Muallimköy Gebze / KOCAELİ",
-   "fiyat_2026": "İki/Üç Yataklı Oda: MEB Çalışanı 1.050 TL, Kamu / Kamu Yakını 1.250 TL, Diğer (Sivil Misafir) 1.500 TL · Oda Kapama: MEB Çalışanı 1.600 TL, Kamu / Kamu Yakını 1.900 TL, Diğer (Sivil Misafir) 2.200 TL"
+   "fiyat_2026": "İki/Üç Yataklı Oda: MEB Çalışanı 1.050 TL, Kamu / Kamu Yakını 1.250 TL, Diğer (Sivil Misafir) 1.500 TL · Oda Kapama: MEB Çalışanı 1.600 TL, Kamu / Kamu Yakını 1.900 TL, Diğer (Sivil Misafir) 2.200 TL",
+   "rezervasyon": "https://gebze.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Gölcük Öğretmenevi ve Akşam Sanat Okulu",
@@ -4328,7 +4386,8 @@
    "ankara_saat": 4.5,
    "web": "https://ogretmenevigolcuk.meb.k12.tr",
    "adres": "Donanma Mh. 9.Sk No:4 Gölcük/Kocaeli",
-   "ulasim": "800 mGölcük Donanma Caddesinden geçen minibüslerle ulaşım sağlanabilir. İzmit ya da Yalova istikametinden araçla gelenler Donanma Caddesi durağında inmeleri halinde kurumumuza kolaylıkla ulaşabilecektir."
+   "ulasim": "800 mGölcük Donanma Caddesinden geçen minibüslerle ulaşım sağlanabilir. İzmit ya da Yalova istikametinden araçla gelenler Donanma Caddesi durağında inmeleri halinde kurumumuza kolaylıkla ulaşabilecektir.",
+   "rezervasyon": "https://golcuk.mebogretmenevi.com/booking/"
   },
   {
    "ad": "İzmit Öğretmenevi ve Akşam Sanat Okulu",
@@ -4376,7 +4435,8 @@
    "ankara_saat": 4.5,
    "web": "https://karamurselogretmenevi.meb.k12.tr",
    "adres": "4 TEMMUZ MAH. GAZANFER BİLGE CAD. NO:3 KARAMÜRSEL / KOCAELİ",
-   "ulasim": "MerkezKocaeli - Yalova D-100 Karayolu üzeri -KARAMÜRSEL"
+   "ulasim": "MerkezKocaeli - Yalova D-100 Karayolu üzeri -KARAMÜRSEL",
+   "rezervasyon": "https://karamursel.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Akşehir Öğretmenevi ve Akşam Sanat Okulu",
@@ -4407,7 +4467,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 3,
    "web": "https://beysehirogretmenevi.meb.k12.tr",
-   "adres": "Yeni Mahalle Antalya Cad. No:125 Beyşehir/KONYA"
+   "adres": "Yeni Mahalle Antalya Cad. No:125 Beyşehir/KONYA",
+   "rezervasyon": "https://beysehir.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Bozkır Öğretmenevi ve Akşam Sanat Okulu",
@@ -4503,7 +4564,8 @@
    "adres": "AKMESCİT MAH. ŞEHİT ALİ KOCATÜRK CAD. NO 26 İÇ KAPI NO 1 EMİRGAZİ / KONYA",
    "ulasim": "Emirgazi ilçe merkezine 300 m uzaklıktadır. Konya şehir merkezine ise 130 km uzaklıktadır.Hafta içi her gün Konya şehir merkezine saat 07.00´da giden belediye otobüsü bulunmaktadır. Saat 15.00´da ise aynı otobüs ile Emirgazi ilçesine dönüş seferi düzenlenmektedir. Emirgazi ilçesinden Ereğli ve Karapınar ilçelerine de hafta içi hergün sabah seferleri düzenlenmektedir.",
    "fiyat_2026": "MEB Personeli: Tek Kişi Yatak Ücreti 250 TL · Kamu Personeli: Tek Kişi Yatak Ücreti 375 TL · Sivil: Tek Kişi Yatak Ücreti 500 TL",
-   "kaynak_fiyat": "https://emirgaziogretmenevi.meb.k12.tr/icerikler/konaklama-fiyatlari_14251271.html"
+   "kaynak_fiyat": "https://emirgaziogretmenevi.meb.k12.tr/icerikler/konaklama-fiyatlari_14251271.html",
+   "rezervasyon": "https://emirgazi.mebogretmenevi.com/booking/</p/booking/"
   },
   {
    "ad": "Ereğli Öğretmenevi ve Akşam Sanat Okulu",
@@ -4597,7 +4659,8 @@
    "ankara_saat": 3,
    "web": "https://karapinarogretmenevi.meb.k12.tr",
    "adres": "Ana Bina: Hacı Ömerli Mah. Konya Cad. No17 Karapınar/KONYA Kalyon Ek Bina: İpekçi Mahallesi İnönü Caddesi No:69A Karapınar/KONYA",
-   "ulasim": "Kurumumuz ilçe merkezinde bulunmakla beraber Konya il merkezine 100 km mesafededir.Kurumumuza ilçenin hemen hemen her yerinden yürüyerek ulaşılabilir."
+   "ulasim": "Kurumumuz ilçe merkezinde bulunmakla beraber Konya il merkezine 100 km mesafededir.Kurumumuza ilçenin hemen hemen her yerinden yürüyerek ulaşılabilir.",
+   "rezervasyon": "https://karapinar.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Kulu Öğretmenevi ve Akşam Sanat Okulu",
@@ -4658,7 +4721,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 3,
    "web": "https://yunakogretmenevi.meb.k12.tr",
-   "adres": "Yeni Mahalle Mithat Paşa Caddesi No 26 Yunak/KONYA"
+   "adres": "Yeni Mahalle Mithat Paşa Caddesi No 26 Yunak/KONYA",
+   "rezervasyon": "https://yunak.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Emet Öğretmenevi ve Akşam Sanat Okulu",
@@ -4702,7 +4766,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://kutahyaogretmeneviaso.meb.k12.tr",
    "adres": "Yıldırım Beyazıt Mh. Abdurrahman Karaa Blv. No:45 Merkez / KÜTAHYA",
-   "ulasim": "Öğretmenevimiz İl Merkezinde Bulunmaktadır.Öğretmenevimiz ilimiz tren garına 5 dakikalık yürüyüş mesafesindedir."
+   "ulasim": "Öğretmenevimiz İl Merkezinde Bulunmaktadır.Öğretmenevimiz ilimiz tren garına 5 dakikalık yürüyüş mesafesindedir.",
+   "rezervasyon": "https://kutahya.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Pazarlar Öğretmenevi ve Akşam Sanat Okulu",
@@ -4733,7 +4798,8 @@
    "adres": "Hisarardı Mah.Osmanbey Cad.2 43500 Simav/Kütahya",
    "ulasim": "Simav Öğretmenevi ve Aso Kütahya il merkezine 145 km,Uşak il merkezine 85 km,Bursa il merkezine 180 km,Balıkesir il merkezine 145 km,İzmir il merkezine 180km uzaklıkta olup,Simav ilçe merkezinde Eski Osmanbey İlköğretim Okulunun eğitim verdiği binanın öğretmenevine dönüştürülmesiyle hizmet vermektedir.İlçemiz Kent Müzesi ile aynı bahçede hizmet vermektedir.Ulaşım karayolu ile yapılamktadır.",
    "fiyat_2026": "Oda Fiyatlarımız kişi başı MEB:800 Kamu:900 Sivil:1000 TL olarak güncellendi. Ayrıca MEB PAYLAŞIMSIZ:1200 KAMU PAYLAŞIMS",
-   "kaynak_fiyat": "https://simavogretmenevi.meb.k12.tr/icerikler/konaklama-fiyatlarımız-güncellendi_17532583.html"
+   "kaynak_fiyat": "https://simavogretmenevi.meb.k12.tr/icerikler/konaklama-fiyatlarımız-güncellendi_17532583.html",
+   "rezervasyon": "https://simav.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Şaphane Öğretmenevi ve Akşam Sanat Okulu",
@@ -4777,7 +4843,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://arapgirogretmenevi.meb.k12.tr",
    "adres": "MEHMETAKİF MAH. ÖMER BABA CAD. ARAPGİR ÖĞRETMENEVİ BLOK NO 7 İÇ KAPI NO 1 ARAPGİR / MALATYA",
-   "ulasim": "Kurumumuz Malatya il merkezine uzaklık 120 km dir. Arapgir ilçe merkezinde yer almaktadır.Karayolu"
+   "ulasim": "Kurumumuz Malatya il merkezine uzaklık 120 km dir. Arapgir ilçe merkezinde yer almaktadır.Karayolu",
+   "rezervasyon": "https://arapgir.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Darende Öğretmenevi ve Akşam Sanat Okulu",
@@ -4916,7 +4983,8 @@
    "ankara_saat": 7.5,
    "web": "https://salihliogretmenevi.meb.k12.tr",
    "adres": "Aksoy Mh. Menderes Cd. No70 SALİHLİ/MANİSA",
-   "ulasim": "MerkezOtogardan yürüyerek 15 dakika olup, şehir içi hatlarla ulaşım sağlanmaktadır."
+   "ulasim": "MerkezOtogardan yürüyerek 15 dakika olup, şehir içi hatlarla ulaşım sağlanmaktadır.",
+   "rezervasyon": "https://salihli.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Soma Öğretmenevi ve Akşam Sanat Okulu",
@@ -5122,7 +5190,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://mardinogretmenevi.meb.k12.tr",
    "adres": "13 MART MAH. 11. SOK. NO 5 ARTUKLU / MARDİN",
-   "ulasim": "İl Merkezi13 Mart Mah. 11. Sok. No:7 Artuklu / MARDİN"
+   "ulasim": "İl Merkezi13 Mart Mah. 11. Sok. No:7 Artuklu / MARDİN",
+   "rezervasyon": "https://artuklu.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Midyat Öğretmenevi ve Akşam Sanat Okulu",
@@ -5184,7 +5253,8 @@
    "ankara_saat": 9,
    "web": "https://bodrumogretmeneviaso.meb.k12.tr",
    "adres": "Kumbahçe Mah. Paşatarlası Caddesi No 1/4 Bodrum / Muğla",
-   "ulasim": "İl merkezine 110 km uzaklıkta olup Bodrum Şehir Merkezindedir.Kara, hava ve deniz yolu ile ulaşım mevcuttur."
+   "ulasim": "İl merkezine 110 km uzaklıkta olup Bodrum Şehir Merkezindedir.Kara, hava ve deniz yolu ile ulaşım mevcuttur.",
+   "rezervasyon": "https://bodrum.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Fethiye Öğretmenevi ve Akşam Sanat Okulu",
@@ -5200,7 +5270,8 @@
    "ankara_saat": 9,
    "web": "https://fethiyeogretmenevi.meb.k12.tr",
    "adres": "KARAÇULHA MAH. BUCAK CAD. FETHİYE ÖĞRETMENEVİ BLOK NO 10 FETHİYE / MUĞLA",
-   "ulasim": "⏱️ Yaklaşık 2 – 2,5 saat. (yol ve trafik durumuna göre değişebilir)''"
+   "ulasim": "⏱️ Yaklaşık 2 – 2,5 saat. (yol ve trafik durumuna göre değişebilir)''",
+   "rezervasyon": "https://fethiye.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Köyceğiz Öğretmenevi ve Akşam Sanat Okulu",
@@ -5263,7 +5334,8 @@
    "ankara_saat": 9,
    "web": "https://milasorhanmenteseogretmenevi.meb.k12.tr",
    "adres": "Milas Orhanmenteşe Öğretmenevi Emek Mah. İnci Sok. No23 Milas/MUĞLA",
-   "ulasim": "Kurumumuz İlçe Merkezinde Olup,İl´Merkezine uzaklığı (67)km.dir.Karayoluyla olup,normal yaklaşık süre (1)saat´tir."
+   "ulasim": "Kurumumuz İlçe Merkezinde Olup,İl´Merkezine uzaklığı (67)km.dir.Karayoluyla olup,normal yaklaşık süre (1)saat´tir.",
+   "rezervasyon": "https://milas.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Ula Öğretmenevi ve Akşam Sanat Okulu",
@@ -5277,7 +5349,8 @@
    "kiyi": true,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 9,
-   "web": "https://ulaogretmenevi.meb.k12.tr"
+   "web": "https://ulaogretmenevi.meb.k12.tr",
+   "rezervasyon": "https://ula.mebogretmenevi.com/booking/"
   },
   {
    "ad": "BulanıkÖğretmenevi ve Akşam Sanat Okulu",
@@ -5361,7 +5434,8 @@
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://avanosogretmenevi.meb.k12.tr",
-   "adres": "Yukarı Mahalle Vatan Caddesi No69 AVANOS NEVŞEHİR"
+   "adres": "Yukarı Mahalle Vatan Caddesi No69 AVANOS NEVŞEHİR",
+   "rezervasyon": "https://avanos.mebogretmenevi.com/booking/?KeepThis=true&TB_iframe=true&height=80&width=80/booking/"
   },
   {
    "ad": "Gülşehir Öğretmenevi ve Akşam Sanat Okulu",
@@ -5406,7 +5480,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://nevsehirogretmenevi.meb.k12.tr",
    "adres": "2000 EVLER MAH. 77. SK. NO 1 MERKEZ / NEVŞEHİR",
-   "ulasim": "Nevşehir MerkezÖzel Araç ve Özel Halk Otobüsü ile."
+   "ulasim": "Nevşehir MerkezÖzel Araç ve Özel Halk Otobüsü ile.",
+   "rezervasyon": "https://nevsehir.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Ürgüp Öğretmenevi ve Akşam Sanat Okulu",
@@ -5420,7 +5495,8 @@
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://urgupogretmenevi.meb.k12.tr",
-   "adres": "Temenni Mah.Cami Kebir 2.Sok.No5 Ürgüp/NEVŞEHİR"
+   "adres": "Temenni Mah.Cami Kebir 2.Sok.No5 Ürgüp/NEVŞEHİR",
+   "rezervasyon": "https://urgup.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Altunhisar Öğretmenevi ve Akşam Sanat Okulu",
@@ -5449,7 +5525,8 @@
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://borogretmeneviaso.meb.k12.tr",
-   "adres": "MEHMETÇİK MAH. DOĞAN BARAN CAD. BOR ÖĞRETMENEVİ BLOK NO 2 BOR / NİĞDE"
+   "adres": "MEHMETÇİK MAH. DOĞAN BARAN CAD. BOR ÖĞRETMENEVİ BLOK NO 2 BOR / NİĞDE",
+   "rezervasyon": "https://bor.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Çamardı Öğretmenevi ve Akşam Sanat Okulu",
@@ -5479,7 +5556,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://ciftlikaso.meb.k12.tr",
    "adres": "ÇARŞI MAH. ŞEHİT NURETTİN TEKİN CAD. NO: 1A ÇİFTLİK / NİĞDE",
-   "ulasim": "İlçe Merkezinde bulunan Öğretmevi İl´e 65 km uzaklıktadır.İl merkezinden düzenli saatlerde yapılan servislerle ulaşım sağlanmaktadır."
+   "ulasim": "İlçe Merkezinde bulunan Öğretmevi İl´e 65 km uzaklıktadır.İl merkezinden düzenli saatlerde yapılan servislerle ulaşım sağlanmaktadır.",
+   "rezervasyon": "https://ciftlik.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Niğde Öğretmenevi ve Akşam Sanat Okulu",
@@ -5493,7 +5571,8 @@
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://nigdeogretmenevi.meb.k12.tr",
-   "adres": "Valilik Yanı Niğde"
+   "adres": "Valilik Yanı Niğde",
+   "rezervasyon": "https://nigde.mebogretmenevi.com/booking/%20/booking/"
   },
   {
    "ad": "Ulukışla Öğretmenevi ve Akşam Sanat Okulu",
@@ -5554,7 +5633,8 @@
    "ankara_saat": 6.5,
    "web": "https://fatsaogretmenevi.meb.k12.tr",
    "adres": "MUSTAFAKEMALPAŞA MAH. HÜKÜMET CAD. MİSAFİRHANE SİTESİ ÖĞRETMENEVİ BLOK NO: 25 FATSA / ORDU",
-   "ulasim": "İL MERKEZİNE 35 KM UZAKLIKTA VE İLÇE MERKEZİNDE HİZMET VERMEKTEYİZ HER TÜRLÜ ARAÇLA ŞEHİR MEYDANINDAN ULAŞILIR.OTOBÜS TERMİNALİNE UZAKLIĞI 400 m.MESAFEDEDİR."
+   "ulasim": "İL MERKEZİNE 35 KM UZAKLIKTA VE İLÇE MERKEZİNDE HİZMET VERMEKTEYİZ HER TÜRLÜ ARAÇLA ŞEHİR MEYDANINDAN ULAŞILIR.OTOBÜS TERMİNALİNE UZAKLIĞI 400 m.MESAFEDEDİR.",
+   "rezervasyon": "https://fatsa.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Korgan Öğretmenevi ve Akşam Sanat Okulu",
@@ -5611,7 +5691,8 @@
    "ankara_saat": 9.5,
    "web": "https://ardesenogretmenevi.meb.k12.tr",
    "adres": "Atatürk Caddesi Kavaklıdere Mah. No 119 Ardeşen/RİZE",
-   "ulasim": "İlçe Merkezine 500 mMinibüs"
+   "ulasim": "İlçe Merkezine 500 mMinibüs",
+   "rezervasyon": "https://ardesen.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Çamlıhemşin Yamantürk Öğretmenevi ve Akşam Sanat Okulu",
@@ -5707,7 +5788,8 @@
    "ankara_saat": 9.5,
    "web": "https://kalkandereogretmenevi.meb.k12.tr",
    "adres": "Medrese Mah. Rize Cad. No2/1 Kalkandere/RİZE",
-   "ulasim": "Kurumumuz ilçe merkezinde yer almaktadır. İlçe merkezinden sahile 13 km il merkezine ise 33 km mesafededir.Rize merkeze iki farklı yol güzergahından ulaşılmaktadır. Yolbaşı beldesi üzerinden 17km mesafe, yoğun olarak kullanılan ana yol İyidere ilçesi güzergahındadır. İyidere güzergahından düzenli olarak her yarım saatte bir dolmuş seferleri ile ulaşım sağlanabilmektedir."
+   "ulasim": "Kurumumuz ilçe merkezinde yer almaktadır. İlçe merkezinden sahile 13 km il merkezine ise 33 km mesafededir.Rize merkeze iki farklı yol güzergahından ulaşılmaktadır. Yolbaşı beldesi üzerinden 17km mesafe, yoğun olarak kullanılan ana yol İyidere ilçesi güzergahındadır. İyidere güzergahından düzenli olarak her yarım saatte bir dolmuş seferleri ile ulaşım sağlanabilmektedir.",
+   "rezervasyon": "https://kalkandere.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Rize Merkez Öğretmenevi ve Akşam Sanat Okulu",
@@ -5723,7 +5805,8 @@
    "ankara_saat": 9.5,
    "web": "https://rizeogretmenevi.meb.k12.tr",
    "adres": "Engindere Mah, Menders Bulvarı No175, Merkez/Rize",
-   "ulasim": "Şehir MerkeziŞehir İçi Minibüs. Taksi"
+   "ulasim": "Şehir MerkeziŞehir İçi Minibüs. Taksi",
+   "rezervasyon": "https://rize.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Pazar Öğretmenevi ve Akşam Sanat Okulu",
@@ -5739,7 +5822,8 @@
    "ankara_saat": 9.5,
    "web": "https://pazarogretmeneviaso.meb.k12.tr",
    "adres": "Kirazlık Mahallesi Liman Sokak No 18 Pazar / RİZE",
-   "ulasim": "İl merkezine 39 km, ilçe merkezine 500 myaya-dolmuş"
+   "ulasim": "İl merkezine 39 km, ilçe merkezine 500 myaya-dolmuş",
+   "rezervasyon": "https://pazar.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Akyazı Öğretmenevi ve Akşam Sanat Okulu",
@@ -5800,7 +5884,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 4,
    "web": "https://karasuogretmeneviveaso.meb.k12.tr",
-   "adres": "AZİZİYE MAH. 555 SK. KARASU ÖĞRETMENEVİ VE AKŞAM SANAT OKULU NO 28 İÇ KAPI NO 101 KARASU / SAKARYA"
+   "adres": "AZİZİYE MAH. 555 SK. KARASU ÖĞRETMENEVİ VE AKŞAM SANAT OKULU NO 28 İÇ KAPI NO 101 KARASU / SAKARYA",
+   "rezervasyon": "https://karasu.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Pamukova Öğretmenevi ve Akşam Sanat Okulu",
@@ -5896,7 +5981,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 5,
    "web": "https://samsunogretmenevi.meb.k12.tr",
-   "ulasim": "OKARAYOLU-DENİZYOLU-HAVAYOLU-DEMİRYOLU"
+   "ulasim": "OKARAYOLU-DENİZYOLU-HAVAYOLU-DEMİRYOLU",
+   "rezervasyon": "https://samsun.mebogretmenevi.com/booking/?KeepThis=true&TB_iframe=true&height=80&width=80/booking/"
   },
   {
    "ad": "Çarşamba Öğretmenevi ve Akşam Sanat Okulu",
@@ -5984,7 +6070,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 5,
    "web": "https://termeogretmenevi.meb.k12.tr",
-   "adres": "FENK MAH. YENİHAL SK. NO: 13 TERME / SAMSUN SAMSUN-TRABZON KARAYOLU TERME MERKEZ IŞIKLARDA TABELALARIMIZ MEVCUTTUR"
+   "adres": "FENK MAH. YENİHAL SK. NO: 13 TERME / SAMSUN SAMSUN-TRABZON KARAYOLU TERME MERKEZ IŞIKLARDA TABELALARIMIZ MEVCUTTUR",
+   "rezervasyon": "https://terme.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Vezirköprü Öğretmenevi ve Akşam Sanat Okulu",
@@ -6058,7 +6145,8 @@
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://siirtogretmenevi.meb.k12.tr",
-   "adres": "Yeni Mahalle Eski Müftülük Cad. No 18 MERKEZ /SİİRT"
+   "adres": "Yeni Mahalle Eski Müftülük Cad. No 18 MERKEZ /SİİRT",
+   "rezervasyon": "https://siirt.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Pervari Öğretmenevi ve Akşam Sanat Okulu",
@@ -6103,7 +6191,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 5.5,
    "web": "https://ayancikogretmenevi.meb.k12.tr",
-   "adres": "Yalı M. Hakan Ünsal C.No5 AYANCIK / SİNOP"
+   "adres": "Yalı M. Hakan Ünsal C.No5 AYANCIK / SİNOP",
+   "rezervasyon": "https://ayancik.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Boyabat Öğretmenevi ve Akşam Sanat Okulu",
@@ -6286,7 +6375,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://koyulhisarogretmenevi.meb.k12.tr",
    "adres": "TUĞLADAĞI MAH. ESENKENT 4 CAD. NO 30 İÇ KAPI NO 1 KOYULHİSAR / SİVAS",
-   "ulasim": "İl merkezine 160 km, ilçe merkezine 2 km uzaklıkta.Özel araç ile."
+   "ulasim": "İl merkezine 160 km, ilçe merkezine 2 km uzaklıkta.Özel araç ile.",
+   "rezervasyon": "https://koyulhisar.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Sivas Öğretmenevi ve Akşam Sanat Okulu",
@@ -6301,7 +6391,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://sivasogretmenevi.meb.k12.tr",
    "adres": "Pulur Mah. Arapşeyh Cad. No22. 58070 Merkez/SİVAS",
-   "ulasim": "İl MerkezindeBelediye otobüsleri, özel araçlar ve taksi ile ulaşım sağlanmaktadır."
+   "ulasim": "İl MerkezindeBelediye otobüsleri, özel araçlar ve taksi ile ulaşım sağlanmaktadır.",
+   "rezervasyon": "https://sivas.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Suşehri Öğretmenevi ve Akşam Sanat Okulu",
@@ -6467,7 +6558,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://resadiyeogretmenevi.meb.k12.tr",
    "adres": "Kurtuluş Mh. Sultan Reşad Cd. No2 Reşadiye / Tokat",
-   "ulasim": "Reşadiye ilçe merkezindedir. Tokat ilinden ilçe merkezine her saat başı karşılıklı minibüs seferleri mevcuttur."
+   "ulasim": "Reşadiye ilçe merkezindedir. Tokat ilinden ilçe merkezine her saat başı karşılıklı minibüs seferleri mevcuttur.",
+   "rezervasyon": "https://resadiye.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Turhal Öğretmenevi ve Akşam Sanat Okulu",
@@ -6558,7 +6650,8 @@
    "ankara_saat": 9,
    "web": "https://besikduzusabanciogretmenevi.meb.k12.tr",
    "adres": "Cumhuriyet Mahallesi Ahmet Yardım Caddesi No 39 61800 Beşikdüzü /Trabzon",
-   "ulasim": "Öğretmenevi, Trabzon il merkezine 48 Km uzaklıkta, Beşikdüzü ilçesi merkezindedir.Karadeniz sahil yolu Giresun iline sınır, Trabzon´un batısındaki ilk ilçedir. Trabzon merkezden ulaşımı Moloz Mevkii´nden 15 dakikada bir dolmuşlarla ve Trabzon Büyükşehir Belediyesi otobüsleri ile sağlanmaktadır."
+   "ulasim": "Öğretmenevi, Trabzon il merkezine 48 Km uzaklıkta, Beşikdüzü ilçesi merkezindedir.Karadeniz sahil yolu Giresun iline sınır, Trabzon´un batısındaki ilk ilçedir. Trabzon merkezden ulaşımı Moloz Mevkii´nden 15 dakikada bir dolmuşlarla ve Trabzon Büyükşehir Belediyesi otobüsleri ile sağlanmaktadır.",
+   "rezervasyon": "https://besikduzu.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Çarşıbaşı Öğretmenevi ve Akşam Sanat Okulu",
@@ -6620,7 +6713,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 9,
    "web": "https://trabzonogretmenevi.meb.k12.tr",
-   "adres": "CUMHURİYET MAH. GÖLCÜK CAD. ÖĞRETMEN EVİ BLOK NO 1 İÇ KAPI NO 1 ORTAHİSAR / TRABZON"
+   "adres": "CUMHURİYET MAH. GÖLCÜK CAD. ÖĞRETMEN EVİ BLOK NO 1 İÇ KAPI NO 1 ORTAHİSAR / TRABZON",
+   "rezervasyon": "https://trabzon.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Of Öğretmenevi ve Akşam Sanat Okulu",
@@ -6728,7 +6822,8 @@
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://pertekogretmenevi.meb.k12.tr",
-   "adres": "İSTİKLAL MAH. YAŞAR KEMAL CAD. NO 7/G PERTEK / TUNCELİ"
+   "adres": "İSTİKLAL MAH. YAŞAR KEMAL CAD. NO 7/G PERTEK / TUNCELİ",
+   "rezervasyon": "https://pertek.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Akçakale Öğretmenevi ve Akşam Sanat Okulu",
@@ -6830,7 +6925,8 @@
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://siverekogretmeneviaso.meb.k12.tr",
-   "adres": "Güney Mah. Güney 20. Sok. No3 Siverek/Ş.URFA"
+   "adres": "Güney Mah. Güney 20. Sok. No3 Siverek/Ş.URFA",
+   "rezervasyon": "https://siverek.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Suruç Öğretmenevi ve Akşam Sanat Okulu",
@@ -7165,7 +7261,8 @@
    ],
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
-   "web": "https://yozgatogretmenevi.meb.k12.tr"
+   "web": "https://yozgatogretmenevi.meb.k12.tr",
+   "rezervasyon": "https://yozgat.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Saraykent Öğretmenevi ve Akşam Sanat Okulu",
@@ -7179,7 +7276,8 @@
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://saraykentogretmenevi.meb.k12.tr",
-   "adres": "KARŞIYAKA MAH. GAZİ MUSTAFA KEMAL BUL. MİLİEĞİTİM BAKANLIĞI SİTESİ ÖGRETMEN EVİ BLOK NO 188 İÇ KAPI NO 9 SARAYKENT / YOZGAT"
+   "adres": "KARŞIYAKA MAH. GAZİ MUSTAFA KEMAL BUL. MİLİEĞİTİM BAKANLIĞI SİTESİ ÖGRETMEN EVİ BLOK NO 188 İÇ KAPI NO 9 SARAYKENT / YOZGAT",
+   "rezervasyon": "https://saraykent.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Sarıkaya Öğretmenevi ve Akşam Sanat Okulu",
@@ -7299,7 +7397,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 4.5,
    "web": "https://eregliogretmenevi67.meb.k12.tr",
-   "adres": "MÜFTÜ MAH. SÜHEYLA EREL SK. AY CİTY İŞ MERKEZİ SİTESİ AY CİTY İŞ MERKEZİ BLOK NO 2/1A EREĞLİ / ZONGULDAK"
+   "adres": "MÜFTÜ MAH. SÜHEYLA EREL SK. AY CİTY İŞ MERKEZİ SİTESİ AY CİTY İŞ MERKEZİ BLOK NO 2/1A EREĞLİ / ZONGULDAK",
+   "rezervasyon": "https://zonguldakeregli.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Öğretmenevi ve Akşam Sanat Okulu",
@@ -7314,7 +7413,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 4.5,
    "web": "https://zonguldakogretmenevi.meb.k12.tr",
-   "ulasim": "Zonguldak şehirlerarası otobüs terminaline öğretmenevinden yürüme 15 dakikada arabayla 5 dakikada varabilirsiniz. Öğretmenevinden il merkezine uzaklık 3 km, öğretmenevinden şehirlerarası otobüs terminaline uzaklık 2 km civarındadır."
+   "ulasim": "Zonguldak şehirlerarası otobüs terminaline öğretmenevinden yürüme 15 dakikada arabayla 5 dakikada varabilirsiniz. Öğretmenevinden il merkezine uzaklık 3 km, öğretmenevinden şehirlerarası otobüs terminaline uzaklık 2 km civarındadır.",
+   "rezervasyon": "https://zonguldak.mebogretmenevi.com/booking/</p/booking/"
   },
   {
    "ad": "Ağaçören Öğretmenevi ve Akşam Sanat Okulu",
@@ -7343,7 +7443,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://eskilogretmenevi.meb.k12.tr",
    "adres": "Merkez Mah. Şehit Ömer HALİSDEMİR Bulvarı No36 Eskil/AKSARAY",
-   "ulasim": "İle uzaklığı 70 km´dir.İlçe merkezindedir.Ulaşım imkanı mevcuttur."
+   "ulasim": "İle uzaklığı 70 km´dir.İlçe merkezindedir.Ulaşım imkanı mevcuttur.",
+   "rezervasyon": "https://eskil.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Aksaray Öğretmenevi ve Akşam Sanat Okulu",
@@ -7417,7 +7518,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://karamanogretmenevi.meb.k12.tr",
    "adres": "Fenari Mah. Kazım Karabekir Cad. No29 Merkez/KARAMAN",
-   "ulasim": "MERKEZDEDOLMUŞ, OTOBÜS GÜZERGAHINDA"
+   "ulasim": "MERKEZDEDOLMUŞ, OTOBÜS GÜZERGAHINDA",
+   "rezervasyon": "https://karaman.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Şehit Pilot Komiser Gökhun Mete Altunbaş Öğretmenevi ve Akşam Sanat Okulu",
@@ -7519,7 +7621,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://sasonogretmenevi.meb.k12.tr",
    "adres": "Orta Mahalle Haluk İmga Caddesi No8/1 Sason/BATMAN UAVT Kodu 1155778234",
-   "ulasim": "İl merkezine 70 km uzaklıktadır."
+   "ulasim": "İl merkezine 70 km uzaklıktadır.",
+   "rezervasyon": "https://sason.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Beytüşşebap Öğretmenevi ve Akşam Sanat Okulu",
@@ -7606,7 +7709,8 @@
    ],
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
-   "web": "https://silopiogretmenevi.meb.k12.tr"
+   "web": "https://silopiogretmenevi.meb.k12.tr",
+   "rezervasyon": "https://silopi.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Uludere Öğretmenevi ve Akşam Sanat Okulu",
@@ -7651,7 +7755,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 4.5,
    "web": "https://bartinogretmenevi.meb.k12.tr",
-   "adres": "Kemerköprü Mahallesi 899.sok. no2 Merkez/BARTIN"
+   "adres": "Kemerköprü Mahallesi 899.sok. no2 Merkez/BARTIN",
+   "rezervasyon": "https://bartin.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Ulus Öğretmenevi ve Akşam Sanat Okulu",
@@ -7667,7 +7772,8 @@
    "ankara_saat": 4.5,
    "web": "https://ulusogretmenevi.meb.k12.tr",
    "adres": "Kaldırım mahallesi Hürriyet Caddesi No 34/5 Ulus BARTIN",
-   "ulasim": "36 KmŞehir merkezine ve şehiir merkezinden saat başı minibüslerle ulaşım imkanı vardır."
+   "ulasim": "36 KmŞehir merkezine ve şehiir merkezinden saat başı minibüslerle ulaşım imkanı vardır.",
+   "rezervasyon": "https://ulus.mebogretmenevi.com/booking/</p/booking/"
   },
   {
    "ad": "Hanak Öğretmenevi ve Akşam Sanat Okulu",
@@ -7754,7 +7860,8 @@
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "ankara_saat": 5,
    "web": "https://yalovaogretmenevi.meb.k12.tr",
-   "ulasim": "İl MerkezindeYaya,Şehir içi dolmuş, taxi"
+   "ulasim": "İl MerkezindeYaya,Şehir içi dolmuş, taxi",
+   "rezervasyon": "https://yalova.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Eflani Öğretmenevi ve Akşam Sanat Okulu",
@@ -7785,7 +7892,8 @@
    "ankara_saat": 3.5,
    "web": "https://karabukogretmenevi.meb.k12.tr",
    "adres": "Yeşil Mahalle Taşkent Caddesi No34 MERKEZ / KARABÜK",
-   "ulasim": "İl merkezine 1 km mesafede.Terminale yürüme mesafesinde (500 metre). Esentepe Mah. Otobüs ve Minibüs güzergahında."
+   "ulasim": "İl merkezine 1 km mesafede.Terminale yürüme mesafesinde (500 metre). Esentepe Mah. Otobüs ve Minibüs güzergahında.",
+   "rezervasyon": "https://karabuk.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Safranbolu Öğretmenevi ve Akşam Sanat Okulu",
@@ -7831,7 +7939,8 @@
    "ankara_saat": 7.5,
    "web": "https://duziciogretmenevi.meb.k12.tr",
    "adres": "İRFANLI MAH. MÜDÜR MEHMET ISLAH CD. NO 13/ DÜZİÇİ/OSMANİYE",
-   "ulasim": "Öğretmenevimiz İlçemiz merkezinde bulunmaktadır.Şehirler arası ve şehir içi hertürlü ulaşım vardır"
+   "ulasim": "Öğretmenevimiz İlçemiz merkezinde bulunmaktadır.Şehirler arası ve şehir içi hertürlü ulaşım vardır",
+   "rezervasyon": "https://duzici.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Kadirli Öğretmenevi ve Akşam Sanat Okulu",
@@ -7907,7 +8016,8 @@
    "ankara_saat": 3.5,
    "web": "https://duzceavniakyologretmenevi.meb.k12.tr",
    "adres": "Azmimilli Mah.Gazhane Cad. No70/2 Merkez DÜZCE",
-   "fiyat_2026": "Standart Oda 1 Kişi Fiyatı: MEB Personeli 925 TL, Kamu Personeli 1.150 TL, Misafir 1.600 TL · Paylaşımlı Oda Fiyatı: MEB Personeli 700 TL, Kamu Personeli 850 TL, Misafir 1.150 TL"
+   "fiyat_2026": "Standart Oda 1 Kişi Fiyatı: MEB Personeli 925 TL, Kamu Personeli 1.150 TL, Misafir 1.600 TL · Paylaşımlı Oda Fiyatı: MEB Personeli 700 TL, Kamu Personeli 850 TL, Misafir 1.150 TL",
+   "rezervasyon": "https://duzce.mebogretmenevi.com/booking/"
   },
   {
    "ad": "Yığılca Öğretmenevi ve Akşam Sanat Okulu",

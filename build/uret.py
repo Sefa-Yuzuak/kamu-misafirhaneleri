@@ -38,7 +38,7 @@ from mesafe import cikis_mesafeleri, sure_metni  # noqa: E402
 from veri import cikma  # noqa: E402
 from veri import TURLER, e164, fiyat_araligi, fiyat_taban, kisa_ad, sayfa_basligi, slug  # noqa: E402
 from veri import tesis_slug, tur_slug  # noqa: E402
-from veri import adres_ozeti, duzgun_adres  # noqa: E402
+from veri import adres_ozeti, duzgun_adres, tr_kucuk  # noqa: E402
 
 KOK = Path(__file__).resolve().parent.parent
 CIKTI = KOK / "site"
@@ -185,6 +185,17 @@ def sss_listesi(t: dict) -> list[tuple[str, str]]:
                 f"{ad} telefon numarası nedir?",
                 f"{ad} telefon numarası {hepsi}. Rezervasyon yalnızca tesis "
                 "üzerinden yapılır; bu sitede rezervasyon alınmamaktadır.",
+            )
+        )
+
+    if t.get("rezervasyon"):
+        s.append(
+            (
+                f"{ad} online rezervasyon alıyor mu?",
+                f"Evet. {ad} kendi sitesinde online rezervasyon sayfası duyuruyor: "
+                f'{t["rezervasyon"].split("//")[-1].rstrip("/")}. Müsaitlik ve oda '
+                "tipleri oradan görülebilir; yine de teyit için tesisi aramak "
+                "en güvenlisidir.",
             )
         )
 
@@ -393,6 +404,14 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
         )
     if t.get("eposta"):
         satirlar.append(("E-posta", f'<a href="mailto:{e(t["eposta"])}">{e(t["eposta"])}</a>'))
+    if t.get("rezervasyon"):
+        satirlar.append(
+            (
+                "Online rezervasyon",
+                f'<a href="{e(t["rezervasyon"])}" target="_blank" rel="noopener nofollow">'
+                f'{ik("dis")}{e(t["rezervasyon"].split("//")[-1].rstrip("/"))}</a>',
+            )
+        )
     if t.get("web"):
         satirlar.append(
             (
@@ -591,6 +610,13 @@ target="_blank" rel="noopener nofollow">{ik("yildiz")}Google yorumlarını gör<
         ld_tesis["image"] = f"{SITE}/img/il/{g['lg']}"
     if adres:
         ld_tesis["address"]["streetAddress"] = adres
+    if t.get("rezervasyon"):
+        ld_tesis["potentialAction"] = {
+            "@type": "ReserveAction",
+            "target": {"@type": "EntryPoint", "urlTemplate": t["rezervasyon"],
+                       "actionPlatform": "https://schema.org/DesktopWebPlatform"},
+            "result": {"@type": "LodgingReservation", "name": "Konaklama rezervasyonu"},
+        }
     if konum and konum["kesinlik"] == "tesis":
         ld_tesis["geo"] = {
             "@type": "GeoCoordinates",
@@ -646,6 +672,16 @@ target="_blank" rel="noopener nofollow">{ik("yildiz")}Google yorumlarını gör<
 # --------------------------------------------------------------------------
 # İl sayfası
 # --------------------------------------------------------------------------
+
+
+def _tur_sayisi(tur: str, adet: int) -> str:
+    """"1 polisevleri" yaziyordu: sayi 1 iken tekil ad kullanilmali.
+
+    TURLER[tur][0] cogul, [1] tekil. Turkce guvenli kucultme sart degil
+    (bu adlarda buyuk I yok) ama kural olarak tr_kucuk kullaniliyor.
+    """
+    ad = TURLER[tur][1] if adet == 1 else TURLER[tur][0]
+    return f"{adet} {tr_kucuk(ad)}"
 
 
 def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
@@ -711,7 +747,7 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
     ozet = (
         f"<strong>{e(il)}</strong> ilinde bu dizinde kayıtlı "
         f"<strong>{len(tesisler)} kamu konaklama tesisi</strong> bulunuyor: "
-        + ", ".join(f"{len(v)} {TURLER[k][0].lower()}" for k, v in sorted(turler.items()))
+        + ", ".join(_tur_sayisi(k, len(v)) for k, v in sorted(turler.items()))
         + ". "
     )
     if deniz:
@@ -722,6 +758,10 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
         "Tesislerin tamamı telefonla doğrudan aranabilir; bu sitede rezervasyon alınmaz."
     )
 
+    il_rezervasyonlu = sum(1 for t in tesisler if t.get("rezervasyon"))
+    if il_rezervasyonlu:
+        ozet += (f"{il_rezervasyonlu} tesiste online rezervasyon sayfası var; "
+                 "kalanında rezervasyon telefonla yapılır. ")
     ilceler = sorted({t["ilce"] for t in tesisler})
     ozet += f" Tesisler {len(ilceler)} ilçeye yayılmış durumda."
 
@@ -729,14 +769,17 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
         (
             f"{il}'de kaç kamu misafirhanesi var?",
             f"{il} ilinde bu dizinde kayıtlı {len(tesisler)} tesis bulunuyor: "
-            + ", ".join(f"{len(v)} {TURLER[k][0].lower()}" for k, v in sorted(turler.items()))
+            + ", ".join(_tur_sayisi(k, len(v)) for k, v in sorted(turler.items()))
             + f". Tesisler {len(ilceler)} farklı ilçede yer alıyor.",
         ),
         (
             f"{il}'de kamu misafirhanesi rezervasyonu nasıl yapılır?",
-            f"{il} ilindeki tesislerde rezervasyon yalnızca tesisin kendi telefonundan "
-            "yapılır; merkezî bir rezervasyon sistemi yoktur. Bu sayfadaki her tesis "
-            "kartında telefon numarası ve arama düğmesi bulunur.",
+            (f"{il} ilindeki {il_rezervasyonlu} tesis online rezervasyon alıyor; "
+             "diğerlerinde rezervasyon yalnızca tesisin kendi telefonundan yapılır. "
+             if il_rezervasyonlu else
+             f"{il} ilindeki tesislerde rezervasyon yalnızca tesisin kendi "
+             "telefonundan yapılır; ortak bir rezervasyon sistemi yoktur. ")
+            + "Bu sayfadaki her tesis kartında telefon numarası ve arama düğmesi bulunur.",
         ),
     ]
     if deniz:
@@ -821,14 +864,24 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
         ],
     }
 
-    il_fiyatli = sum(1 for t in tesisler if t.get("fiyat_2026"))
+    # Alanda metin olmasi yetmez, icinde gercek TUTAR olmali.
+    il_fiyatli = sum(1 for t in tesisler if fiyat_taban(t.get("fiyat_2026")))
+    il_adresli = sum(1 for t in tesisler if t.get("adres"))
+    # Vaat merdiveni: "ve fiyat" yalnizca ilde fiyat KAPSAMI anlamliysa. Tek
+    # tesiste fiyat varken dokuz tesislik bir ile "fiyat" sozu vermek, tesis
+    # sayfalarinda TO'yu %0,3'e dusuren hatanin il olcegindeki hali olurdu.
+    if il_fiyatli >= max(2, len(tesisler) * 0.25):
+        soz = f", {il_fiyatli} tesiste 2026 fiyatı"
+    elif il_adresli >= len(tesisler) * 0.6:
+        soz = ", açık adres ve telefon"
+    else:
+        soz = ", telefon ve konum"
     return kabuk(
-        # Fiyat vaadi ilin GERCEK kapsamina bagli: cogu ilde yayimlanmis fiyat yok.
-        baslik=f"{il} Kamu Misafirhaneleri — {len(tesisler)} tesis, telefon"
-               + (" ve fiyat" if il_fiyatli else " ve konum"),
+        baslik=f"{il} Kamu Misafirhaneleri — {len(tesisler)} tesis{soz}"[:62],
         aciklama=(
             f"{il} ilindeki {len(tesisler)} öğretmenevi, polisevi ve kamu misafirhanesi. "
             f"Telefon numaraları"
+            + (f", {il_adresli} tesiste açık adres" if il_adresli else "")
             + (f", {il_fiyatli} tesiste 2026 fiyatı" if il_fiyatli else "")
             + (f", {len(deniz)} denize yakın tesis" if deniz else "")
             + ". Rezervasyon doğrudan tesisten."

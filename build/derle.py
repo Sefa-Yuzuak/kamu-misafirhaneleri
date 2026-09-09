@@ -631,7 +631,14 @@ def sitemap(yollar: list[str]) -> str:
     )
 
 
-def llms_txt(tesisler: list[dict], il_grup: dict) -> str:
+def llms_txt(tesisler: list[dict], il_grup: dict, konumlar: dict | None = None) -> str:
+    # Bu dosyadaki sayilar ELLE yazilmisti ve veri buyudukce eskidi ("161
+    # tesisin konumu" yaziyordu, gercek 556). Artik veriden hesaplaniyor.
+    konumlar = konumlar or {}
+    _rez = sum(1 for t in tesisler if t.get("rezervasyon"))
+    _kesin = sum(1 for t in tesisler
+                 if (konumlar.get(tesis_slug(t)) or {}).get("kesinlik") == "tesis")
+    _yaklasik = len(tesisler) - _kesin
     deniz = [t for t in tesisler if t.get("deniz")]
     fiyatli = [t for t in tesisler if t.get("fiyat_2026")]
     # 81 il sayfasi tek tek listeleniyor: llms.txt yalnizca 5 rehber
@@ -683,14 +690,16 @@ Son güncelleme: {TARIH_TR}
         f"- [{b}]({SITE}/rehber/{s}/)\n" for s, b, _ in REHBERLER
     ) + f"""
 ## Önemli notlar
-- Bu site rezervasyon almaz. Rezervasyon her tesisin kendi telefonundan yapılır;
-  merkezî bir rezervasyon sistemi yoktur.
+- Bu site rezervasyon almaz. Tesislerin {_rez} tanesinin kendi online rezervasyon
+  sayfası var; kalanında rezervasyon tesisin kendi telefonundan yapılır. Ortak bir
+  rezervasyon sistemi yoktur.
 - Fiyat yalnızca tesisin kendisi yayımlamışsa yazılır; tahmini fiyat verilmez.
 - Mesafeler koordinatlardan (OpenStreetMap Nominatim) hesaplanan tahminlerdir:
   kuş uçuşu uzaklık × 1,27. Bilinen güzergâhlarda sapma ortalama %6'dır.
   Ölçülmüş karayolu mesafesi değildir.
-- 161 tesisin konumu OSM kaydından birebir alındı; kalan 400 tesiste ilçe merkezi
-  kullanılır ve bu `kesinlik` alanıyla işaretlidir.
+- {_kesin} tesisin konumu tesisin kendi yayınından ya da doğrulanmış kayıttan
+  alındı; kalan {_yaklasik} tesiste ilçe merkezi kullanılır ve bu `kesinlik`
+  alanıyla işaretlidir.
 - Site hiçbir kuruma ait değildir ve hiçbir kurumu temsil etmez.
 """
 
@@ -1004,7 +1013,7 @@ def main() -> int:
     # AdSense yetkili satici beyani: /ads.txt yoksa Google reklam talebini kisitlar.
     (CIKTI / "ads.txt").write_text(
         f"google.com, {ADSENSE_ID.removeprefix('ca-')}, DIRECT, f08c47fec0942fa0\n", "utf-8")
-    (CIKTI / "llms.txt").write_text(llms_txt(tesisler, il_grup), "utf-8")
+    (CIKTI / "llms.txt").write_text(llms_txt(tesisler, il_grup, konumlar), "utf-8")
     shutil.copy(KOK / "tesisler.json", CIKTI / "tesisler.json")
     shutil.copy(KOK / "favicon.svg", CIKTI / "favicon.svg")
     shutil.copytree(KOK / "static", CIKTI / "static", dirs_exist_ok=True)

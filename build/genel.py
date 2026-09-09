@@ -50,6 +50,7 @@ def ana_sayfa(tesisler: list[dict], gorseller: dict, kurumlar: dict) -> str:
         il_grup[t["il"]].append(t)
     deniz = [t for t in tesisler if t.get("deniz")]
     fiyatli = [t for t in tesisler if fiyat_taban(t.get("fiyat_2026"))]
+    rezervasyonlu = [t for t in tesisler if t.get("rezervasyon")]
     telefonlu = [t for t in tesisler if t.get("telefon")]
 
     kiyi_iller = sorted(
@@ -307,6 +308,7 @@ def _sivil_kati(tesisler: list[dict]) -> tuple[int, float, float, float]:
 def rehber_govde(anahtar: str, tesisler: list[dict]) -> tuple[str, list[tuple[str, str]]]:
     deniz = [t for t in tesisler if t.get("deniz")]
     fiyatli = [t for t in tesisler if fiyat_taban(t.get("fiyat_2026"))]
+    rezervasyonlu = [t for t in tesisler if t.get("rezervasyon")]
 
     if anahtar == "ogretmenevinde-kimler-kalabilir":
         govde = f"""
@@ -465,10 +467,19 @@ tanesinde havuz kayıtlı) denizden daha kullanışlı olabiliyor.</p>
 
     if anahtar == "rezervasyon-nasil-yapilir":
         govde = f"""
-<p>Kamu konaklama tesislerinin <strong>ortak bir rezervasyon sistemi yoktur</strong>.
-Online rezervasyon alan tesis sayısı çok azdır; neredeyse tamamı telefonla çalışır.
-Bu dizindeki {len(tesisler)} tesisin
-{sum(1 for t in tesisler if t.get("telefon"))} tanesinin telefon numarası doğrulandı.</p>
+<p>Kamu konaklama tesislerinin <strong>ortak bir rezervasyon sistemi yoktur</strong>;
+her tesis kendi başına çalışır. Ancak "hepsi telefonla" da doğru değil: bu dizindeki
+{len(tesisler)} tesisin <strong>{len(rezervasyonlu)} tanesinin kendi online rezervasyon
+sayfası</strong> var. Bunların büyük bölümü Millî Eğitim Bakanlığı'nın
+<code>&lt;ilçe&gt;.mebogretmenevi.com</code> platformunu kullanıyor; adres her tesisin
+kendi sitesinden alındı ve rezervasyon sayfasının başlığı kurum adıyla
+karşılaştırılarak doğrulandı. Kalan tesislerde telefon tek yoldur;
+{sum(1 for t in tesisler if t.get("telefon"))} tesisin numarası doğrulandı.</p>
+{_tablo(["Tesis", "İl / ilçe", "Online rezervasyon"],
+        [[_link(t), f'{e(t["il"])} / {e(t.get("ilce") or "—")}',
+          f'<a href="{e(t["rezervasyon"])}" target="_blank" rel="noopener nofollow">'
+          f'{e(t["rezervasyon"].split("//")[-1].rstrip("/"))}</a>']
+         for t in sorted(rezervasyonlu, key=lambda x: (slug(x["il"]), slug(x["ad"])))])}
 <h2>Adım adım</h2>
 <ol>
 <li><strong>İli seçin.</strong> <a href="/il/">81 il listesinden</a> gideceğiniz ili açın.</li>
@@ -493,7 +504,9 @@ Telefonla ulaşılamayan tesislere yazılı sormak, özellikle tarih esnekliği 
 sonuç veriyor.</div></div>"""
         sss = [
             ("Öğretmenevi rezervasyonu online yapılabilir mi?",
-             "Çok az tesis online rezervasyon alır. Neredeyse tamamında rezervasyon "
+             f"Bu dizindeki {len(tesisler)} tesisin {len(rezervasyonlu)} tanesinde "
+             "online rezervasyon sayfası bulundu ve adresler doğrulandı; ilgili tesisin "
+             "sayfasında bağlantı var. Kalan tesislerde rezervasyon "
              "tesisin kendi telefonundan yapılır; merkezî bir sistem yoktur."),
             ("Rezervasyon için kapora ödenir mi?",
              "Çoğu tesiste kapora istenmez, ödeme girişte yapılır. Yoğun sezonda bazı "
