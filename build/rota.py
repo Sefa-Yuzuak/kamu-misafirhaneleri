@@ -89,6 +89,11 @@ def _zincir(baslangic: dict, havuz: list[dict], kullanilan: set[str]) -> list[di
     rota = [baslangic]
     il_sayaci = {baslangic["tesis"]["il"]: 1}
     secilenler = {baslangic["slug"]}
+    # Gidilen ILCE bir daha ziyaret edilmez. Yalniz tesis takip edilince ayni
+    # ilcede iki tesis oldugunda rota geri donebiliyordu ve ortaya
+    # "Marmaris -> Didim -> Marmaris -> Didim" gibi anlamsiz bir 4 duraklik
+    # program cikiyordu (olculdu, 09.2026).
+    ziyaret = {_yer_anahtari(baslangic["tesis"])}
 
     while len(rota) < EN_COK_DURAK:
         son = rota[-1]
@@ -98,6 +103,8 @@ def _zincir(baslangic: dict, havuz: list[dict], kullanilan: set[str]) -> list[di
                 continue
             # Aynı il üst üste iki duraktan fazla olmasın: rota il değiştirsin
             if il_sayaci.get(d["tesis"]["il"], 0) >= 2:
+                continue
+            if _yer_anahtari(d["tesis"]) in ziyaret:
                 continue
             if deniz_gecer(son["nokta"], d["nokta"]):
                 continue
@@ -112,6 +119,7 @@ def _zincir(baslangic: dict, havuz: list[dict], kullanilan: set[str]) -> list[di
         secim = adaylar[0][2]
         rota.append(secim)
         secilenler.add(secim["slug"])
+        ziyaret.add(_yer_anahtari(secim["tesis"]))
         il_sayaci[secim["tesis"]["il"]] = il_sayaci.get(secim["tesis"]["il"], 0) + 1
     return rota
 
@@ -122,12 +130,21 @@ def rotalar_uret(havuz: list[dict]) -> list[list[dict]]:
     uretilen: list[list[dict]] = []
     kullanilan: set[str] = set()
 
+    adresler: set[str] = set()
     for baslangic in sirali:
         if baslangic["slug"] in kullanilan:
             continue
         rota = _zincir(baslangic, havuz, kullanilan)
         if len(rota) < EN_AZ_DURAK:
             continue
+        # Adres il dizisinden kuruluyor; ayni illeri ayni sayida durakla gezen
+        # ikinci bir rota hem ayni adrese duser (biri digerinin sayfasinin
+        # uzerine yazilir, sitemap adresi iki kez listeler) hem de ayni
+        # bolgeyi anlatan ikinci bir sayfa olur. Biri yeter.
+        adres = rota_slug(rota)
+        if adres in adresler:
+            continue
+        adresler.add(adres)
         # Aynı durakları paylaşan ikinci bir rota üretme
         yeni = {d["slug"] for d in rota}
         if any(len(yeni & {x["slug"] for x in r}) > ORTAK_DURAK_SINIRI for r in uretilen):
