@@ -23,6 +23,7 @@ from parca import (  # noqa: E402
     google_yer_url,
     harita_kutusu,
     osm_adres,
+    tesis_adresi,
     SITE,
     e,
     eylemler,
@@ -37,6 +38,7 @@ from mesafe import cikis_mesafeleri, sure_metni  # noqa: E402
 from veri import cikma  # noqa: E402
 from veri import TURLER, e164, fiyat_araligi, fiyat_taban, kisa_ad, sayfa_basligi, slug  # noqa: E402
 from veri import tesis_slug, tur_slug  # noqa: E402
+from veri import adres_ozeti, duzgun_adres  # noqa: E402
 
 KOK = Path(__file__).resolve().parent.parent
 CIKTI = KOK / "site"
@@ -291,12 +293,16 @@ def tesis_aciklamasi(t: dict) -> str:
         bas = f"{ad} ({yer}) 2026 fiyatı {tutar} TL'den başlıyor"
     elif t.get("deniz"):
         bas = f"{ad} ({yer}) — {t['deniz']}"
+    elif adres_ozeti(t.get("adres") or ""):
+        # Sokak adı her tesiste farklıdır; kurum adı 521 sayfada aynıdır.
+        bas = f"{ad} ({yer}) — {adres_ozeti(t['adres'])}"
     else:
         bas = f"{ad} ({yer}) — {kurum} tesisi"
     # Duz [:158] kelimenin ortasindan kesiyordu ("… nasil yapild"). Sigan en
     # bilgili kuyruk seciliyor; hicbiri sigmazsa bas sozcuk sinirinda kirpiliyor.
     for kuyruk in (". Telefon, kimler kalabilir ve rezervasyon bilgisi sayfada.",
                    ". Telefon ve kimler kalabilir.",
+                   ". Telefon sayfada.",
                    "."):
         if len(bas) + len(kuyruk) <= 158:
             return bas + kuyruk
@@ -369,10 +375,12 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
         ("Bağlı kurum", e(kurum_tam(t["kurum"]))),
         ("İl / ilçe", f'<a href="/il/{slug(t["il"])}/">{e(t["il"])}</a> / {e(t["ilce"])}'),
     ]
-    adres = osm_adres(konum)
+    adres, adres_kaynagi = tesis_adresi(t, konum)
     if adres:
-        satirlar.append(("Adres", f"{e(adres)} <span style=\"color:var(--soluk)\">"
-                                  "(OpenStreetMap kaydı)</span>"))
+        etiket = ("kurumun kendi sayfasından" if adres_kaynagi == "kurum"
+                  else "OpenStreetMap kaydı")
+        satirlar.append(("Adres", f'{e(duzgun_adres(adres))} <span style="color:var(--soluk)">'
+                                  f'({etiket})</span>'))
     if t.get("telefon"):
         satirlar.append(
             (
@@ -385,6 +393,14 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
         )
     if t.get("eposta"):
         satirlar.append(("E-posta", f'<a href="mailto:{e(t["eposta"])}">{e(t["eposta"])}</a>'))
+    if t.get("web"):
+        satirlar.append(
+            (
+                "Resmî sitesi",
+                f'<a href="{e(t["web"])}" target="_blank" rel="noopener nofollow">'
+                f'{ik("dis")}{e(t["web"].split("//")[-1])}</a>',
+            )
+        )
     if t.get("fiyat_2026"):
         satirlar.append(("2026 fiyatı", e(t["fiyat_2026"])))
     if t.get("deniz"):
@@ -403,6 +419,16 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
         + "".join(f"<tr><th>{b}</th><td>{d}</td></tr>" for b, d in satirlar)
         + "</tbody></table>"
     )
+
+    # Kurumun kendi sitesinde yazdigi ulasim tarifi. Her tesiste FARKLI bir
+    # metin; sayfayi digerlerinden ayiran tek gercek serbest metin bu.
+    ulasim_html = ""
+    if t.get("ulasim"):
+        ulasim_html = (
+            '<h2 style="margin-top:2em">Ulaşım</h2>'
+            f'<p>{e(t["ulasim"])}</p>'
+            '<p class="guncel">Tesisin kendi sitesinde yayımladığı tarif.</p>'
+        )
 
     olanak = olanak_ikonlari(t.get("olanaklar"))
     olanak_html = ""
@@ -424,8 +450,11 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
             sinif="harita-yan",
             aciklama=False,
         )
+        kaynak_adi = {"meb": "tesisin kendi sitesinden",
+                      "google": "Google kaydından"}.get(
+            konum.get("saglayici"), "OpenStreetMap kaydından")
         konum_notu = (
-            f'{t["ilce"]}, {t["il"]} — konum OpenStreetMap kaydından alındı.'
+            f'{t["ilce"]}, {t["il"]} — konum {kaynak_adi} alındı.'
             if konum["kesinlik"] == "tesis"
             else f'{t["ilce"]}, {t["il"]} — harita ilçe merkezini gösterir, '
             "tesisin tam konumu değildir."
@@ -499,6 +528,7 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
 {kunye}
 <p class="guncel">Son güncelleme: <time datetime="{BUGUN}">{TARIH_TR}</time> — bilgiler kurumun kendi yayınından derlendi.</p>
 {olanak_html}
+{ulasim_html}
 <h2 style="margin-top:2em">Sık sorulan sorular</h2>
 {sss_html(sss)}
 <div class="not" style="margin-top:22px">{ik("uyari")}<div>
@@ -547,7 +577,7 @@ target="_blank" rel="noopener nofollow">{ik("yildiz")}Google yorumlarını gör<
             "name": kurum_tam(t["kurum"]),
         },
         "isAccessibleForFree": False,
-        "sameAs": [t["kaynak"]],
+        "sameAs": [x for x in (t["kaynak"], t.get("web")) if x],
         "speakable": {
             "@type": "SpeakableSpecification",
             "cssSelector": [".ozet", "h1"],

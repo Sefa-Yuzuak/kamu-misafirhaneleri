@@ -135,6 +135,11 @@ def sayfa_basligi(t: dict) -> str:
         ekler = (" — 2026 fiyatı ve telefon", " — fiyat ve telefon", " — fiyat")
     elif t.get("deniz"):
         ekler = (" — denize yakın, telefon", " — denize yakın", "")
+    elif t.get("adres") and t.get("telefon"):
+        # Ölçüldü: "adres/yol" niyetli 71 sorgu 217 gösterim alıyor ve TO %0,
+        # ortalama konum 18,7 — çünkü sayfada adres YOKTU. Artık 514 tesiste
+        # kurumun kendi yayımladığı açık adres var, vaat gerçek.
+        ekler = (" — adres ve telefon", " — adres", " — telefon")
     elif t.get("telefon"):
         ekler = (" — telefon ve konaklama", " — telefon", "")
     else:
@@ -215,3 +220,94 @@ def cikma(ad: str) -> str:
     kalin = _son_sesli(ad) in _KALIN
     d = "t" if ad and ad[-1].lower() in _SERT else "d"
     return f"{ad}'{d}{'a' if kalin else 'e'}n"
+
+
+# --- Türkçe güvenli harf dönüşümü -------------------------------------------
+# Python'un kendi lower()/title()'ı Türkçeyi bozar: "KONUKEVİ".title() ->
+# "Konukevi̇" (İ, i + U+0307 birleşen noktaya ayrışır) ve "IĞDIR".lower() ->
+# "iğdir". Dönüşümden ÖNCE noktalı/noktasız i çiftini elle eşlemek gerekir.
+_KUCULT = str.maketrans("İI", "iı")
+_BUYULT = str.maketrans("iı", "İI")
+
+
+def tr_kucuk(metin: str) -> str:
+    return metin.translate(_KUCULT).lower()
+
+
+def tr_buyuk(metin: str) -> str:
+    return metin.translate(_BUYULT).upper()
+
+
+# BÜYÜK harfte İ ile I ayrımı kaybolur ve geri getirilemez: "MİLLİ" de "MILLI"
+# de aynı tuşla yazılıyor. 488 adresteki 178 farklı belirsiz sözcük sayıldı ve
+# ÇOĞUNDA noktasız ı DOĞRU çıktı (KAPI, ÇANKIRI, HACI, BALIKESİR, AĞRI...).
+# Bu yüzden varsayılan kural I -> ı; aşağıdaki liste yalnızca ölçülen istisnalar.
+_NOKTALI = {
+    "EVI": "Evi", "ÖĞRETMENEVI": "Öğretmenevi", "OGRETMENEVI": "Öğretmenevi",
+    "EĞITIM": "Eğitim", "EGITIM": "Eğitim", "MILLI": "Millî", "BINASI": "Binası",
+    "ŞEHIT": "Şehit", "SEHIT": "Şehit", "FAKIH": "Fakih", "HIZMET": "Hizmet",
+    "ILCE": "İlçe", "ILÇE": "İlçe", "ISKELE": "İskele", "CUMHURIYET": "Cumhuriyet",
+    "BURHANIYE": "Burhaniye", "ERZIN": "Erzin", "ERZINCAN": "Erzincan",
+    "LISESI": "Lisesi", "MERKEZI": "Merkezi", "MERZIFON": "Merzifon",
+    "MECITÖZÜ": "Mecitözü", "NISAN": "Nisan", "PANSIYON": "Pansiyon",
+    "PANSIYONU": "Pansiyonu", "TESIS": "Tesis", "TURIZM": "Turizm",
+    "UNIVERSITESI": "Üniversitesi", "SELAHATTIN": "Selahattin",
+    "İBRAHIM": "İbrahim", "ÖĞRENCI": "Öğrenci", "KARESIBEY": "Karesibey",
+    "BALIKESIR": "Balıkesir", "PIRAZIZ": "Piraziz", "ÇIFTÇI": "Çiftçi",
+    "FEVZIATAC": "Fevziatac", "ILIC": "İliç", "ŞEREFLIKOÇHISAR": "Şereflikoçhisar",
+}
+
+
+def tr_baslik(metin: str) -> str:
+    """Yalnızca TAMAMI büyük yazılmış sözcükleri düzeltir.
+
+    Zaten doğru yazılmış sözcüğe dokunulmaz; "Kurtuluş Mahallesi ... / HATAY"
+    gibi karışık yazımlarda sadece bağıran parça yumuşar.
+    """
+    cikti = []
+    for s in metin.split(" "):
+        cekirdek = s.strip(".,;:/()-")
+        if cekirdek.upper() in _NOKTALI and cekirdek == tr_buyuk(cekirdek):
+            s = s.replace(cekirdek, _NOKTALI[cekirdek.upper()])
+        elif len([h for h in s if h.isalpha()]) > 1 and s == tr_buyuk(s):
+            s = tr_buyuk(s[:1]) + tr_kucuk(s[1:])
+        cikti.append(s)
+    return " ".join(cikti)
+
+
+_ADRES_GURULTU = re.compile(
+    r"\s*(İÇ\s*KAPI\s*NO[:\s]*\S+|D(ış|IŞ)\s*[Kk]ap[ıi]\s*[Nn]o[:\s]*\S+"
+    r"|BLOK\s*NO[:\s]*\S+|[Aa]dres\s*no\s*\d+|POSTA\s*KODU.*|PK\s*\d+)",
+    re.I)
+# Adres alanina sonradan yapisan kuyruklar: kurum sayfalarinda telefon, e-posta
+# ve web adresi cogu zaman ayni satira devam ediyor.
+_ADRES_KUYRUK = re.compile(
+    r"\s*[-–—,]?\s*(telefon|tel\.?|gsm|faks|belgege[çc]er|e-?posta|eposta|"
+    r"e-?mail|web\s*adresi|https?://).*$", re.I)
+# Etiketsiz telefon: "... Adana Seyhan Öğretmenevi 0322 453 31 58 - 0533 ..."
+_ADRES_TEL = re.compile(r"\s*[-–—,]?\s*0\d{3}[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}.*$")
+# Basa yapisan tam cumle: "Eskisehir merkeze 65 km uzakta. Sakarya Mah. ..."
+_ADRES_ONEK = re.compile(r"^[^.]{20,}?\.\s+(?=\S+\s+(mah|mh|mahalle))", re.I)
+
+
+def duzgun_adres(adres: str) -> str:
+    """Ekranda gösterilecek biçim: bağırmayan, iç kapı/blok gürültüsü atılmış."""
+    a = _ADRES_ONEK.sub("", (adres or "").strip())
+    a = _ADRES_GURULTU.sub("", _ADRES_TEL.sub("", _ADRES_KUYRUK.sub("", a)))
+    a = re.sub(r"\s*/\s*", " / ", re.sub(r"\s+", " ", a)).strip(" ,;-/")
+    return tr_baslik(a)
+
+
+def adres_ozeti(adres: str, en: int = 52) -> str:
+    """Açıklamada kullanılan kısa adres: mahalle + cadde, ilçe/il kuyruğu yok.
+
+    Kuyruk zaten cümlenin başında "(İlçe, İl)" olarak geçiyor; tekrarlamak
+    açıklamanın sınırlı 158 karakterini harcar.
+    """
+    a = duzgun_adres(adres)
+    a = re.sub(r"\s*/\s*[^/]+$", "", a)              # "... Söğüt / Bilecik" kuyruğu
+    a = re.sub(r"\s*No[:.]?\s*\S+\s*$", "", a, flags=re.I)
+    a = a.strip(" ,;-")
+    if len(a) <= en:
+        return a
+    return a[:en].rsplit(" ", 1)[0].rstrip(" ,;-.")

@@ -134,6 +134,22 @@ def osm_adres(konum: dict | None) -> str:
             goruldu.add(a)
             govde.append(x)
     return ", ".join(govde)
+
+
+def tesis_adresi(t: dict, konum: dict | None) -> tuple[str, str]:
+    """Sayfada gosterilecek adres ve kaynagi.
+
+    Kurumun KENDI yayinladigi adres, ters kodlamayla uretilenden ustundur:
+    binayi degil sokagi isaret etme riski yok ve kapi numarasi iceriyor.
+    Ogretmenevlerinde bu adres kurumun meb.k12.tr sitesinden alindi; yoksa
+    OSM kaydindan turetilene dusulur.
+    """
+    kendi = (t.get("adres") or "").strip()
+    if kendi:
+        return kendi, "kurum"
+    return osm_adres(konum), "osm"
+
+
 def wa_url(t: dict, no: str) -> str:
     import urllib.parse
     mesaj = (
