@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import collections
 import json
 import shutil
 import sys
@@ -57,6 +58,8 @@ from rota import (  # noqa: E402
     veriyi_yukle as rota_verisi,
 )
 from uret import CIKTI, KOK, il_sayfasi, kirinti_ld, sss_html, sss_ld, tesis_sayfasi  # noqa: E402
+from uret import ilce_tesis_sayfasi, ilce_tesis_uygun  # noqa: E402
+from uret import COK_ILLI_ILCE, ILCE_SAYFALARI  # noqa: E402
 from veri import TURLER, fiyat_taban, kisa_ad, slug, tesis_slug, tur_slug  # noqa: E402
 
 
@@ -807,10 +810,33 @@ def main() -> int:
         yaz(f"/rehber/{anahtar}/", rehber_sayfasi(anahtar, baslik, ikon, tesisler))
         yollar.append(f"/rehber/{anahtar}/")
 
+    # Ilce sayfalari SAYFALAR YAZILMADAN once belirlenir: il ve tesis sayfalari
+    # baglanti verirken bu kumeye bakiyor.
+    ilce_grup: dict[tuple[str, str], list] = defaultdict(list)
+    for t in tesisler:
+        ilce_grup[(t["il"], t.get("ilce") or "")].append(t)
+    ILCE_SAYFALARI.clear()
+    ILCE_SAYFALARI.update(
+        k for k, v in ilce_grup.items() if ilce_tesis_uygun(k[0], k[1], v))
+    _adlar = collections.Counter(slug(i) for _, i in ILCE_SAYFALARI)
+    COK_ILLI_ILCE.clear()
+    COK_ILLI_ILCE.update(a for a, n in _adlar.items() if n > 1)
+
     for il, ts in il_grup.items():
         il_haritali = any(konumlar.get(tesis_slug(t)) for t in ts)
         yaz(f"/il/{slug(il)}/", il_sayfasi(il, ts, gorseller, il_haritali))
         yollar.append(f"/il/{slug(il)}/")
+
+    # Ilce sayfalari — yalnizca 2+ tesisli, adi genel olmayan ilcelerde.
+    # Gerekcesi uret.ilce_tesis_sayfasi'nin ustunde: ayni sorgu bes sayfaya boluniyordu.
+    ilce_sayisi = 0
+    for (il, ilce) in sorted(ILCE_SAYFALARI):
+        ts = ilce_grup[(il, ilce)]
+        y = f"/ilce/{slug(il)}/{slug(ilce)}/"
+        yaz(y, ilce_tesis_sayfasi(il, ilce, ts, gorseller, konumlar))
+        yollar.append(y)
+        ilce_sayisi += 1
+    print(f"ilçe sayfası: {ilce_sayisi}")
 
     # Rotalar: koordinati dogrulanmis tesisleri gunluk surus mesafesinde
     # zincirleyip cok duraklı gezi programlari uretir.

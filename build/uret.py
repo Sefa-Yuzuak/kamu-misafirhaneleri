@@ -348,11 +348,12 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
             f'<ul class="il-liste">{satirlar}</ul></section>'
         )
 
-    kirintilar = [
-        ("/", "Ana sayfa"),
-        (f"/il/{slug(t['il'])}/", t["il"]),
-        (yol, kisa_ad(t["ad"])),
-    ]
+    kirintilar = [("/", "Ana sayfa"), (f"/il/{slug(t['il'])}/", t["il"])]
+    # Ilcenin kendi sayfasi varsa kirintiya girer: hem kullanici hem tarayici
+    # icin ilcedeki diger tesislere giden dogal yol.
+    if (t["il"], t.get("ilce") or "") in ILCE_SAYFALARI:
+        kirintilar.append((f"/ilce/{slug(t['il'])}/{slug(t['ilce'])}/", t["ilce"]))
+    kirintilar.append((yol, kisa_ad(t["ad"])))
 
     hero_img = ""
     foto_not = ""
@@ -742,6 +743,23 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
             f'<ul class="il-liste">{ogeler}</ul></section>'
         )
 
+    # Ilce sayfasi olan ilceler: oksuz kalmasinlar diye il sayfasindan baglanti.
+    il_ilceleri = sorted(
+        {t["ilce"] for t in tesisler if (il, t.get("ilce") or "") in ILCE_SAYFALARI})
+    ilce_bolum = ""
+    if il_ilceleri:
+        ogeler = "".join(
+            f'<li><a href="/ilce/{slug(il)}/{slug(i)}/">{e(i)} kamu misafirhaneleri'
+            f' <span style="color:var(--soluk)">'
+            f'{sum(1 for t in tesisler if t["ilce"] == i)} tesis</span></a></li>'
+            for i in il_ilceleri)
+        ilce_bolum = (
+            f'<section class="bl kap bl-cizgi"><div class="bl-bas"><div>'
+            f'<h2>{e(il)} ilçelerine göre</h2>'
+            f'<p>Birden çok tesisi olan ilçeler için ayrı karşılaştırma sayfası var.'
+            f'</p></div></div><ul class="il-liste">{ogeler}</ul></section>'
+        )
+
     kirintilar = [("/", "Ana sayfa"), ("/il/", "İller"), (yol, il)]
 
     ozet = (
@@ -841,6 +859,7 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
 <div class="iz">{kartlar}</div>
 </section>
 {harita_bolum}
+{ilce_bolum}
 {gezi_bolum}
 {liste_bolum}
 <section class="bl kap bl-cizgi">
@@ -906,4 +925,167 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
         aktif="/il/",
         harita=haritali,
         jsonld=[ld_liste, sss_ld(sss), kirinti_ld(kirintilar)],
+    )
+
+
+# --------------------------------------------------------------------------
+# İlçe sayfası
+# --------------------------------------------------------------------------
+# NEDEN VAR — Search Console'da ölçüldü (09.09.2026): "didim kamu
+# misafirhaneleri" sorgusunun 122 gösterimi BEŞ ayrı sayfaya bölünüyordu
+# (üç tesis sayfası + /il/aydin/ + /tur/kamu-misafirhaneleri/), hepsi 10-12.
+# sırada. Hiçbiri "ilçedeki tesisler" sorusunu yanıtlamıyor; Google hangisini
+# göstereceğine karar veremiyor. Bu sayfa sinyali tek adreste topluyor.
+#
+# YALNIZCA 2+ TESİSLİ İLÇEDE üretilir. Tek tesisli ilçede zaten tesisin kendi
+# sayfası doğru yanıt; oraya ikinci bir sayfa açmak /gezi/ bölümünde olanı
+# tekrarlar (169 sayfa, ortalama sıra 40, 90 günde 4 tıklama).
+
+ILCE_EN_AZ = 2
+GENEL_ILCE_ADI = {"merkez", "büyükşehir"}
+
+# Sayfasi URETILEN ilceler. derle.py sayfalari yazmadan ONCE dolduruyor; il ve
+# tesis sayfalari buradan bakip baglanti veriyor. Denetim betigi ilk turda
+# "22 sayfa oksuz" dedi — ic baglanti olmadan sayfa uretmek onu gorunmez birakir.
+ILCE_SAYFALARI: set[tuple[str, str]] = set()
+# Ayni ilce adi birden cok ilde varsa (Yenisehir: Diyarbakir ve Mersin) baslik
+# tekrar ediyordu; boyle ilcelerde baslik il adini da tasir.
+COK_ILLI_ILCE: set[str] = set()
+
+
+def ilce_tesis_uygun(il: str, ilce: str, tesisler: list[dict]) -> bool:
+    return (
+        bool(ilce)
+        and tr_kucuk(ilce) not in GENEL_ILCE_ADI
+        and len(tesisler) >= ILCE_EN_AZ
+    )
+
+
+def ilce_tesis_sayfasi(il: str, ilce: str, tesisler: list[dict], gorseller: dict,
+                       konumlar: dict) -> str:
+    yol = f"/ilce/{slug(il)}/{slug(ilce)}/"
+    g = gorseller.get(il)
+    sirali = sorted(tesisler, key=lambda t: slug(kisa_ad(t["ad"])))
+    deniz = [t for t in tesisler if t.get("deniz")]
+    fiyatli = [t for t in tesisler if fiyat_taban(t.get("fiyat_2026"))]
+    adresli = [t for t in tesisler if t.get("adres")]
+    rezervli = [t for t in tesisler if t.get("rezervasyon")]
+    turler = defaultdict(list)
+    for t in tesisler:
+        turler[t["tur"]].append(t)
+
+    def _hucre(t: dict) -> list[str]:
+        tel = (t.get("telefon") or [None])[0]
+        return [
+            f'<a href="/tesis/{tesis_slug(t)}/">{e(kisa_ad(t["ad"]))}</a>',
+            e(kurum_tam(t["kurum"])),
+            e(duzgun_adres(t["adres"])) if t.get("adres") else "—",
+            f'<a href="tel:{e164(tel)}">{e(tel)}</a>' if tel else "—",
+            e(t["fiyat_2026"]) if t.get("fiyat_2026") else "—",
+        ]
+
+    tablo = (
+        '<div class="tablo-kutu"><table><thead><tr>'
+        + "".join(f"<th>{x}</th>" for x in
+                  ("Tesis", "Bağlı kurum", "Adres", "Telefon", "Yayımlanmış 2026 fiyatı"))
+        + "</tr></thead><tbody>"
+        + "".join("<tr>" + "".join(f"<td>{x}</td>" for x in _hucre(t)) + "</tr>"
+                  for t in sirali)
+        + "</tbody></table></div>"
+    )
+
+    ozet = (
+        f"<strong>{e(ilce)}</strong> ilçesinde ({e(il)}) bu dizinde kayıtlı "
+        f"<strong>{len(tesisler)} kamu konaklama tesisi</strong> var: "
+        + ", ".join(_tur_sayisi(k, len(v)) for k, v in sorted(turler.items())) + ". "
+    )
+    if adresli:
+        ozet += f"{len(adresli)} tesisin açık adresi kurumun kendi yayınından alındı. "
+    if fiyatli:
+        ozet += f"{len(fiyatli)} tesis 2026 fiyatını yayımlamış. "
+    if deniz:
+        ozet += f"{len(deniz)} tesis denize yakın konumda. "
+    if rezervli:
+        ozet += f"{len(rezervli)} tesiste online rezervasyon sayfası var. "
+    ozet += "Rezervasyon doğrudan tesisten yapılır; bu sitede rezervasyon alınmaz."
+
+    kartlar = "".join(tesis_karti(t, gorseller, il_goster=False) for t in sirali)
+
+    sss = [
+        (f"{ilce}'de kaç kamu misafirhanesi var?",
+         f"{ilce} ({il}) ilçesinde bu dizinde kayıtlı {len(tesisler)} tesis var: "
+         + ", ".join(_tur_sayisi(k, len(v)) for k, v in sorted(turler.items()))
+         + ". Tamamı bu sayfadaki tabloda telefon numarasıyla listeli."),
+        (f"{ilce}'deki kamu misafirhanelerinde fiyatlar ne kadar?",
+         (f"{len(fiyatli)} tesis 2026 tarifesini kendi sayfasında yayımlamış ve "
+          "tutarlar bu sayfadaki tabloda olduğu gibi yazılı. Kalan tesislerde "
+          "fiyat için tesisi aramak gerekir; bu sitede tahmini fiyat yazılmaz.")
+         if fiyatli else
+         (f"{ilce}'deki tesislerin hiçbiri 2026 tarifesini internette yayımlamamış. "
+          "Fiyat için tablodaki telefon numaralarından tesisi aramak gerekir; "
+          "bu sitede tahmini fiyat yazılmaz.")),
+    ]
+    if deniz:
+        sss.append(
+            (f"{ilce}'de denize yakın kamu tesisi var mı?",
+             f"Evet, {len(deniz)} tesisin denize konumu kendi yayınından doğrulandı: "
+             + ", ".join(kisa_ad(t["ad"]) for t in deniz[:4]) + "."))
+
+    kirintilar = [("/", "Ana sayfa"), ("/il/", "İller"),
+                  (f"/il/{slug(il)}/", il), (yol, ilce)]
+
+    icerik = f"""<div class="ts-ust"><div class="kap">
+<div class="rzs"><span class="rz">{ik("konum")}{e(il)}</span>
+<span class="rz">{len(tesisler)} tesis</span>
+{f'<span class="rz">{len(deniz)} denize yakın</span>' if deniz else ""}</div>
+<h1>{e(ilce)} kamu misafirhaneleri</h1>
+<p class="yer">{e(ilce)}, {e(il)} — öğretmenevi, polisevi ve kamu tesisleri</p>
+</div></div>
+<div class="kap">
+<p class="ozet">{ozet}</p>
+<h2>Karşılaştırma tablosu</h2>
+{tablo}
+<p class="guncel">Son güncelleme: <time datetime="{BUGUN}">{TARIH_TR}</time> —
+bilgiler kurumların kendi yayınlarından derlendi.</p>
+<h2>Tesisler</h2>
+<div class="izgara">{kartlar}</div>
+<h2>Sık sorulan sorular</h2>
+{sss_html(sss)}
+<p><a class="dg dg-2 dg-sm" href="/il/{slug(il)}/">{e(il)} ilinin tamamı{ik("ok")}</a></p>
+</div>"""
+
+    ad = f"{ilce}, {il}" if slug(ilce) in COK_ILLI_ILCE else ilce
+    return kabuk(
+        baslik=f"{ad} Kamu Misafirhaneleri — {len(tesisler)} tesis"[:62],
+        aciklama=(
+            f"{ilce} ({il}) ilçesindeki {len(tesisler)} kamu konaklama tesisi: "
+            "öğretmenevi, polisevi ve kurum misafirhaneleri. Telefon"
+            + (f", {len(adresli)} tesiste açık adres" if adresli else "")
+            + (f", {len(fiyatli)} tesiste 2026 fiyatı" if fiyatli else "")
+            + (f", {len(deniz)} denize yakın tesis" if deniz else "")
+            + "."
+        )[:158],
+        yol=yol,
+        icerik=icerik,
+        og_gorsel=f"/img/il/{g['lg']}" if g else None,
+        kirintilar=kirintilar,
+        anahtarlar=[f"{ilce} kamu misafirhaneleri", f"{ilce} misafirhane",
+                    f"{ilce} öğretmenevi", f"{ilce} {il} konaklama",
+                    f"{il} {ilce} kamu misafirhanesi"],
+        jsonld=[
+            {
+                "@context": "https://schema.org",
+                "@type": "ItemList",
+                "name": f"{ilce} kamu misafirhaneleri",
+                "numberOfItems": len(tesisler),
+                "itemListElement": [
+                    {"@type": "ListItem", "position": i,
+                     "url": SITE + f"/tesis/{tesis_slug(t)}/",
+                     "name": kisa_ad(t["ad"])}
+                    for i, t in enumerate(sirali, 1)
+                ],
+            },
+            sss_ld(sss),
+            kirinti_ld(kirintilar),
+        ],
     )
