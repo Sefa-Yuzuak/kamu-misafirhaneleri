@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 import json
 import shutil
 import sys
@@ -23,6 +24,7 @@ from uret import (  # noqa: E402
     tesis_sayfasi,
 )
 from veri import TURLER, slug, tesis_slug, tur_slug  # noqa: E402
+from veri import donemlik_mi, fiyat_taban  # noqa: E402
 
 BUGUN = date.today()
 AY_TR = "Ocak Şubat Mart Nisan Mayıs Haziran Temmuz Ağustos Eylül Ekim Kasım Aralık".split()
@@ -47,7 +49,7 @@ def ana_sayfa(tesisler: list[dict], gorseller: dict, kurumlar: dict) -> str:
     for t in tesisler:
         il_grup[t["il"]].append(t)
     deniz = [t for t in tesisler if t.get("deniz")]
-    fiyatli = [t for t in tesisler if t.get("fiyat_2026")]
+    fiyatli = [t for t in tesisler if fiyat_taban(t.get("fiyat_2026"))]
     telefonlu = [t for t in tesisler if t.get("telefon")]
 
     kiyi_iller = sorted(
@@ -274,9 +276,37 @@ def _link(t: dict) -> str:
     return f'<a href="/tesis/{tesis_slug(t)}/">{e(t["ad"])}</a>'
 
 
+_PERSONEL = re.compile(r"(öğretmen|ogretmen|meb|mensu)[^0-9]{0,34}?"
+                       r"(\d{1,3}(?:\.\d{3})+|\d{3,5})\s*(?:TL|₺)", re.I)
+_SIVIL = re.compile(r"(sivil|misafir|vatandaş|diğer)[^0-9]{0,34}?"
+                    r"(\d{1,3}(?:\.\d{3})+|\d{3,5})\s*(?:TL|₺)", re.I)
+
+
+def _sivil_kati(tesisler: list[dict]) -> tuple[int, float, float, float]:
+    """Sivil tarifesi personel tarifesinin kaç katı? (adet, en az, ortanca, en çok)
+
+    Bu bir ORAN iddiasıdır ve tahminle yazılamaz. İlk taslakta "iki katına
+    yakın" yazılmıştı; ölçülünce 1,4-2,0 aralığı ve 1,73 ortanca çıktı.
+    Yalnızca aynı metinde her iki tarifeyi de yayımlamış tesisler sayılır.
+    """
+    oranlar = []
+    for t in tesisler:
+        m = t.get("fiyat_2026") or ""
+        pers = [int(x[1].replace(".", "")) for x in _PERSONEL.findall(m)]
+        siv = [int(x[1].replace(".", "")) for x in _SIVIL.findall(m)]
+        if pers and siv and min(pers):
+            o = min(siv) / min(pers)
+            if 1.0 <= o <= 4.0:
+                oranlar.append(o)
+    if len(oranlar) < 5:
+        return (0, 0.0, 0.0, 0.0)
+    oranlar.sort()
+    return (len(oranlar), oranlar[0], oranlar[len(oranlar) // 2], oranlar[-1])
+
+
 def rehber_govde(anahtar: str, tesisler: list[dict]) -> tuple[str, list[tuple[str, str]]]:
     deniz = [t for t in tesisler if t.get("deniz")]
-    fiyatli = [t for t in tesisler if t.get("fiyat_2026")]
+    fiyatli = [t for t in tesisler if fiyat_taban(t.get("fiyat_2026"))]
 
     if anahtar == "ogretmenevinde-kimler-kalabilir":
         govde = f"""
@@ -323,20 +353,61 @@ kamu personeline 2.800 TL, MEB personeline 2.200 TL olarak duyuruldu.</blockquot
         return govde, sss
 
     if anahtar == "ogretmenevi-fiyatlari":
-        sat = sorted(fiyatli, key=lambda t: (t["il"], t["ad"]))
+        # Bandi ELLE yazmak yanlisti: metin "iki kisilik oda 1.500-3.000 TL"
+        # diyordu, cunku fiyat sayisi 21 iken cogu sahil tesisiydi. Kapsam
+        # buyuyunce (250 TL'lik ic Anadolu tesisleri girince) sayfa kendi
+        # tablosunun yalanladigi bir iddia tasiyor oldu. Artik veriden hesaplanir.
+        gecelik = [t for t in fiyatli if not donemlik_mi(t.get("fiyat_2026"))]
+        tabanlar = sorted(fiyat_taban(t["fiyat_2026"]) for t in gecelik)
+        orta = tabanlar[len(tabanlar) // 2] if tabanlar else 0
+        ucuz = sum(1 for x in tabanlar if x < 750)
+        pahali = sum(1 for x in tabanlar if x >= 2000)
+        kahvalti = sum(1 for t in gecelik if "kahvalt" in t["fiyat_2026"].lower())
+        kiyida = [fiyat_taban(t["fiyat_2026"]) for t in gecelik if t.get("deniz")]
+        icerde = [fiyat_taban(t["fiyat_2026"]) for t in gecelik if not t.get("deniz")]
+
+        def _tl(n: int) -> str:
+            return f"{n:,}".replace(",", ".") + " TL"
+
+        def _kat(x: float) -> str:
+            return f"{x:.2f}".rstrip("0").rstrip(".").replace(".", ",")
+
+        n_kat, en_az, orta_kat, en_cok = _sivil_kati(gecelik)
+        kat_cumlesi = ""
+        if n_kat:
+            kat_cumlesi = (
+                f" Her iki tarifeyi de yayımlamış {n_kat} tesiste sivil tarifesi, "
+                f"personel tarifesinin {_kat(en_az)} ile {_kat(en_cok)} katı "
+                f"arasında; ortanca {_kat(orta_kat)} kat.")
+
+        sat = sorted(fiyatli, key=lambda t: (donemlik_mi(t.get("fiyat_2026")),
+                                             fiyat_taban(t["fiyat_2026"])))
+        kiyi_cumlesi = ""
+        if len(kiyida) >= 3 and len(icerde) >= 3:
+            ko = sorted(kiyida)[len(kiyida) // 2]
+            io = sorted(icerde)[len(icerde) // 2]
+            kiyi_cumlesi = (
+                f" Denize yakınlığı doğrulanmış {len(kiyida)} tesiste ortanca "
+                f"{_tl(ko)}, diğerlerinde {_tl(io)}.")
         govde = f"""
 <p>Kamu konaklama tesislerinin <strong>merkezî bir fiyat listesi yoktur</strong>.
 Her tesis kendi tarifesini belirler ve çoğu bunu internette yayımlamaz. Bu dizinde
 {len(tesisler)} tesis kayıtlı; bunlardan <strong>{len(fiyatli)} tanesinin</strong>
 yayımlanmış 2026 fiyatına ulaşılabildi. Aşağıdaki tablo tamamen bu kurumların kendi
 duyurularından alınmıştır — tahmin veya ortalama yazılmamıştır.</p>
-{_tablo(["Tesis", "İl", "Yayımlanan 2026 fiyatı"],
-        [[_link(t), f'<a href="/il/{slug(t["il"])}/">{e(t["il"])}</a>', e(t["fiyat_2026"])] for t in sat])}
-<h2>Tablodan çıkan tablo</h2>
-<p>Yayımlanmış tarifelerde iki kişilik oda genellikle <strong>1.500–3.000 TL</strong>
-bandında, üç–dört kişilik oda ise <strong>2.500–4.500 TL</strong> bandında duyurulmuş
-durumda. Sahil tesisleri bandın üst ucunda, iç bölgelerdeki tesisler alt ucunda yer
-alıyor. Çoğu tesiste <strong>açık büfe kahvaltı fiyata dahil</strong>.</p>
+<h2>Yayımlanan fiyatlar ne söylüyor?</h2>
+<p>Gecelik tarifesini yayımlamış {len(gecelik)} tesiste <strong>en düşük tutar
+{_tl(tabanlar[0])} ile {_tl(tabanlar[-1])} arasında</strong> değişiyor; ortanca
+{_tl(orta)}. Tesislerin {ucuz} tanesinde başlangıç fiyatı 750 TL'nin altında,
+{pahali} tanesinde 2.000 TL ve üzerinde.{kiyi_cumlesi} Aynı tesiste kurum personeli,
+diğer kamu personeli ve misafir için ayrı tarife uygulanıyor; tablodaki tutarlar
+duyurunun kendi ifadesiyle veriliyor.{kat_cumlesi}</p>
+<p>Yayımlanmış {len(gecelik)} tarifenin {kahvalti} tanesinde kahvaltının fiyata
+dahil olduğu açıkça yazıyor. Kalanında bu bilgi duyuruda yok — dahil olmadığı
+anlamına gelmez, teyit edilmelidir.</p>
+{_tablo(["Tesis", "İl", "Başlangıç", "Yayımlanan 2026 fiyatı"],
+        [[_link(t), f'<a href="/il/{slug(t["il"])}/">{e(t["il"])}</a>',
+          _tl(fiyat_taban(t["fiyat_2026"])), e(t["fiyat_2026"])] for t in sat])}
 <h2>Fiyatı yayımlanmamış tesisler</h2>
 <p>Kalan {len(tesisler) - len(fiyatli)} tesis için bu sitede fiyat yazılmaz. Tahmini
 rakam vermek yanıltıcı olurdu; ilgili tesisin sayfasındaki telefon numarasından
@@ -346,15 +417,20 @@ güncellenebilir. Tablodaki her tesisin kendi sayfasında kaynak bağlantısı v
 Son derleme: {TARIH_TR}.</div></div>"""
         sss = [
             ("Öğretmenevi fiyatları 2026'da ne kadar?",
-             f"Yayımlanmış {len(fiyatli)} tarifeye göre iki kişilik oda çoğunlukla "
-             "1.500–3.000 TL, üç–dört kişilik oda 2.500–4.500 TL bandında. Tek bir "
-             "ülke geneli fiyat yoktur; her tesis kendi tarifesini belirler."),
+             f"Tek bir ülke geneli fiyat yoktur; her tesis kendi tarifesini belirler. "
+             f"Bu dizinde gecelik tarifesi yayımlanmış {len(gecelik)} tesiste başlangıç "
+             f"fiyatı {_tl(tabanlar[0])} ile {_tl(tabanlar[-1])} arasında, ortanca "
+             f"{_tl(orta)}."),
             ("Kamu personeli ile dışarıdan gelen misafir aynı ücreti mi öder?",
              "Hayır. Yayımlanmış listelerde çoğunlukla kurum personeli, diğer kamu "
-             "personeli ve misafir için ayrı tarifeler bulunuyor."),
+             "personeli ve misafir için ayrı tarifeler bulunuyor."
+             + (f" Her iki tarifeyi de yayımlamış {n_kat} tesiste ölçüldü: sivil "
+                f"tarifesi personel tarifesinin {_kat(en_az)}-{_kat(en_cok)} katı, "
+                f"ortanca {_kat(orta_kat)} kat." if n_kat else "")),
             ("Kahvaltı fiyata dahil mi?",
-             "Yayımlanmış listelerin çoğunda açık büfe kahvaltının dahil olduğu "
-             "belirtiliyor; ancak her tesiste geçerli değildir, teyit edilmelidir."),
+             f"Yayımlanmış {len(gecelik)} tarifenin {kahvalti} tanesinde kahvaltının "
+             "dahil olduğu yazıyor. Kalanında duyuruda böyle bir ifade yok; "
+             "tesise sormak gerekir."),
         ]
         return govde, sss
 

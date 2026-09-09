@@ -131,7 +131,10 @@ def sayfa_basligi(t: dict) -> str:
         yer = t["il"]
     else:
         yer = f"{t['ilce']}, {t['il']}"
-    if t.get("fiyat_2026"):
+    # Alanda metin olmasi yetmez, icinde TUTAR olmali: iki kayitta "2026
+    # donemleri 1 Haziran-27 Eylul" gibi bir NOT yaziliydi ve sayfa hic fiyat
+    # tasimadigi halde basligi "2026 fiyati" diye soz veriyordu.
+    if fiyat_taban(t.get("fiyat_2026")):
         ekler = (" — 2026 fiyatı ve telefon", " — fiyat ve telefon", " — fiyat")
     elif t.get("deniz"):
         ekler = (" — denize yakın, telefon", " — denize yakın", "")
@@ -153,47 +156,52 @@ def sayfa_basligi(t: dict) -> str:
     return ad
 
 
-_TUTAR = re.compile(r"\b(\d{1,3}(?:\.\d{3})+|\d{3,6})\b")
+# Tutar YALNIZCA para birimiyle birlikte sayilir. Eski desen ciplak sayilari da
+# aliyordu ve "212 Nolu Oda" satirindaki 212'yi fiyat sanabiliyordu; ustelik yil
+# sayilarini elemek icin ayri bir kural gerekiyordu. Para birimi sarti ikisini de
+# cozuyor. Alt sinir 500'den 150'ye indi: kurumlarin kendi yayimladigi
+# tarifelerde 250-450 TL'lik yatak ucretleri var ve 500 esigi bunlari GORMUYORDU.
+_TUTAR = re.compile(
+    r"(\d{1,3}(?:\.\d{3})+|\d{3,6})(?:[,.]\d{2})?\s*(?:TL|₺)", re.I)
+# Donemlik paketler gecelik tarifelerle karsilastirilamaz: "6 gece 7 gun 50.400 TL"
+# bir gecelik fiyat degildir ve "en ucuz" siralamasina girerse tabloyu bozar.
+_DONEMLIK = re.compile(r"(\d+\s*gece|dönem sistemi|haftalık|sezonluk)", re.I)
+
+
+def _tutarlar(metin: str | None) -> list[int]:
+    if not metin:
+        return []
+    cikti = []
+    for ham in _TUTAR.findall(metin):
+        try:
+            n = int(ham.replace(".", ""))
+        except ValueError:
+            continue
+        if 150 <= n <= 200000:
+            cikti.append(n)
+    return cikti
+
+
+def donemlik_mi(metin: str | None) -> bool:
+    """Fiyat gecelik degil, cok geceli paket mi?"""
+    return bool(metin) and bool(_DONEMLIK.search(metin))
 
 
 def fiyat_taban(metin: str | None) -> int:
-    """Yayımlanan fiyat metnindeki en düşük gerçekçi tutar.
+    """Yayimlanan fiyat metnindeki en dusuk gercekci tutar.
 
-    Metinlerde birden çok oda tipi geçiyor ("2 kişilik 3.000 / 4 kişilik 4.000 TL").
-    Sıralama için en düşük tutarı almak, "şu fiyattan başlıyor" anlamına gelir ve
-    yanıltmaz; en büyüğü almak dört kişilik odayı tek kişilik gibi gösterirdi.
-    Yıl sayıları (2026) ve küçük rakamlar elenir.
+    Metinlerde birden cok oda tipi geciyor ("2 kisilik 3.000 / 4 kisilik 4.000 TL").
+    Siralama icin en dusugu almak "su fiyattan basliyor" anlamina gelir ve
+    yaniltmaz; en buyugu almak dort kisilik odayi tek kisilik gibi gosterirdi.
     """
-    if not metin:
-        return 0
-    tutarlar = []
-    for ham in _TUTAR.findall(metin):
-        try:
-            n = int(ham.replace(".", ""))
-        except ValueError:
-            continue
-        if 500 <= n <= 200000 and not (2000 <= n <= 2100 and "." not in ham):
-            tutarlar.append(n)
-    return min(tutarlar) if tutarlar else 0
+    t = _tutarlar(metin)
+    return min(t) if t else 0
 
 
 def fiyat_araligi(metin: str | None) -> tuple[int, int]:
-    """Yayımlanan fiyat metnindeki en düşük ve en yüksek gerçekçi tutar.
-
-    schema.org priceRange için gerekiyor. fiyat_taban ile aynı süzgeci
-    kullanır; tek tutar varsa iki uç da odur.
-    """
-    if not metin:
-        return (0, 0)
-    tutarlar = []
-    for ham in _TUTAR.findall(metin):
-        try:
-            n = int(ham.replace(".", ""))
-        except ValueError:
-            continue
-        if 500 <= n <= 200000 and not (2000 <= n <= 2100 and "." not in ham):
-            tutarlar.append(n)
-    return (min(tutarlar), max(tutarlar)) if tutarlar else (0, 0)
+    """schema.org priceRange icin en dusuk ve en yuksek tutar."""
+    t = _tutarlar(metin)
+    return (min(t), max(t)) if t else (0, 0)
 
 
 _SESLI = "aeıioöuü"

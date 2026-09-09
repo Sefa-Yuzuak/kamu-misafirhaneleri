@@ -700,7 +700,9 @@
    "ankara_saat": 6,
    "web": "https://aksekiogretmenevi.meb.k12.tr",
    "adres": "DEMİRCİLER MAH. HÜKÜMET CAD. NO 2A AKSEKİ / ANTALYA",
-   "ulasim": "DEMİRCİLER MAH. HÜKÜMET CAD. NO 2A AKSEKİ / ANTALYA - 2426782018"
+   "ulasim": "DEMİRCİLER MAH. HÜKÜMET CAD. NO 2A AKSEKİ / ANTALYA - 2426782018",
+   "fiyat_2026": "ÖĞRETMEN , ÖĞRETMEN YAKINI VE MİLLİ EĞİTİM PERSONELİ:800 TL · KAMU KURUM VE KURULUŞLARININ ÇALIŞANLARI, EMEKLİLERİ VE YAKINLARI:1200 TL · DİĞER MİSAFİRLER (SİVİL) :1600 TL",
+   "kaynak_fiyat": "https://aksekiogretmenevi.meb.k12.tr/icerikler/güncel-fiyat-listesi_17637783.html"
   },
   {
    "ad": "Alanya Öğretmenevi ve Akşam Sanat Okulu",
@@ -1876,7 +1878,9 @@
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://sabanozugelalcorapogretmenevi.meb.k12.tr",
-   "adres": "Sağlık Mah. Ahmet Erdem Cad. No6 Şabanözü / ÇANKIRI"
+   "adres": "Sağlık Mah. Ahmet Erdem Cad. No6 Şabanözü / ÇANKIRI",
+   "fiyat_2026": "Yatak Ücretleri: Öğretmen 300 TL, Kamu 500 TL, Sivil 600 TL · Oda Ücretleri: Öğretmen 450 TL, Kamu 750 TL, Sivil 900 TL",
+   "kaynak_fiyat": "https://sabanozugelalcorapogretmenevi.meb.k12.tr/icerikler/01012026-tarihi-itibariyle-konaklama-ücretlerimiz_13612098.html"
   },
   {
    "ad": "Alaca Öğretmenevi ve Akşam Sanat Okulu",
@@ -4290,7 +4294,9 @@
    "kiyi": false,
    "kaynak": "https://dhgm.meb.gov.tr/edestek/ogretmenevi/ogretmenevi_liste.aspx",
    "web": "https://mucurogretmenevi.meb.k12.tr",
-   "adres": "YENİCE MAH. ENVER PAŞA CAD. NO 32A/1 İÇ KAPI NO 1 MUCUR / KIRŞEHİR"
+   "adres": "YENİCE MAH. ENVER PAŞA CAD. NO 32A/1 İÇ KAPI NO 1 MUCUR / KIRŞEHİR",
+   "fiyat_2026": "1.Paylaşımsız odalarda (tek kişilik) bir gecelik konaklama ; sivil misafirlerimiz için 1200TL , kamu görevlisi ve öğrenc",
+   "kaynak_fiyat": "https://mucurogretmenevi.meb.k12.tr/icerikler/01072026-tarihi-itibariyle-konaklama-ücretlerimizde-güncelleme-yapilmiştir_15406678.html"
   },
   {
    "ad": "Gebze Öğretmenevi ve Akşam Sanat Okulu",
