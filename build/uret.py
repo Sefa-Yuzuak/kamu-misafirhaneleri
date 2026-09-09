@@ -791,11 +791,15 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
         ],
     }
 
+    il_fiyatli = sum(1 for t in tesisler if t.get("fiyat_2026"))
     return kabuk(
-        baslik=f"{il} Kamu Misafirhaneleri — {len(tesisler)} tesis, telefon ve fiyat",
+        # Fiyat vaadi ilin GERCEK kapsamina bagli: cogu ilde yayimlanmis fiyat yok.
+        baslik=f"{il} Kamu Misafirhaneleri — {len(tesisler)} tesis, telefon"
+               + (" ve fiyat" if il_fiyatli else " ve konum"),
         aciklama=(
             f"{il} ilindeki {len(tesisler)} öğretmenevi, polisevi ve kamu misafirhanesi. "
-            f"Telefon numaraları, 2026 fiyatları"
+            f"Telefon numaraları"
+            + (f", {il_fiyatli} tesiste 2026 fiyatı" if il_fiyatli else "")
             + (f", {len(deniz)} denize yakın tesis" if deniz else "")
             + ". Rezervasyon doğrudan tesisten."
         )[:158],

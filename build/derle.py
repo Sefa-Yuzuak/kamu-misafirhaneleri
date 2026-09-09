@@ -156,10 +156,17 @@ def tur_sayfasi(tur: str, tesisler: list[dict], gorseller: dict) -> str:
 <section class="bl kap bl-cizgi">
 <h2>Sık sorulan sorular</h2>{sss_html(sss)}</section>"""
 
+    # "telefon ve fiyat" HER merkeze yaziliyordu ama yayimlanmis fiyat oranı
+    # cok dusuk: ogretmenevi 4/521, polisevi 3/43, kamu misafirhanesi 0/8.
+    # Tutulmayan soz TO'yu dusuruyor; vaat gercek kapsama gore kuruluyor.
+    fiyat_sayisi = len(fiyatli)
+    bol = fiyat_sayisi >= max(3, len(tesisler) * 0.25)
     return kabuk(
-        baslik=f"{cogul} — {len(tesisler)} tesis, telefon ve fiyat",
-        aciklama=f"Türkiye'deki {len(tesisler)} {cogul.lower()}: telefon numaraları, "
-        f"2026 fiyatları ve {len(iller)} ilde konum bilgisi.",
+        baslik=f"{cogul} — {len(tesisler)} tesis, telefon"
+               + (" ve fiyat" if bol else " ve konum"),
+        aciklama=f"Türkiye'deki {len(tesisler)} {cogul.lower()}: telefon numaraları"
+        + (f", {fiyat_sayisi} tesiste yayımlanmış 2026 fiyatı" if fiyat_sayisi else "")
+        + f" ve {len(iller)} ilde konum bilgisi.",
         yol=yol,
         icerik=icerik,
         kirintilar=kirintilar,
