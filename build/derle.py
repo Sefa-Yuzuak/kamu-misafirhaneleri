@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import collections
+import hashlib
 import json
 import shutil
 import sys
@@ -596,7 +597,7 @@ role="combobox" aria-expanded="false" aria-controls="oneri" aria-label="Tesis ar
 <div id="sonuclar"></div>
 </section>"""
     return kabuk(
-        baslik="Tesis ara — 562 kamu misafirhanesi içinde arama",
+        baslik=f"Tesis ara — {len(tesisler)} kamu misafirhanesi içinde arama",
         aciklama=f"{len(tesisler)} kamu konaklama tesisi içinde ada, ilçeye veya ile göre arama.",
         yol="/ara/",
         icerik=icerik,
@@ -605,10 +606,10 @@ role="combobox" aria-expanded="false" aria-controls="oneri" aria-label="Tesis ar
     )
 
 
-def dortyuzdort() -> str:
+def dortyuzdort(adet: int) -> str:
     return kabuk(
         baslik="Sayfa bulunamadı — Kamu Misafirhaneleri",
-        aciklama="Aradığınız sayfa bulunamadı. 81 ildeki 562 kamu konaklama tesisine ana sayfadan veya il listesinden ulaşabilirsiniz.",
+        aciklama=f"Aradığınız sayfa bulunamadı. 81 ildeki {adet} kamu konaklama tesisine ana sayfadan veya il listesinden ulaşabilirsiniz.",
         yol="/404.html",
         icerik=f"""<div class="bos" style="padding:90px 20px">{ik("bos")}
 <h1 style="margin-bottom:10px">Sayfa bulunamadı</h1>
@@ -620,9 +621,13 @@ def dortyuzdort() -> str:
 
 
 # --------------------------------------------------------------------------
-def sitemap(yollar: list[str]) -> str:
+def sitemap(yollar: list[str], tarihler: dict[str, str] | None = None) -> str:
+    """lastmod: tesis ve il sayfalarinda kaydin gercek degisim tarihi; digerlerinde
+    derleme gunu. Eskiden 1.081 URL'nin hepsi ayni gunu tasiyordu ve tarih sinyali
+    anlamsizdi (Google: tarihler gercek guncellemeyi yansitmali)."""
+    tarihler = tarihler or {}
     ogeler = "".join(
-        f"<url><loc>{SITE}{y}</loc><lastmod>{BUGUN.isoformat()}</lastmod>"
+        f"<url><loc>{SITE}{y}</loc><lastmod>{tarihler.get(y, BUGUN.isoformat())}</lastmod>"
         f"<changefreq>{'weekly' if y.count('/') < 3 else 'monthly'}</changefreq>"
         f"<priority>{'1.0' if y == '/' else '0.8' if y.count('/') < 3 else '0.6'}</priority></url>"
         for y in yollar
@@ -775,6 +780,9 @@ def main() -> int:
     yaz("/gizlilik/", gizlilik_sayfasi())
     yaz("/rehber/", rehber_dizini(tesisler))
     yaz("/ara/", ara_sayfasi(tesisler))
+    yaz("/hakkinda/", hakkinda_sayfasi(tesisler))
+    yollar.append("/hakkinda/")
+    kayit_tarihleri(tesisler)
 
     if konumlar:
         il_merkez = il_merkezleri(konumlar)
@@ -804,7 +812,7 @@ def main() -> int:
         parca.GEZ = [g for g in parca.GEZ if g[0] not in ("/araclar/", "/liste/")]
     if konumlar:
         yaz("/harita/", harita_sayfasi(tesisler, konumlar))
-    (CIKTI / "404.html").write_text(dortyuzdort(), "utf-8")
+    (CIKTI / "404.html").write_text(dortyuzdort(len(tesisler)), "utf-8")
 
     for anahtar, baslik, ikon in REHBERLER:
         yaz(f"/rehber/{anahtar}/", rehber_sayfasi(anahtar, baslik, ikon, tesisler))
@@ -825,6 +833,7 @@ def main() -> int:
     for il, ts in il_grup.items():
         il_haritali = any(konumlar.get(tesis_slug(t)) for t in ts)
         yaz(f"/il/{slug(il)}/", il_sayfasi(il, ts, gorseller, il_haritali))
+        TARIHLER[f"/il/{slug(il)}/"] = max(t["guncelleme"] for t in ts)
         yollar.append(f"/il/{slug(il)}/")
 
     # Ilce sayfalari — yalnizca 2+ tesisli, adi genel olmayan ilcelerde.
@@ -895,6 +904,7 @@ def main() -> int:
         yaz(f"/tesis/{tesis_slug(t)}/",
             tesis_sayfasi(t, gorseller, komsular, konumlar.get(tesis_slug(t))))
         yollar.append(f"/tesis/{tesis_slug(t)}/")
+        TARIHLER[f"/tesis/{tesis_slug(t)}/"] = t["guncelleme"]
 
     # arama dizini — [ad, ilce, il, slug, tur kisaltmasi]
     tur_kod = {k: i for i, k in enumerate(TURLER)}
@@ -1028,13 +1038,13 @@ def main() -> int:
     for anahtar, baslik, ikon in REHBERLER:
         one_cikan.append((f"/rehber/{anahtar}/", baslik, ""))
     (CIKTI / "feed.xml").write_text(rss(one_cikan, simdi), "utf-8")
-    (CIKTI / "opensearch.xml").write_text(opensearch(), "utf-8")
-    (CIKTI / "manifest.webmanifest").write_text(manifest(), "utf-8")
+    (CIKTI / "opensearch.xml").write_text(opensearch(len(tesisler)), "utf-8")
+    (CIKTI / "manifest.webmanifest").write_text(manifest(len(tesisler)), "utf-8")
     (CIKTI / f"{INDEXNOW_ANAHTAR}.txt").write_text(INDEXNOW_ANAHTAR, "utf-8")
     # IndexNow'a gönderilecek adres listesi
     (CIKTI / "urls.txt").write_text("\n".join(SITE + y for y in yollar), "utf-8")
 
-    (CIKTI / "sitemap.xml").write_text(sitemap(yollar), "utf-8")
+    (CIKTI / "sitemap.xml").write_text(sitemap(yollar, TARIHLER), "utf-8")
     (CIKTI / "robots.txt").write_text(robots(), "utf-8")
     # AdSense yetkili satici beyani: /ads.txt yoksa Google reklam talebini kisitlar.
     (CIKTI / "ads.txt").write_text(
@@ -1053,6 +1063,127 @@ def main() -> int:
     print(f"{len(yollar)} sayfa · {len(list(CIKTI.rglob('*.html')))} html "
           f"· {boyut / 1024 / 1024:.1f} MB -> {CIKTI}")
     return 0
+
+
+# --------------------------------------------------------------------------
+# Kayıt bazlı güncelleme tarihi ve hakkında sayfası
+# --------------------------------------------------------------------------
+#: sitemap lastmod icin yol -> ISO tarih
+TARIHLER: dict[str, str] = {}
+
+
+def kayit_tarihleri(tesisler: list[dict]) -> None:
+    """Her tesise, icerigi son degistigi gunun tarihini yazar (t["guncelleme"]).
+
+    data/guncelleme.json: {slug: {"h": icerik_karmasi, "t": tarih}}. Kayit ilk kez
+    goruldugunde tarih olarak verinin cekim tarihi (tesisler.json cekim_tarihi)
+    yazilir; karma degisince derleme gunu. Boylece "Son guncelleme" ve sitemap
+    lastmod, sayfanin ne zaman DERLENDIGINI degil verinin ne zaman DEGISTIGINI
+    soyler."""
+    yol = KOK / "data" / "guncelleme.json"
+    kayit = json.loads(yol.read_text("utf-8")) if yol.exists() else {}
+    cekim = json.loads((KOK / "tesisler.json").read_text("utf-8")).get("cekim_tarihi") or BUGUN.isoformat()
+    yeni = degisen = 0
+    for t in tesisler:
+        s = tesis_slug(t)
+        govde = {k: v for k, v in t.items() if k != "guncelleme"}
+        h = hashlib.sha1(json.dumps(govde, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()[:12]
+        onceki = kayit.get(s)
+        if onceki is None:
+            kayit[s] = {"h": h, "t": cekim}
+            yeni += 1
+        elif onceki["h"] != h:
+            kayit[s] = {"h": h, "t": BUGUN.isoformat()}
+            degisen += 1
+        t["guncelleme"] = kayit[s]["t"]
+    yol.write_text(json.dumps(kayit, ensure_ascii=False, indent=0, sort_keys=True), "utf-8")
+    print(f"güncelleme tarihi: {yeni} yeni, {degisen} değişen kayıt")
+
+
+def hakkinda_sayfasi(tesisler: list[dict]) -> str:
+    """E-E-A-T: kim derliyor, nasıl, ne sıklıkla, neyi yapmıyoruz. Google'ın
+    'yardımcı içerik' rehberi otomasyonun ve kaynağın açıkça belirtilmesini
+    ister; /hakkinda/ 404 dönüyordu (ölçüm 13.09.2026)."""
+    from parca import BILDIR_URL, INSTAGRAM, KURULUS_REF
+
+    n = len(tesisler)
+    adresli = sum(1 for t in tesisler if t.get("adres"))
+    fiyatli = sum(1 for t in tesisler if fiyat_taban(t.get("fiyat_2026")))
+    rez = sum(1 for t in tesisler if t.get("rezervasyon"))
+    kirintilar = [("/", "Ana sayfa"), ("/hakkinda/", "Hakkında")]
+    sss = [
+        ("Bu site kime ait?",
+         "Kamu Misafirhaneleri bağımsız bir dizindir; hiçbir bakanlığa, tesise veya "
+         "aracı kuruma ait değildir. Rezervasyon almaz, ödeme almaz, hiçbir tesisi "
+         "ücret karşılığı öne çıkarmaz. Giderler sayfalardaki reklamlarla karşılanır."),
+        ("Bilgiler nereden geliyor?",
+         f"Her kaydın kaynağı kurumun kendi yayınıdır: MEB kurum dizini ve tesislerin "
+         f"meb.k12.tr siteleri, emniyet ve üniversite sayfaları. {adresli} tesiste açık "
+         f"adres, {fiyatli} tesiste 2026 tarifesi ve {rez} tesiste online rezervasyon "
+         "adresi doğrudan o tesisin sayfasından alındı. Kaynak bağlantısı her tesis "
+         "sayfasının künyesinde görünür."),
+        ("Fiyatlar tahmin mi?",
+         "Hayır. Bu sitede tahmini veya ortalama fiyat yazılmaz. Tesis bir tarife "
+         "yayımlamışsa o tarife, yayımlamamışsa 'fiyat yayımlanmamış, tesisi arayın' "
+         "yazar. Tarife tablosu tesisin metninden birebir ayrıştırılır; ayrıştırılamayan "
+         "metin olduğu gibi gösterilir."),
+        ("Ne sıklıkla güncelleniyor?",
+         "Veri, kurum sayfalarından programla toplanır ve her derlemede yeniden "
+         "karşılaştırılır. Her tesis sayfasındaki 'Son güncelleme' tarihi o kaydın "
+         "içeriğinin en son değiştiği günü gösterir; site haritasındaki lastmod da "
+         "aynı tarihi taşır."),
+        ("Yanlış bir bilgi gördüm, ne yapayım?",
+         "Instagram'dan mesaj atın; tesis adı ve doğru bilgiyi yazmanız yeterli. "
+         "Düzeltme kaynağıyla birlikte yapılır."),
+    ]
+    sss_h = sss_html(sss)
+    icerik = f"""<section class="bl kap" style="max-width:820px">
+<h1>Hakkında ve yöntem</h1>
+<p class="giris">Türkiye'nin 81 ilindeki {n} öğretmenevi, polisevi, üniversite ve
+bakanlık misafirhanesinin bağımsız dizini. Amacı tek: kamu personelinin ve
+yakınlarının, uygun fiyatlı kamu tesislerini <strong>telefon, adres ve yol
+tarifiyle</strong> tek yerden bulması.</p>
+<h2>Nasıl hazırlanıyor?</h2>
+<ol>
+<li><strong>Kaynak:</strong> yalnızca kurumların kendi yayınları (MEB kurum dizini,
+tesislerin meb.k12.tr siteleri, emniyet ve üniversite sayfaları). Haber siteleri,
+forumlar ve toplayıcı siteler kaynak sayılmaz.</li>
+<li><strong>Toplama:</strong> adres, telefon, koordinat, tarife ve rezervasyon
+adresi kurum sayfalarından programla çekilir; telefon ve ad eşleştirmesiyle kayda
+bağlanır, biçimi doğrulanır.</li>
+<li><strong>Yayın:</strong> her tesis sayfası künyesinde kaynak bağlantısı ve kaydın
+son değişim tarihi bulunur. Bilinmeyen alan boş bırakılır; tahmin yazılmaz.</li>
+<li><strong>Düzeltme:</strong> bildirilen hatalar kaynağıyla karşılaştırılıp düzeltilir.</li>
+</ol>
+<h2>Neyi yapmıyoruz?</h2>
+<ul>
+<li>Rezervasyon almıyoruz; "Online rezervasyon" düğmeleri tesisin kendi sistemine gider.</li>
+<li>Kullanıcı yorumu depolamıyoruz; "Google yorumlarını gör" bağlantısı Google'a gider.</li>
+<li>Tesis fotoğrafı kullanmıyoruz; sayfalardaki görseller ilin lisanslı fotoğraflarıdır ve öyle etiketlenir.</li>
+<li>Hiçbir tesisten ücret almıyoruz; sıralamalar veriye (mesafe, fiyat, ad) göre yapılır.</li>
+</ul>
+<h2>İletişim</h2>
+<p>Yanlış bilgi, kapanan tesis veya değişen tarife için
+<a href="{BILDIR_URL}" target="_blank" rel="noopener">Instagram'dan mesaj atın</a>
+(<a href="{INSTAGRAM}" target="_blank" rel="noopener">@kamumisafirhaneler</a>).
+Veri kümesi <a href="/veri/">CC BY 4.0 ile açık</a>; kaynak göstererek serbestçe kullanılabilir.</p>
+<h2>Sık sorulan sorular</h2>
+{sss_h}
+</section>"""
+    return kabuk(
+        baslik="Hakkında ve yöntem — Kamu Misafirhaneleri",
+        aciklama=(f"{n} kamu tesisini kim, hangi kaynaklardan, nasıl derliyor; neyi "
+                  "yapmıyoruz; hata nasıl bildirilir."),
+        yol="/hakkinda/",
+        icerik=icerik,
+        kirintilar=kirintilar,
+        jsonld=[
+            {"@context": "https://schema.org", "@type": "AboutPage",
+             "name": "Hakkında ve yöntem", "url": SITE + "/hakkinda/",
+             "about": KURULUS_REF, "inLanguage": "tr-TR"},
+            sss_ld(sss), kirinti_ld(kirintilar),
+        ],
+    )
 
 
 if __name__ == "__main__":

@@ -52,12 +52,12 @@ def rss(sayfalar: list[tuple[str, str, str]], guncelleme: datetime) -> str:
     )
 
 
-def opensearch() -> str:
+def opensearch(adet: int) -> str:
     return (
         '<?xml version="1.0" encoding="UTF-8"?>'
         '<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">'
         f"<ShortName>{AD}</ShortName>"
-        "<Description>562 kamu konaklama tesisi içinde ara</Description>"
+        f"<Description>{adet} kamu konaklama tesisi içinde ara</Description>"
         "<InputEncoding>UTF-8</InputEncoding>"
         f'<Image width="16" height="16" type="image/svg+xml">{SITE}/favicon.svg</Image>'
         f'<Url type="text/html" method="get" template="{SITE}/ara/?q={{searchTerms}}"/>'
@@ -67,14 +67,14 @@ def opensearch() -> str:
     )
 
 
-def manifest() -> str:
+def manifest(adet: int) -> str:
     import json
 
     return json.dumps(
         {
             "name": AD,
             "short_name": "Kamu Misafirhaneleri",
-            "description": "81 ilde 562 öğretmenevi, polisevi ve kamu misafirhanesi.",
+            "description": f"81 ilde {adet} öğretmenevi, polisevi ve kamu misafirhanesi.",
             "start_url": "/",
             "scope": "/",
             "display": "standalone",
@@ -178,7 +178,7 @@ lisans koşulları geçerlidir.</div></div>
 </div>"""
 
     return kabuk(
-        baslik="Açık veri — 562 kamu tesisi, CC BY 4.0",
+        baslik=f"Açık veri — {len(tesisler)} kamu tesisi, CC BY 4.0",
         aciklama=f"Türkiye'deki {len(tesisler)} kamu konaklama tesisinin açık veri "
         "kümesi. JSON olarak indirin, kaynak göstererek serbestçe kullanın.",
         yol="/veri/",

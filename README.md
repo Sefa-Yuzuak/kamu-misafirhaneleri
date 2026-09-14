@@ -4,7 +4,7 @@
 kamu konaklama tesislerinin dizini: öğretmenevi, polisevi, bakanlık misafirhanesi ve
 üniversite sosyal tesisleri.
 
-Statik site. 562 tesisin her biri için ayrı sayfa üretilir; JavaScript yalnızca arama
+Statik site. 600+ tesisin her biri için ayrı sayfa üretilir; JavaScript yalnızca arama
 ve harita için kullanılır, içeriğin tamamı HTML'de hazır gelir.
 
 ## İlke
@@ -20,10 +20,10 @@ bilinmediği açıkça söylenir. Aynı ilke fotoğraflar ve harita için de ge�
 /ara/                  istemci tarafı arama
 /araclar/              4 hesaplama aracı (en yakın, bütçe, mesafe, karşılaştırma)
 /liste/                7 sıralı liste (en yakın sahil, en ucuz, havuzlu, ...)
-/harita/               562 tesis, kümelenmiş harita
+/harita/               tüm tesisler, kümelenmiş harita
 /il/                   81 il, alfabetik
 /il/<il>/              ilin tesisleri + il haritası + SSS
-/tesis/<il>-<ad>/      künye, olanaklar, SSS, harita, iletişim (562 sayfa)
+/tesis/<il>-<ad>/      künye, olanaklar, SSS, harita, iletişim (tesis başına bir sayfa)
 /tur/<tür>/            öğretmenevleri, polisevleri, üniversite, kamu
 /deniz/                denize konumu doğrulanmış tesisler
 /rehber/<yazı>/        veriye dayalı 5 rehber

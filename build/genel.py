@@ -171,14 +171,8 @@ kurumlara aittir; kaynağı göstermek için kullanılmaktadır.</p></div>
                 f"Türkiye'nin 81 ilindeki {len(tesisler)} kamu konaklama tesisinin "
                 "bağımsız dizini."
             ),
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": {
-                    "@type": "EntryPoint",
-                    "urlTemplate": SITE + "/ara/?q={search_term_string}",
-                },
-                "query-input": "required name=search_term_string",
-            },
+            # SearchAction (sitelinks arama kutusu) Google tarafindan 21.11.2024'te
+            # kaldirildi; olu isaretleme her sayfaya agirlik.
         },
         {
             "@context": "https://schema.org",

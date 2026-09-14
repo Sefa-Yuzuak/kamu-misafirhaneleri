@@ -1,11 +1,40 @@
 /* Harita — Leaflet + OpenStreetMap. Tek dosya, üç kullanım:
    1) Tesis sayfası: #harita[data-lat][data-lon]  -> tek iğne
    2) İl sayfası:    #harita[data-il]             -> ilin tesisleri
-   3) /harita/:      #harita[data-tum]            -> 562 tesis, kümelenmiş  */
+   3) /harita/:      #harita[data-tum]            -> tüm tesisler, kümelenmiş  */
 (function () {
   "use strict";
   var kutu = document.getElementById("harita");
-  if (!kutu || typeof L === "undefined") return;
+  if (!kutu) return;
+
+  /* Leaflet (51 KB gzip) ve üç CSS dosyası artık burada, kutu görünürlüğe
+     600px yaklaşınca yüklenir. Ölçüldü (PSI 13.09.2026): tesis sayfasında tek
+     iğne için peşin iniyor, LCP'yi geciktiriyordu. /harita/ sayfasında harita
+     içeriğin kendisi olduğundan hemen yüklenir. */
+  var YOL = "/static/harita/";
+  var basladi = false;
+  function css(ad) {
+    var l = document.createElement("link"); l.rel = "stylesheet"; l.href = YOL + ad;
+    document.head.appendChild(l);
+  }
+  function js(ad, sonra) {
+    var s = document.createElement("script"); s.src = YOL + ad; s.async = true;
+    s.onload = sonra; s.onerror = function () { kutu.remove(); };
+    document.head.appendChild(s);
+  }
+  function yukle() {
+    if (basladi) return; basladi = true;
+    if (typeof L !== "undefined") { baslat(); return; }
+    ["leaflet.css", "markercluster.css", "markercluster-default.css"].forEach(css);
+    js("leaflet.js", function () { js("markercluster.js", baslat); });
+  }
+  if (kutu.dataset.tum === "1" || !("IntersectionObserver" in window)) yukle();
+  else new IntersectionObserver(function (g, io) {
+    if (g[0].isIntersecting) { io.disconnect(); yukle(); }
+  }, { rootMargin: "600px 0px" }).observe(kutu);
+
+  function baslat() {
+  if (typeof L === "undefined") return;
 
   var RENK = { tesis: "#0D5C4E", ilce: "#8F5A15", deniz: "#0B6580" };
 
@@ -149,4 +178,5 @@
       if (say) say.textContent = kayitlar.length + " tesis haritada";
     })
     .catch(function () { kutu.remove(); });
+  }
 })();

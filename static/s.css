@@ -688,3 +688,49 @@ font-size:.88rem;color:var(--soluk);border-left:2px dashed var(--cizgi2);padding
 .rota-fiyat{margin:14px 0 0;padding-top:12px;border-top:1px solid var(--cizgi);
 font-size:.9rem;color:var(--soluk)}
 @media (max-width:600px){.rota-durak{padding:16px}.rota-iki{gap:14px}}
+
+/* ---------- fiyat tablosu (statü × oda) ---------- */
+.fyt{width:100%;border-collapse:collapse;font-size:.93rem;margin:10px 0 4px}
+.fyt th,.fyt td{padding:9px 10px;border-bottom:1px solid var(--cizgi);text-align:left;vertical-align:top}
+.fyt thead th{font-size:.78rem;text-transform:uppercase;letter-spacing:.03em;color:var(--soluk);border-bottom:2px solid var(--cizgi2)}
+.fyt tbody th{font-weight:600;color:var(--murekkep)}
+.fyt td{font-variant-numeric:tabular-nums;white-space:nowrap}
+@media (max-width:600px){
+  .fyt:not(.fyt-tek) thead{position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;overflow:hidden}
+  .fyt:not(.fyt-tek),.fyt:not(.fyt-tek) tbody,.fyt:not(.fyt-tek) tr,.fyt:not(.fyt-tek) th,.fyt:not(.fyt-tek) td{display:block}
+  .fyt:not(.fyt-tek) tr{border:1px solid var(--cizgi2);border-radius:10px;padding:8px 12px;margin-bottom:10px}
+  .fyt:not(.fyt-tek) th,.fyt:not(.fyt-tek) td{border:0;padding:4px 0;white-space:normal}
+  .fyt:not(.fyt-tek) td::before{content:attr(data-etiket) ": ";color:var(--soluk);font-size:.85rem}
+}
+/* ---------- liste filtre çipleri + liste arama kutusu ---------- */
+.ara-il{max-width:560px;margin:0 0 14px}
+.cipler{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 18px}
+.cip{border:1px solid var(--cizgi2);background:var(--yuzey);color:var(--murekkep);border-radius:999px;padding:7px 14px;font:inherit;font-size:.875rem;cursor:pointer;min-height:36px}
+.cip:hover{border-color:var(--soluk)}
+.cip[aria-pressed="true"]{background:var(--vurgu);color:#fff;border-color:var(--vurgu)}
+.cip-say{font-size:.85rem;color:var(--soluk)}
+.tk.gizle{display:none}
+/* ---------- paylaş / yazdır / alt bilgi Instagram ---------- */
+.paylas{display:flex;gap:6px;margin:8px 0 0}
+.alt-ig{display:inline-flex;align-items:center;gap:6px}
+/* ---------- mobil hızlı işlem çubuğu (tesis sayfası) ---------- */
+.yapis,.yapis-bosluk{display:none}
+@media (max-width:940px){
+  .yapis-bosluk{display:block;height:72px}
+  .yapis{display:flex;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--yuzey);border-top:1px solid var(--cizgi2);box-shadow:0 -6px 20px rgba(0,0,0,.08);transition:transform .25s}
+  .yapis .dg{flex:1;min-height:44px;padding:0 10px;font-size:.9rem}
+  .yapis[data-gizli]{transform:translateY(120%)}
+}
+@media (prefers-reduced-motion:reduce){.yapis{transition:none}}
+/* ---------- yazdırma ---------- */
+@media print{
+  .ust,.gez,.gez-dg,.alt,.yapis,.yapis-bosluk,.atla,.krnt,#harita,.oneri,.ara,.paylas,.cipler,ins.adsbygoogle,.dg-3,.harita-ac{display:none!important}
+  body{background:#fff;color:#000}
+  .ts-ust{height:auto;background:none;color:#000}
+  .ts-ust>img,.ts-ust::after{display:none}
+  .ts-ust h1,.ts-ust .yer{color:#000;text-shadow:none}
+  .ikili{display:block}
+  .kutu{border:1px solid #999;page-break-inside:avoid;margin-bottom:12px}
+  a{color:#000;text-decoration:none}
+  a[href^="http"]::after{content:" (" attr(href) ")";font-size:.8em;color:#555}
+}

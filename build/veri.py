@@ -135,14 +135,20 @@ def sayfa_basligi(t: dict) -> str:
     # donemleri 1 Haziran-27 Eylul" gibi bir NOT yaziliydi ve sayfa hic fiyat
     # tasimadigi halde basligi "2026 fiyati" diye soz veriyordu.
     if fiyat_taban(t.get("fiyat_2026")):
-        ekler = (" — 2026 fiyatı ve telefon", " — fiyat ve telefon", " — fiyat")
+        # Rakip olcumu (13.09.2026): fiyat sorgularini kazanan basliklar
+        # "[Ad] 2026 Fiyatlari, Telefon ve Adres" kalibinda; vaat yine
+        # yalnizca sayfada GERCEK tutar varken verilir.
+        ekler = (
+            (" — 2026 fiyatları, telefon ve adres" if t.get("adres") else " — 2026 fiyatları ve telefon"),
+            " — 2026 fiyatları ve telefon", " — 2026 fiyatı", " — fiyat")
     elif t.get("deniz"):
-        ekler = (" — denize yakın, telefon", " — denize yakın", "")
+        ekler = ((" — denize yakın, telefon ve adres" if t.get("adres") else " — denize yakın, telefon"),
+                 " — denize yakın, telefon", " — denize yakın", "")
     elif t.get("adres") and t.get("telefon"):
         # Ölçüldü: "adres/yol" niyetli 71 sorgu 217 gösterim alıyor ve TO %0,
         # ortalama konum 18,7 — çünkü sayfada adres YOKTU. Artık 514 tesiste
         # kurumun kendi yayımladığı açık adres var, vaat gerçek.
-        ekler = (" — adres ve telefon", " — adres", " — telefon")
+        ekler = (" — telefon, adres ve yol tarifi", " — adres ve telefon", " — adres", " — telefon")
     elif t.get("telefon"):
         ekler = (" — telefon ve konaklama", " — telefon", "")
     else:

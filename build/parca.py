@@ -4,7 +4,7 @@ import html
 import json
 import re
 from stil import KRITIK
-from veri import TURLER, e164, kisa_ad, slug, tesis_slug, ulusal_rakam, wa_numarasi
+from veri import TURLER, e164, fiyat_taban, kisa_ad, slug, tesis_slug, tur_slug, ulusal_rakam, wa_numarasi
 SITE = "https://kamumisafirhaneler.com"
 # derle.py karma adlı dosyayı üretince bunu günceller
 STIL_YOLU = "/static/s.css"
@@ -21,6 +21,9 @@ def e(x) -> str:
 # İkonlar — hepsi tek renk (currentColor), 24x24 çizgi, kalınlık CSS'ten.
 # --------------------------------------------------------------------------
 IKONLAR = {
+    "paylas": "M16 5.5a2.5 2.5 0 1 0 5 0 2.5 2.5 0 0 0-5 0ZM3 12a2.5 2.5 0 1 0 5 0 2.5 2.5 0 0 0-5 0Zm13 6.5a2.5 2.5 0 1 0 5 0 2.5 2.5 0 0 0-5 0ZM7.8 10.8l8.4-4.6M7.8 13.2l8.4 4.6",
+    "yazdir": "M7 8V3h10v5M7 17H4.5A1.5 1.5 0 0 1 3 15.5v-5A2.5 2.5 0 0 1 5.5 8h13A2.5 2.5 0 0 1 21 10.5v5a1.5 1.5 0 0 1-1.5 1.5H17M7 14h10v7H7z",
+    "instagram": "M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm5 5.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm5.2-1.7h.01",
     "telefon": "M6.6 3H4a1 1 0 0 0-1 1.1A16.9 16.9 0 0 0 19.9 21a1 1 0 0 0 1.1-1v-2.6a1 1 0 0 0-.8-1l-3-.6a1 1 0 0 0-1 .4l-1 1.3a13.4 13.4 0 0 1-5.7-5.7l1.3-1a1 1 0 0 0 .4-1l-.6-3a1 1 0 0 0-1-.8Z",
     "whatsapp": "M3.5 20.5 5 16.3A8 8 0 1 1 7.9 19.2l-4.4 1.3ZM9 9.3c.2 1 .8 2.2 1.7 3.1.9.9 2 1.5 3 1.7.4 0 .8-.1 1-.4l.6-.7a.6.6 0 0 1 .7-.1l1.6.8c.2.1.3.4.3.6-.1.7-.6 1.4-1.4 1.6-2.1.5-5-1.2-6.6-2.8C8.3 11.5 6.6 8.6 7.1 6.5c.2-.8.9-1.3 1.6-1.4.2 0 .5.1.6.3l.8 1.6c.1.2 0 .5-.1.7l-.7.6c-.3.2-.4.6-.3 1Z",
     "yol": "M21.4 11.1 12.9 2.6a1.3 1.3 0 0 0-1.8 0l-8.5 8.5a1.3 1.3 0 0 0 0 1.8l8.5 8.5c.5.5 1.3.5 1.8 0l8.5-8.5c.5-.5.5-1.3 0-1.8ZM9.5 14.5v-2.6a1.4 1.4 0 0 1 1.4-1.4h4M12.6 8.3l2.3 2.2-2.3 2.2",
@@ -232,7 +235,7 @@ def tesis_karti(t: dict, gorseller: dict, il_goster: bool = True) -> str:
     if t.get("fiyat_2026"):
         kisa = t["fiyat_2026"].split(";")[0].strip()
         fiyat = f'<p class="tk-fiyat">{ik("para")} {e(kisa)}</p>'
-    return f"""<article class="tk">
+    return f"""<article class="tk"{kart_nitelikleri(t)}>
 <div class="tk-gorsel">{gorsel}<span class="rzs-k">{rozetler}</span><span class="yer-et">{ik("konum")}{e(t["il"])}</span></div>
 <div class="tk-govde">
 <h3 class="tk-ad"><a href="/tesis/{s}/">{e(kisa_ad(t["ad"]))}</a></h3>
@@ -274,13 +277,12 @@ GEZ = [
     ("/tur/ogretmenevleri/", "Öğretmenevleri"),
     ("/rehber/", "Rehber"),
 ]
+# Harita CSS/JS artik h.js tarafindan kutu gorunurluge yaklasinca yukleniyor
+# (PSI 13.09.2026: tesis sayfasinda 51 KB gzip Leaflet tek igne icin pesin
+# iniyordu, uc CSS dosyasi da onbelleksizdi). Burada yalnizca karo sunucusu.
 HARITA_ON = (
     '<link rel="preconnect" href="https://tile.openstreetmap.org" crossorigin>'
     '<link rel="dns-prefetch" href="https://tile.openstreetmap.org">'
-) + "".join(
-    f'<link rel="preload" href="/static/harita/{ad}" as="style" '
-    "onload=\"this.rel='stylesheet'\">"
-    for ad in ("leaflet.css", "markercluster.css", "markercluster-default.css")
 )
 
 
@@ -299,6 +301,12 @@ MARKA_SVG = (
     'stroke-linecap="round" stroke-linejoin="round"/>'
     '<path d="M6 22.6h20" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>'
 )
+#: Sitenin tek kanitli iletisim kanali: Instagram hesabi (Graph API ile dogrulandi,
+#: 13.09.2026). Alan adinda posta kutusu oldugu kanitlanamadi; olu bir mailto
+#: "bildirin" metninden kotudur.
+INSTAGRAM = "https://www.instagram.com/kamumisafirhaneler/"
+BILDIR_URL = "https://ig.me/m/kamumisafirhaneler"
+
 #: Sitenin kanonik kuruluş düğümü. Tek @id ile tanımlanır ve Dataset.creator,
 #: Article.publisher, WebSite.publisher hep buna işaret eder; yoksa varlıklar
 #: birbirine baglanmiyor ve Google kimin yayinladigini cozemiyor.
@@ -313,6 +321,7 @@ KURULUS = {
         "width": 1200,
         "height": 630,
     },
+    "sameAs": [INSTAGRAM],
 }
 
 #: Baska dugumlerden kisa gonderme: tam tanim yalnizca ana sayfada basilir.
@@ -440,18 +449,20 @@ misafirhanelerinin bağımsız dizini. Rezervasyon alınmaz; her tesis doğrudan
 <li><a href="/feed.xml">RSS beslemesi</a></li>
 <li><a href="/sitemap.xml">Site haritası</a></li>
 <li><a href="/kaynaklar/">Kaynaklar ve katkı</a></li>
+<li><a href="/hakkinda/">Hakkında ve yöntem</a></li>
 <li><a href="/gizlilik/">Gizlilik ve çerezler</a></li>
 </ul></div>
 </div>
 <div class="alt-son">
 <span>Bağımsız dizindir; hiçbir kuruma ait değildir ve rezervasyon almaz.</span>
 <span>Fotoğraflar Wikimedia Commons, ilgili lisanslarıyla.</span>
+<a class="alt-ig" href="{INSTAGRAM}" target="_blank" rel="noopener">{ik("instagram")}Instagram</a>
 </div>
 </div>
 </footer>
 <script src="/static/a.js" defer></script>
 {'<script src="/static/t.js" defer></script>' if arac else ""}
-{'<script src="/static/harita/leaflet.js" defer></script><script src="/static/harita/markercluster.js" defer></script><script src="/static/h.js" defer></script>' if harita else ""}
+{'<script src="/static/h.js" defer></script>' if harita else ""}
 </body>
 </html>"""
 # --------------------------------------------------------------------------
@@ -477,4 +488,91 @@ def harita_kutusu(*, ozellikler: str, sinif: str = "", aciklama: bool = True,
     return (
         f'<div class="harita-sar {sinif}"><div id="harita" {ozellikler}></div>'
         f"{gosterge}</div>"
+    )
+
+
+# --------------------------------------------------------------------------
+# Mobil hızlı işlem çubuğu ve filtre çipleri
+# --------------------------------------------------------------------------
+def hizli_cubuk(t: dict) -> str:
+    """Mobilde (≤940px) alt kenara yapışan Ara / Rezervasyon / Yol tarifi çubuğu.
+
+    Ölçüldü (PSI + mobil emülasyon, 13.09.2026): sağ sütun mobilde statik, telefon
+    düğmesi künye ve SSS'nin altında, 3-4 ekran aşağıda kalıyordu. Booking/Airbnb
+    kalıbı: birincil eylem her an başparmak altında. Büyük "İletişim" kutusu
+    görünürken çubuk gizlenir (a.js)."""
+    tel = (t.get("telefon") or [None])[0]
+    p = []
+    if tel:
+        p.append(
+            f'<a class="dg dg-1" href="tel:{e164(tel)}" aria-label="{e(tel)} telefonla ara">'
+            f'{ik("telefon")}<span>Ara</span></a>'
+        )
+    if t.get("rezervasyon"):
+        p.append(
+            f'<a class="dg dg-2" href="{e(t["rezervasyon"])}" target="_blank" rel="noopener nofollow">'
+            f'{ik("saat")}<span>Rezervasyon</span></a>'
+        )
+    p.append(
+        f'<a class="dg dg-2" href="{e(yol_tarifi_url(t))}" target="_blank" rel="noopener nofollow">'
+        f'{ik("yol")}<span>Yol tarifi</span></a>'
+    )
+    return (
+        '<div class="yapis-bosluk"></div>'
+        f'<nav class="yapis" id="yapis" aria-label="Hızlı işlemler">{"".join(p)}</nav>'
+    )
+
+
+def kart_nitelikleri(t: dict) -> str:
+    """tesis_karti üzerindeki data-* nitelikleri; filtre çipleri bunlara bakar."""
+    return (
+        f' data-tur="{tur_slug(t["tur"])}"'
+        f' data-deniz="{1 if t.get("deniz") else 0}"'
+        f' data-fiyat="{1 if fiyat_taban(t.get("fiyat_2026")) else 0}"'
+        f' data-rez="{1 if t.get("rezervasyon") else 0}"'
+    )
+
+
+def filtre_cipleri(tesisler: list[dict]) -> str:
+    """İl/ilçe/tür listelerinde yatay filtre çipleri (Hostelworld/Baymard kalıbı).
+
+    Sayfa statik kalır: çipler yalnızca sayfadaki kartları gizler/gösterir, yeni
+    adres üretmez. Beş tesisin altında filtre anlamsız."""
+    import collections
+
+    if len(tesisler) < 5:
+        return ""
+    turler = collections.Counter(t["tur"] for t in tesisler)
+    cipler: list[tuple[str, str]] = []
+    if len(turler) > 1:
+        for tur, n in turler.most_common():
+            cipler.append((f"tur:{tur_slug(tur)}", f"{TURLER[tur][1]} ({n})"))
+    for anahtar, etiket, kosul in (
+        ("deniz", "Denize yakın", lambda t: bool(t.get("deniz"))),
+        ("fiyat", "2026 fiyatı var", lambda t: bool(fiyat_taban(t.get("fiyat_2026")))),
+        ("rez", "Online rezervasyon", lambda t: bool(t.get("rezervasyon"))),
+    ):
+        n = sum(1 for t in tesisler if kosul(t))
+        if 0 < n < len(tesisler):
+            cipler.append((anahtar, f"{etiket} ({n})"))
+    if not cipler:
+        return ""
+    dugmeler = "".join(
+        f'<button type="button" class="cip" data-f="{k}" aria-pressed="false">{e(m)}</button>'
+        for k, m in cipler
+    )
+    return (
+        f'<div class="cipler" role="group" aria-label="Listeyi filtrele">{dugmeler}'
+        '<span class="cip-say" aria-live="polite"></span></div>'
+    )
+
+
+def arama_kutusu(yer: str = "") -> str:
+    """Liste sayfalarının üstüne küçük arama kutusu; a.js aynı #q'ya bağlanır."""
+    return (
+        '<form class="ara ara-il" action="/ara/" method="get" role="search">'
+        '<svg class="ik ik-ara" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 17.5 21 21M19.5 11.2a8.2 8.2 0 1 1-16.5 0 8.2 8.2 0 0 1 16.5 0Z"/></svg>'
+        f'<input type="search" id="q" name="q" placeholder="{e(yer)}" autocomplete="off" '
+        'role="combobox" aria-expanded="false" aria-controls="oneri" aria-label="Tesis ara">'
+        '<div class="oneri" id="oneri" role="listbox"></div></form>'
     )

@@ -176,3 +176,71 @@
     if (window.innerWidth > 1000) kapat();
   });
 })();
+
+/* Tesis sayfası: mobil yapışkan hızlı işlem çubuğu. Büyük "İletişim" kutusu
+   ekrandayken gizlenir; aynı düğmeler iki kez görünmesin. */
+(function () {
+  var cubuk = document.getElementById("yapis");
+  if (!cubuk || !("IntersectionObserver" in window)) return;
+  var hedef = document.querySelector(".kutu-vurgu");
+  if (!hedef) return;
+  new IntersectionObserver(function (g) {
+    if (g[0].isIntersecting) cubuk.setAttribute("data-gizli", "");
+    else cubuk.removeAttribute("data-gizli");
+  }, { threshold: 0.15 }).observe(hedef);
+})();
+
+/* Liste filtre çipleri: kartları data-* niteliğine göre gizler/gösterir.
+   "tur:" grubunda tek seçim; diğerleri birlikte uygulanır (VE). */
+(function () {
+  var kap = document.querySelector(".cipler");
+  if (!kap) return;
+  var kartlar = Array.prototype.slice.call(document.querySelectorAll(".iz > .tk"));
+  var say = kap.querySelector(".cip-say");
+  var etkin = {};
+  function uygula() {
+    var n = 0, acik = Object.keys(etkin).filter(function (f) { return etkin[f]; });
+    kartlar.forEach(function (k) {
+      var goster = acik.every(function (f) {
+        var p = f.split(":");
+        return p.length > 1 ? k.dataset[p[0]] === p[1] : k.dataset[f] === "1";
+      });
+      k.classList.toggle("gizle", !goster);
+      if (goster) n++;
+    });
+    if (say) say.textContent = acik.length ? n + " tesis gösteriliyor" : "";
+  }
+  kap.addEventListener("click", function (ev) {
+    var d = ev.target.closest(".cip");
+    if (!d) return;
+    var f = d.dataset.f;
+    if (f.indexOf(":") > 0) {
+      var on = f.split(":")[0] + ":";
+      Object.keys(etkin).forEach(function (k) {
+        if (k !== f && k.indexOf(on) === 0 && etkin[k]) {
+          etkin[k] = false;
+          kap.querySelector('[data-f="' + k + '"]').setAttribute("aria-pressed", "false");
+        }
+      });
+    }
+    etkin[f] = !etkin[f];
+    d.setAttribute("aria-pressed", etkin[f] ? "true" : "false");
+    uygula();
+  });
+})();
+
+/* Paylaş (Web Share, yoksa bağlantıyı kopyala) ve yazdır. */
+(function () {
+  var p = document.querySelector("[data-paylas]"), y = document.querySelector("[data-yazdir]");
+  if (p) {
+    if (!navigator.share && !(navigator.clipboard && navigator.clipboard.writeText)) p.hidden = true;
+    p.addEventListener("click", function () {
+      var veri = { title: document.title, url: location.href };
+      if (navigator.share) { navigator.share(veri).catch(function () {}); return; }
+      navigator.clipboard.writeText(location.href).then(function () {
+        p.textContent = "Bağlantı kopyalandı";
+      });
+    });
+  }
+  if (y) y.addEventListener("click", function () { window.print(); });
+})();

@@ -37,6 +37,8 @@ from parca import (  # noqa: E402
 from mesafe import cikis_mesafeleri, sure_metni  # noqa: E402
 from veri import cikma  # noqa: E402
 from veri import TURLER, e164, fiyat_araligi, fiyat_taban, kisa_ad, sayfa_basligi, slug  # noqa: E402
+import fiyat as F  # noqa: E402
+from parca import BILDIR_URL, arama_kutusu, filtre_cipleri, hizli_cubuk  # noqa: E402
 from veri import tesis_slug, tur_slug  # noqa: E402
 from veri import adres_ozeti, duzgun_adres, tr_kucuk  # noqa: E402
 
@@ -97,6 +99,27 @@ AY_TR = ("Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
 _B = date.today()
 TARIH_TR = f"{_B.day} {AY_TR[_B.month - 1]} {_B.year}"
 
+
+def tarih_tr(iso: str) -> str:
+    """2026-09-09 -> 9 Eylül 2026"""
+    y, m, d = iso.split("-")
+    return f"{int(d)} {AY_TR[int(m) - 1]} {y}"
+
+
+def il_basligi(il: str, n: int, soz: str) -> str:
+    """Rakip olcumu (13.09.2026): "Istanbul Ogretmenevleri" sorgusunu tam baslik
+    eslesmesi kazaniyor; 611 tesisin 521'i ogretmenevi ama basligimiz yalniz
+    "kamu misafirhaneleri" diyordu. Ayri il×tur sayfasi acmak ayni listeyi
+    ikiye bolerdi (kanibalizasyon); il sayfasinin kendisi iki sorguyu da tasir.
+    Eskiden [:62] ile kelime ortasindan kesiliyordu; simdi sigan ilk aday."""
+    adaylar = (
+        f"{il} Öğretmenevleri ve Kamu Misafirhaneleri — {n} tesis{soz}",
+        f"{il} Öğretmenevleri ve Kamu Misafirhaneleri — {n} tesis",
+        f"{il} Öğretmenevleri — {n} tesis{soz}",
+        f"{il} Kamu Misafirhaneleri — {n} tesis",
+    )
+    return next((a for a in adaylar if len(a) <= 64), adaylar[-1][:64])
+
 KURUM_TAM = {
     "MEB": "Millî Eğitim Bakanlığı",
     "EGM": "Emniyet Genel Müdürlüğü",
@@ -129,7 +152,13 @@ def ozet_metni(t: dict, mesafe_var: bool = False) -> str:
             f'<strong>{e(tel)}</strong> numarasından aranır.'
         )
     if t.get("fiyat_2026"):
-        c.append(f'Tesisin yayımladığı 2026 fiyatları: {e(t["fiyat_2026"])}.')
+        if F.tablo(t["fiyat_2026"]):
+            # Tablo varken metni aynen tekrarlamak ozeti sisiriyordu (ekran
+            # goruntusuyle olculdu); taban fiyat + tabloya yonlendirme yeter.
+            c.append(f"Tesisin yayımladığı 2026 tarifesi {F.para(fiyat_taban(t['fiyat_2026']))}'den "
+                     "başlıyor; statü ve oda tipine göre tam tablo aşağıda.")
+        else:
+            c.append(f'Tesisin yayımladığı 2026 fiyatları: {e(t["fiyat_2026"])}.')
     else:
         c.append(
             "Tesisin yayımlanmış bir fiyat listesine ulaşılamadı; fiyat bilgisi "
@@ -421,8 +450,17 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
                 f'{ik("dis")}{e(t["web"].split("//")[-1])}</a>',
             )
         )
-    if t.get("fiyat_2026"):
+    fiyat_tb = F.tablo(t.get("fiyat_2026"))
+    if t.get("fiyat_2026") and not fiyat_tb:
         satirlar.append(("2026 fiyatı", e(t["fiyat_2026"])))
+    if t.get("kaynak_fiyat"):
+        # Rakip olcumu: kamutesisleri "Kaynagi ac", polisevi.net pol.tr baglantisi
+        # basiyor; bizde adres JSON'da vardi ama sayfada gorunmuyordu.
+        satirlar.append((
+            "Fiyat kaynağı",
+            f'<a href="{e(t["kaynak_fiyat"])}" target="_blank" rel="noopener nofollow">'
+            f'{ik("dis")} tesisin fiyat sayfası</a>',
+        ))
     if t.get("deniz"):
         satirlar.append(("Denize konumu", e(t["deniz"])))
     if t.get("ankara_saat"):
@@ -434,6 +472,18 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
             f'{ik("dis")} kurum sayfası</a>',
         )
     )
+    fiyat_html = ""
+    if fiyat_tb:
+        fiyat_html = (
+            '<h2 style="margin-top:1.6em">2026 fiyat tarifesi</h2>'
+            + F.html(fiyat_tb, e)
+            + '<p class="guncel">Tesisin kendi yayımladığı tarife. Birim (kişi/oda), '
+            'kahvaltı ve vergi kapsamı tesise göre değişir; rezervasyonda teyit edin.'
+            + (f' <a href="{e(t["kaynak_fiyat"])}" target="_blank" rel="noopener nofollow">Kaynak sayfa</a>.'
+               if t.get("kaynak_fiyat") else "")
+            + "</p>"
+        )
+    guncel_iso = t.get("guncelleme") or BUGUN
     kunye = (
         '<table class="kunye"><tbody>'
         + "".join(f"<tr><th>{b}</th><td>{d}</td></tr>" for b, d in satirlar)
@@ -546,8 +596,9 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
 <p class="ozet">{ozet_metni(t, bool(mesafe_cumlesi))}{mesafe_cumlesi}</p>
 <h2 class="gizli">Künye</h2>
 {kunye}
-<p class="guncel">Son güncelleme: <time datetime="{BUGUN}">{TARIH_TR}</time> — bilgiler kurumun kendi yayınından derlendi.</p>
-{olanak_html}
+<p class="guncel">Son güncelleme: <time datetime="{guncel_iso}">{tarih_tr(guncel_iso)}</time> — bilgiler kurumun kendi yayınından derlendi. <a href="{BILDIR_URL}" target="_blank" rel="noopener">Yanlış bilgi mi gördünüz? Bildirin</a></p>
+<div class="paylas"><button type="button" class="dg dg-3 dg-sm" data-paylas>{ik("paylas")}Paylaş</button><button type="button" class="dg dg-3 dg-sm" data-yazdir>{ik("yazdir")}Yazdır</button></div>
+{fiyat_html}{olanak_html}
 {ulasim_html}
 <h2 style="margin-top:2em">Sık sorulan sorular</h2>
 {sss_html(sss)}
@@ -578,7 +629,7 @@ target="_blank" rel="noopener nofollow">{ik("yildiz")}Google yorumlarını gör<
 </div>
 </aside>
 </div>
-{komsu_html}{gezi_html}"""
+{komsu_html}{gezi_html}{hizli_cubuk(t)}"""
 
     ld_tesis: dict = {
         "@context": "https://schema.org",
@@ -634,9 +685,11 @@ target="_blank" rel="noopener nofollow">{ik("yildiz")}Google yorumlarını gör<
             else f"{dusuk:,}".replace(",", ".") + " TL"
         )
         ld_tesis["currenciesAccepted"] = "TRY"
+        if fiyat_tb:
+            ld_tesis["makesOffer"] = F.teklifler(fiyat_tb, t.get("kaynak_fiyat"))
     # Tarihsiz "2026 fiyatlari" iddiasi guven kirici; sayfa ne zaman
     # derlendiyse hem gorunur hem makine-okunur olarak yaziliyor.
-    ld_tesis["dateModified"] = BUGUN
+    ld_tesis["dateModified"] = guncel_iso
     if olanak:
         ld_tesis["amenityFeature"] = [
             {"@type": "LocationFeatureSpecification", "name": m, "value": True}
@@ -778,7 +831,7 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
 
     il_rezervasyonlu = sum(1 for t in tesisler if t.get("rezervasyon"))
     if il_rezervasyonlu:
-        ozet += (f"{il_rezervasyonlu} tesiste online rezervasyon sayfası var; "
+        ozet += (f" {il_rezervasyonlu} tesiste online rezervasyon sayfası var; "
                  "kalanında rezervasyon telefonla yapılır. ")
     ilceler = sorted({t["ilce"] for t in tesisler})
     ozet += f" Tesisler {len(ilceler)} ilçeye yayılmış durumda."
@@ -848,7 +901,7 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
 <div class="rzs"><span class="rz">{ik("konum")}{len(ilceler)} ilçe</span>
 <span class="rz">{ik("bina")}{len(tesisler)} tesis</span>
 {f'<span class="rz rz-deniz">{ik("deniz")}{len(deniz)} denize yakın</span>' if deniz else ""}</div>
-<h1>{e(il)} kamu misafirhaneleri</h1>
+<h1>{e(il)} öğretmenevleri ve kamu misafirhaneleri</h1>
 <p class="yer">{ik("bilgi")}Öğretmenevi, polisevi ve üniversite tesisleri</p>
 </div></div>
 <div class="kap" style="padding-top:26px">
@@ -856,7 +909,7 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
 </div>
 <section class="bl kap" style="padding-top:6px">
 <h2 class="gizli">{e(il)} ilindeki tesisler</h2>
-<div class="iz">{kartlar}</div>
+{arama_kutusu(f"{il} içinde tesis ara")}{filtre_cipleri(tesisler)}<div class="iz">{kartlar}</div>
 </section>
 {harita_bolum}
 {ilce_bolum}
@@ -896,7 +949,7 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
     else:
         soz = ", telefon ve konum"
     return kabuk(
-        baslik=f"{il} Kamu Misafirhaneleri — {len(tesisler)} tesis{soz}"[:62],
+        baslik=il_basligi(il, len(tesisler), soz),
         aciklama=(
             f"{il} ilindeki {len(tesisler)} öğretmenevi, polisevi ve kamu misafirhanesi. "
             f"Telefon numaraları"
