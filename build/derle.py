@@ -112,29 +112,84 @@ toplam {toplam} kayıt. İl seçin, tesislerin telefon ve fiyat bilgilerine ula�
     )
 
 
-def tur_sayfasi(tur: str, tesisler: list[dict], gorseller: dict) -> str:
+TUR_SAYFA_BOYU = 60
+
+
+def tur_yolu(tur: str, sayfa: int) -> str:
+    kok = f"/tur/{tur_slug(tur)}/"
+    return kok if sayfa <= 1 else f"{kok}sayfa-{sayfa}/"
+
+
+def tur_sirali(tesisler: list[dict]) -> list[dict]:
+    """Denizi ve yayimlanmis fiyati olan once. Son anahtar ad: sira derlemeler
+    arasinda AYNI kalmali, yoksa 2. sayfadaki tesis ertesi gun 3. sayfaya kayar."""
+    return sorted(
+        tesisler,
+        key=lambda t: (not t.get("deniz"), not t.get("fiyat_2026"), t["il"], t["ad"]),
+    )
+
+
+def tur_sayfa_sayisi(tesisler: list[dict]) -> int:
+    return max(1, (len(tesisler) + TUR_SAYFA_BOYU - 1) // TUR_SAYFA_BOYU)
+
+
+def tur_dilimi(tesisler: list[dict], sayfa: int) -> list[dict]:
+    bas = (sayfa - 1) * TUR_SAYFA_BOYU
+    return tur_sirali(tesisler)[bas:bas + TUR_SAYFA_BOYU]
+
+
+def sayfalama_html(tur: str, sayfa: int, toplam: int) -> str:
+    """Taranabilir sayfa baglantilari (js yok, her numara gercek bir <a>)."""
+    if toplam <= 1:
+        return ""
+    o = []
+    if sayfa > 1:
+        o.append(f'<a class="syf-ok" rel="prev" href="{tur_yolu(tur, sayfa - 1)}">&lsaquo; Önceki</a>')
+    for n in range(1, toplam + 1):
+        if n == sayfa:
+            o.append(f'<span class="syf-simdi" aria-current="page">{n}</span>')
+        else:
+            o.append(f'<a href="{tur_yolu(tur, n)}" aria-label="Sayfa {n}">{n}</a>')
+    if sayfa < toplam:
+        o.append(f'<a class="syf-ok" rel="next" href="{tur_yolu(tur, sayfa + 1)}">Sonraki &rsaquo;</a>')
+    return '<nav class="sayfalama" aria-label="Sayfalama">' + "".join(o) + "</nav>"
+
+
+def tur_sayfasi(tur: str, tesisler: list[dict], gorseller: dict, sayfa: int = 1) -> str:
     cogul, kisa, ikon, aciklama = TURLER[tur]
-    yol = f"/tur/{tur_slug(tur)}/"
-    kirintilar = [("/", "Ana sayfa"), ("/tur/", "Tesis türleri"), (yol, cogul)]
+    sirali = tur_sirali(tesisler)
+    toplam_sayfa = tur_sayfa_sayisi(sirali)
+    sayfa = min(max(1, sayfa), toplam_sayfa)
+    bas = (sayfa - 1) * TUR_SAYFA_BOYU
+    goster = sirali[bas:bas + TUR_SAYFA_BOYU]
+    ilk = sayfa == 1
+    yol = tur_yolu(tur, sayfa)
+
+    kirintilar = [("/", "Ana sayfa"), ("/tur/", "Tesis türleri"), (tur_yolu(tur, 1), cogul)]
+    if not ilk:
+        kirintilar.append((yol, f"Sayfa {sayfa}"))
     iller = sorted({t["il"] for t in tesisler})
     deniz = [t for t in tesisler if t.get("deniz")]
     fiyatli = [t for t in tesisler if t.get("fiyat_2026")]
 
-    ozet = (
-        f"Bu dizinde <strong>{len(tesisler)} {cogul.lower()}</strong> kayıtlı ve bunlar "
-        f"<strong>{len(iller)} ile</strong> yayılmış durumda. {aciklama} "
-        + (f"{len(deniz)} tesisin denize yakın konumu doğrulandı. " if deniz else "")
-        + (f"{len(fiyatli)} tesisin yayımlanmış 2026 fiyatı sayfasında yer alıyor. " if fiyatli else "")
-        + "Rezervasyon her tesisin kendi telefonundan yapılır."
-    )
+    if ilk:
+        ozet = (
+            f"Bu dizinde <strong>{len(tesisler)} {cogul.lower()}</strong> kayıtlı ve bunlar "
+            f"<strong>{len(iller)} ile</strong> yayılmış durumda. {aciklama} "
+            + (f"{len(deniz)} tesisin denize yakın konumu doğrulandı. " if deniz else "")
+            + (f"{len(fiyatli)} tesisin yayımlanmış 2026 fiyatı sayfasında yer alıyor. " if fiyatli else "")
+            + "Rezervasyon her tesisin kendi telefonundan yapılır."
+            + (f" Liste {toplam_sayfa} sayfaya bölündü." if toplam_sayfa > 1 else "")
+        )
+    else:
+        ozet = (
+            f"<strong>{e(cogul)}</strong> listesinin {sayfa}. sayfası: "
+            f"{bas + 1}–{bas + len(goster)}. kayıtlar. "
+            f"Listenin tamamı {len(sirali)} tesis ve {toplam_sayfa} sayfa."
+        )
 
-    sirali = sorted(tesisler, key=lambda t: (not t.get("deniz"), not t.get("fiyat_2026"), t["il"]))
-    goster = sirali[:120]
-    kalan = len(sirali) - len(goster)
-
-    il_baglantilari = " · ".join(
-        f'<a href="/il/{slug(i)}/">{e(i)}</a>' for i in iller
-    )
+    sayfa_bag = sayfalama_html(tur, sayfa, toplam_sayfa)
+    il_baglantilari = " · ".join(f'<a href="/il/{slug(i)}/">{e(i)}</a>' for i in iller)
 
     sss = [
         (f"Türkiye'de kaç {kisa.lower()} var?",
@@ -146,13 +201,15 @@ def tur_sayfasi(tur: str, tesisler: list[dict], gorseller: dict) -> str:
     icerik = f"""<section class="bl kap">
 <div class="bl-bas"><div>
 <span class="rz rz-vurgu">{ik(ikon)}{e(kisa)}</span>
-<h1 style="margin-top:10px">{e(cogul)}</h1></div></div>
+<h1 style="margin-top:10px">{e(cogul)}{"" if ilk else f" — sayfa {sayfa}"}</h1></div></div>
 <p class="ozet" style="max-width:78ch">{ozet}</p>
 <h2 class="gizli">{e(cogul)} listesi</h2>
 <div class="iz" style="margin-top:26px">
 {"".join(tesis_karti(t, gorseller) for t in goster)}</div>
-{f'<p style="color:var(--soluk);margin-top:22px">Listede ilk {len(goster)} tesis gösteriliyor. Kalan {kalan} tesise il sayfalarından ulaşabilirsiniz.</p>' if kalan > 0 else ""}
-</section>
+{sayfa_bag}
+</section>"""
+    if ilk:
+        icerik += f"""
 <section class="bl kap bl-cizgi">
 <h2>İllere göre</h2>
 <p style="color:var(--soluk);line-height:2.1">{il_baglantilari}</p>
@@ -165,33 +222,52 @@ def tur_sayfasi(tur: str, tesisler: list[dict], gorseller: dict) -> str:
     # Tutulmayan soz TO'yu dusuruyor; vaat gercek kapsama gore kuruluyor.
     fiyat_sayisi = len(fiyatli)
     bol = fiyat_sayisi >= max(3, len(tesisler) * 0.25)
+    if ilk:
+        baslik = (f"{cogul} — {len(tesisler)} tesis, telefon"
+                  + (" ve fiyat" if bol else " ve konum"))
+        meta = (f"Türkiye'deki {len(tesisler)} {cogul.lower()}: telefon numaraları"
+                + (f", {fiyat_sayisi} tesiste yayımlanmış 2026 fiyatı" if fiyat_sayisi else "")
+                + f" ve {len(iller)} ilde konum bilgisi.")
+    else:
+        baslik = f"{cogul} — sayfa {sayfa}/{toplam_sayfa}"
+        meta = (f"{cogul} listesinin {sayfa}. sayfası: {len(goster)} tesisin telefonu, "
+                f"ili ve konum bilgisi.")
+
+    ek_bas = ""
+    if sayfa > 1:
+        ek_bas += f'<link rel="prev" href="{SITE}{tur_yolu(tur, sayfa - 1)}">'
+    if sayfa < toplam_sayfa:
+        ek_bas += f'<link rel="next" href="{SITE}{tur_yolu(tur, sayfa + 1)}">'
+
+    jsonld = [
+        {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": cogul if ilk else f"{cogul} — sayfa {sayfa}",
+            # Yalnizca sayfada GOSTERILEN kayitlar: 521 ogeli liste 94 KB JSON-LD
+            # tasiyordu ve Google ItemList'i sayfadaki ogelerle eslestirir.
+            # position listenin GENELINDEKI sira: sayfa 2 61'den baslar.
+            "numberOfItems": len(goster),
+            "itemListElement": [
+                {"@type": "ListItem", "position": bas + i,
+                 "url": f"{SITE}/tesis/{tesis_slug(t)}/", "name": t["ad"]}
+                for i, t in enumerate(goster, 1)
+            ],
+        },
+        kirinti_ld(kirintilar),
+    ]
+    if ilk:
+        jsonld.insert(1, sss_ld(sss))
+
     return kabuk(
-        baslik=f"{cogul} — {len(tesisler)} tesis, telefon"
-               + (" ve fiyat" if bol else " ve konum"),
-        aciklama=f"Türkiye'deki {len(tesisler)} {cogul.lower()}: telefon numaraları"
-        + (f", {fiyat_sayisi} tesiste yayımlanmış 2026 fiyatı" if fiyat_sayisi else "")
-        + f" ve {len(iller)} ilde konum bilgisi.",
+        baslik=baslik,
+        aciklama=meta,
         yol=yol,
         icerik=icerik,
         kirintilar=kirintilar,
         aktif="/tur/ogretmenevleri/" if tur == "Öğretmenevi" else "",
-        jsonld=[
-            {
-                "@context": "https://schema.org",
-                "@type": "ItemList",
-                "name": cogul,
-                # Yalnizca sayfada GOSTERILEN kayitlar: 521 ogeli liste 94 KB JSON-LD
-                # tasiyordu ve Google ItemList'i sayfadaki ogelerle eslestirir.
-                "numberOfItems": len(goster),
-                "itemListElement": [
-                    {"@type": "ListItem", "position": i,
-                     "url": f"{SITE}/tesis/{tesis_slug(t)}/", "name": t["ad"]}
-                    for i, t in enumerate(goster, 1)
-                ],
-            },
-            sss_ld(sss),
-            kirinti_ld(kirintilar),
-        ],
+        ek_bas=ek_bas,
+        jsonld=jsonld,
     )
 
 
@@ -888,9 +964,13 @@ def main() -> int:
 
     for tur in TURLER:
         alt = [t for t in tesisler if t["tur"] == tur]
-        if alt:
-            yaz(f"/tur/{tur_slug(tur)}/", tur_sayfasi(tur, alt, gorseller))
-            yollar.append(f"/tur/{tur_slug(tur)}/")
+        if not alt:
+            continue
+        for sy in range(1, tur_sayfa_sayisi(alt) + 1):
+            y = tur_yolu(tur, sy)
+            yaz(y, tur_sayfasi(tur, alt, gorseller, sy))
+            yollar.append(y)
+            TARIHLER[y] = max(t["guncelleme"] for t in tur_dilimi(alt, sy))
 
     for t in tesisler:
         s_t = tesis_slug(t)

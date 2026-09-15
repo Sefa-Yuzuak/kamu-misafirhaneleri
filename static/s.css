@@ -738,3 +738,12 @@ font-size:.9rem;color:var(--soluk)}
   a{color:#000;text-decoration:none}
   a[href^="http"]::after{content:" (" attr(href) ")";font-size:.8em;color:#555}
 }
+/* ---------- sayfalama (tür sayfaları) ---------- */
+/* Renk: arka plan --vurgu, yazı --kagit — ikisi de temaya göre döndüğü için
+   kontrast hem açık hem koyu modda korunuyor (koyuda vurgu açık mint). */
+.sayfalama{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:28px 0 2px}
+.sayfalama a,.sayfalama .syf-simdi{min-width:44px;padding:10px 12px;border-radius:var(--r-sm);border:1px solid var(--cizgi);text-align:center;text-decoration:none;color:inherit;font-variant-numeric:tabular-nums;line-height:1}
+.sayfalama a:hover{border-color:var(--vurgu);background:var(--vurgu-yumusak)}
+.sayfalama .syf-simdi{background:var(--vurgu);border-color:var(--vurgu);color:var(--kagit);font-weight:700}
+.sayfalama .syf-ok{min-width:0;font-weight:600;color:var(--vurgu)}
+@media print{.sayfalama{display:none}}
