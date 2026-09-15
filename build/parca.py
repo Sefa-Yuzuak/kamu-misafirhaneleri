@@ -413,6 +413,7 @@ def kabuk(
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/static/f/newsreader-latin-ext-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/static/f/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/static/f/newsreader-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>{KRITIK}</style>
 <link rel="preload" href="{STIL_YOLU}" as="style" onload="this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{STIL_YOLU}"></noscript>
