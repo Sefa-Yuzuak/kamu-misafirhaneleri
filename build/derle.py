@@ -180,11 +180,13 @@ def tur_sayfasi(tur: str, tesisler: list[dict], gorseller: dict) -> str:
                 "@context": "https://schema.org",
                 "@type": "ItemList",
                 "name": cogul,
-                "numberOfItems": len(tesisler),
+                # Yalnizca sayfada GOSTERILEN kayitlar: 521 ogeli liste 94 KB JSON-LD
+                # tasiyordu ve Google ItemList'i sayfadaki ogelerle eslestirir.
+                "numberOfItems": len(goster),
                 "itemListElement": [
                     {"@type": "ListItem", "position": i,
                      "url": f"{SITE}/tesis/{tesis_slug(t)}/", "name": t["ad"]}
-                    for i, t in enumerate(sirali, 1)
+                    for i, t in enumerate(goster, 1)
                 ],
             },
             sss_ld(sss),

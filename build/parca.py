@@ -9,12 +9,22 @@ SITE = "https://kamumisafirhaneler.com"
 # derle.py karma adlı dosyayı üretince bunu günceller
 STIL_YOLU = "/static/s.css"
 AD = "Kamu Misafirhaneleri"
-GA_ETIKET = ('<script async src="https://www.googletagmanager.com/gtag/js?id=G-MWVMNR7S6M"></script>'
-             '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}'
-             "gtag('js',new Date());gtag('config','G-MWVMNR7S6M',{anonymize_ip:true});</script>")
+GA_ID = "G-MWVMNR7S6M"
+# gtag + AdSense, sayfa load olayindan SONRA enjekte edilir. PSI izinde (15.09.2026)
+# gozlenen FCP 2.457 ms, load 1.052 ms: iki ucuncu taraf betigi (adsense managed
+# 163 KB + gtag 187 KB) ilk boyamadan once ana is parcacigini yiyordu. Statik bir
+# sayfada load ~1 sn; reklam ve olcum yine gelir, icerik once boyanir.
+GA_ETIKET = ('<script>window.dataLayer=window.dataLayer||[];'
+             'window.gtag=function(){dataLayer.push(arguments);};'
+             f"gtag('js',new Date());gtag('config','{GA_ID}',{{anonymize_ip:true}});"
+             '(function(){var y=function(){["https://www.googletagmanager.com/gtag/js?id=' + GA_ID + '",'
+             '"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5424881701309211"]'
+             '.forEach(function(u){var s=document.createElement("script");s.async=true;s.src=u;'
+             'if(u.indexOf("pagead")>0)s.crossOrigin="anonymous";document.head.appendChild(s);});};'
+             'if(document.readyState==="complete")y();else window.addEventListener("load",function(){setTimeout(y,0);});})();'
+             '</script>')
 ADSENSE_ID = "ca-pub-5424881701309211"
-ADSENSE_ETIKET = ('<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
-                  f'?client={ADSENSE_ID}" crossorigin="anonymous"></script>')
+ADSENSE_ETIKET = ""  # GA_ETIKET icindeki ertelenmis yukleyici ekliyor
 def e(x) -> str:
     return html.escape(str(x or ""), quote=True)
 # --------------------------------------------------------------------------
@@ -57,10 +67,25 @@ IKONLAR = {
     "kurum": "M12 3.2 3 7.8h18ZM5.4 10.4v6.9M9.8 10.4v6.9M14.2 10.4v6.9M18.6 10.4v6.9M3.4 20.4h17.2",
 }
 def ik(ad: str, sinif: str = "ik") -> str:
-    d = IKONLAR[ad]
+    """Ikon: sayfa sonunda tek sprite'a <use> ile gonderme. Olculdu (15.09.2026):
+    /tur/ogretmenevleri/ 434 KB'nin 168 KB'si 747 tekrar eden satir ici SVG'ydi,
+    il sayfasinda 62 KB'nin 23 KB'si. kabuk() kullanilan ikonlari tarayip yalnizca
+    onlarin <symbol>'unu basar."""
+    IKONLAR[ad]  # bilinmeyen ad derlemede patlasin
     return (
-        f'<svg class="{sinif}" viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
-        f'<path d="{d}"/></svg>'
+        f'<svg class="{sinif}" aria-hidden="true" focusable="false">'
+        f'<use href="#i-{ad}"/></svg>'
+    )
+
+
+def sprite(dok: str) -> str:
+    kullanilan = sorted(set(re.findall(r'href="#i-([a-z0-9-]+)"', dok)))
+    if not kullanilan:
+        return ""
+    return (
+        '<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>'
+        + "".join(f'<symbol id="i-{a}" viewBox="0 0 24 24"><path d="{IKONLAR[a]}"/></symbol>' for a in kullanilan)
+        + "</defs></svg>"
     )
 # --------------------------------------------------------------------------
 # Olanak metninden ikon çıkarma
@@ -364,7 +389,7 @@ def kabuk(
             parcalar.append(f"<span>›</span>" if i else "")
             parcalar.append(a if son else f'<a href="{u}">{a}</a>')
         krnt = f'<nav class="kap krnt" aria-label="Sayfa yolu">{"".join(parcalar)}</nav>'
-    return f"""<!doctype html>
+    dok = f"""<!doctype html>
 <html lang="tr">
 <head>
 <meta charset="utf-8">
@@ -387,6 +412,7 @@ def kabuk(
 <meta name="theme-color" content="#0F1413" media="(prefers-color-scheme:dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/static/f/newsreader-latin-ext-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/static/f/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>{KRITIK}</style>
 <link rel="preload" href="{STIL_YOLU}" as="style" onload="this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{STIL_YOLU}"></noscript>
@@ -465,6 +491,7 @@ misafirhanelerinin bağımsız dizini. Rezervasyon alınmaz; her tesis doğrudan
 {'<script src="/static/h.js" defer></script>' if harita else ""}
 </body>
 </html>"""
+    return dok.replace("<body>\n", "<body>\n" + sprite(dok) + "\n", 1)
 # --------------------------------------------------------------------------
 # Harita bileşeni
 # --------------------------------------------------------------------------

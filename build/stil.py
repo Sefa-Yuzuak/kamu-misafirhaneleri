@@ -64,9 +64,12 @@ def yayimla(cikti_kok: Path) -> str:
 # metin yedek yazı tipiyle hemen görünür, asıl yazı tipi tam stille birlikte gelir.
 _KRITIK_HAM = """
 @font-face{font-family:"Newsreader Yedek";src:local("Georgia"),local("Times New Roman");
-size-adjust:88%;font-weight:400 700;font-style:normal}
+size-adjust:102.63%;ascent-override:71.62%;descent-override:25.82%;line-gap-override:0%;font-weight:400 700;font-style:normal}
+/* Metrikler fontTools ile olculdu (15.09.2026, ornek Turkce metin genisligi):
+   yedek ile asil ayni satir yuksekligini ve genisligi verir, swap aninda kayma
+   olmaz. PSI: CLS 0,19 kaynagi "Web font loaded" idi (Inter 500/700). */
 @font-face{font-family:"Inter Yedek";src:local("Arial"),local("Helvetica Neue"),local("Liberation Sans");
-size-adjust:107%;font-weight:400 700;font-style:normal}
+size-adjust:104.85%;ascent-override:92.39%;descent-override:23.01%;line-gap-override:0%;font-weight:400 700;font-style:normal}
 :root{--kagit:#FBF9F5;--yuzey:#FFF;--yuzey2:#F4F1E9;--yuzey3:#EDE9DE;--cizgi:#E3DED2;
 --cizgi2:#D2CBBB;--murekkep:#16201E;--orta:#3E4B48;--soluk:#5E6B67;--vurgu:#0D5C4E;
 --vurgu-koyu:#08453A;--vurgu-yumusak:#E2F0EB;--vurgu-cizgi:#B9DBD0;--deniz:#0B6580;
