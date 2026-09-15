@@ -552,7 +552,7 @@ def kaynaklar_sayfasi(tesisler: list[dict], gorseller: dict, kurumlar: dict) -> 
     foto_satir = "".join(
         f'<tr><td><a href="/il/{slug(il)}/">{e(il)}</a></td><td>{e(g["yazar"])[:70]}</td>'
         f'<td>{e(g["lisans"])}</td>'
-        f'<td><a href="{e(g["sayfa"])}" target="_blank" rel="noopener nofollow">dosya</a></td></tr>'
+        f'<td><a href="{e(g["sayfa"])}" target="_blank" rel="noopener">dosya</a></td></tr>'
         for il, g in sorted(gorseller.items())
     )
     icerik = f"""<div class="kap" style="max-width:860px;padding-block:34px 0">
@@ -817,6 +817,28 @@ Sitemap: {SITE}/sitemap.xml
 
 
 # --------------------------------------------------------------------------
+# Adi onarilan tesislerin eski adresleri: 15.09.2026'da 8 kayitta bitisik yazilmis
+# ad duzeltildi (KarapınarÖğretmenevi -> Karapınar Öğretmenevi) ve slug degisti.
+# Tasinmis adres 404 degil 301 dondurmeli; nginx _yonlendirme*.conf'u include ediyor.
+TESIS_ESKI_ADRES = {
+    "canakkale-eceabatsabanci-ogretmen-evi-ve-aksam-sanat-okulu":
+        "canakkale-eceabat-sabanci-ogretmen-evi-ve-aksam-sanat-okulu",
+    "konya-karapinarogretmenevi-ve-aksam-sanat-okulu":
+        "konya-karapinar-ogretmenevi-ve-aksam-sanat-okulu",
+    "mus-bulanikogretmenevi-ve-aksam-sanat-okulu":
+        "mus-bulanik-ogretmenevi-ve-aksam-sanat-okulu",
+    "sivas-sarkislaogretmenevi-ve-aksam-sanat-okulu":
+        "sivas-sarkisla-ogretmenevi-ve-aksam-sanat-okulu",
+    "van-ozalpogretmenevi-ve-aksam-sanat-okulu":
+        "van-ozalp-ogretmenevi-ve-aksam-sanat-okulu",
+    "yozgat-kadisehriogretmenevi-ve-aksam-sanat-okulu":
+        "yozgat-kadisehri-ogretmenevi-ve-aksam-sanat-okulu",
+    "bartin-amasraogretmenevi-ve-aksam-sanat-okulu":
+        "bartin-amasra-ogretmenevi-ve-aksam-sanat-okulu",
+    "kirsehir-kirsehir-polisevi": "kirsehir-kirsehir-polis-evi",
+}
+
+
 def main() -> int:
     veri = json.loads((KOK / "tesisler.json").read_text("utf-8"))
     tesisler = veri["tesisler"]
@@ -1126,6 +1148,9 @@ def main() -> int:
     # IndexNow'a gönderilecek adres listesi
     (CIKTI / "urls.txt").write_text("\n".join(SITE + y for y in yollar), "utf-8")
 
+    (CIKTI / "_yonlendirme_tesis.conf").write_text(
+        "".join(f"location = /tesis/{_e}/ {{ return 301 /tesis/{_y}/; }}\n"
+                for _e, _y in sorted(TESIS_ESKI_ADRES.items())), "utf-8")
     (CIKTI / "sitemap.xml").write_text(sitemap(yollar, TARIHLER), "utf-8")
     (CIKTI / "robots.txt").write_text(robots(), "utf-8")
     # AdSense yetkili satici beyani: /ads.txt yoksa Google reklam talebini kisitlar.

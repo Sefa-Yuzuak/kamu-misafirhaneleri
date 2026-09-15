@@ -236,6 +236,15 @@ def cikma(ad: str) -> str:
     return f"{ad}'{d}{'a' if kalin else 'e'}n"
 
 
+def bulunma(ad: str) -> str:
+    """Bulunma hâli: Ankara -> Ankara'da, İzmir -> İzmir'de, Sinop -> Sinop'ta.
+    Ek f-string'e sabit yazılamaz: ünlü uyumu (a/ı/o/u -> da) ve sert ünsüz
+    benzeşmesi (fstkçşhp -> ta) birlikte karar verir."""
+    kalin = _son_sesli(ad) in _KALIN
+    d = "t" if ad and ad[-1].lower() in _SERT else "d"
+    return f"{ad}'{d}{'a' if kalin else 'e'}"
+
+
 # --- Türkçe güvenli harf dönüşümü -------------------------------------------
 # Python'un kendi lower()/title()'ı Türkçeyi bozar: "KONUKEVİ".title() ->
 # "Konukevi̇" (İ, i + U+0307 birleşen noktaya ayrışır) ve "IĞDIR".lower() ->
@@ -324,4 +333,14 @@ def adres_ozeti(adres: str, en: int = 52) -> str:
     a = a.strip(" ,;-")
     if len(a) <= en:
         return a
-    return a[:en].rsplit(" ", 1)[0].rstrip(" ,;-.")
+    # Kelime sinirinda kesmek adresin ortasindan yarim bir parca birakiyordu
+    # ("Sinanpasa Mah. Necati"); ayrac sinirinda sigan tam parcalar alinir.
+    parcalar = [x.strip() for x in re.split(r"[,;]", a) if x.strip()]
+    kalan, out = en, []
+    for x in parcalar:
+        ek = len(x) + (2 if out else 0)
+        if ek > kalan:
+            break
+        out.append(x)
+        kalan -= ek
+    return ", ".join(out)

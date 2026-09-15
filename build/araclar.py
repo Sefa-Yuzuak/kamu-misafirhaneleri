@@ -13,7 +13,7 @@ from __future__ import annotations
 
 from parca import AD, SITE, e, ik, kabuk
 from mesafe import CIKIS_NOKTALARI, ORT_HIZ, SAPMA, karayolu_km, sure_metni, sure_saat
-from veri import TURLER, kisa_ad, slug, tesis_slug
+from veri import fiyat_taban, TURLER, kisa_ad, slug, tesis_slug
 
 # --------------------------------------------------------------------------
 # Ortak parçalar
@@ -182,7 +182,7 @@ işinizi görür. Ankara dışından geliyorsanız yukarıdan ilinizi seçin.</p
 
 
 def butce_sayfasi(tesisler: list[dict], konumlar: dict, il_merkez: dict) -> str:
-    fiyatli = [t for t in tesisler if t.get("fiyat_2026")]
+    fiyatli = [t for t in tesisler if fiyat_taban(t.get("fiyat_2026"))]
     ozet = (
         "Bir kamu tesisinde tatilin gerçek maliyeti yalnızca oda ücreti değildir; "
         "yol ve yemek çoğu zaman konaklamayı geçer. Bu araç üçünü birlikte hesaplar "

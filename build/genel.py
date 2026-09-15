@@ -220,8 +220,9 @@ kurumlara aittir; kaynağı göstermek için kullanılmaktadır.</p></div>
     return kabuk(
         baslik=f"{AD} — 81 ilde {len(tesisler)} öğretmenevi ve kamu tesisi",
         aciklama=(
-            f"Türkiye'nin 81 ilindeki {len(tesisler)} kamu misafirhanesi: telefon numaraları, "
-            f"2026 fiyatları, denize yakın {len(deniz)} tesis. Ücretsiz, bağımsız dizin."
+            f"Türkiye'nin 81 ilindeki {len(tesisler)} öğretmenevi, polisevi ve kamu "
+            f"misafirhanesi: {len(telefonlu)} telefon numarası, {len(fiyatli)} tesiste "
+            f"yayımlanmış 2026 tarifesi, denize yakın {len(deniz)} tesis. Bağımsız dizin."
         ),
         yol="/",
         icerik=icerik,

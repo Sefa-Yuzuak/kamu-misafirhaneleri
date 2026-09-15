@@ -140,9 +140,12 @@ def kurum_tam(k: str) -> str:
 def ozet_metni(t: dict, mesafe_var: bool = False) -> str:
     """Sayfanın ilk paragrafı: tek başına okunduğunda da tam cevap verir."""
     tur = t["tur"].lower()
+    # İlçe alanı 40 kayıtta boş: "Ankara ilinin  ilçesinde bulunan" çıkıyordu.
+    yer = (f'{e(t["il"])} ilinin {e(t["ilce"])} ilçesinde' if t.get("ilce")
+           else f'{e(t["il"])} ilinde')
     c = [
-        f'<strong>{e(t["ad"])}</strong>, {e(t["il"])} ilinin {e(t["ilce"])} '
-        f'ilçesinde bulunan ve {e(kurum_tam(t["kurum"]))} bünyesinde hizmet veren '
+        f'<strong>{e(t["ad"])}</strong>, {yer} bulunan ve '
+        f'{e(kurum_tam(t["kurum"]))} bünyesinde hizmet veren '
         f"bir {e(tur)}dir."
     ]
     tel = (t.get("telefon") or [None])[0]
@@ -159,6 +162,11 @@ def ozet_metni(t: dict, mesafe_var: bool = False) -> str:
                      "başlıyor; statü ve oda tipine göre tam tablo aşağıda.")
         else:
             c.append(f'Tesisin yayımladığı 2026 fiyatları: {e(t["fiyat_2026"])}.')
+    elif "yayımlıyor" in (t.get("not") or "") or "yayimliyor" in (t.get("not") or ""):
+        # 7 kayıtta not alanı "fiyatlarını kendi sayfasında yayımlıyor" diyor;
+        # "ulaşılamadı" cümlesi aynı paragrafta kendini yalanlıyordu. Notun
+        # kendisi aşağıda yazılıyor, burada susuyoruz.
+        pass
     else:
         c.append(
             "Tesisin yayımlanmış bir fiyat listesine ulaşılamadı; fiyat bilgisi "
@@ -235,6 +243,19 @@ def sss_listesi(t: dict) -> list[tuple[str, str]]:
                 f"Tesisin yayımladığı 2026 fiyatları şöyledir: {t['fiyat_2026']}. "
                 "Fiyatlar kurum tarafından yıl içinde güncellenebilir; ödeme öncesi "
                 "telefonla teyit edilmelidir.",
+            )
+        )
+    elif "yayımlıyor" in (t.get("not") or "") or "yayimliyor" in (t.get("not") or ""):
+        # Notta "fiyatlarını kendi sayfasında yayımlıyor" yazan 7 tesiste
+        # "ulaşılamadı" demek aynı sayfada kendini yalanlamaktı: tutarı biz
+        # ayıklayamadık, ama liste var ve nerede olduğu notta yazıyor.
+        s.append(
+            (
+                f"{ad} fiyatları ne kadar?",
+                f"Tesis 2026 fiyatlarını kendi sayfasında yayımlıyor; tutarlar bu dizine "
+                "makineyle aktarılamadığı için burada yazılmadı. Güncel tarife "
+                + (f"{tel} numarasından" if tel else "tesisten")
+                + " ya da tesisin kendi sayfasından öğrenilebilir.",
             )
         )
     else:
@@ -414,7 +435,11 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
     satirlar += [
         ("Tesis türü", e(t["tur"])),
         ("Bağlı kurum", e(kurum_tam(t["kurum"]))),
-        ("İl / ilçe", f'<a href="/il/{slug(t["il"])}/">{e(t["il"])}</a> / {e(t["ilce"])}'),
+        # İlçe alanı 40 kayıtta boş: etiket ve değer buna göre kurulur,
+        # yoksa "Ankara /" gibi yarım bir satır çıkıyordu.
+        ("İl / ilçe" if t.get("ilce") else "İl",
+         f'<a href="/il/{slug(t["il"])}/">{e(t["il"])}</a>'
+         + (f' / {e(t["ilce"])}' if t.get("ilce") else "")),
     ]
     adres, adres_kaynagi = tesis_adresi(t, konum)
     if adres:
@@ -446,7 +471,9 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
         satirlar.append(
             (
                 "Resmî sitesi",
-                f'<a href="{e(t["web"])}" target="_blank" rel="noopener nofollow">'
+                # Kaynak gösterme editoryal bağlantıdır; nofollow doğrulama
+                # zincirini motorlara kapatıyordu (611 tesiste 1844 bağlantı).
+                f'<a href="{e(t["web"])}" target="_blank" rel="noopener">'
                 f'{ik("dis")}{e(t["web"].split("//")[-1])}</a>',
             )
         )
@@ -458,7 +485,7 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
         # basiyor; bizde adres JSON'da vardi ama sayfada gorunmuyordu.
         satirlar.append((
             "Fiyat kaynağı",
-            f'<a href="{e(t["kaynak_fiyat"])}" target="_blank" rel="noopener nofollow">'
+            f'<a href="{e(t["kaynak_fiyat"])}" target="_blank" rel="noopener">'
             f'{ik("dis")} tesisin fiyat sayfası</a>',
         ))
     if t.get("deniz"):
@@ -468,7 +495,7 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
     satirlar.append(
         (
             "Bilgi kaynağı",
-            f'<a href="{e(t["kaynak"])}" target="_blank" rel="noopener nofollow">'
+            f'<a href="{e(t["kaynak"])}" target="_blank" rel="noopener">'
             f'{ik("dis")} kurum sayfası</a>',
         )
     )
@@ -479,7 +506,7 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
             + F.html(fiyat_tb, e)
             + '<p class="guncel">Tesisin kendi yayımladığı tarife. Birim (kişi/oda), '
             'kahvaltı ve vergi kapsamı tesise göre değişir; rezervasyonda teyit edin.'
-            + (f' <a href="{e(t["kaynak_fiyat"])}" target="_blank" rel="noopener nofollow">Kaynak sayfa</a>.'
+            + (f' <a href="{e(t["kaynak_fiyat"])}" target="_blank" rel="noopener">Kaynak sayfa</a>.'
                if t.get("kaynak_fiyat") else "")
             + "</p>"
         )
@@ -547,8 +574,9 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
                 '<div class="kutu"><h3>Nereden ne kadar?</h3>'
                 f'<table class="mesafe-tablo"><tbody>{govde_m}</tbody></table>'
                 '<p style="font-size:.79rem;color:var(--soluk);margin:11px 0 12px">'
-                "Koordinatlardan hesaplanan tahmini karayolu mesafesi ve mola hariç "
-                "sürüş süresi.</p>"
+                + ("Koordinatlardan hesaplanan" if konum
+                   else "Tesisin tam konumu doğrulanmadı; ilçe merkezinden hesaplanan")
+                + " tahmini karayolu mesafesi ve mola hariç sürüş süresi.</p>"
                 '<a class="dg dg-2 dg-sm dg-blok" href="/araclar/mesafe/">'
                 f'{ik("yol")}Kendi ilinden hesapla</a></div>'
             )
