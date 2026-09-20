@@ -144,17 +144,25 @@ def sayfa_basligi(t: dict) -> str:
     elif t.get("deniz"):
         ekler = ((" — denize yakın, telefon ve adres" if t.get("adres") else " — denize yakın, telefon"),
                  " — denize yakın, telefon", " — denize yakın", "")
-    elif t.get("adres") and t.get("telefon"):
-        # Ölçüldü: "adres/yol" niyetli 71 sorgu 217 gösterim alıyor ve TO %0,
-        # ortalama konum 18,7 — çünkü sayfada adres YOKTU. Artık 514 tesiste
-        # kurumun kendi yayımladığı açık adres var, vaat gerçek.
-        ekler = (" — telefon, adres ve yol tarifi", " — adres ve telefon", " — adres", " — telefon")
-    elif t.get("telefon"):
-        ekler = (" — telefon ve konaklama", " — telefon", "")
+    elif t.get("telefon") or t.get("adres"):
+        # 09.09'da buraya "telefon, adres ve yol tarifi" yazılmıştı; gerekçe
+        # adres niyetinin %0 TO almasıydı ve sayfada adres olunca düzeleceği
+        # varsayılmıştı. 20.09 ölçümü varsayımı ÇÜRÜTTÜ: sıralama 18,7'den
+        # 11,3'e çıktı ama TO hâlâ tam %0,00 (597 gösterim). Telefon niyeti de
+        # %0,63. İkisinin de cevabını Google kendi işletme kartında veriyor;
+        # kullanıcının siteye girmesi için sebep kalmıyor.
+        # İşletme kartının cevaplayamadığı soru "ben kalabilir miyim?" — ve
+        # sss_listesi her tesiste türüne göre bunu yanıtlıyor, yani vaat
+        # gerçek. Uygunluk niyeti %1,96, rezervasyon %1,25 ölçüldü.
+        ekler = (" — kimler kalabilir, telefon ve rezervasyon",
+                 " — kimler kalabilir ve telefon", " — kimler kalabilir", " — telefon")
     else:
         ekler = ("",)
-    for ek in ekler:
-        for y in (yer, t["il"], ""):
+    # Sira ONEMLI: once YER korunur, sigmazsa VAAT kisalir. Ters sirada
+    # (once uzun vaat, sonra yeri at) 62 karakter siniri il adini dusuruyor ve
+    # "Sinop Ogretmenevi" gibi ayni adi tasiyan tesisler ayni basligi aliyordu.
+    for y in (yer, t["il"], ""):
+        for ek in ekler:
             govde = ", ".join(x for x in (ad, y) if x)
             aday = f"{govde}{ek}"
             if len(aday) <= 62:

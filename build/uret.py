@@ -361,8 +361,8 @@ def tesis_aciklamasi(t: dict) -> str:
         bas = f"{ad} ({yer}) — {kurum} tesisi"
     # Duz [:158] kelimenin ortasindan kesiyordu ("… nasil yapild"). Sigan en
     # bilgili kuyruk seciliyor; hicbiri sigmazsa bas sozcuk sinirinda kirpiliyor.
-    for kuyruk in (". Telefon, kimler kalabilir ve rezervasyon bilgisi sayfada.",
-                   ". Telefon ve kimler kalabilir.",
+    for kuyruk in (". Kimler kalabilir, telefon ve rezervasyon bilgisi sayfada.",
+                   ". Kimler kalabilir ve telefon sayfada.",
                    ". Telefon sayfada.",
                    "."):
         if len(bas) + len(kuyruk) <= 158:
