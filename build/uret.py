@@ -186,6 +186,22 @@ def ozet_metni(t: dict, mesafe_var: bool = False) -> str:
     return " ".join(c)
 
 
+
+def sigdir(*cumleler: str, sinir: int = 158) -> str:
+    """Cumleleri sirayla ekler, sinira sigmayani ATLAR (kirpmaz).
+
+    Duz dizge kirpmasi kelimenin ortasindan kesiyor ve bazen en guclu bilgiyi
+    yok ediyordu; buradaki sira "en iyi donen bilgi once" diye kuruluyor.
+    """
+    cikti = ""
+    for c in cumleler:
+        if not c:
+            continue
+        aday = f"{cikti} {c}".strip()
+        if len(aday) <= sinir:
+            cikti = aday
+    return cikti
+
 def sss_listesi(t: dict) -> list[tuple[str, str]]:
     ad = t["ad"]
     tel = (t.get("telefon") or [None])[0]
@@ -978,14 +994,20 @@ def il_sayfasi(il: str, tesisler: list[dict], gorseller: dict,
         soz = ", telefon ve konum"
     return kabuk(
         baslik=il_basligi(il, len(tesisler), soz),
-        aciklama=(
-            f"{il} ilindeki {len(tesisler)} öğretmenevi, polisevi ve kamu misafirhanesi. "
-            f"Telefon numaraları"
-            + (f", {il_adresli} tesiste açık adres" if il_adresli else "")
-            + (f", {il_fiyatli} tesiste 2026 fiyatı" if il_fiyatli else "")
-            + (f", {len(deniz)} denize yakın tesis" if deniz else "")
-            + ". Rezervasyon doğrudan tesisten."
-        )[:158],
+        # Cumleler EN IYI DONEN bilgiden baslayarak ekleniyor. Eski hali
+        # "Telefon numaralari, N tesiste acik adres…" ile basliyordu; olculdu
+        # ki telefon niyeti %0,63, adres niyeti %0,00, deniz niyeti %4,90.
+        # Ayrica sert [:158] kirpmasi en guclu cumleyi kesiyordu (Izmir:
+        # "…6 denize yakin" diye yarim kaliyordu). Artik sigmayan cumle hic
+        # yazilmiyor, kelime ortasindan kesilmiyor.
+        aciklama=sigdir(
+            f"{il} ilindeki {len(tesisler)} öğretmenevi, polisevi ve kamu misafirhanesi.",
+            (f"{len(deniz)} tesis denize yakın." if deniz else ""),
+            (f"{il_fiyatli} tesiste yayımlanmış 2026 fiyatı var." if il_fiyatli else ""),
+            (f"{il_adresli} tesiste açık adres ve telefon."
+             if il_adresli else "Telefon numaraları sayfada."),
+            "Rezervasyon doğrudan tesisten.",
+        ),
         yol=yol,
         icerik=icerik,
         og_gorsel=f"/img/il/{g['lg']}" if g else None,
