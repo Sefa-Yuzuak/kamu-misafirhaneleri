@@ -158,15 +158,27 @@ def sayfa_basligi(t: dict) -> str:
                  " — kimler kalabilir ve telefon", " — kimler kalabilir", " — telefon")
     else:
         ekler = ("",)
-    # Sira ONEMLI: once YER korunur, sigmazsa VAAT kisalir. Ters sirada
-    # (once uzun vaat, sonra yeri at) 62 karakter siniri il adini dusuruyor ve
-    # "Sinop Ogretmenevi" gibi ayni adi tasiyan tesisler ayni basligi aliyordu.
+    # Sira uc asamali ve ikisi de olculmus bir hatadan dogdu:
+    #  1) Once VAAT uzerinden dolasilirsa 62 karakter siniri il adini
+    #     dusuruyor ve ayni adi tasiyan tesisler ayni basligi aliyor
+    #     (598/612 benzersizdi).
+    #  2) Once YER uzerinden dolasilirsa bos vaat ("") daha ilk adimda
+    #     kabul ediliyor ve Ozdere gibi denize sifir tesisler vaatlerini
+    #     kaybediyor — oysa "deniz" kumesi %4,90 ile sitenin en iyi donen
+    #     niyeti (site ortalamasi %0,91).
+    # Dogrusu: her yer duzeyinde TUM dolu vaatler denenir; bos vaat ancak
+    # hicbiri hicbir yerde sigmazsa devreye girer.
+    dolu = [e for e in ekler if e]
     for y in (yer, t["il"], ""):
-        for ek in ekler:
+        for ek in dolu:
             govde = ", ".join(x for x in (ad, y) if x)
             aday = f"{govde}{ek}"
             if len(aday) <= 62:
                 return aday
+    for y in (yer, t["il"], ""):
+        govde = ", ".join(x for x in (ad, y) if x)
+        if len(govde) <= 62:
+            return govde
     return ad
 
 
