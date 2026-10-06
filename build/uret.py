@@ -504,6 +504,10 @@ def tesis_sayfasi(t: dict, gorseller: dict, komsular: list,
             f'<a href="{e(t["kaynak_fiyat"])}" target="_blank" rel="noopener">'
             f'{ik("dis")} tesisin fiyat sayfası</a>',
         ))
+    if t.get("fiyat_2026"):
+        satirlar.append(("Tarife kontrol tarihi", e(t.get("fiyat_son_dogrulama"))
+                         if t.get("fiyat_son_dogrulama") else
+                         "Ayrı doğrulama tarihi kayıtlı değil; güncel tutarı ve kimlerin yararlanabileceğini tesisten teyit edin."))
     if t.get("deniz"):
         satirlar.append(("Denize konumu", e(t["deniz"])))
     if t.get("ankara_saat"):
