@@ -483,6 +483,7 @@ misafirhanelerinin bağımsız dizini. Rezervasyon alınmaz; her tesis doğrudan
 <div class="alt-son">
 <span>Bağımsız dizindir; hiçbir kuruma ait değildir ve rezervasyon almaz.</span>
 <span>Fotoğraflar Wikimedia Commons, ilgili lisanslarıyla.</span>
+<span>Aynı ekipten: <a href="https://artolyemiz.com/">3dartolyemiz</a> — Ankara'da kişiye özel 3D baskı figür ve maket atölyesi.</span>
 <a class="alt-ig" href="{INSTAGRAM}" target="_blank" rel="noopener">{ik("instagram")}Instagram</a>
 </div>
 </div>
